@@ -1,0 +1,128 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the properties of a b2cAuthenticationMethodsPolicy object.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgPolicyB2CAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyB2CAuthenticationMethodPolicy?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.SignIns
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphB2CAuthenticationMethodsPolicy>`: b2cAuthenticationMethodsPolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[IsEmailPasswordAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using email if the email and password authentication method is enabled.
+    - `[IsPhoneOneTimePasswordAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using phone number if the phone number and one-time password authentication method is enabled.
+    - `[IsUserNameAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using username if the username and password authentication method is enabled.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2CAuthenticationMethodsPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphB2CAuthenticationMethodsPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgPolicyB2CAuthenticationMethodPolicy
+  href: /powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyB2CAuthenticationMethodPolicy?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaPolicyB2CAuthenticationMethodPolicy [-AdditionalProperties <Hashtable>] [-Id <String>]
+
+   [-IsEmailPasswordAuthenticationEnabled] [-IsPhoneOneTimePasswordAuthenticationEnabled]
+
+   [-IsUserNameAuthenticationEnabled] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaPolicyB2CAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphB2CAuthenticationMethodsPolicy>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphB2CAuthenticationMethodsPolicy" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    b2cAuthenticationMethodsPolicy
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsEmailPasswordAuthenticationEnabled
+  description: |+
+    The tenant admin can configure local accounts using email if the email and password authentication method is enabled.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsPhoneOneTimePasswordAuthenticationEnabled
+  description: |+
+    The tenant admin can configure local accounts using phone number if the phone number and one-time password authentication method is enabled.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsUserNameAuthenticationEnabled
+  description: |+
+    The tenant admin can configure local accounts using username if the username and password authentication method is enabled.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.SignIns.Update-MgBetaPolicyB2CAuthenticationMethodPolicy
+name: Update-MgBetaPolicyB2CAuthenticationMethodPolicy
+description: |-
+  Update the properties of a b2cAuthenticationMethodsPolicy object.
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.SignIns
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyb2cauthenticationmethodpolicy
+  schema: 2.0.0

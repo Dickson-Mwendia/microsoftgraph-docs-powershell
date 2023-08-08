@@ -1,0 +1,785 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property messages in users
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderChildFolderMessage?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Mail
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `ATTACHMENTS <IMicrosoftGraphAttachment[]>`: The fileAttachment and itemAttachment attachments for the message.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ContentType <String>]`: The MIME type.
+    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
+    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+    - `[Size <Int32?>]`: The length of the attachment in bytes.
+
+  `BCCRECIPIENTS <IMicrosoftGraphRecipient[]>`: The Bcc: recipients for the message.
+    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
+
+  `BODY <IMicrosoftGraphItemBody>`: itemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of the item.
+    - `[ContentType <String>]`: bodyType
+
+  `BODYPARAMETER <IMicrosoftGraphMessage>`: message
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Categories <String[]>]`: 
+    - `[ChangeKey <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Attachments <IMicrosoftGraphAttachment[]>]`: The fileAttachment and itemAttachment attachments for the message.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ContentType <String>]`: The MIME type.
+      - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
+      - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+      - `[Size <Int32?>]`: The length of the attachment in bytes.
+    - `[BccRecipients <IMicrosoftGraphRecipient[]>]`: The Bcc: recipients for the message.
+      - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Address <String>]`: The email address of an entity instance.
+        - `[Name <String>]`: The display name of an entity instance.
+    - `[Body <IMicrosoftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
+    - `[BodyPreview <String>]`: The first 255 characters of the message body. It is in text format. If the message contains instances of mention, this property would contain a concatenation of these mentions as well.
+    - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the message.
+    - `[ConversationId <String>]`: The ID of the conversation the email belongs to.
+    - `[ConversationIndex <Byte[]>]`: Indicates the position of the message within the conversation.
+    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the message. Nullable.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+      - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[FlagStatus <String>]`: followupFlagStatus
+      - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[From <IMicrosoftGraphRecipient>]`: recipient
+    - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
+    - `[Importance <String>]`: importance
+    - `[InferenceClassification <String>]`: inferenceClassificationType
+    - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
+      - `[Name <String>]`: Represents the key in a key-value pair.
+      - `[Value <String>]`: The value in a key-value pair.
+    - `[InternetMessageId <String>]`: 
+    - `[IsDeliveryReceiptRequested <Boolean?>]`: 
+    - `[IsDraft <Boolean?>]`: 
+    - `[IsRead <Boolean?>]`: 
+    - `[IsReadReceiptRequested <Boolean?>]`: 
+    - `[Mentions <IMicrosoftGraphMention[]>]`: A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest. By default, a GET /messages does not return this property unless you apply $expand on the property.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
+      - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
+      - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
+      - `[CreatedDateTime <DateTime?>]`: The date and time that the mention is created on the client.
+      - `[DeepLink <String>]`: A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for message.
+      - `[MentionText <String>]`: Optional. Not used and defaulted as null for message. To get the mentions in a message, see the bodyPreview property of the message instead.
+      - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
+      - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server. Optional. Not used and defaulted as null for message.
+    - `[MentionsPreview <IMicrosoftGraphMentionsPreview>]`: mentionsPreview
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsMentioned <Boolean?>]`: True if the signed-in user is mentioned in the parent resource instance. Read-only. Supports filter.
+    - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Value <String[]>]`: A collection of property values.
+    - `[ParentFolderId <String>]`: 
+    - `[ReceivedDateTime <DateTime?>]`: 
+    - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
+    - `[Sender <IMicrosoftGraphRecipient>]`: recipient
+    - `[SentDateTime <DateTime?>]`: 
+    - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Value <String>]`: A property value.
+    - `[Subject <String>]`: 
+    - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
+    - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
+    - `[UnsubscribeData <String[]>]`: 
+    - `[UnsubscribeEnabled <Boolean?>]`: 
+    - `[WebLink <String>]`: 
+
+  `CCRECIPIENTS <IMicrosoftGraphRecipient[]>`: The Cc: recipients for the message.
+    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
+
+  `EXTENSIONS <IMicrosoftGraphExtension[]>`: The collection of open extensions defined for the message. Nullable.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+
+  `FLAG <IMicrosoftGraphFollowupFlag>`: followupFlag
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+    - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[FlagStatus <String>]`: followupFlagStatus
+    - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+
+  `FROM <IMicrosoftGraphRecipient>`: recipient
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
+
+  `INPUTOBJECT <IMailIdentity>`: Identity Parameter
+    - `[AttachmentId <String>]`: The unique identifier of attachment
+    - `[ExtensionId <String>]`: The unique identifier of extension
+    - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
+    - `[MailFolderId <String>]`: The unique identifier of mailFolder
+    - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+    - `[MentionId <String>]`: The unique identifier of mention
+    - `[MessageId <String>]`: The unique identifier of message
+    - `[MessageRuleId <String>]`: The unique identifier of messageRule
+    - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
+    - `[UserId <String>]`: The unique identifier of user
+
+  `INTERNETMESSAGEHEADERS <IMicrosoftGraphInternetMessageHeader[]>`: .
+    - `[Name <String>]`: Represents the key in a key-value pair.
+    - `[Value <String>]`: The value in a key-value pair.
+
+  `MENTIONS <IMicrosoftGraphMention[]>`: A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest. By default, a GET /messages does not return this property unless you apply $expand on the property.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
+    - `[ClientReference <String>]`: A unique identifier that represents a parent of the resource instance. Optional. Not used and defaulted as null for message.
+    - `[CreatedBy <IMicrosoftGraphEmailAddress>]`: emailAddress
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
+    - `[CreatedDateTime <DateTime?>]`: The date and time that the mention is created on the client.
+    - `[DeepLink <String>]`: A deep web link to the context of the mention in the resource instance. Optional. Not used and defaulted as null for message.
+    - `[MentionText <String>]`: Optional. Not used and defaulted as null for message. To get the mentions in a message, see the bodyPreview property of the message instead.
+    - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
+    - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server. Optional. Not used and defaulted as null for message.
+
+  `MENTIONSPREVIEW <IMicrosoftGraphMentionsPreview>`: mentionsPreview
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsMentioned <Boolean?>]`: True if the signed-in user is mentioned in the parent resource instance. Read-only. Supports filter.
+
+  `MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>`: The collection of multi-value extended properties defined for the message. Nullable.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Value <String[]>]`: A collection of property values.
+
+  `REPLYTO <IMicrosoftGraphRecipient[]>`: .
+    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
+
+  `SENDER <IMicrosoftGraphRecipient>`: recipient
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
+
+  `SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>`: The collection of single-value extended properties defined for the message. Nullable.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Value <String>]`: A property value.
+
+  `TORECIPIENTS <IMicrosoftGraphRecipient[]>`: .
+    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
+
+  `UNIQUEBODY <IMicrosoftGraphItemBody>`: itemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of the item.
+    - `[ContentType <String>]`: bodyType
+
+  ## RELATED LINKS
+  [Update-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderChildFolderMessage?view=graph-powershell-v1.0)
+
+  ## RELATED LINKS
+  [Update-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Mail/Update-MgUserMailFolderChildFolderMessage?view=graph-powershell-v1.0)
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Update-MgBetaUserMailFolderChildFolderMessage -MailFolderId <String> -MailFolderId1 <String>
+
+   -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+
+   [-Attachments <IMicrosoftGraphAttachment[]>] [-BccRecipients <IMicrosoftGraphRecipient[]>]
+
+   [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Categories <String[]>]
+
+   [-CcRecipients <IMicrosoftGraphRecipient[]>] [-ChangeKey <String>] [-ConversationId <String>]
+
+   [-ConversationIndexInputFile <String>] [-CreatedDateTime <DateTime>]
+
+   [-Extensions <IMicrosoftGraphExtension[]>] [-Flag <IMicrosoftGraphFollowupFlag>]
+
+   [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-Importance <String>]
+
+   [-InferenceClassification <String>] [-InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]
+
+   [-InternetMessageId <String>] [-IsDeliveryReceiptRequested] [-IsDraft] [-IsRead] [-IsReadReceiptRequested]
+
+   [-LastModifiedDateTime <DateTime>] [-Mentions <IMicrosoftGraphMention[]>]
+
+   [-MentionsPreview <IMicrosoftGraphMentionsPreview>]
+
+   [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
+
+   [-ReceivedDateTime <DateTime>] [-ReplyTo <IMicrosoftGraphRecipient[]>] [-Sender <IMicrosoftGraphRecipient>]
+
+   [-SentDateTime <DateTime>]
+
+   [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Subject <String>]
+
+   [-ToRecipients <IMicrosoftGraphRecipient[]>] [-UniqueBody <IMicrosoftGraphItemBody>]
+
+   [-UnsubscribeData <String[]>] [-UnsubscribeEnabled] [-WebLink <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaUserMailFolderChildFolderMessage -MailFolderId <String> -MailFolderId1 <String>
+
+   -MessageId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMessage> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
+
+   [-Attachments <IMicrosoftGraphAttachment[]>] [-BccRecipients <IMicrosoftGraphRecipient[]>]
+
+   [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Categories <String[]>]
+
+   [-CcRecipients <IMicrosoftGraphRecipient[]>] [-ChangeKey <String>] [-ConversationId <String>]
+
+   [-ConversationIndexInputFile <String>] [-CreatedDateTime <DateTime>]
+
+   [-Extensions <IMicrosoftGraphExtension[]>] [-Flag <IMicrosoftGraphFollowupFlag>]
+
+   [-From <IMicrosoftGraphRecipient>] [-HasAttachments] [-Id <String>] [-Importance <String>]
+
+   [-InferenceClassification <String>] [-InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]
+
+   [-InternetMessageId <String>] [-IsDeliveryReceiptRequested] [-IsDraft] [-IsRead] [-IsReadReceiptRequested]
+
+   [-LastModifiedDateTime <DateTime>] [-Mentions <IMicrosoftGraphMention[]>]
+
+   [-MentionsPreview <IMicrosoftGraphMentionsPreview>]
+
+   [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
+
+   [-ReceivedDateTime <DateTime>] [-ReplyTo <IMicrosoftGraphRecipient[]>] [-Sender <IMicrosoftGraphRecipient>]
+
+   [-SentDateTime <DateTime>]
+
+   [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Subject <String>]
+
+   [-ToRecipients <IMicrosoftGraphRecipient[]>] [-UniqueBody <IMicrosoftGraphItemBody>]
+
+   [-UnsubscribeData <String[]>] [-UnsubscribeEnabled] [-WebLink <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaUserMailFolderChildFolderMessage -InputObject <IMailIdentity>
+
+   -BodyParameter <IMicrosoftGraphMessage> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAttachment" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Attachments
+  description: |+
+    The fileAttachment and itemAttachment attachments for the message.
+    To construct, see NOTES section for ATTACHMENTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphRecipient" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: BccRecipients
+  description: |+
+    The Bcc: recipients for the message.
+    To construct, see NOTES section for BCCRECIPIENTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphItemBody" data-throw-if-not-resolved="False" />
+  name: Body
+  description: |+
+    itemBody
+    To construct, see NOTES section for BODY properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphMessage" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    message
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: BodyPreview
+  description: |+
+    The first 255 characters of the message body.
+    It is in text format.
+    If the message contains instances of mention, this property would contain a concatenation of these mentions as well.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Categories
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphRecipient" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: CcRecipients
+  description: |+
+    The Cc: recipients for the message.
+    To construct, see NOTES section for CCRECIPIENTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ChangeKey
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ConversationId
+  description: |+
+    The ID of the conversation the email belongs to.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ConversationIndexInputFile
+  description: |+
+    Input File for ConversationIndex (Indicates the position of the message within the conversation.)
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphExtension" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Extensions
+  description: |+
+    The collection of open extensions defined for the message.
+    Nullable.
+    To construct, see NOTES section for EXTENSIONS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphFollowupFlag" data-throw-if-not-resolved="False" />
+  name: Flag
+  description: |+
+    followupFlag
+    To construct, see NOTES section for FLAG properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphRecipient" data-throw-if-not-resolved="False" />
+  name: From
+  description: |+
+    recipient
+    To construct, see NOTES section for FROM properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: HasAttachments
+  description: |+
+    Indicates whether the message has attachments.
+    This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false.
+    To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Importance
+  description: |+
+    importance
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InferenceClassification
+  description: |+
+    inferenceClassificationType
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMailIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphInternetMessageHeader" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: InternetMessageHeaders
+  description: |+
+    .
+    To construct, see NOTES section for INTERNETMESSAGEHEADERS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: InternetMessageId
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsDeliveryReceiptRequested
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsDraft
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsRead
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsReadReceiptRequested
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MailFolderId
+  isRequired: true
+  description: |+
+    The unique identifier of mailFolder
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MailFolderId1
+  isRequired: true
+  description: |+
+    The unique identifier of mailFolder
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphMention" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Mentions
+  description: |+
+    A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
+    By default, a GET /messages does not return this property unless you apply $expand on the property.
+    To construct, see NOTES section for MENTIONS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphMentionsPreview" data-throw-if-not-resolved="False" />
+  name: MentionsPreview
+  description: |+
+    mentionsPreview
+    To construct, see NOTES section for MENTIONSPREVIEW properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MessageId
+  isRequired: true
+  description: |+
+    The unique identifier of message
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphMultiValueLegacyExtendedProperty" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: MultiValueExtendedProperties
+  description: |+
+    The collection of multi-value extended properties defined for the message.
+    Nullable.
+    To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ParentFolderId
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: ReceivedDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphRecipient" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ReplyTo
+  description: |+
+    .
+    To construct, see NOTES section for REPLYTO properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphRecipient" data-throw-if-not-resolved="False" />
+  name: Sender
+  description: |+
+    recipient
+    To construct, see NOTES section for SENDER properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: SentDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSingleValueLegacyExtendedProperty" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: SingleValueExtendedProperties
+  description: |+
+    The collection of single-value extended properties defined for the message.
+    Nullable.
+    To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Subject
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphRecipient" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ToRecipients
+  description: |+
+    .
+    To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphItemBody" data-throw-if-not-resolved="False" />
+  name: UniqueBody
+  description: |+
+    itemBody
+    To construct, see NOTES section for UNIQUEBODY properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: UnsubscribeData
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: UnsubscribeEnabled
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: WebLink
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Mail.Update-MgBetaUserMailFolderChildFolderMessage
+name: Update-MgBetaUserMailFolderChildFolderMessage
+description: |-
+  Update the navigation property messages in users
+metadata:
+  external help file: Microsoft.Graph.Beta.Mail-help.xml
+  Module Name: Microsoft.Graph.Beta.Mail
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfolderchildfoldermessage
+  schema: 2.0.0

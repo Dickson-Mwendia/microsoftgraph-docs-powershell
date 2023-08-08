@@ -1,0 +1,203 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke action executeAction
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Invoke-MgExecuteDeviceManagementManagedDeviceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgExecuteDeviceManagementManagedDeviceAction?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Actions
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ActionName <ManagedDeviceRemoteAction?>]`: managedDeviceRemoteAction
+    - `[CarrierUrl <String>]`: 
+    - `[DeprovisionReason <String>]`: 
+    - `[DeviceIds <String[]>]`: 
+    - `[DeviceName <String>]`: 
+    - `[KeepEnrollmentData <Boolean?>]`: 
+    - `[KeepUserData <Boolean?>]`: 
+    - `[NotificationBody <String>]`: 
+    - `[NotificationTitle <String>]`: 
+    - `[OrganizationalUnitPath <String>]`: 
+    - `[PersistEsimDataPlan <Boolean?>]`:
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBulkManagedDeviceActionResult" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Invoke-MgExecuteDeviceManagementManagedDeviceAction
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgExecuteDeviceManagementManagedDeviceAction?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Invoke-MgBetaExecuteDeviceManagementManagedDeviceAction [-ActionName <ManagedDeviceRemoteAction>]
+
+   [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-DeprovisionReason <String>]
+
+   [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData] [-KeepUserData]
+
+   [-NotificationBody <String>] [-NotificationTitle <String>] [-OrganizationalUnitPath <String>]
+
+   [-PersistEsimDataPlan] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Invoke-MgBetaExecuteDeviceManagementManagedDeviceAction
+
+   -BodyParameter <IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="ManagedDeviceRemoteAction" data-throw-if-not-resolved="False" />
+  name: ActionName
+  description: |+
+    managedDeviceRemoteAction
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CarrierUrl
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeprovisionReason
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: DeviceIds
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceName
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: KeepEnrollmentData
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: KeepUserData
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: NotificationBody
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: NotificationTitle
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OrganizationalUnitPath
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PersistEsimDataPlan
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Actions.Invoke-MgBetaExecuteDeviceManagementManagedDeviceAction
+name: Invoke-MgBetaExecuteDeviceManagementManagedDeviceAction
+description: |-
+  Invoke action executeAction
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaexecutedevicemanagementmanageddeviceaction
+  schema: 2.0.0

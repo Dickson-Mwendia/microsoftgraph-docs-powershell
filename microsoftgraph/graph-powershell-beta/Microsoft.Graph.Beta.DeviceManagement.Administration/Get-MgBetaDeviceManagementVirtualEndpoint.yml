@@ -1,0 +1,48 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get virtualEndpoint from deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpoint](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpoint?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Administration
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualEndpoint" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgDeviceManagementVirtualEndpoint
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpoint?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaDeviceManagementVirtualEndpoint [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Administration.Get-MgBetaDeviceManagementVirtualEndpoint
+name: Get-MgBetaDeviceManagementVirtualEndpoint
+description: |-
+  Get virtualEndpoint from deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementvirtualendpoint
+  schema: 2.0.0

@@ -1,0 +1,102 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke function my
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Invoke-MgMyPrivilegedRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgMyPrivilegedRoleAssignment?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.Governance
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Invoke-MgMyPrivilegedRoleAssignment
+  href: /powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgMyPrivilegedRoleAssignment?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Invoke-MgBetaMyPrivilegedRoleAssignment [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>]
+
+   [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the Invoke-MgBetaMyPrivilegedRoleAssignment Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Identity.Governance
+    Invoke-MgBetaMyPrivilegedRoleAssignment
+  description: |-
+    This example shows how to use the Invoke-MgBetaMyPrivilegedRoleAssignment Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Count
+  description: |+
+    Include count of items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.Governance.Invoke-MgBetaMyPrivilegedRoleAssignment
+name: Invoke-MgBetaMyPrivilegedRoleAssignment
+description: |-
+  Invoke function my
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.Governance
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetamyprivilegedroleassignment
+  schema: 2.0.0

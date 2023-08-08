@@ -1,0 +1,223 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>`: Not yet documented
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
+    - `[DeviceId <String>]`: The Device Id that is being reported
+    - `[DeviceModel <String>]`: The device model that is being reported
+    - `[DeviceName <String>]`: The Device Name that is being reported
+    - `[PlatformType <DeviceType?>]`: Device type.
+    - `[Setting <String>]`: The setting class name and property name.
+    - `[SettingName <String>]`: The Setting Name that is being reported
+    - `[State <String>]`: complianceStatus
+    - `[UserEmail <String>]`: The User email address that is being reported
+    - `[UserId <String>]`: The user Id that is being reported
+    - `[UserName <String>]`: The User Name that is being reported
+    - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
+
+  `BODYPARAMETER <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>`: Windows defender advanced threat protection onboarding state summary across the account.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AdvancedThreatProtectionOnboardingDeviceSettingStates <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>]`: Not yet documented
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
+      - `[DeviceId <String>]`: The Device Id that is being reported
+      - `[DeviceModel <String>]`: The device model that is being reported
+      - `[DeviceName <String>]`: The Device Name that is being reported
+      - `[PlatformType <DeviceType?>]`: Device type.
+      - `[Setting <String>]`: The setting class name and property name.
+      - `[SettingName <String>]`: The Setting Name that is being reported
+      - `[State <String>]`: complianceStatus
+      - `[UserEmail <String>]`: The User email address that is being reported
+      - `[UserId <String>]`: The user Id that is being reported
+      - `[UserName <String>]`: The User Name that is being reported
+      - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
+    - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
+    - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
+    - `[ErrorDeviceCount <Int32?>]`: Number of error devices
+    - `[NonCompliantDeviceCount <Int32?>]`: Number of NonCompliant devices
+    - `[NotApplicableDeviceCount <Int32?>]`: Number of not applicable devices
+    - `[NotAssignedDeviceCount <Int32?>]`: Number of not assigned devices
+    - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
+    - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
+  href: /powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-AdditionalProperties <Hashtable>]
+
+   [-AdvancedThreatProtectionOnboardingDeviceSettingStates <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>]
+
+   [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>] [-ErrorDeviceCount <Int32>] [-Id <String>]
+
+   [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>] [-NotAssignedDeviceCount <Int32>]
+
+   [-RemediatedDeviceCount <Int32>] [-UnknownDeviceCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
+
+   -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: AdvancedThreatProtectionOnboardingDeviceSettingStates
+  description: |+
+    Not yet documented
+    To construct, see NOTES section for ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Windows defender advanced threat protection onboarding state summary across the account.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: CompliantDeviceCount
+  description: |+
+    Number of compliant devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: ConflictDeviceCount
+  description: |+
+    Number of conflict devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: ErrorDeviceCount
+  description: |+
+    Number of error devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: NonCompliantDeviceCount
+  description: |+
+    Number of NonCompliant devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: NotApplicableDeviceCount
+  description: |+
+    Number of not applicable devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: NotAssignedDeviceCount
+  description: |+
+    Number of not assigned devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: RemediatedDeviceCount
+  description: |+
+    Number of remediated devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: UnknownDeviceCount
+  description: |+
+    Number of unknown devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
+name: Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
+description: |-
+  Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementadvancedthreatprotectiononboardingstatesummary
+  schema: 2.0.0

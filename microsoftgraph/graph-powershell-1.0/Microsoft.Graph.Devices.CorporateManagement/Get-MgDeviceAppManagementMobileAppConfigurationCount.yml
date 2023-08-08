@@ -1,0 +1,47 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppConfigurationCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfigurationCount?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.CorporateManagement
+notes: |-
+  ALIASES
+
+  Get-MgDeviceAppMgtMobileAppConfigurationCount
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaDeviceAppManagementMobileAppConfigurationCount
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfigurationCount?view=graph-powershell-beta
+syntaxes:
+- Get-MgDeviceAppManagementMobileAppConfigurationCount [-Filter <String>] [-Search <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.CorporateManagement.Get-MgDeviceAppManagementMobileAppConfigurationCount
+name: Get-MgDeviceAppManagementMobileAppConfigurationCount
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Devices.CorporateManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappconfigurationcount
+  schema: 2.0.0

@@ -1,0 +1,245 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retrieve the properties and relationships of a sectionGroup object.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroup?view=graph-powershell-beta)
+module: Microsoft.Graph.Sites
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <ISitesIdentity>`: Identity Parameter
+    - `[BaseItemId <String>]`: The unique identifier of baseItem
+    - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
+    - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+    - `[ContentTypeId <String>]`: The unique identifier of contentType
+    - `[ContentTypeId1 <String>]`: The unique identifier of contentType
+    - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+    - `[DriveId <String>]`: The unique identifier of drive
+    - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[GroupId1 <String>]`: The unique identifier of group
+    - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+    - `[Interval <String>]`: Usage: interval='{interval}'
+    - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+    - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+    - `[ListId <String>]`: The unique identifier of list
+    - `[ListItemId <String>]`: The unique identifier of listItem
+    - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+    - `[NotebookId <String>]`: The unique identifier of notebook
+    - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
+    - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+    - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
+    - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+    - `[Path <String>]`: Usage: path='{path}'
+    - `[PermissionId <String>]`: The unique identifier of permission
+    - `[RelationId <String>]`: The unique identifier of relation
+    - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+    - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+    - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
+    - `[SetId <String>]`: The unique identifier of set
+    - `[SetId1 <String>]`: The unique identifier of set
+    - `[SiteId <String>]`: The unique identifier of site
+    - `[SiteId1 <String>]`: The unique identifier of site
+    - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+    - `[StoreId <String>]`: The unique identifier of store
+    - `[SubscriptionId <String>]`: The unique identifier of subscription
+    - `[TermId <String>]`: The unique identifier of term
+    - `[TermId1 <String>]`: The unique identifier of term
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.ISitesIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSectionGroup" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaGroupSiteOnenoteSectionGroup
+  href: /powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOnenoteSectionGroup?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgGroupSiteOnenoteSectionGroup -GroupId <String> -SiteId <String> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+
+   [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+- >-
+  Get-MgGroupSiteOnenoteSectionGroup -GroupId <String> -SectionGroupId <String> -SiteId <String>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+
+   [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+- >-
+  Get-MgGroupSiteOnenoteSectionGroup -GroupId <String> -SectionGroupId <String> -SiteId <String>
+
+   -SectionGroupId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgGroupSiteOnenoteSectionGroup -GroupId <String> -SectionGroupId <String> -SiteId <String>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgGroupSiteOnenoteSectionGroup -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgGroupSiteOnenoteSectionGroup -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GroupId
+  isRequired: true
+  description: |+
+    The unique identifier of group
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ISitesIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SectionGroupId
+  isRequired: true
+  description: |+
+    The unique identifier of sectionGroup
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SectionGroupId1
+  isRequired: true
+  description: |+
+    The unique identifier of sectionGroup
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SiteId
+  isRequired: true
+  description: |+
+    The unique identifier of site
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Sites.Get-MgGroupSiteOnenoteSectionGroup
+name: Get-MgGroupSiteOnenoteSectionGroup
+description: |-
+  Retrieve the properties and relationships of a sectionGroup object.
+metadata:
+  external help file: Microsoft.Graph.Sites-help.xml
+  Module Name: Microsoft.Graph.Sites
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsiteonenotesectiongroup
+  schema: 2.0.0

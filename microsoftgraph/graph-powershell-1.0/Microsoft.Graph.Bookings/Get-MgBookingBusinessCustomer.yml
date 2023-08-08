@@ -1,0 +1,193 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the properties and relationships of a bookingCustomer object.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
+module: Microsoft.Graph.Bookings
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
+    - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
+    - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
+    - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
+    - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
+    - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
+    - `[BookingServiceId <String>]`: The unique identifier of bookingService
+    - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IBookingsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingCustomerBase" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaBookingBusinessCustomer
+  href: /powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessCustomer?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgBookingBusinessCustomer -BookingBusinessId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+
+   [-All] [-CountVariable <String>] [<CommonParameters>]
+- >-
+  Get-MgBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerBaseId <String>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.Bookings
+
+    Get-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerBaseId $bookingCustomerBaseId
+  description: |-
+    This example shows how to use the Get-MgBookingBusinessCustomer Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: BookingBusinessId
+  isRequired: true
+  description: |+
+    The unique identifier of bookingBusiness
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: BookingCustomerBaseId
+  isRequired: true
+  description: |+
+    The unique identifier of bookingCustomerBase
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IBookingsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Bookings.Get-MgBookingBusinessCustomer
+name: Get-MgBookingBusinessCustomer
+description: |-
+  Get the properties and relationships of a bookingCustomer object.
+metadata:
+  external help file: Microsoft.Graph.Bookings-help.xml
+  Module Name: Microsoft.Graph.Bookings
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscustomer
+  schema: 2.0.0

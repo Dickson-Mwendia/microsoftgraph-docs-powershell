@@ -1,0 +1,125 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get ref of members from onPremisesPublishingProfiles
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgOnPremisePublishingProfileConnectorGroupMemberByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileConnectorGroupMemberByRef?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Applications
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgOnPremisePublishingProfileConnectorGroupMemberByRef
+  href: /powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileConnectorGroupMemberByRef?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef -ConnectorGroupId <String>
+
+   -OnPremisesPublishingProfileId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+
+   [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ConnectorGroupId
+  isRequired: true
+  description: |+
+    The unique identifier of connectorGroup
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OnPremisesPublishingProfileId
+  isRequired: true
+  description: |+
+    The unique identifier of onPremisesPublishingProfile
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Applications.Get-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef
+name: Get-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef
+description: |-
+  Get ref of members from onPremisesPublishingProfiles
+metadata:
+  external help file: Microsoft.Graph.Beta.Applications-help.xml
+  Module Name: Microsoft.Graph.Beta.Applications
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofileconnectorgroupmemberbyref
+  schema: 2.0.0

@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get directory
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectory?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.DirectoryManagement
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectory" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgDirectory
+  href: /powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectory?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaDirectory [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.DirectoryManagement.Get-MgBetaDirectory
+name: Get-MgBetaDirectory
+description: |-
+  Get directory
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectory
+  schema: 2.0.0

@@ -1,0 +1,313 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property issues in admin
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Update-MgServiceAnnouncementIssue?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphServiceHealthIssue>`: serviceHealthIssue
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Details <IMicrosoftGraphKeyValuePair[]>]`: Additional details about service event. This property doesn't support filters.
+      - `[Name <String>]`: Name for this key-value pair
+      - `[Value <String>]`: Value for this key-value pair
+    - `[EndDateTime <DateTime?>]`: The end time of the service event.
+    - `[LastModifiedDateTime <DateTime?>]`: The last modified time of the service event.
+    - `[StartDateTime <DateTime?>]`: The start time of the service event.
+    - `[Title <String>]`: The title of the service event.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Classification <String>]`: serviceHealthClassificationType
+    - `[Feature <String>]`: The feature name of the service issue.
+    - `[FeatureGroup <String>]`: The feature group name of the service issue.
+    - `[ImpactDescription <String>]`: The description of the service issue impact.
+    - `[IsResolved <Boolean?>]`: Indicates whether the issue is resolved.
+    - `[Origin <String>]`: serviceHealthOrigin
+    - `[Posts <IMicrosoftGraphServiceHealthIssuePost[]>]`: Collection of historical posts for the service issue.
+      - `[CreatedDateTime <DateTime?>]`: The published time of the post.
+      - `[Description <IMicrosoftGraphItemBody>]`: itemBody
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Content <String>]`: The content of the item.
+        - `[ContentType <String>]`: bodyType
+      - `[PostType <String>]`: postType
+    - `[Service <String>]`: Indicates the service affected by the issue.
+    - `[Status <String>]`: serviceHealthStatus
+
+  `DETAILS <IMicrosoftGraphKeyValuePair[]>`: Additional details about service event. This property doesn't support filters.
+    - `[Name <String>]`: Name for this key-value pair
+    - `[Value <String>]`: Value for this key-value pair
+
+  `INPUTOBJECT <IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+    - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
+    - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
+    - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
+    - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
+
+  `POSTS <IMicrosoftGraphServiceHealthIssuePost[]>`: Collection of historical posts for the service issue.
+    - `[CreatedDateTime <DateTime?>]`: The published time of the post.
+    - `[Description <IMicrosoftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
+    - `[PostType <String>]`: postType
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IDevicesServiceAnnouncementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceHealthIssue" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceHealthIssue" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgServiceAnnouncementIssue
+  href: /powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Update-MgServiceAnnouncementIssue?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaServiceAnnouncementIssue -ServiceHealthIssueId <String> [-AdditionalProperties <Hashtable>]
+
+   [-Classification <String>] [-Details <IMicrosoftGraphKeyValuePair[]>] [-EndDateTime <DateTime>]
+
+   [-Feature <String>] [-FeatureGroup <String>] [-Id <String>] [-ImpactDescription <String>] [-IsResolved]
+
+   [-LastModifiedDateTime <DateTime>] [-Origin <String>] [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>]
+
+   [-Service <String>] [-StartDateTime <DateTime>] [-Status <String>] [-Title <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaServiceAnnouncementIssue -ServiceHealthIssueId <String>
+
+   -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaServiceAnnouncementIssue -InputObject <IDevicesServiceAnnouncementIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-Classification <String>] [-Details <IMicrosoftGraphKeyValuePair[]>]
+
+   [-EndDateTime <DateTime>] [-Feature <String>] [-FeatureGroup <String>] [-Id <String>]
+
+   [-ImpactDescription <String>] [-IsResolved] [-LastModifiedDateTime <DateTime>] [-Origin <String>]
+
+   [-Posts <IMicrosoftGraphServiceHealthIssuePost[]>] [-Service <String>] [-StartDateTime <DateTime>]
+
+   [-Status <String>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaServiceAnnouncementIssue -InputObject <IDevicesServiceAnnouncementIdentity>
+
+   -BodyParameter <IMicrosoftGraphServiceHealthIssue> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphServiceHealthIssue" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    serviceHealthIssue
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Classification
+  description: |+
+    serviceHealthClassificationType
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphKeyValuePair" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Details
+  description: |+
+    Additional details about service event.
+    This property doesn't support filters.
+    To construct, see NOTES section for DETAILS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: EndDateTime
+  description: |+
+    The end time of the service event.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Feature
+  description: |+
+    The feature name of the service issue.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: FeatureGroup
+  description: |+
+    The feature group name of the service issue.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ImpactDescription
+  description: |+
+    The description of the service issue impact.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDevicesServiceAnnouncementIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsResolved
+  description: |+
+    Indicates whether the issue is resolved.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    The last modified time of the service event.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Origin
+  description: |+
+    serviceHealthOrigin
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphServiceHealthIssuePost" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Posts
+  description: |+
+    Collection of historical posts for the service issue.
+    To construct, see NOTES section for POSTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Service
+  description: |+
+    Indicates the service affected by the issue.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ServiceHealthIssueId
+  isRequired: true
+  description: |+
+    The unique identifier of serviceHealthIssue
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: StartDateTime
+  description: |+
+    The start time of the service event.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Status
+  description: |+
+    serviceHealthStatus
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Title
+  description: |+
+    The title of the service event.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Update-MgBetaServiceAnnouncementIssue
+name: Update-MgBetaServiceAnnouncementIssue
+description: |-
+  Update the navigation property issues in admin
+metadata:
+  external help file: Microsoft.Graph.Beta.Devices.ServiceAnnouncement-help.xml
+  Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/update-mgbetaserviceannouncementissue
+  schema: 2.0.0

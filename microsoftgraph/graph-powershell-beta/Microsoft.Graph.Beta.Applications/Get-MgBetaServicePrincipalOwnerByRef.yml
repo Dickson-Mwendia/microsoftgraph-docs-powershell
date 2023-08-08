@@ -1,0 +1,144 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Directory objects that are owners of this servicePrincipal.
+  The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+  Read-only.
+  Nullable.
+  Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnerByRef?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Applications
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgServicePrincipalOwnerByRef
+  href: /powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnerByRef?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaServicePrincipalOwnerByRef -ServicePrincipalId <String> [-Filter <String>] [-Search <String>]
+
+   [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
+
+   [-CountVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Applications
+
+    Get-MgBetaServicePrincipalOwner -ServicePrincipalId $servicePrincipalId
+  description: |-
+    This example shows how to use the Get-MgBetaServicePrincipalOwnerByRef Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ConsistencyLevel
+  description: |+
+    Indicates the requested consistency level.
+    Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ServicePrincipalId
+  isRequired: true
+  description: |+
+    The unique identifier of servicePrincipal
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Applications.Get-MgBetaServicePrincipalOwnerByRef
+name: Get-MgBetaServicePrincipalOwnerByRef
+description: |-
+  Directory objects that are owners of this servicePrincipal.
+  The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+  Read-only.
+  Nullable.
+  Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
+metadata:
+  external help file: Microsoft.Graph.Beta.Applications-help.xml
+  Module Name: Microsoft.Graph.Beta.Applications
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaserviceprincipalownerbyref
+  schema: 2.0.0

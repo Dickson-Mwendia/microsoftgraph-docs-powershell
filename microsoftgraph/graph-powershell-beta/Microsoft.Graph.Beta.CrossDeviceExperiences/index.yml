@@ -1,0 +1,80 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.CrossDeviceExperiences
+  cmdlets:
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserActivity
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserActivityCount
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserActivityHistoryItem
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserActivityHistoryItemActivity
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserActivityHistoryItemCount
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDevice
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceCommand
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceCommandCount
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceCommandResponsepayload
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceCount
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceExtension
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceExtensionCount
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceMemberOf
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceMemberOfAsAdministrativeUnit
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceMemberOfAsGroup
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceMemberOfCount
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceMemberOfCountAsAdministrativeUnit
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceMemberOfCountAsGroup
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredOwner
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredOwnerAsEndpoint
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredOwnerAsServicePrincipal
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredOwnerAsUser
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredOwnerByRef
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredOwnerCount
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredOwnerCountAsEndpoint
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredOwnerCountAsServicePrincipal
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredOwnerCountAsUser
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredUser
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredUserAsEndpoint
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredUserAsServicePrincipal
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredUserAsUser
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredUserByRef
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredUserCount
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredUserCountAsEndpoint
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredUserCountAsServicePrincipal
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceRegisteredUserCountAsUser
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceTransitiveMemberOf
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceTransitiveMemberOfAsAdministrativeUnit
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceTransitiveMemberOfAsGroup
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceTransitiveMemberOfCount
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceTransitiveMemberOfCountAsAdministrativeUnit
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceTransitiveMemberOfCountAsGroup
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceUsageRights
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Get-MgBetaUserDeviceUsageRightsCount
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.New-MgBetaUserActivity
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.New-MgBetaUserActivityHistoryItem
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.New-MgBetaUserDevice
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.New-MgBetaUserDeviceCommand
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.New-MgBetaUserDeviceExtension
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.New-MgBetaUserDeviceRegisteredOwnerByRef
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.New-MgBetaUserDeviceRegisteredUserByRef
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.New-MgBetaUserDeviceUsageRights
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Remove-MgBetaUserActivity
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Remove-MgBetaUserActivityHistoryItem
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Remove-MgBetaUserDevice
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Remove-MgBetaUserDeviceCommand
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Remove-MgBetaUserDeviceExtension
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Remove-MgBetaUserDeviceRegisteredOwnerByRef
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Remove-MgBetaUserDeviceRegisteredUserByRef
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Remove-MgBetaUserDeviceUsageRights
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Update-MgBetaUserActivity
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Update-MgBetaUserActivityHistoryItem
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Update-MgBetaUserDevice
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Update-MgBetaUserDeviceCommand
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Update-MgBetaUserDeviceExtension
+  - Microsoft.Graph.Beta.CrossDeviceExperiences.Update-MgBetaUserDeviceUsageRights
+uid: Microsoft.Graph.Beta.CrossDeviceExperiences
+name: Microsoft.Graph.Beta.CrossDeviceExperiences
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
+  Module Guid: 6af6858b-1f45-4c61-abb6-ceedf531e754
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences
+  Help Version: 1.0.0.0
+  Locale: en-US

@@ -1,0 +1,112 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Remove-MgSecurityTiIndicatorMultiple](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTiIndicatorMultiple?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Security
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Value <String[]>]`:
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResultInfo" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Remove-MgSecurityTiIndicatorMultiple
+  href: /powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTiIndicatorMultiple?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Remove-MgBetaSecurityTiIndicatorMultiple [-AdditionalProperties <Hashtable>] [-Value <String[]>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Remove-MgBetaSecurityTiIndicatorMultiple
+
+   -BodyParameter <IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the Remove-MgBetaSecurityTiIndicatorMultiple Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Security
+    $params = @{
+    	Value = @(
+    		"id-value1"
+    		"id-value2"
+    	)
+    }
+    Remove-MgBetaSecurityTiIndicatorMultiple -BodyParameter $params
+  description: |-
+    This example shows how to use the Remove-MgBetaSecurityTiIndicatorMultiple Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPaths9Mf33ASecurityTiindicatorsMicrosoftGraphDeletetiindicatorsPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Value
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Security.Remove-MgBetaSecurityTiIndicatorMultiple
+name: Remove-MgBetaSecurityTiIndicatorMultiple
+description: |-
+  Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
+metadata:
+  external help file: Microsoft.Graph.Beta.Security-help.xml
+  Module Name: Microsoft.Graph.Beta.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatormultiple
+  schema: 2.0.0

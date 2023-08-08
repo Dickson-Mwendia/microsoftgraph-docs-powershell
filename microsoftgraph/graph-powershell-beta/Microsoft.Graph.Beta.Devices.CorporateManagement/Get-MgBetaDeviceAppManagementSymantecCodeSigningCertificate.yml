@@ -1,0 +1,50 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The WinPhone Symantec Code Signing Certificate.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementSymantecCodeSigningCertificate](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Devices.CorporateManagement
+notes: |-
+  ALIASES
+
+  Get-MgBetaDeviceAppMgtSymantecCodeSigningCertificate
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSymantecCodeSigningCertificate" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgDeviceAppManagementSymantecCodeSigningCertificate
+  href: /powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaDeviceAppManagementSymantecCodeSigningCertificate [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Devices.CorporateManagement.Get-MgBetaDeviceAppManagementSymantecCodeSigningCertificate
+name: Get-MgBetaDeviceAppManagementSymantecCodeSigningCertificate
+description: |-
+  The WinPhone Symantec Code Signing Certificate.
+metadata:
+  external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementsymanteccodesigningcertificate
+  schema: 2.0.0

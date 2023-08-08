@@ -1,0 +1,110 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get media content for the navigation property photo from users
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaUserContactFolderContactPhotoContent](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderContactPhotoContent?view=graph-powershell-beta)
+module: Microsoft.Graph.PersonalContacts
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IPersonalContactsIdentity>`: Identity Parameter
+    - `[ContactFolderId <String>]`: The unique identifier of contactFolder
+    - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
+    - `[ContactId <String>]`: The unique identifier of contact
+    - `[ExtensionId <String>]`: The unique identifier of extension
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaUserContactFolderContactPhotoContent
+  href: /powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgBetaUserContactFolderContactPhotoContent?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgUserContactFolderContactPhotoContent -ContactFolderId <String> -ContactId <String> -UserId <String>
+
+   -OutFile <String> [-PassThru] [<CommonParameters>]
+- >-
+  Get-MgUserContactFolderContactPhotoContent -InputObject <IPersonalContactsIdentity> -OutFile <String>
+
+   [-PassThru] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContactFolderId
+  isRequired: true
+  description: |+
+    The unique identifier of contactFolder
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContactId
+  isRequired: true
+  description: |+
+    The unique identifier of contact
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPersonalContactsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OutFile
+  isRequired: true
+  description: |+
+    Path to write output file to
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderContactPhotoContent
+name: Get-MgUserContactFolderContactPhotoContent
+description: |-
+  Get media content for the navigation property photo from users
+metadata:
+  external help file: Microsoft.Graph.PersonalContacts-help.xml
+  Module Name: Microsoft.Graph.PersonalContacts
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercontactphotocontent
+  schema: 2.0.0

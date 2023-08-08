@@ -1,0 +1,339 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update informationProtection
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgInformationProtection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInformationProtection?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.SignIns
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BITLOCKER <IMicrosoftGraphBitlocker>`: bitlocker
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory.
+      - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
+      - `[Key <String>]`: The BitLocker recovery key.
+      - `[VolumeType <String>]`: volumeType
+
+  `BODYPARAMETER <IMicrosoftGraphInformationProtection>`: informationProtection
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Bitlocker <IMicrosoftGraphBitlocker>]`: bitlocker
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory.
+        - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
+        - `[Key <String>]`: The BitLocker recovery key.
+        - `[VolumeType <String>]`: volumeType
+    - `[DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>]`: 
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Name <String>]`: 
+    - `[Policy <IMicrosoftGraphInformationProtectionPolicy>]`: informationProtectionPolicy
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Labels <IMicrosoftGraphInformationProtectionLabel[]>]`: 
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[Color <String>]`: The color that the UI should display for the label, if configured.
+        - `[Description <String>]`: The admin-defined description for the label.
+        - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in UI.
+        - `[Name <String>]`: The plaintext name of the label.
+        - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Color <String>]`: The color that the user interface should display for the label, if configured.
+          - `[Description <String>]`: The admin-defined description for the label.
+          - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
+          - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces.
+          - `[Name <String>]`: The plaintext name of the label.
+          - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
+          - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+          - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
+        - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+        - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
+    - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]`: 
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ApplicableTo <String>]`: sensitivityLabelTarget
+      - `[ApplicationMode <String>]`: applicationMode
+      - `[AssignedPolicies <IMicrosoftGraphLabelPolicy[]>]`: 
+        - `[Id <String>]`: 
+        - `[Name <String>]`: 
+      - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Message <String>]`: 
+        - `[SensitiveTypeIds <String[]>]`: 
+      - `[Description <String>]`: 
+      - `[DisplayName <String>]`: 
+      - `[IsDefault <Boolean?>]`: 
+      - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+      - `[LabelActions <IMicrosoftGraphLabelActionBase[]>]`: 
+        - `[Name <String>]`: 
+      - `[Name <String>]`: 
+      - `[Priority <Int32?>]`: 
+      - `[Sublabels <IMicrosoftGraphSensitivityLabel[]>]`: 
+      - `[ToolTip <String>]`: 
+    - `[SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]`: sensitivityPolicySettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ApplicableTo <String>]`: sensitivityLabelTarget
+      - `[DowngradeSensitivityRequiresJustification <Boolean?>]`: 
+      - `[HelpWebUrl <String>]`: 
+      - `[IsMandatory <Boolean?>]`: 
+    - `[ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>]`: 
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Category <String>]`: threatCategory
+      - `[ContentType <String>]`: threatAssessmentContentType
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Application <IMicrosoftGraphIdentity>]`: identity
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
+        - `[Device <IMicrosoftGraphIdentity>]`: identity
+        - `[User <IMicrosoftGraphIdentity>]`: identity
+      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[ExpectedAssessment <String>]`: threatExpectedAssessment
+      - `[RequestSource <String>]`: threatAssessmentRequestSource
+      - `[Results <IMicrosoftGraphThreatAssessmentResult[]>]`: A collection of threat assessment results. Read-only. By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[Message <String>]`: The result message for each threat assessment.
+        - `[ResultType <String>]`: threatAssessmentResultType
+      - `[Status <String>]`: threatAssessmentStatus
+
+  `DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy[]>`: .
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Name <String>]`: 
+
+  `POLICY <IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Labels <IMicrosoftGraphInformationProtectionLabel[]>]`: 
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Color <String>]`: The color that the UI should display for the label, if configured.
+      - `[Description <String>]`: The admin-defined description for the label.
+      - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in UI.
+      - `[Name <String>]`: The plaintext name of the label.
+      - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Color <String>]`: The color that the user interface should display for the label, if configured.
+        - `[Description <String>]`: The admin-defined description for the label.
+        - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
+        - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces.
+        - `[Name <String>]`: The plaintext name of the label.
+        - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
+        - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+        - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
+      - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+      - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
+
+  `SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel[]>`: .
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ApplicableTo <String>]`: sensitivityLabelTarget
+    - `[ApplicationMode <String>]`: applicationMode
+    - `[AssignedPolicies <IMicrosoftGraphLabelPolicy[]>]`: 
+      - `[Id <String>]`: 
+      - `[Name <String>]`: 
+    - `[AutoLabeling <IMicrosoftGraphAutoLabeling>]`: autoLabeling
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Message <String>]`: 
+      - `[SensitiveTypeIds <String[]>]`: 
+    - `[Description <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[IsDefault <Boolean?>]`: 
+    - `[IsEndpointProtectionEnabled <Boolean?>]`: 
+    - `[LabelActions <IMicrosoftGraphLabelActionBase[]>]`: 
+      - `[Name <String>]`: 
+    - `[Name <String>]`: 
+    - `[Priority <Int32?>]`: 
+    - `[Sublabels <IMicrosoftGraphSensitivityLabel[]>]`: 
+    - `[ToolTip <String>]`: 
+
+  `SENSITIVITYPOLICYSETTINGS <IMicrosoftGraphSensitivityPolicySettings>`: sensitivityPolicySettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ApplicableTo <String>]`: sensitivityLabelTarget
+    - `[DowngradeSensitivityRequiresJustification <Boolean?>]`: 
+    - `[HelpWebUrl <String>]`: 
+    - `[IsMandatory <Boolean?>]`: 
+
+  `THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest[]>`: .
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Category <String>]`: threatCategory
+    - `[ContentType <String>]`: threatAssessmentContentType
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[ExpectedAssessment <String>]`: threatExpectedAssessment
+    - `[RequestSource <String>]`: threatAssessmentRequestSource
+    - `[Results <IMicrosoftGraphThreatAssessmentResult[]>]`: A collection of threat assessment results. Read-only. By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[Message <String>]`: The result message for each threat assessment.
+      - `[ResultType <String>]`: threatAssessmentResultType
+    - `[Status <String>]`: threatAssessmentStatus
+
+  ## RELATED LINKS
+  [Update-MgInformationProtection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInformationProtection?view=graph-powershell-v1.0)
+
+  ## RELATED LINKS
+  [Update-MgInformationProtection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInformationProtection?view=graph-powershell-v1.0)
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtection" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtection" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Update-MgBetaInformationProtection [-AdditionalProperties <Hashtable>] [-Bitlocker <IMicrosoftGraphBitlocker>]
+
+   [-DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>] [-Id <String>]
+
+   [-Policy <IMicrosoftGraphInformationProtectionPolicy>]
+
+   [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]
+
+   [-SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]
+
+   [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphBitlocker" data-throw-if-not-resolved="False" />
+  name: Bitlocker
+  description: |+
+    bitlocker
+    To construct, see NOTES section for BITLOCKER properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphInformationProtection" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    informationProtection
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDataLossPreventionPolicy" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: DataLossPreventionPolicies
+  description: |+
+    .
+    To construct, see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphInformationProtectionPolicy" data-throw-if-not-resolved="False" />
+  name: Policy
+  description: |+
+    informationProtectionPolicy
+    To construct, see NOTES section for POLICY properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSensitivityLabel" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: SensitivityLabels
+  description: |+
+    .
+    To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSensitivityPolicySettings" data-throw-if-not-resolved="False" />
+  name: SensitivityPolicySettings
+  description: |+
+    sensitivityPolicySettings
+    To construct, see NOTES section for SENSITIVITYPOLICYSETTINGS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphThreatAssessmentRequest" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ThreatAssessmentRequests
+  description: |+
+    .
+    To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.SignIns.Update-MgBetaInformationProtection
+name: Update-MgBetaInformationProtection
+description: |-
+  Update informationProtection
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.SignIns
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetainformationprotection
+  schema: 2.0.0

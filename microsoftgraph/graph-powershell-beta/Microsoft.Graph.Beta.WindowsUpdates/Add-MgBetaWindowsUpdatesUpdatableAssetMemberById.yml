@@ -1,0 +1,181 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Add members of the same type to an updatableAssetGroup.
+  You can also use the method addMembers to add members.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Add-MgWindowsUpdatesUpdatableAssetMemberById](/powershell/module/Microsoft.Graph.WindowsUpdates/Add-MgWindowsUpdatesUpdatableAssetMemberById?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.WindowsUpdates
+notes: |-
+  ALIASES
+
+  Add-MgBetaWuUpdatableAssetMemberGraphBPreId
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPathsHfkndjAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Ids <String[]>]`: 
+    - `[MemberEntityType <String>]`: 
+
+  `INPUTOBJECT <IWindowsUpdatesIdentity>`: Identity Parameter
+    - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
+    - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
+    - `[DeploymentId <String>]`: The unique identifier of deployment
+    - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
+    - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
+    - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPathsHfkndjAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Add-MgWindowsUpdatesUpdatableAssetMemberById
+  href: /powershell/module/Microsoft.Graph.WindowsUpdates/Add-MgWindowsUpdatesUpdatableAssetMemberById?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Add-MgBetaWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId <String> [-AdditionalProperties <Hashtable>]
+
+   [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Add-MgBetaWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId <String>
+
+   -BodyParameter <IPathsHfkndjAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Add-MgBetaWindowsUpdatesUpdatableAssetMemberById -InputObject <IWindowsUpdatesIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Add-MgBetaWindowsUpdatesUpdatableAssetMemberById -InputObject <IWindowsUpdatesIdentity>
+
+   -BodyParameter <IPathsHfkndjAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the Add-MgBetaWindowsUpdatesUpdatableAssetMemberById Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.WindowsUpdates
+    $params = @{
+    	Ids = @(
+    		"String"
+    		"String"
+    		"String"
+    	)
+    	MemberEntityType = "#microsoft.graph.windowsUpdates.azureADDevice"
+    }
+    Add-MgBetaWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId $updatableAssetId -BodyParameter $params
+  description: |-
+    This example shows how to use the Add-MgBetaWindowsUpdatesUpdatableAssetMemberById Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPathsHfkndjAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Ids
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IWindowsUpdatesIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MemberEntityType
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UpdatableAssetId
+  isRequired: true
+  description: |+
+    The unique identifier of updatableAsset
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.WindowsUpdates.Add-MgBetaWindowsUpdatesUpdatableAssetMemberById
+name: Add-MgBetaWindowsUpdatesUpdatableAssetMemberById
+description: |-
+  Add members of the same type to an updatableAssetGroup.
+  You can also use the method addMembers to add members.
+metadata:
+  external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
+  Module Name: Microsoft.Graph.Beta.WindowsUpdates
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/add-mgbetawindowsupdatesupdatableassetmemberbyid
+  schema: 2.0.0

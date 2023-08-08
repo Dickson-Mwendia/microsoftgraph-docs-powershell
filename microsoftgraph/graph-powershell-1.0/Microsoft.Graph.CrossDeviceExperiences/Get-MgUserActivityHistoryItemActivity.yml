@@ -1,0 +1,109 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Optional.
+  NavigationProperty/Containment; navigation property to the associated activity.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaUserActivityHistoryItemActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivityHistoryItemActivity?view=graph-powershell-beta)
+module: Microsoft.Graph.CrossDeviceExperiences
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <ICrossDeviceExperiencesIdentity>`: Identity Parameter
+    - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
+    - `[UserActivityId <String>]`: The unique identifier of userActivity
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserActivity" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaUserActivityHistoryItemActivity
+  href: /powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivityHistoryItemActivity?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgUserActivityHistoryItemActivity -ActivityHistoryItemId <String> -UserActivityId <String> -UserId <String>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgUserActivityHistoryItemActivity -InputObject <ICrossDeviceExperiencesIdentity>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ActivityHistoryItemId
+  isRequired: true
+  description: |+
+    The unique identifier of activityHistoryItem
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="ICrossDeviceExperiencesIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserActivityId
+  isRequired: true
+  description: |+
+    The unique identifier of userActivity
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.CrossDeviceExperiences.Get-MgUserActivityHistoryItemActivity
+name: Get-MgUserActivityHistoryItemActivity
+description: |-
+  Optional.
+  NavigationProperty/Containment; navigation property to the associated activity.
+metadata:
+  external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
+  Module Name: Microsoft.Graph.CrossDeviceExperiences
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivityhistoryitemactivity
+  schema: 2.0.0

@@ -1,0 +1,25 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.CrossDeviceExperiences
+  cmdlets:
+  - Microsoft.Graph.CrossDeviceExperiences.Get-MgUserActivity
+  - Microsoft.Graph.CrossDeviceExperiences.Get-MgUserActivityCount
+  - Microsoft.Graph.CrossDeviceExperiences.Get-MgUserActivityHistoryItem
+  - Microsoft.Graph.CrossDeviceExperiences.Get-MgUserActivityHistoryItemActivity
+  - Microsoft.Graph.CrossDeviceExperiences.Get-MgUserActivityHistoryItemCount
+  - Microsoft.Graph.CrossDeviceExperiences.New-MgUserActivity
+  - Microsoft.Graph.CrossDeviceExperiences.New-MgUserActivityHistoryItem
+  - Microsoft.Graph.CrossDeviceExperiences.Remove-MgUserActivity
+  - Microsoft.Graph.CrossDeviceExperiences.Remove-MgUserActivityHistoryItem
+  - Microsoft.Graph.CrossDeviceExperiences.Update-MgUserActivity
+  - Microsoft.Graph.CrossDeviceExperiences.Update-MgUserActivityHistoryItem
+uid: Microsoft.Graph.CrossDeviceExperiences
+name: Microsoft.Graph.CrossDeviceExperiences
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.CrossDeviceExperiences
+  Module Guid: 4312ecd9-76dc-49f9-8f2c-e67cb6d8443c
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.crossdeviceexperiences
+  Help Version: 1.0.0.0
+  Locale: en-US

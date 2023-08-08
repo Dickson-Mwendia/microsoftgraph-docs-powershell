@@ -1,0 +1,92 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgUserMessageExtensionCount](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessageExtensionCount?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Mail
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IMailIdentity>`: Identity Parameter
+    - `[AttachmentId <String>]`: The unique identifier of attachment
+    - `[ExtensionId <String>]`: The unique identifier of extension
+    - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
+    - `[MailFolderId <String>]`: The unique identifier of mailFolder
+    - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+    - `[MentionId <String>]`: The unique identifier of mention
+    - `[MessageId <String>]`: The unique identifier of message
+    - `[MessageRuleId <String>]`: The unique identifier of messageRule
+    - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgUserMessageExtensionCount
+  href: /powershell/module/Microsoft.Graph.Mail/Get-MgUserMessageExtensionCount?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaUserMessageExtensionCount -MessageId <String> -UserId <String> [-Filter <String>]
+
+   [<CommonParameters>]
+- Get-MgBetaUserMessageExtensionCount -InputObject <IMailIdentity> [-Filter <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMailIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MessageId
+  isRequired: true
+  description: |+
+    The unique identifier of message
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Mail.Get-MgBetaUserMessageExtensionCount
+name: Get-MgBetaUserMessageExtensionCount
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Beta.Mail-help.xml
+  Module Name: Microsoft.Graph.Beta.Mail
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermessageextensioncount
+  schema: 2.0.0

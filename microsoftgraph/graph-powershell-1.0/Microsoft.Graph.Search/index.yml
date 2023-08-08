@@ -1,0 +1,54 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Search
+  cmdlets:
+  - Microsoft.Graph.Search.Add-MgExternalConnectionItemActivity
+  - Microsoft.Graph.Search.Get-MgExternal
+  - Microsoft.Graph.Search.Get-MgExternalConnection
+  - Microsoft.Graph.Search.Get-MgExternalConnectionCount
+  - Microsoft.Graph.Search.Get-MgExternalConnectionGroup
+  - Microsoft.Graph.Search.Get-MgExternalConnectionGroupCount
+  - Microsoft.Graph.Search.Get-MgExternalConnectionGroupMember
+  - Microsoft.Graph.Search.Get-MgExternalConnectionGroupMemberCount
+  - Microsoft.Graph.Search.Get-MgExternalConnectionItem
+  - Microsoft.Graph.Search.Get-MgExternalConnectionItemActivity
+  - Microsoft.Graph.Search.Get-MgExternalConnectionItemActivityCount
+  - Microsoft.Graph.Search.Get-MgExternalConnectionItemActivityPerformedBy
+  - Microsoft.Graph.Search.Get-MgExternalConnectionItemCount
+  - Microsoft.Graph.Search.Get-MgExternalConnectionOperation
+  - Microsoft.Graph.Search.Get-MgExternalConnectionOperationCount
+  - Microsoft.Graph.Search.Get-MgExternalConnectionSchema
+  - Microsoft.Graph.Search.Get-MgSearchEntity
+  - Microsoft.Graph.Search.Invoke-MgQuerySearch
+  - Microsoft.Graph.Search.New-MgExternalConnection
+  - Microsoft.Graph.Search.New-MgExternalConnectionGroup
+  - Microsoft.Graph.Search.New-MgExternalConnectionGroupMember
+  - Microsoft.Graph.Search.New-MgExternalConnectionItem
+  - Microsoft.Graph.Search.New-MgExternalConnectionItemActivity
+  - Microsoft.Graph.Search.New-MgExternalConnectionOperation
+  - Microsoft.Graph.Search.Remove-MgExternalConnection
+  - Microsoft.Graph.Search.Remove-MgExternalConnectionGroup
+  - Microsoft.Graph.Search.Remove-MgExternalConnectionGroupMember
+  - Microsoft.Graph.Search.Remove-MgExternalConnectionItem
+  - Microsoft.Graph.Search.Remove-MgExternalConnectionItemActivity
+  - Microsoft.Graph.Search.Remove-MgExternalConnectionOperation
+  - Microsoft.Graph.Search.Remove-MgExternalConnectionSchema
+  - Microsoft.Graph.Search.Set-MgExternalConnectionItem
+  - Microsoft.Graph.Search.Update-MgExternal
+  - Microsoft.Graph.Search.Update-MgExternalConnection
+  - Microsoft.Graph.Search.Update-MgExternalConnectionGroup
+  - Microsoft.Graph.Search.Update-MgExternalConnectionGroupMember
+  - Microsoft.Graph.Search.Update-MgExternalConnectionItemActivity
+  - Microsoft.Graph.Search.Update-MgExternalConnectionOperation
+  - Microsoft.Graph.Search.Update-MgExternalConnectionSchema
+  - Microsoft.Graph.Search.Update-MgSearchEntity
+uid: Microsoft.Graph.Search
+name: Microsoft.Graph.Search
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Search
+  Module Guid: d2cfc558-f5d8-4b18-a3ad-e03030c3d74c
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.search
+  Help Version: 1.0.0.0
+  Locale: en-US

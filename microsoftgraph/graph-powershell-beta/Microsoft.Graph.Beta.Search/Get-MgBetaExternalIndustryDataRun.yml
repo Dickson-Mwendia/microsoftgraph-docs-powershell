@@ -1,0 +1,181 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Read the properties and relationships of an industryDataRun object.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgExternalIndustryDataRun](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataRun?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Search
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <ISearchIdentity>`: Identity Parameter
+    - `[AcronymId <String>]`: The unique identifier of acronym
+    - `[BookmarkId <String>]`: The unique identifier of bookmark
+    - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
+    - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
+    - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
+    - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
+    - `[ExternalItemId <String>]`: The unique identifier of externalItem
+    - `[IdentityId <String>]`: The unique identifier of identity
+    - `[InboundFlowId <String>]`: The unique identifier of inboundFlow
+    - `[IndustryDataConnectorId <String>]`: The unique identifier of industryDataConnector
+    - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
+    - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
+    - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+    - `[QnaId <String>]`: The unique identifier of qna
+    - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
+    - `[RoleGroupId <String>]`: The unique identifier of roleGroup
+    - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
+    - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataRun" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgExternalIndustryDataRun
+  href: /powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataRun?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaExternalIndustryDataRun [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+
+   [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+
+   [-CountVariable <String>] [<CommonParameters>]
+- >-
+  Get-MgBetaExternalIndustryDataRun -IndustryDataRunId <String> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgBetaExternalIndustryDataRun -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: IndustryDataRunId
+  isRequired: true
+  description: |+
+    The unique identifier of industryDataRun
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ISearchIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataRun
+name: Get-MgBetaExternalIndustryDataRun
+description: |-
+  Read the properties and relationships of an industryDataRun object.
+metadata:
+  external help file: Microsoft.Graph.Beta.Search-help.xml
+  Module Name: Microsoft.Graph.Beta.Search
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydatarun
+  schema: 2.0.0

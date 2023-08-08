@@ -1,0 +1,168 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Grant the specified user access to submit print jobs to the associated printerShare.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [New-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareAllowedUserByRef?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.CloudPrint
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IReferenceCreate>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `OdataId <String>`: The entity reference URL of the resource. For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
+
+  `INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+    - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+    - `[PrintJobId <String>]`: The unique identifier of printJob
+    - `[PrintOperationId <String>]`: The unique identifier of printOperation
+    - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
+    - `[PrintServiceId <String>]`: The unique identifier of printService
+    - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
+    - `[PrintTaskId <String>]`: The unique identifier of printTask
+    - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
+    - `[PrinterId <String>]`: The unique identifier of printer
+    - `[PrinterShareId <String>]`: The unique identifier of printerShare
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IReferenceCreate" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgBetaPrintShareAllowedUserByRef
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintShareAllowedUserByRef?view=graph-powershell-beta
+syntaxes:
+- >-
+  New-MgPrintShareAllowedUserByRef -PrinterShareId <String> -OdataId <String> [-AdditionalProperties <Hashtable>]
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgPrintShareAllowedUserByRef -PrinterShareId <String> -BodyParameter <IReferenceCreate> [-PassThru]
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> -OdataId <String>
+
+   [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IReferenceCreate>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.Devices.CloudPrint
+
+    $params = @{
+    	"@odata.id" = "https://graph.microsoft.com/v1.0/users/{userId}"
+    }
+
+    New-MgPrintShareAllowedUserByRef -PrinterShareId $printerShareId -BodyParameter $params
+  description: |-
+    This example shows how to use the New-MgPrintShareAllowedUserByRef Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IReferenceCreate" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IDevicesCloudPrintIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OdataId
+  isRequired: true
+  description: |+
+    The entity reference URL of the resource.
+    For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrinterShareId
+  isRequired: true
+  description: |+
+    The unique identifier of printerShare
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.CloudPrint.New-MgPrintShareAllowedUserByRef
+name: New-MgPrintShareAllowedUserByRef
+description: |-
+  Grant the specified user access to submit print jobs to the associated printerShare.
+metadata:
+  external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+  Module Name: Microsoft.Graph.Devices.CloudPrint
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintsharealloweduserbyref
+  schema: 2.0.0

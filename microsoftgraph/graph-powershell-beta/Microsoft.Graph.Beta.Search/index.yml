@@ -1,0 +1,117 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.Search
+  cmdlets:
+  - Microsoft.Graph.Beta.Search.Add-MgBetaExternalConnectionItemActivity
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternal
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnection
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionGroup
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionGroupCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionGroupMember
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionGroupMemberCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionItem
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionItemActivity
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionItemActivityCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionItemActivityPerformedBy
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionItemCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionOperation
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionOperationCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionQuota
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalConnectionSchema
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryData
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataConnector
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataConnectorCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataConnectorSourceSystem
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataInboundFlow
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataInboundFlowCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataInboundFlowDataConnector
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataInboundFlowYear
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataOperation
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataOperationCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataReferenceDefinition
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataReferenceDefinitionCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataRoleGroup
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataRoleGroupCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataRun
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataRunActivity
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataRunActivityCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataRunCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataRunStatistics
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataSourceSystem
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataSourceSystemCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataYear
+  - Microsoft.Graph.Beta.Search.Get-MgBetaExternalIndustryDataYearCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaSearchAcronym
+  - Microsoft.Graph.Beta.Search.Get-MgBetaSearchAcronymCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaSearchBookmark
+  - Microsoft.Graph.Beta.Search.Get-MgBetaSearchBookmarkCount
+  - Microsoft.Graph.Beta.Search.Get-MgBetaSearchEntity
+  - Microsoft.Graph.Beta.Search.Get-MgBetaSearchQna
+  - Microsoft.Graph.Beta.Search.Get-MgBetaSearchQnaCount
+  - Microsoft.Graph.Beta.Search.Invoke-MgBetaQuerySearch
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalConnection
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalConnectionGroup
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalConnectionGroupMember
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalConnectionItem
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalConnectionItemActivity
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalConnectionOperation
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalIndustryDataConnector
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalIndustryDataInboundFlow
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalIndustryDataOperation
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalIndustryDataReferenceDefinition
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalIndustryDataRoleGroup
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalIndustryDataSourceSystem
+  - Microsoft.Graph.Beta.Search.New-MgBetaExternalIndustryDataYear
+  - Microsoft.Graph.Beta.Search.New-MgBetaSearchAcronym
+  - Microsoft.Graph.Beta.Search.New-MgBetaSearchBookmark
+  - Microsoft.Graph.Beta.Search.New-MgBetaSearchQna
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalConnection
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalConnectionGroup
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalConnectionGroupMember
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalConnectionItem
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalConnectionItemActivity
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalConnectionOperation
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalConnectionQuota
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalConnectionSchema
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalIndustryDataConnector
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalIndustryDataInboundFlow
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalIndustryDataOperation
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalIndustryDataReferenceDefinition
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalIndustryDataRoleGroup
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalIndustryDataSourceSystem
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaExternalIndustryDataYear
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaSearchAcronym
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaSearchBookmark
+  - Microsoft.Graph.Beta.Search.Remove-MgBetaSearchQna
+  - Microsoft.Graph.Beta.Search.Set-MgBetaExternalConnectionItem
+  - Microsoft.Graph.Beta.Search.Test-MgBetaExternalIndustryDataConnector
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternal
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalConnection
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalConnectionGroup
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalConnectionGroupMember
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalConnectionItemActivity
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalConnectionOperation
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalConnectionQuota
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalConnectionSchema
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalIndustryDataConnector
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalIndustryDataInboundFlow
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalIndustryDataOperation
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalIndustryDataReferenceDefinition
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalIndustryDataRoleGroup
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalIndustryDataSourceSystem
+  - Microsoft.Graph.Beta.Search.Update-MgBetaExternalIndustryDataYear
+  - Microsoft.Graph.Beta.Search.Update-MgBetaSearchAcronym
+  - Microsoft.Graph.Beta.Search.Update-MgBetaSearchBookmark
+  - Microsoft.Graph.Beta.Search.Update-MgBetaSearchEntity
+  - Microsoft.Graph.Beta.Search.Update-MgBetaSearchQna
+uid: Microsoft.Graph.Beta.Search
+name: Microsoft.Graph.Beta.Search
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.Search
+  Module Guid: 78aa09b3-7814-4500-8680-156b979fea13
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search
+  Help Version: 1.0.0.0
+  Locale: en-US

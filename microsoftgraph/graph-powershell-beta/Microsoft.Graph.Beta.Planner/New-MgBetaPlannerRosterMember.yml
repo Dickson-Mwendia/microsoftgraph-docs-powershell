@@ -1,0 +1,185 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Add a member to the plannerRoster object.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgPlannerRosterMember](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerRosterMember?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Planner
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphPlannerRosterMember>`: plannerRosterMember
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Roles <String[]>]`: Additional roles associated with the PlannerRosterMember, which determines permissions of the member in the plannerRoster. Currently there are no available roles to assign, and every member has full control over the contents of the plannerRoster.
+    - `[TenantId <String>]`: Identifier of the tenant the user belongs to. Currently only the users from the same tenant can be added to a plannerRoster.
+    - `[UserId <String>]`: Identifier of the user.
+
+  `INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+    - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
+    - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+    - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
+    - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
+    - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRosterMember" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRosterMember" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgPlannerRosterMember
+  href: /powershell/module/Microsoft.Graph.Planner/New-MgPlannerRosterMember?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaPlannerRosterMember -PlannerRosterId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
+
+   [-Roles <String[]>] [-TenantId <String>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaPlannerRosterMember -PlannerRosterId <String> -BodyParameter <IMicrosoftGraphPlannerRosterMember>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
+
+   [-Id <String>] [-Roles <String[]>] [-TenantId <String>] [-UserId <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  New-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
+
+   -BodyParameter <IMicrosoftGraphPlannerRosterMember> [-WhatIf] [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the New-MgBetaPlannerRosterMember Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Planner
+    $params = @{
+    	"@odata.type" = "#microsoft.graph.plannerRosterMember"
+    	UserId = "String"
+    }
+    New-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -BodyParameter $params
+  description: |-
+    This example shows how to use the New-MgBetaPlannerRosterMember Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphPlannerRosterMember" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    plannerRosterMember
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPlannerIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PlannerRosterId
+  isRequired: true
+  description: |+
+    The unique identifier of plannerRoster
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Roles
+  description: |+
+    Additional roles associated with the PlannerRosterMember, which determines permissions of the member in the plannerRoster.
+    Currently there are no available roles to assign, and every member has full control over the contents of the plannerRoster.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Identifier of the tenant the user belongs to.
+    Currently only the users from the same tenant can be added to a plannerRoster.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  description: |+
+    Identifier of the user.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Planner.New-MgBetaPlannerRosterMember
+name: New-MgBetaPlannerRosterMember
+description: |-
+  Add a member to the plannerRoster object.
+metadata:
+  external help file: Microsoft.Graph.Beta.Planner-help.xml
+  Module Name: Microsoft.Graph.Beta.Planner
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerrostermember
+  schema: 2.0.0

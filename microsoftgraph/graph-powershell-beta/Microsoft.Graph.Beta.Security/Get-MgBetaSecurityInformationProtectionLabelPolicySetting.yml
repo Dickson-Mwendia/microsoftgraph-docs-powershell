@@ -1,0 +1,50 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Read the properties and relationships of an informationProtectionPolicySetting object.
+  The settings exposed by this API should be used in applications to populate the **moreInfoUrl** property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Security
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionPolicySetting" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgSecurityInformationProtectionLabelPolicySetting
+  href: /powershell/module/Microsoft.Graph.Security/Get-MgSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaSecurityInformationProtectionLabelPolicySetting [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Security.Get-MgBetaSecurityInformationProtectionLabelPolicySetting
+name: Get-MgBetaSecurityInformationProtectionLabelPolicySetting
+description: |-
+  Read the properties and relationships of an informationProtectionPolicySetting object.
+  The settings exposed by this API should be used in applications to populate the **moreInfoUrl** property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
+metadata:
+  external help file: Microsoft.Graph.Beta.Security-help.xml
+  Module Name: Microsoft.Graph.Beta.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityinformationprotectionlabelpolicysetting
+  schema: 2.0.0

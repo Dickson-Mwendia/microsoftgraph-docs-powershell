@@ -1,0 +1,47 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesDeploymentCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesDeploymentCount?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.WindowsUpdates
+notes: |-
+  ALIASES
+
+  Get-MgBetaWuDeploymentCount
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgWindowsUpdatesDeploymentCount
+  href: /powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesDeploymentCount?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaWindowsUpdatesDeploymentCount [-Filter <String>] [-Search <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesDeploymentCount
+name: Get-MgBetaWindowsUpdatesDeploymentCount
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
+  Module Name: Microsoft.Graph.Beta.WindowsUpdates
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatesdeploymentcount
+  schema: 2.0.0

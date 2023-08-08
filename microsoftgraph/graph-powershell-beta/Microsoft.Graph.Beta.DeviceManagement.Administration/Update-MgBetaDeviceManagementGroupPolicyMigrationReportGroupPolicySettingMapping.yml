@@ -1,0 +1,432 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property groupPolicySettingMappings in deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Administration
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphGroupPolicySettingMapping>`: The Group Policy setting to MDM/Intune mapping.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AdmxSettingDefinitionId <String>]`: Admx Group Policy Id
+    - `[ChildIdList <String[]>]`: List of Child Ids of the group policy setting.
+    - `[IntuneSettingDefinitionId <String>]`: The Intune Setting Definition Id
+    - `[IntuneSettingUriList <String[]>]`: The list of Intune Setting URIs this group policy setting maps to
+    - `[IsMdmSupported <Boolean?>]`: Indicates if the setting is supported by Intune or not
+    - `[MdmCspName <String>]`: The CSP name this group policy setting maps to.
+    - `[MdmMinimumOSVersion <Int32?>]`: The minimum OS version this mdm setting supports.
+    - `[MdmSettingUri <String>]`: The MDM CSP URI this group policy setting maps to.
+    - `[MdmSupportedState <MdmSupportedState?>]`: Mdm Support Status of the setting.
+    - `[ParentId <String>]`: Parent Id of the group policy setting.
+    - `[SettingCategory <String>]`: The category the group policy setting is in.
+    - `[SettingDisplayName <String>]`: The display name of this group policy setting.
+    - `[SettingDisplayValue <String>]`: The display value of this group policy setting.
+    - `[SettingDisplayValueType <String>]`: The display value type of this group policy setting.
+    - `[SettingName <String>]`: The name of this group policy setting.
+    - `[SettingScope <GroupPolicySettingScope?>]`: Scope of the group policy setting.
+    - `[SettingType <GroupPolicySettingType?>]`: Setting type of the group policy.
+    - `[SettingValue <String>]`: The value of this group policy setting.
+    - `[SettingValueDisplayUnits <String>]`: The display units of this group policy setting value
+    - `[SettingValueType <String>]`: The value type of this group policy setting.
+
+  `INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
+    - `[AuditEventId <String>]`: The unique identifier of auditEvent
+    - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
+    - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
+    - `[CloudPcBulkActionId <String>]`: The unique identifier of cloudPcBulkAction
+    - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+    - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
+    - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
+    - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
+    - `[CloudPcId <String>]`: The unique identifier of cloudPC
+    - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
+    - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
+    - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
+    - `[CloudPcServicePlanId <String>]`: The unique identifier of cloudPcServicePlan
+    - `[CloudPcSharedUseServicePlanId <String>]`: The unique identifier of cloudPcSharedUseServicePlan
+    - `[CloudPcSnapshotId <String>]`: The unique identifier of cloudPcSnapshot
+    - `[CloudPcSupportedRegionId <String>]`: The unique identifier of cloudPcSupportedRegion
+    - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
+    - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
+    - `[ComanagementEligibleDeviceId <String>]`: The unique identifier of comanagementEligibleDevice
+    - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
+    - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
+    - `[DeviceManagementDomainJoinConnectorId <String>]`: The unique identifier of deviceManagementDomainJoinConnector
+    - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+    - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: The unique identifier of deviceManagementExchangeOnPremisesPolicy
+    - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+    - `[GroupPolicyCategoryId <String>]`: The unique identifier of groupPolicyCategory
+    - `[GroupPolicyCategoryId1 <String>]`: The unique identifier of groupPolicyCategory
+    - `[GroupPolicyDefinitionFileId <String>]`: The unique identifier of groupPolicyDefinitionFile
+    - `[GroupPolicyDefinitionId <String>]`: The unique identifier of groupPolicyDefinition
+    - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
+    - `[GroupPolicyObjectFileId <String>]`: The unique identifier of groupPolicyObjectFile
+    - `[GroupPolicyOperationId <String>]`: The unique identifier of groupPolicyOperation
+    - `[GroupPolicyPresentationId <String>]`: The unique identifier of groupPolicyPresentation
+    - `[GroupPolicySettingMappingId <String>]`: The unique identifier of groupPolicySettingMapping
+    - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+    - `[IntuneBrandingProfileAssignmentId <String>]`: The unique identifier of intuneBrandingProfileAssignment
+    - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
+    - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
+    - `[ManagedAllDeviceCertificateStateId <String>]`: The unique identifier of managedAllDeviceCertificateState
+    - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
+    - `[NdesConnectorId <String>]`: The unique identifier of ndesConnector
+    - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+    - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
+    - `[RestrictedAppsViolationId <String>]`: The unique identifier of restrictedAppsViolation
+    - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
+    - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
+    - `[RoleScopeTagAutoAssignmentId <String>]`: The unique identifier of roleScopeTagAutoAssignment
+    - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
+    - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
+    - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
+    - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
+    - `[TermsAndConditionsGroupAssignmentId <String>]`: The unique identifier of termsAndConditionsGroupAssignment
+    - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
+    - `[UnsupportedGroupPolicyExtensionId <String>]`: The unique identifier of unsupportedGroupPolicyExtension
+    - `[UserId <String>]`: The unique identifier of user
+    - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+
+   -GroupPolicyMigrationReportId <String> -GroupPolicySettingMappingId <String>
+
+   [-AdditionalProperties <Hashtable>] [-AdmxSettingDefinitionId <String>] [-ChildIdList <String[]>]
+
+   [-Id <String>] [-IntuneSettingDefinitionId <String>] [-IntuneSettingUriList <String[]>] [-IsMdmSupported]
+
+   [-MdmCspName <String>] [-MdmMinimumOSVersion <Int32>] [-MdmSettingUri <String>]
+
+   [-MdmSupportedState <MdmSupportedState>] [-ParentId <String>] [-SettingCategory <String>]
+
+   [-SettingDisplayName <String>] [-SettingDisplayValue <String>] [-SettingDisplayValueType <String>]
+
+   [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>] [-SettingType <GroupPolicySettingType>]
+
+   [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+
+   -GroupPolicyMigrationReportId <String> -GroupPolicySettingMappingId <String>
+
+   -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+
+   -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
+
+   [-AdmxSettingDefinitionId <String>] [-ChildIdList <String[]>] [-Id <String>]
+
+   [-IntuneSettingDefinitionId <String>] [-IntuneSettingUriList <String[]>] [-IsMdmSupported]
+
+   [-MdmCspName <String>] [-MdmMinimumOSVersion <Int32>] [-MdmSettingUri <String>]
+
+   [-MdmSupportedState <MdmSupportedState>] [-ParentId <String>] [-SettingCategory <String>]
+
+   [-SettingDisplayName <String>] [-SettingDisplayValue <String>] [-SettingDisplayValueType <String>]
+
+   [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>] [-SettingType <GroupPolicySettingType>]
+
+   [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+
+   -InputObject <IDeviceManagementAdministrationIdentity>
+
+   -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AdmxSettingDefinitionId
+  description: |+
+    Admx Group Policy Id
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphGroupPolicySettingMapping" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    The Group Policy setting to MDM/Intune mapping.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ChildIdList
+  description: |+
+    List of Child Ids of the group policy setting.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GroupPolicyMigrationReportId
+  isRequired: true
+  description: |+
+    The unique identifier of groupPolicyMigrationReport
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GroupPolicySettingMappingId
+  isRequired: true
+  description: |+
+    The unique identifier of groupPolicySettingMapping
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDeviceManagementAdministrationIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: IntuneSettingDefinitionId
+  description: |+
+    The Intune Setting Definition Id
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: IntuneSettingUriList
+  description: |+
+    The list of Intune Setting URIs this group policy setting maps to
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsMdmSupported
+  description: |+
+    Indicates if the setting is supported by Intune or not
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MdmCspName
+  description: |+
+    The CSP name this group policy setting maps to.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: MdmMinimumOSVersion
+  description: |+
+    The minimum OS version this mdm setting supports.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MdmSettingUri
+  description: |+
+    The MDM CSP URI this group policy setting maps to.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="MdmSupportedState" data-throw-if-not-resolved="False" />
+  name: MdmSupportedState
+  description: |+
+    Mdm Support Status of the setting.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ParentId
+  description: |+
+    Parent Id of the group policy setting.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SettingCategory
+  description: |+
+    The category the group policy setting is in.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SettingDisplayName
+  description: |+
+    The display name of this group policy setting.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SettingDisplayValue
+  description: |+
+    The display value of this group policy setting.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SettingDisplayValueType
+  description: |+
+    The display value type of this group policy setting.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SettingName
+  description: |+
+    The name of this group policy setting.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="GroupPolicySettingScope" data-throw-if-not-resolved="False" />
+  name: SettingScope
+  description: |+
+    Scope of the group policy setting.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="GroupPolicySettingType" data-throw-if-not-resolved="False" />
+  name: SettingType
+  description: |+
+    Setting type of the group policy.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SettingValue
+  description: |+
+    The value of this group policy setting.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SettingValueDisplayUnits
+  description: |+
+    The display units of this group policy setting value
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SettingValueType
+  description: |+
+    The value type of this group policy setting.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Administration.Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+name: Update-MgBetaDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+description: |-
+  Update the navigation property groupPolicySettingMappings in deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicymigrationreportgrouppolicysettingmapping
+  schema: 2.0.0

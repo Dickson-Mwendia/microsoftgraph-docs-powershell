@@ -1,0 +1,66 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.PersonalContacts
+  cmdlets:
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContact
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactCount
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactExtension
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactExtensionCount
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolder
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderChildFolder
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderChildFolderContact
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderChildFolderContactCount
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderChildFolderContactExtension
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderChildFolderContactExtensionCount
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderChildFolderContactPhoto
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderChildFolderContactPhotoContent
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderChildFolderCount
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderContact
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderContactCount
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderContactExtension
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderContactExtensionCount
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderContactPhoto
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderContactPhotoContent
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactFolderCount
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactPhoto
+  - Microsoft.Graph.PersonalContacts.Get-MgUserContactPhotoContent
+  - Microsoft.Graph.PersonalContacts.New-MgUserContact
+  - Microsoft.Graph.PersonalContacts.New-MgUserContactExtension
+  - Microsoft.Graph.PersonalContacts.New-MgUserContactFolder
+  - Microsoft.Graph.PersonalContacts.New-MgUserContactFolderChildFolder
+  - Microsoft.Graph.PersonalContacts.New-MgUserContactFolderChildFolderContact
+  - Microsoft.Graph.PersonalContacts.New-MgUserContactFolderChildFolderContactExtension
+  - Microsoft.Graph.PersonalContacts.New-MgUserContactFolderContact
+  - Microsoft.Graph.PersonalContacts.New-MgUserContactFolderContactExtension
+  - Microsoft.Graph.PersonalContacts.Remove-MgUserContact
+  - Microsoft.Graph.PersonalContacts.Remove-MgUserContactExtension
+  - Microsoft.Graph.PersonalContacts.Remove-MgUserContactFolder
+  - Microsoft.Graph.PersonalContacts.Remove-MgUserContactFolderChildFolder
+  - Microsoft.Graph.PersonalContacts.Remove-MgUserContactFolderChildFolderContact
+  - Microsoft.Graph.PersonalContacts.Remove-MgUserContactFolderChildFolderContactExtension
+  - Microsoft.Graph.PersonalContacts.Remove-MgUserContactFolderContact
+  - Microsoft.Graph.PersonalContacts.Remove-MgUserContactFolderContactExtension
+  - Microsoft.Graph.PersonalContacts.Set-MgUserContactFolderChildFolderContactPhotoContent
+  - Microsoft.Graph.PersonalContacts.Set-MgUserContactFolderContactPhotoContent
+  - Microsoft.Graph.PersonalContacts.Set-MgUserContactPhotoContent
+  - Microsoft.Graph.PersonalContacts.Update-MgUserContact
+  - Microsoft.Graph.PersonalContacts.Update-MgUserContactExtension
+  - Microsoft.Graph.PersonalContacts.Update-MgUserContactFolder
+  - Microsoft.Graph.PersonalContacts.Update-MgUserContactFolderChildFolder
+  - Microsoft.Graph.PersonalContacts.Update-MgUserContactFolderChildFolderContact
+  - Microsoft.Graph.PersonalContacts.Update-MgUserContactFolderChildFolderContactExtension
+  - Microsoft.Graph.PersonalContacts.Update-MgUserContactFolderChildFolderContactPhoto
+  - Microsoft.Graph.PersonalContacts.Update-MgUserContactFolderContact
+  - Microsoft.Graph.PersonalContacts.Update-MgUserContactFolderContactExtension
+  - Microsoft.Graph.PersonalContacts.Update-MgUserContactFolderContactPhoto
+  - Microsoft.Graph.PersonalContacts.Update-MgUserContactPhoto
+uid: Microsoft.Graph.PersonalContacts
+name: Microsoft.Graph.PersonalContacts
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.PersonalContacts
+  Module Guid: bc4047ec-b5f7-47af-8441-662fe9a7f7c7
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts
+  Help Version: 1.0.0.0
+  Locale: en-US

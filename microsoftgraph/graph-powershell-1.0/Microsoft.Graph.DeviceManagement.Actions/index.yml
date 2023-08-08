@@ -1,0 +1,66 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.DeviceManagement.Actions
+  cmdlets:
+  - Microsoft.Graph.DeviceManagement.Actions.Clear-MgDeviceManagementManagedDevice
+  - Microsoft.Graph.DeviceManagement.Actions.Disable-MgDeviceManagementManagedDeviceLostMode
+  - Microsoft.Graph.DeviceManagement.Actions.Disconnect-MgDeviceManagementRemoteAssistancePartner
+  - Microsoft.Graph.DeviceManagement.Actions.Find-MgDeviceManagementManagedDevice
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportCachedReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportComplianceSettingNonComplianceReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportConfigurationPolicyNonComplianceReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportConfigurationPolicyNonComplianceSummaryReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportConfigurationSettingNonComplianceReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportDeviceManagementIntentSettingReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportDeviceNonComplianceReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportFilter
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportHistoricalReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportPolicyNonComplianceMetadata
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportPolicyNonComplianceReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportPolicyNonComplianceSummaryReport
+  - Microsoft.Graph.DeviceManagement.Actions.Get-MgDeviceManagementReportSettingNonComplianceReport
+  - Microsoft.Graph.DeviceManagement.Actions.Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
+  - Microsoft.Graph.DeviceManagement.Actions.Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding
+  - Microsoft.Graph.DeviceManagement.Actions.Invoke-MgCleanDeviceManagementManagedDeviceWindowsDevice
+  - Microsoft.Graph.DeviceManagement.Actions.Invoke-MgDownDeviceManagementManagedDeviceShut
+  - Microsoft.Graph.DeviceManagement.Actions.Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser
+  - Microsoft.Graph.DeviceManagement.Actions.Invoke-MgRetireDeviceManagementManagedDevice
+  - Microsoft.Graph.DeviceManagement.Actions.Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender
+  - Microsoft.Graph.DeviceManagement.Actions.Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule
+  - Microsoft.Graph.DeviceManagement.Actions.Invoke-MgTerminateDeviceManagementPartner
+  - Microsoft.Graph.DeviceManagement.Actions.Invoke-MgUnassignDeviceManagementWindowsAutopilotDeviceIdentityUserFromDevice
+  - Microsoft.Graph.DeviceManagement.Actions.Lock-MgDeviceManagementManagedDeviceRemote
+  - Microsoft.Graph.DeviceManagement.Actions.New-MgDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl
+  - Microsoft.Graph.DeviceManagement.Actions.New-MgDeviceManagementManagedDeviceWindowsDefenderUpdateSignature
+  - Microsoft.Graph.DeviceManagement.Actions.New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl
+  - Microsoft.Graph.DeviceManagement.Actions.Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice
+  - Microsoft.Graph.DeviceManagement.Actions.Request-MgDeviceManagementManagedDeviceRemoteAssistance
+  - Microsoft.Graph.DeviceManagement.Actions.Reset-MgDeviceManagementManagedDevicePasscode
+  - Microsoft.Graph.DeviceManagement.Actions.Restart-MgDeviceManagementManagedDeviceNow
+  - Microsoft.Graph.DeviceManagement.Actions.Restore-MgDeviceManagementManagedDevicePasscode
+  - Microsoft.Graph.DeviceManagement.Actions.Send-MgDeviceManagementNotificationMessageTemplateTestMessage
+  - Microsoft.Graph.DeviceManagement.Actions.Set-MgDeviceManagementDeviceCompliancePolicy
+  - Microsoft.Graph.DeviceManagement.Actions.Set-MgDeviceManagementDeviceConfiguration
+  - Microsoft.Graph.DeviceManagement.Actions.Set-MgDeviceManagementDeviceEnrollmentConfiguration
+  - Microsoft.Graph.DeviceManagement.Actions.Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority
+  - Microsoft.Graph.DeviceManagement.Actions.Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice
+  - Microsoft.Graph.DeviceManagement.Actions.Skip-MgDeviceManagementManagedDeviceActivationLock
+  - Microsoft.Graph.DeviceManagement.Actions.Sync-MgDeviceManagementExchangeConnector
+  - Microsoft.Graph.DeviceManagement.Actions.Sync-MgDeviceManagementManagedDevice
+  - Microsoft.Graph.DeviceManagement.Actions.Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount
+  - Microsoft.Graph.DeviceManagement.Actions.Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty
+uid: Microsoft.Graph.DeviceManagement.Actions
+name: Microsoft.Graph.DeviceManagement.Actions
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.DeviceManagement.Actions
+  Module Guid: 5fcb3620-fa80-4df2-8210-2b3e425e5e1b
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions
+  Help Version: 1.0.0.0
+  Locale: en-US

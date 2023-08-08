@@ -1,0 +1,133 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterShareAllowedUser](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShareAllowedUser?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Devices.CloudPrint
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUser" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgPrintPrinterShareAllowedUser
+  href: /powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShareAllowedUser?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaPrintPrinterShareAllowedUser -PrinterShareId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+
+   [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+
+   [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrinterShareId
+  isRequired: true
+  description: |+
+    The unique identifier of printerShare
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Devices.CloudPrint.Get-MgBetaPrintPrinterShareAllowedUser
+name: Get-MgBetaPrintPrinterShareAllowedUser
+description: |-
+  Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
+metadata:
+  external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+  Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintersharealloweduser
+  schema: 2.0.0

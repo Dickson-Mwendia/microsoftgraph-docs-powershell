@@ -1,0 +1,97 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke action requestSignupUrl
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Request-MgDeviceManagementAndroidForWorkSettingSignupUrl](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Request-MgDeviceManagementAndroidForWorkSettingSignupUrl?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Actions
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPaths4D3Ll5DevicemanagementAndroidforworksettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[HostName <String>]`:
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPaths4D3Ll5DevicemanagementAndroidforworksettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Request-MgDeviceManagementAndroidForWorkSettingSignupUrl
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Actions/Request-MgDeviceManagementAndroidForWorkSettingSignupUrl?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl [-AdditionalProperties <Hashtable>]
+
+   [-HostName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl
+
+   -BodyParameter <IPaths4D3Ll5DevicemanagementAndroidforworksettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPaths4D3Ll5DevicemanagementAndroidforworksettingsMicrosoftGraphRequestsignupurlPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: HostName
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Actions.Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl
+name: Request-MgBetaDeviceManagementAndroidForWorkSettingSignupUrl
+description: |-
+  Invoke action requestSignupUrl
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/request-mgbetadevicemanagementandroidforworksettingsignupurl
+  schema: 2.0.0

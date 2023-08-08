@@ -1,0 +1,47 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  A container for Microsoft Edge resources.
+  Read-only.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdge?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdge" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgAdminEdge
+  href: /powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdge?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaAdminEdge [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Get-MgBetaAdminEdge
+name: Get-MgBetaAdminEdge
+description: |-
+  A container for Microsoft Edge resources.
+  Read-only.
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetaadminedge
+  schema: 2.0.0

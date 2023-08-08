@@ -1,0 +1,279 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to domainSecurityProfiles for security
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgSecurityDomainSecurityProfile](/powershell/module/Microsoft.Graph.Security/New-MgSecurityDomainSecurityProfile?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Security
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphDomainSecurityProfile>`: domainSecurityProfile
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ActivityGroupNames <String[]>]`: 
+    - `[AzureSubscriptionId <String>]`: 
+    - `[AzureTenantId <String>]`: 
+    - `[CountHits <Int32?>]`: 
+    - `[CountInOrg <Int32?>]`: 
+    - `[DomainCategories <IMicrosoftGraphReputationCategory[]>]`: 
+      - `[Description <String>]`: 
+      - `[Name <String>]`: 
+      - `[Vendor <String>]`: 
+    - `[DomainRegisteredDateTime <DateTime?>]`: 
+    - `[FirstSeenDateTime <DateTime?>]`: 
+    - `[LastSeenDateTime <DateTime?>]`: 
+    - `[Name <String>]`: 
+    - `[Registrant <IMicrosoftGraphDomainRegistrant>]`: domainRegistrant
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CountryOrRegionCode <String>]`: 
+      - `[Organization <String>]`: 
+      - `[Url <String>]`: 
+      - `[Vendor <String>]`: 
+    - `[RiskScore <String>]`: 
+    - `[Tags <String[]>]`: 
+    - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+      - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
+      - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+      - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
+
+  `DOMAINCATEGORIES <IMicrosoftGraphReputationCategory[]>`: .
+    - `[Description <String>]`: 
+    - `[Name <String>]`: 
+    - `[Vendor <String>]`: 
+
+  `REGISTRANT <IMicrosoftGraphDomainRegistrant>`: domainRegistrant
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CountryOrRegionCode <String>]`: 
+    - `[Organization <String>]`: 
+    - `[Url <String>]`: 
+    - `[Vendor <String>]`: 
+
+  `VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
+    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDomainSecurityProfile" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDomainSecurityProfile" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgSecurityDomainSecurityProfile
+  href: /powershell/module/Microsoft.Graph.Security/New-MgSecurityDomainSecurityProfile?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaSecurityDomainSecurityProfile [-ActivityGroupNames <String[]>] [-AdditionalProperties <Hashtable>]
+
+   [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-CountHits <Int32>] [-CountInOrg <Int32>]
+
+   [-DomainCategories <IMicrosoftGraphReputationCategory[]>] [-DomainRegisteredDateTime <DateTime>]
+
+   [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>] [-Name <String>]
+
+   [-Registrant <IMicrosoftGraphDomainRegistrant>] [-RiskScore <String>] [-Tags <String[]>]
+
+   [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaSecurityDomainSecurityProfile -BodyParameter <IMicrosoftGraphDomainSecurityProfile> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ActivityGroupNames
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AzureSubscriptionId
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AzureTenantId
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDomainSecurityProfile" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    domainSecurityProfile
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: CountHits
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: CountInOrg
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphReputationCategory" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: DomainCategories
+  description: |+
+    .
+    To construct, see NOTES section for DOMAINCATEGORIES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: DomainRegisteredDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: FirstSeenDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastSeenDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Name
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDomainRegistrant" data-throw-if-not-resolved="False" />
+  name: Registrant
+  description: |+
+    domainRegistrant
+    To construct, see NOTES section for REGISTRANT properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RiskScore
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Tags
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecurityVendorInformation" data-throw-if-not-resolved="False" />
+  name: VendorInformation
+  description: |+
+    securityVendorInformation
+    To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Security.New-MgBetaSecurityDomainSecurityProfile
+name: New-MgBetaSecurityDomainSecurityProfile
+description: |-
+  Create new navigation property to domainSecurityProfiles for security
+metadata:
+  external help file: Microsoft.Graph.Beta.Security-help.xml
+  Module Name: Microsoft.Graph.Beta.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydomainsecurityprofile
+  schema: 2.0.0

@@ -1,0 +1,158 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to dataSharingConsents for deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDataSharingConsent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDataSharingConsent?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphDataSharingConsent>`: Data sharing consent information.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[GrantDateTime <DateTime?>]`: The time consent was granted for this account
+    - `[Granted <Boolean?>]`: The granted state for the data sharing consent
+    - `[GrantedByUpn <String>]`: The Upn of the user that granted consent for this account
+    - `[GrantedByUserId <String>]`: The UserId of the user that granted consent for this account
+    - `[ServiceDisplayName <String>]`: The display name of the service work flow
+    - `[TermsUrl <String>]`: The TermsUrl for the data sharing consent
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataSharingConsent" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDataSharingConsent" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementDataSharingConsent
+  href: /powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDataSharingConsent?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDeviceManagementDataSharingConsent [-AdditionalProperties <Hashtable>] [-GrantDateTime <DateTime>]
+
+   [-Granted] [-GrantedByUpn <String>] [-GrantedByUserId <String>] [-Id <String>] [-ServiceDisplayName <String>]
+
+   [-TermsUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaDeviceManagementDataSharingConsent -BodyParameter <IMicrosoftGraphDataSharingConsent> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDataSharingConsent" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Data sharing consent information.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: GrantDateTime
+  description: |+
+    The time consent was granted for this account
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Granted
+  description: |+
+    The granted state for the data sharing consent
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GrantedByUpn
+  description: |+
+    The Upn of the user that granted consent for this account
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GrantedByUserId
+  description: |+
+    The UserId of the user that granted consent for this account
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ServiceDisplayName
+  description: |+
+    The display name of the service work flow
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TermsUrl
+  description: |+
+    The TermsUrl for the data sharing consent
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.New-MgBetaDeviceManagementDataSharingConsent
+name: New-MgBetaDeviceManagementDataSharingConsent
+description: |-
+  Create new navigation property to dataSharingConsents for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdatasharingconsent
+  schema: 2.0.0

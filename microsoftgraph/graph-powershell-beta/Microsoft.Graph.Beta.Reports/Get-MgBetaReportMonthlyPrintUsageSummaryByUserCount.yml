@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgReportMonthlyPrintUsageSummaryByUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportMonthlyPrintUsageSummaryByUserCount?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Reports
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgReportMonthlyPrintUsageSummaryByUserCount
+  href: /powershell/module/Microsoft.Graph.Reports/Get-MgReportMonthlyPrintUsageSummaryByUserCount?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaReportMonthlyPrintUsageSummaryByUserCount [-Filter <String>] [-Search <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Reports.Get-MgBetaReportMonthlyPrintUsageSummaryByUserCount
+name: Get-MgBetaReportMonthlyPrintUsageSummaryByUserCount
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Beta.Reports-help.xml
+  Module Name: Microsoft.Graph.Beta.Reports
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportmonthlyprintusagesummarybyusercount
+  schema: 2.0.0

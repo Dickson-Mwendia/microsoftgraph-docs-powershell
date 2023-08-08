@@ -1,0 +1,75 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke function getAuditCategories
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementAuditEventAuditCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementAuditEventAuditCategory?view=graph-powershell-beta)
+module: Microsoft.Graph.DeviceManagement.Functions
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaDeviceManagementAuditEventAuditCategory
+  href: /powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementAuditEventAuditCategory?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgDeviceManagementAuditEventAuditCategory [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+
+   [-Top <Int32>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Count
+  description: |+
+    Include count of items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Functions.Get-MgDeviceManagementAuditEventAuditCategory
+name: Get-MgDeviceManagementAuditEventAuditCategory
+description: |-
+  Invoke function getAuditCategories
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Functions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementauditeventauditcategory
+  schema: 2.0.0

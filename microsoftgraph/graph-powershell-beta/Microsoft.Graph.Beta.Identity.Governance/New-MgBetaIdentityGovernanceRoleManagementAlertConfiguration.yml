@@ -1,0 +1,184 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to alertConfigurations for identityGovernance
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceRoleManagementAlertConfiguration](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceRoleManagementAlertConfiguration?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.Governance
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `ALERTDEFINITION <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>`: unifiedRoleManagementAlertDefinition
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Description <String>]`: The description of the alert.
+    - `[DisplayName <String>]`: The friendly display name that renders in Privileged Identity Management (PIM) alerts in the Azure portal.
+    - `[HowToPrevent <String>]`: Long-form text that indicates the ways to prevent the alert from being triggered in your tenant.
+    - `[IsConfigurable <Boolean?>]`: true if the alert configuration can be customized in the tenant, and false otherwise. For example, the number and percentage thresholds of the 'There are too many global administrators' alert can be configured by users, while the 'This organization does not have Azure AD Premium P2' cannot be configured, because the criteria is restricted.
+    - `[IsRemediatable <Boolean?>]`: true if the alert can be remediated, and false otherwise.
+    - `[MitigationSteps <String>]`: The methods to mitigate the alert when it's triggered in the tenant. For example, to mitigate the 'There are too many global administrators', you could remove redundant privileged role assignments.
+    - `[ScopeId <String>]`: The identifier of the scope where the alert is related. / is the only supported one for the tenant. Supports $filter (eq, ne).
+    - `[ScopeType <String>]`: The type of scope where the alert is created. DirectoryRole is the only currently supported scope type for Azure AD Roles.
+    - `[SecurityImpact <String>]`: Security impact of the alert. For example, it could be information leaks or unauthorized access.
+    - `[SeverityLevel <String>]`: alertSeverity
+
+  `BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>`: unifiedRoleManagementAlertConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>]`: unifiedRoleManagementAlertDefinition
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Description <String>]`: The description of the alert.
+      - `[DisplayName <String>]`: The friendly display name that renders in Privileged Identity Management (PIM) alerts in the Azure portal.
+      - `[HowToPrevent <String>]`: Long-form text that indicates the ways to prevent the alert from being triggered in your tenant.
+      - `[IsConfigurable <Boolean?>]`: true if the alert configuration can be customized in the tenant, and false otherwise. For example, the number and percentage thresholds of the 'There are too many global administrators' alert can be configured by users, while the 'This organization does not have Azure AD Premium P2' cannot be configured, because the criteria is restricted.
+      - `[IsRemediatable <Boolean?>]`: true if the alert can be remediated, and false otherwise.
+      - `[MitigationSteps <String>]`: The methods to mitigate the alert when it's triggered in the tenant. For example, to mitigate the 'There are too many global administrators', you could remove redundant privileged role assignments.
+      - `[ScopeId <String>]`: The identifier of the scope where the alert is related. / is the only supported one for the tenant. Supports $filter (eq, ne).
+      - `[ScopeType <String>]`: The type of scope where the alert is created. DirectoryRole is the only currently supported scope type for Azure AD Roles.
+      - `[SecurityImpact <String>]`: Security impact of the alert. For example, it could be information leaks or unauthorized access.
+      - `[SeverityLevel <String>]`: alertSeverity
+    - `[AlertDefinitionId <String>]`: The identifier of an alert definition. Supports $filter (eq, ne).
+    - `[IsEnabled <Boolean?>]`: true if the alert is enabled. Setting it to false disables PIM scanning the tenant to identify instances that trigger the alert.
+    - `[ScopeId <String>]`: The identifier of the scope to which the alert is related. Only / is supported to represent the tenant scope. Supports $filter (eq, ne).
+    - `[ScopeType <String>]`: The type of scope where the alert is created. DirectoryRole is the only currently supported scope type for Azure AD roles.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertConfiguration" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertConfiguration" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgIdentityGovernanceRoleManagementAlertConfiguration
+  href: /powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceRoleManagementAlertConfiguration?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaIdentityGovernanceRoleManagementAlertConfiguration [-AdditionalProperties <Hashtable>]
+
+   [-AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>] [-AlertDefinitionId <String>]
+
+   [-Id <String>] [-IsEnabled] [-ScopeId <String>] [-ScopeType <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  New-MgBetaIdentityGovernanceRoleManagementAlertConfiguration
+
+   -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphUnifiedRoleManagementAlertDefinition" data-throw-if-not-resolved="False" />
+  name: AlertDefinition
+  description: |+
+    unifiedRoleManagementAlertDefinition
+    To construct, see NOTES section for ALERTDEFINITION properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AlertDefinitionId
+  description: |+
+    The identifier of an alert definition.
+    Supports $filter (eq, ne).
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphUnifiedRoleManagementAlertConfiguration" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    unifiedRoleManagementAlertConfiguration
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsEnabled
+  description: |+
+    true if the alert is enabled.
+    Setting it to false disables PIM scanning the tenant to identify instances that trigger the alert.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ScopeId
+  description: |+
+    The identifier of the scope to which the alert is related.
+    Only / is supported to represent the tenant scope.
+    Supports $filter (eq, ne).
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ScopeType
+  description: |+
+    The type of scope where the alert is created.
+    DirectoryRole is the only currently supported scope type for Azure AD roles.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.Governance.New-MgBetaIdentityGovernanceRoleManagementAlertConfiguration
+name: New-MgBetaIdentityGovernanceRoleManagementAlertConfiguration
+description: |-
+  Create new navigation property to alertConfigurations for identityGovernance
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.Governance
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalertconfiguration
+  schema: 2.0.0

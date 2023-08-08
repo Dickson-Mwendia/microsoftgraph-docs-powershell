@@ -1,0 +1,114 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Publish an education assignment.
+  Change the state of an educationAssignment from its original `draft` status to the `published` status.
+  You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date.
+  Only a teacher in the class can make this call.
+  When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects.
+  Calling this API creates educationSubmission objects and displays the assignment in each student's list.
+  The state of the assignment goes back to `draft` if there is any backend failure during publish process.
+  To update the properties of a published **assignment**, see update an assignment.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Publish-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationMeAssignment?view=graph-powershell-beta)
+module: Microsoft.Graph.Education
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IEducationIdentity>`: Identity Parameter
+    - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
+    - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
+    - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
+    - `[EducationClassId <String>]`: The unique identifier of educationClass
+    - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
+    - `[EducationRubricId <String>]`: The unique identifier of educationRubric
+    - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
+    - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
+    - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
+    - `[EducationUserId <String>]`: The unique identifier of educationUser
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IEducationIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Publish-MgBetaEducationMeAssignment
+  href: /powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationMeAssignment?view=graph-powershell-beta
+syntaxes:
+- Publish-MgEducationMeAssignment -EducationAssignmentId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+- Publish-MgEducationMeAssignment -InputObject <IEducationIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.Education
+
+    Publish-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+  description: |-
+    This example shows how to use the Publish-MgEducationMeAssignment Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EducationAssignmentId
+  isRequired: true
+  description: |+
+    The unique identifier of educationAssignment
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IEducationIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Education.Publish-MgEducationMeAssignment
+name: Publish-MgEducationMeAssignment
+description: |-
+  Publish an education assignment.
+  Change the state of an educationAssignment from its original `draft` status to the `published` status.
+  You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date.
+  Only a teacher in the class can make this call.
+  When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects.
+  Calling this API creates educationSubmission objects and displays the assignment in each student's list.
+  The state of the assignment goes back to `draft` if there is any backend failure during publish process.
+  To update the properties of a published **assignment**, see update an assignment.
+metadata:
+  external help file: Microsoft.Graph.Education-help.xml
+  Module Name: Microsoft.Graph.Education
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/publish-mgeducationmeassignment
+  schema: 2.0.0

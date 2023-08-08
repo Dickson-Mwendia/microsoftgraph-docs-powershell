@@ -1,0 +1,262 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric in deviceManagement
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric?view=graph-powershell-beta)
+module: Microsoft.Graph.DeviceManagement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric>`: The user experience analytics hardware readiness entity contains account level information about hardware blockers for windows upgrade.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[OSCheckFailedPercentage <Double?>]`: The percentage of devices for which OS check has failed. Valid values 0 to 100. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+    - `[Processor64BitCheckFailedPercentage <Double?>]`: The percentage of devices for which processor hardware 64-bit architecture check has failed. Valid values 0 to 100. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+    - `[ProcessorCoreCountCheckFailedPercentage <Double?>]`: The percentage of devices for which processor hardware core count check has failed. Valid values 0 to 100. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+    - `[ProcessorFamilyCheckFailedPercentage <Double?>]`: The percentage of devices for which processor hardware family check has failed. Valid values 0 to 100. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+    - `[ProcessorSpeedCheckFailedPercentage <Double?>]`: The percentage of devices for which processor hardware speed check has failed. Valid values 0 to 100. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+    - `[RamCheckFailedPercentage <Double?>]`: The percentage of devices for which RAM hardware check has failed. Valid values 0 to 100. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+    - `[SecureBootCheckFailedPercentage <Double?>]`: The percentage of devices for which secure boot hardware check has failed. Valid values 0 to 100. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+    - `[StorageCheckFailedPercentage <Double?>]`: The percentage of devices for which storage hardware check has failed. Valid values 0 to 100. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+    - `[TotalDeviceCount <Int32?>]`: The count of total devices in an organization. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647
+    - `[TpmCheckFailedPercentage <Double?>]`: The percentage of devices for which Trusted Platform Module (TPM) hardware check has failed. Valid values 0 to 100. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+    - `[UpgradeEligibleDeviceCount <Int32?>]`: The count of devices in an organization eligible for windows upgrade. Valid values 0 to 2147483647. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+  href: /powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric?view=graph-powershell-beta
+syntaxes:
+- >-
+  Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+
+   [-AdditionalProperties <Hashtable>] [-Id <String>] [-OSCheckFailedPercentage <Double>]
+
+   [-Processor64BitCheckFailedPercentage <Double>] [-ProcessorCoreCountCheckFailedPercentage <Double>]
+
+   [-ProcessorFamilyCheckFailedPercentage <Double>] [-ProcessorSpeedCheckFailedPercentage <Double>]
+
+   [-RamCheckFailedPercentage <Double>] [-SecureBootCheckFailedPercentage <Double>]
+
+   [-StorageCheckFailedPercentage <Double>] [-TotalDeviceCount <Int32>] [-TpmCheckFailedPercentage <Double>]
+
+   [-UpgradeEligibleDeviceCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+
+   -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    The user experience analytics hardware readiness entity contains account level information about hardware blockers for windows upgrade.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: OSCheckFailedPercentage
+  description: |+
+    The percentage of devices for which OS check has failed.
+    Valid values 0 to 100.
+    Supports: $select, $OrderBy.
+    Read-only.
+    Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: Processor64BitCheckFailedPercentage
+  description: |+
+    The percentage of devices for which processor hardware 64-bit architecture check has failed.
+    Valid values 0 to 100.
+    Supports: $select, $OrderBy.
+    Read-only.
+    Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: ProcessorCoreCountCheckFailedPercentage
+  description: |+
+    The percentage of devices for which processor hardware core count check has failed.
+    Valid values 0 to 100.
+    Supports: $select, $OrderBy.
+    Read-only.
+    Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: ProcessorFamilyCheckFailedPercentage
+  description: |+
+    The percentage of devices for which processor hardware family check has failed.
+    Valid values 0 to 100.
+    Supports: $select, $OrderBy.
+    Read-only.
+    Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: ProcessorSpeedCheckFailedPercentage
+  description: |+
+    The percentage of devices for which processor hardware speed check has failed.
+    Valid values 0 to 100.
+    Supports: $select, $OrderBy.
+    Read-only.
+    Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: RamCheckFailedPercentage
+  description: |+
+    The percentage of devices for which RAM hardware check has failed.
+    Valid values 0 to 100.
+    Supports: $select, $OrderBy.
+    Read-only.
+    Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: SecureBootCheckFailedPercentage
+  description: |+
+    The percentage of devices for which secure boot hardware check has failed.
+    Valid values 0 to 100.
+    Supports: $select, $OrderBy.
+    Read-only.
+    Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: StorageCheckFailedPercentage
+  description: |+
+    The percentage of devices for which storage hardware check has failed.
+    Valid values 0 to 100.
+    Supports: $select, $OrderBy.
+    Read-only.
+    Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: TotalDeviceCount
+  description: |+
+    The count of total devices in an organization.
+    Valid values 0 to 2147483647.
+    Supports: $select, $OrderBy.
+    Read-only.
+    Valid values -2147483648 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: TpmCheckFailedPercentage
+  description: |+
+    The percentage of devices for which Trusted Platform Module (TPM) hardware check has failed.
+    Valid values 0 to 100.
+    Supports: $select, $OrderBy.
+    Read-only.
+    Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: UpgradeEligibleDeviceCount
+  description: |+
+    The count of devices in an organization eligible for windows upgrade.
+    Valid values 0 to 2147483647.
+    Supports: $select, $OrderBy.
+    Read-only.
+    Valid values -2147483648 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+name: Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+description: |-
+  Update the navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric in deviceManagement
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric
+  schema: 2.0.0

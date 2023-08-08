@@ -1,0 +1,86 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Information about the Microsoft Teams team that was created for the request.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestTeam?view=graph-powershell-beta)
+module: Microsoft.Graph.Compliance
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
+    - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+    - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IComplianceIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaPrivacySubjectRightsRequestTeam
+  href: /powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgBetaPrivacySubjectRightsRequestTeam?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgPrivacySubjectRightsRequestTeam -SubjectRightsRequestId <String> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgPrivacySubjectRightsRequestTeam -InputObject <IComplianceIdentity> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="IComplianceIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SubjectRightsRequestId
+  isRequired: true
+  description: |+
+    The unique identifier of subjectRightsRequest
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Compliance.Get-MgPrivacySubjectRightsRequestTeam
+name: Get-MgPrivacySubjectRightsRequestTeam
+description: |-
+  Information about the Microsoft Teams team that was created for the request.
+metadata:
+  external help file: Microsoft.Graph.Compliance-help.xml
+  Module Name: Microsoft.Graph.Compliance
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance/get-mgprivacysubjectrightsrequestteam
+  schema: 2.0.0

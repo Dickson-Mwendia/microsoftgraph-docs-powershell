@@ -1,0 +1,375 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property managedAppRegistrations in deviceAppManagement
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.CorporateManagement
+notes: |-
+  ALIASES
+
+  Update-MgDeviceAppMgtManagedAppRegistration
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `APPLIEDPOLICIES <IMicrosoftGraphManagedAppPolicy[]>`: Zero or more policys already applied on the registered app when it last synchronized with managment service.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
+    - `[Description <String>]`: The policy's description.
+    - `[DisplayName <String>]`: Policy display name.
+    - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
+    - `[Version <String>]`: Version of the entity.
+
+  `BODYPARAMETER <IMicrosoftGraphManagedAppRegistration>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[AppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ApplicationVersion <String>]`: App version
+    - `[AppliedPolicies <IMicrosoftGraphManagedAppPolicy[]>]`: Zero or more policys already applied on the registered app when it last synchronized with managment service.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
+      - `[Description <String>]`: The policy's description.
+      - `[DisplayName <String>]`: Policy display name.
+      - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
+      - `[Version <String>]`: Version of the entity.
+    - `[CreatedDateTime <DateTime?>]`: Date and time of creation
+    - `[DeviceName <String>]`: Host device name
+    - `[DeviceTag <String>]`: App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in all conditions.
+    - `[DeviceType <String>]`: Host device type
+    - `[FlaggedReasons <ManagedAppFlaggedReason[]>]`: Zero or more reasons an app registration is flagged. E.g. app running on rooted device
+    - `[IntendedPolicies <IMicrosoftGraphManagedAppPolicy[]>]`: Zero or more policies admin intended for the app as of now.
+    - `[LastSyncDateTime <DateTime?>]`: Date and time of last the app synced with management service.
+    - `[ManagementSdkVersion <String>]`: App management SDK version
+    - `[Operations <IMicrosoftGraphManagedAppOperation[]>]`: Zero or more long running operations triggered on the app registration.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[DisplayName <String>]`: The operation name.
+      - `[LastModifiedDateTime <DateTime?>]`: The last time the app operation was modified.
+      - `[State <String>]`: The current state of the operation
+      - `[Version <String>]`: Version of the entity.
+    - `[PlatformVersion <String>]`: Operating System version
+    - `[UserId <String>]`: The user Id to who this app registration belongs.
+    - `[Version <String>]`: Version of the entity.
+
+  `INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
+    - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
+    - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
+    - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
+    - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
+    - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
+    - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+    - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
+    - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
+    - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
+    - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
+    - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
+    - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
+    - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+    - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+    - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+    - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
+    - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+    - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
+    - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
+    - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
+    - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
+    - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+    - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
+    - `[MobileAppId <String>]`: The unique identifier of mobileApp
+    - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
+    - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
+    - `[UserId <String>]`: The unique identifier of user
+    - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
+    - `[VppTokenId <String>]`: The unique identifier of vppToken
+    - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+    - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
+    - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
+
+  `INTENDEDPOLICIES <IMicrosoftGraphManagedAppPolicy[]>`: Zero or more policies admin intended for the app as of now.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
+    - `[Description <String>]`: The policy's description.
+    - `[DisplayName <String>]`: Policy display name.
+    - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
+    - `[Version <String>]`: Version of the entity.
+
+  `OPERATIONS <IMicrosoftGraphManagedAppOperation[]>`: Zero or more long running operations triggered on the app registration.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[DisplayName <String>]`: The operation name.
+    - `[LastModifiedDateTime <DateTime?>]`: The last time the app operation was modified.
+    - `[State <String>]`: The current state of the operation
+    - `[Version <String>]`: Version of the entity.
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppRegistration" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppRegistration" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgBetaDeviceAppManagementManagedAppRegistration
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedAppRegistration?view=graph-powershell-beta
+syntaxes:
+- >-
+  Update-MgDeviceAppManagementManagedAppRegistration -ManagedAppRegistrationId <String>
+
+   [-AdditionalProperties <Hashtable>] [-AppIdentifier <Hashtable>] [-ApplicationVersion <String>]
+
+   [-AppliedPolicies <IMicrosoftGraphManagedAppPolicy[]>] [-CreatedDateTime <DateTime>] [-DeviceName <String>]
+
+   [-DeviceTag <String>] [-DeviceType <String>] [-FlaggedReasons <ManagedAppFlaggedReason[]>] [-Id <String>]
+
+   [-IntendedPolicies <IMicrosoftGraphManagedAppPolicy[]>] [-LastSyncDateTime <DateTime>]
+
+   [-ManagementSdkVersion <String>] [-Operations <IMicrosoftGraphManagedAppOperation[]>]
+
+   [-PlatformVersion <String>] [-UserId <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceAppManagementManagedAppRegistration -ManagedAppRegistrationId <String>
+
+   -BodyParameter <IMicrosoftGraphManagedAppRegistration> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceAppManagementManagedAppRegistration -InputObject <IDevicesCorporateManagementIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-AppIdentifier <Hashtable>] [-ApplicationVersion <String>]
+
+   [-AppliedPolicies <IMicrosoftGraphManagedAppPolicy[]>] [-CreatedDateTime <DateTime>] [-DeviceName <String>]
+
+   [-DeviceTag <String>] [-DeviceType <String>] [-FlaggedReasons <ManagedAppFlaggedReason[]>] [-Id <String>]
+
+   [-IntendedPolicies <IMicrosoftGraphManagedAppPolicy[]>] [-LastSyncDateTime <DateTime>]
+
+   [-ManagementSdkVersion <String>] [-Operations <IMicrosoftGraphManagedAppOperation[]>]
+
+   [-PlatformVersion <String>] [-UserId <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceAppManagementManagedAppRegistration -InputObject <IDevicesCorporateManagementIdentity>
+
+   -BodyParameter <IMicrosoftGraphManagedAppRegistration> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AppIdentifier
+  description: |+
+    The identifier for a mobile app.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ApplicationVersion
+  description: |+
+    App version
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedAppPolicy" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: AppliedPolicies
+  description: |+
+    Zero or more policys already applied on the registered app when it last synchronized with managment service.
+    To construct, see NOTES section for APPLIEDPOLICIES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedAppRegistration" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    Date and time of creation
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceName
+  description: |+
+    Host device name
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceTag
+  description: |+
+    App management SDK generated tag, which helps relate apps hosted on the same device.
+    Not guaranteed to relate apps in all conditions.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceType
+  description: |+
+    Host device type
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ManagedAppFlaggedReason" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: FlaggedReasons
+  description: |+
+    Zero or more reasons an app registration is flagged.
+    E.g.
+    app running on rooted device
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDevicesCorporateManagementIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedAppPolicy" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: IntendedPolicies
+  description: |+
+    Zero or more policies admin intended for the app as of now.
+    To construct, see NOTES section for INTENDEDPOLICIES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastSyncDateTime
+  description: |+
+    Date and time of last the app synced with management service.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ManagedAppRegistrationId
+  isRequired: true
+  description: |+
+    The unique identifier of managedAppRegistration
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ManagementSdkVersion
+  description: |+
+    App management SDK version
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedAppOperation" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Operations
+  description: |+
+    Zero or more long running operations triggered on the app registration.
+    To construct, see NOTES section for OPERATIONS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PlatformVersion
+  description: |+
+    Operating System version
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  description: |+
+    The user Id to who this app registration belongs.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Version
+  description: |+
+    Version of the entity.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.CorporateManagement.Update-MgDeviceAppManagementManagedAppRegistration
+name: Update-MgDeviceAppManagementManagedAppRegistration
+description: |-
+  Update the navigation property managedAppRegistrations in deviceAppManagement
+metadata:
+  external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Devices.CorporateManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedappregistration
+  schema: 2.0.0

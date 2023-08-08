@@ -1,0 +1,102 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingRegistrationCustomQuestionCount](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingRegistrationCustomQuestionCount?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.CloudCommunications
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
+    - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+    - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+    - `[CallId <String>]`: The unique identifier of call
+    - `[CallRecordId <String>]`: The unique identifier of callRecord
+    - `[CallRecordingId <String>]`: The unique identifier of callRecording
+    - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+    - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+    - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+    - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
+    - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+    - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
+    - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
+    - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+    - `[ParticipantId <String>]`: The unique identifier of participant
+    - `[PresenceId <String>]`: The unique identifier of presence
+    - `[SessionId <String>]`: The unique identifier of session
+    - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgCommunicationOnlineMeetingRegistrationCustomQuestionCount
+  href: /powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingRegistrationCustomQuestionCount?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestionCount -OnlineMeetingId <String>
+
+   [-Filter <String>] [-Search <String>] [<CommonParameters>]
+- >-
+  Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestionCount -InputObject <ICloudCommunicationsIdentity>
+
+   [-Filter <String>] [-Search <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ICloudCommunicationsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OnlineMeetingId
+  isRequired: true
+  description: |+
+    The unique identifier of onlineMeeting
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.CloudCommunications.Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestionCount
+name: Get-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestionCount
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+  Module Name: Microsoft.Graph.Beta.CloudCommunications
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeetingregistrationcustomquestioncount
+  schema: 2.0.0

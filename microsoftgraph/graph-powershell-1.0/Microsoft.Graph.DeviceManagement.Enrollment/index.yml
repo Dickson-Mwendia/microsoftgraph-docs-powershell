@@ -1,0 +1,38 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.DeviceManagement.Enrollment
+  cmdlets:
+  - Microsoft.Graph.DeviceManagement.Enrollment.Get-MgDeviceManagementConditionalAccessSetting
+  - Microsoft.Graph.DeviceManagement.Enrollment.Get-MgDeviceManagementDeviceEnrollmentConfiguration
+  - Microsoft.Graph.DeviceManagement.Enrollment.Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
+  - Microsoft.Graph.DeviceManagement.Enrollment.Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignmentCount
+  - Microsoft.Graph.DeviceManagement.Enrollment.Get-MgDeviceManagementDeviceEnrollmentConfigurationCount
+  - Microsoft.Graph.DeviceManagement.Enrollment.Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
+  - Microsoft.Graph.DeviceManagement.Enrollment.Get-MgDeviceManagementImportedWindowsAutopilotDeviceIdentityCount
+  - Microsoft.Graph.DeviceManagement.Enrollment.Get-MgDeviceManagementWindowsAutopilotDeviceIdentity
+  - Microsoft.Graph.DeviceManagement.Enrollment.Get-MgDeviceManagementWindowsAutopilotDeviceIdentityCount
+  - Microsoft.Graph.DeviceManagement.Enrollment.Get-MgRoleManagement
+  - Microsoft.Graph.DeviceManagement.Enrollment.New-MgDeviceManagementDeviceEnrollmentConfiguration
+  - Microsoft.Graph.DeviceManagement.Enrollment.New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
+  - Microsoft.Graph.DeviceManagement.Enrollment.New-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
+  - Microsoft.Graph.DeviceManagement.Enrollment.New-MgDeviceManagementWindowsAutopilotDeviceIdentity
+  - Microsoft.Graph.DeviceManagement.Enrollment.Remove-MgDeviceManagementConditionalAccessSetting
+  - Microsoft.Graph.DeviceManagement.Enrollment.Remove-MgDeviceManagementDeviceEnrollmentConfiguration
+  - Microsoft.Graph.DeviceManagement.Enrollment.Remove-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
+  - Microsoft.Graph.DeviceManagement.Enrollment.Remove-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
+  - Microsoft.Graph.DeviceManagement.Enrollment.Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity
+  - Microsoft.Graph.DeviceManagement.Enrollment.Update-MgDeviceManagementConditionalAccessSetting
+  - Microsoft.Graph.DeviceManagement.Enrollment.Update-MgDeviceManagementDeviceEnrollmentConfiguration
+  - Microsoft.Graph.DeviceManagement.Enrollment.Update-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
+  - Microsoft.Graph.DeviceManagement.Enrollment.Update-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
+  - Microsoft.Graph.DeviceManagement.Enrollment.Update-MgRoleManagement
+uid: Microsoft.Graph.DeviceManagement.Enrollment
+name: Microsoft.Graph.DeviceManagement.Enrollment
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.DeviceManagement.Enrollment
+  Module Guid: aab11d21-5c9c-4025-966f-01c7ef67f5f8
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment
+  Help Version: 1.0.0.0
+  Locale: en-US

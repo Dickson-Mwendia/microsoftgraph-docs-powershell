@@ -1,0 +1,182 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to importedDeviceIdentities for deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementImportedDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementImportedDeviceIdentity?view=graph-powershell-v1.0)
+module: Microsoft.Graph.DeviceManagement.Enrolment
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  BODYPARAMETER `<IMicrosoftGraphImportedDeviceIdentity>`: The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
+    - `[Description <String>]`: The description of the device
+    - `[EnrollmentState <EnrollmentState?>]`: 
+    - `[ImportedDeviceIdentifier <String>]`: Imported Device Identifier
+    - `[ImportedDeviceIdentityType <ImportedDeviceIdentityType?>]`: importedDeviceIdentityType
+    - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
+    - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
+    - `[Platform <Platform?>]`: platform
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementImportedDeviceIdentity
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementImportedDeviceIdentity?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgDeviceManagementImportedDeviceIdentity [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+
+   [-Description <String>] [-EnrollmentState <EnrollmentState>] [-Id <String>]
+
+   [-ImportedDeviceIdentifier <String>] [-ImportedDeviceIdentityType <ImportedDeviceIdentityType>]
+
+   [-LastContactedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Platform <Platform>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  New-MgDeviceManagementImportedDeviceIdentity -BodyParameter <IMicrosoftGraphImportedDeviceIdentity> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphImportedDeviceIdentity" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration.
+    To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    Created Date Time of the device
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    The description of the device
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="EnrollmentState" data-throw-if-not-resolved="False" />
+  name: EnrollmentState
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ImportedDeviceIdentifier
+  description: |+
+    Imported Device Identifier
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ImportedDeviceIdentityType" data-throw-if-not-resolved="False" />
+  name: ImportedDeviceIdentityType
+  description: |+
+    importedDeviceIdentityType
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastContactedDateTime
+  description: |+
+    Last Contacted Date Time of the device
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    Last Modified DateTime of the description
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Platform" data-throw-if-not-resolved="False" />
+  name: Platform
+  description: |+
+    platform
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Enrolment.New-MgDeviceManagementImportedDeviceIdentity
+name: New-MgDeviceManagementImportedDeviceIdentity
+description: |-
+  Create new navigation property to importedDeviceIdentities for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+  online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgdevicemanagementimporteddeviceidentity
+  schema: 2.0.0

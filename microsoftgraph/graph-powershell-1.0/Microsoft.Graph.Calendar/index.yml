@@ -1,0 +1,107 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Calendar
+  cmdlets:
+  - Microsoft.Graph.Calendar.Get-MgGroupCalendar
+  - Microsoft.Graph.Calendar.Get-MgGroupCalendarEvent
+  - Microsoft.Graph.Calendar.Get-MgGroupCalendarPermission
+  - Microsoft.Graph.Calendar.Get-MgGroupCalendarPermissionCount
+  - Microsoft.Graph.Calendar.Get-MgGroupCalendarView
+  - Microsoft.Graph.Calendar.Get-MgGroupEvent
+  - Microsoft.Graph.Calendar.Get-MgGroupEventAttachment
+  - Microsoft.Graph.Calendar.Get-MgGroupEventAttachmentCount
+  - Microsoft.Graph.Calendar.Get-MgGroupEventCalendar
+  - Microsoft.Graph.Calendar.Get-MgGroupEventCount
+  - Microsoft.Graph.Calendar.Get-MgGroupEventExtension
+  - Microsoft.Graph.Calendar.Get-MgGroupEventExtensionCount
+  - Microsoft.Graph.Calendar.Get-MgGroupEventInstance
+  - Microsoft.Graph.Calendar.Get-MgGroupEventInstanceAttachment
+  - Microsoft.Graph.Calendar.Get-MgGroupEventInstanceAttachmentCount
+  - Microsoft.Graph.Calendar.Get-MgGroupEventInstanceCalendar
+  - Microsoft.Graph.Calendar.Get-MgGroupEventInstanceCount
+  - Microsoft.Graph.Calendar.Get-MgGroupEventInstanceExtension
+  - Microsoft.Graph.Calendar.Get-MgGroupEventInstanceExtensionCount
+  - Microsoft.Graph.Calendar.Get-MgPlaceAsRoom
+  - Microsoft.Graph.Calendar.Get-MgPlaceAsRoomList
+  - Microsoft.Graph.Calendar.Get-MgPlaceCount
+  - Microsoft.Graph.Calendar.Get-MgPlaceCountAsRoom
+  - Microsoft.Graph.Calendar.Get-MgPlaceCountAsRoomList
+  - Microsoft.Graph.Calendar.Get-MgUserCalendar
+  - Microsoft.Graph.Calendar.Get-MgUserCalendarCount
+  - Microsoft.Graph.Calendar.Get-MgUserCalendarEvent
+  - Microsoft.Graph.Calendar.Get-MgUserCalendarGroup
+  - Microsoft.Graph.Calendar.Get-MgUserCalendarGroupCalendar
+  - Microsoft.Graph.Calendar.Get-MgUserCalendarGroupCount
+  - Microsoft.Graph.Calendar.Get-MgUserCalendarPermission
+  - Microsoft.Graph.Calendar.Get-MgUserCalendarPermissionCount
+  - Microsoft.Graph.Calendar.Get-MgUserCalendarView
+  - Microsoft.Graph.Calendar.Get-MgUserDefaultCalendar
+  - Microsoft.Graph.Calendar.Get-MgUserDefaultCalendarEvent
+  - Microsoft.Graph.Calendar.Get-MgUserEvent
+  - Microsoft.Graph.Calendar.Get-MgUserEventAttachment
+  - Microsoft.Graph.Calendar.Get-MgUserEventAttachmentCount
+  - Microsoft.Graph.Calendar.Get-MgUserEventCalendar
+  - Microsoft.Graph.Calendar.Get-MgUserEventCount
+  - Microsoft.Graph.Calendar.Get-MgUserEventExtension
+  - Microsoft.Graph.Calendar.Get-MgUserEventExtensionCount
+  - Microsoft.Graph.Calendar.Get-MgUserEventInstance
+  - Microsoft.Graph.Calendar.Get-MgUserEventInstanceAttachment
+  - Microsoft.Graph.Calendar.Get-MgUserEventInstanceAttachmentCount
+  - Microsoft.Graph.Calendar.Get-MgUserEventInstanceCalendar
+  - Microsoft.Graph.Calendar.Get-MgUserEventInstanceCount
+  - Microsoft.Graph.Calendar.Get-MgUserEventInstanceExtension
+  - Microsoft.Graph.Calendar.Get-MgUserEventInstanceExtensionCount
+  - Microsoft.Graph.Calendar.New-MgGroupCalendarEvent
+  - Microsoft.Graph.Calendar.New-MgGroupCalendarPermission
+  - Microsoft.Graph.Calendar.New-MgGroupEvent
+  - Microsoft.Graph.Calendar.New-MgGroupEventAttachment
+  - Microsoft.Graph.Calendar.New-MgGroupEventExtension
+  - Microsoft.Graph.Calendar.New-MgGroupEventInstanceAttachment
+  - Microsoft.Graph.Calendar.New-MgGroupEventInstanceExtension
+  - Microsoft.Graph.Calendar.New-MgUserCalendar
+  - Microsoft.Graph.Calendar.New-MgUserCalendarEvent
+  - Microsoft.Graph.Calendar.New-MgUserCalendarGroup
+  - Microsoft.Graph.Calendar.New-MgUserCalendarGroupCalendar
+  - Microsoft.Graph.Calendar.New-MgUserCalendarPermission
+  - Microsoft.Graph.Calendar.New-MgUserDefaultCalendarEvent
+  - Microsoft.Graph.Calendar.New-MgUserEvent
+  - Microsoft.Graph.Calendar.New-MgUserEventAttachment
+  - Microsoft.Graph.Calendar.New-MgUserEventExtension
+  - Microsoft.Graph.Calendar.New-MgUserEventInstanceAttachment
+  - Microsoft.Graph.Calendar.New-MgUserEventInstanceExtension
+  - Microsoft.Graph.Calendar.Remove-MgGroupCalendarEvent
+  - Microsoft.Graph.Calendar.Remove-MgGroupCalendarPermission
+  - Microsoft.Graph.Calendar.Remove-MgGroupEvent
+  - Microsoft.Graph.Calendar.Remove-MgGroupEventAttachment
+  - Microsoft.Graph.Calendar.Remove-MgGroupEventExtension
+  - Microsoft.Graph.Calendar.Remove-MgGroupEventInstanceAttachment
+  - Microsoft.Graph.Calendar.Remove-MgGroupEventInstanceExtension
+  - Microsoft.Graph.Calendar.Remove-MgPlace
+  - Microsoft.Graph.Calendar.Remove-MgUserCalendarGroup
+  - Microsoft.Graph.Calendar.Remove-MgUserCalendarPermission
+  - Microsoft.Graph.Calendar.Remove-MgUserEvent
+  - Microsoft.Graph.Calendar.Remove-MgUserEventAttachment
+  - Microsoft.Graph.Calendar.Remove-MgUserEventExtension
+  - Microsoft.Graph.Calendar.Remove-MgUserEventInstanceAttachment
+  - Microsoft.Graph.Calendar.Remove-MgUserEventInstanceExtension
+  - Microsoft.Graph.Calendar.Update-MgGroupCalendarEvent
+  - Microsoft.Graph.Calendar.Update-MgGroupCalendarPermission
+  - Microsoft.Graph.Calendar.Update-MgGroupEvent
+  - Microsoft.Graph.Calendar.Update-MgGroupEventExtension
+  - Microsoft.Graph.Calendar.Update-MgGroupEventInstanceExtension
+  - Microsoft.Graph.Calendar.Update-MgPlace
+  - Microsoft.Graph.Calendar.Update-MgUserCalendarGroup
+  - Microsoft.Graph.Calendar.Update-MgUserCalendarPermission
+  - Microsoft.Graph.Calendar.Update-MgUserEvent
+  - Microsoft.Graph.Calendar.Update-MgUserEventExtension
+  - Microsoft.Graph.Calendar.Update-MgUserEventInstanceExtension
+uid: Microsoft.Graph.Calendar
+name: Microsoft.Graph.Calendar
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Calendar
+  Module Guid: 6f8929da-d9a1-4e79-b958-140d229cf122
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar
+  Help Version: 1.0.0.0
+  Locale: en-US

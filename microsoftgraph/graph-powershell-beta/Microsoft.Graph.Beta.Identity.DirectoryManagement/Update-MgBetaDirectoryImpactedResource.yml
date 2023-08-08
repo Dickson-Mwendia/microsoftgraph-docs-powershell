@@ -1,0 +1,337 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property impactedResources in directory
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgDirectoryImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryImpactedResource?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.DirectoryManagement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `ADDITIONALDETAILS <IMicrosoftGraphKeyValue[]>`: Additional information unique to the impactedResource to help contextualize the recommendation.
+    - `[Key <String>]`: Contains the name of the field that a value is associated with.
+    - `[Value <String>]`: Contains the corresponding value for the specified key.
+
+  `BODYPARAMETER <IMicrosoftGraphImpactedResource>`: impactedResource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
+    - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
+      - `[Key <String>]`: Contains the name of the field that a value is associated with.
+      - `[Value <String>]`: Contains the corresponding value for the specified key.
+    - `[ApiUrl <String>]`: The URL link to the corresponding Azure AD resource.
+    - `[DisplayName <String>]`: Friendly name of the Azure AD resource.
+    - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
+    - `[LastModifiedDateTime <String>]`: The date and time when the status was last updated.
+    - `[Owner <String>]`: The user responsible for maintaining the resource.
+    - `[PortalUrl <String>]`: The URL link to the corresponding Azure AD portal page of the resource.
+    - `[PostponeUntilDateTime <DateTime?>]`: The future date and time when the status of a postponed impactedResource will be active again.
+    - `[Rank <Int32?>]`: Indicates the importance of the resource. A resource with a rank equal to 1 is of the highest importance.
+    - `[RecommendationId <String>]`: The unique identifier of the recommendation that the resource is associated with.
+    - `[ResourceType <String>]`: Indicates the type of Azure AD resource. Examples include user, application.
+    - `[Status <String>]`: recommendationStatus
+    - `[SubjectId <String>]`: The related unique identifier, depending on the resourceType. For example, this property is set to the applicationId if the resourceType is an application.
+
+  `INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
+    - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
+    - `[AllowedValueId <String>]`: The unique identifier of allowedValue
+    - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+    - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
+    - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
+    - `[CommandId <String>]`: The unique identifier of command
+    - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
+    - `[ContractId <String>]`: The unique identifier of contract
+    - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
+    - `[DeviceId <String>]`: The unique identifier of device
+    - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+    - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
+    - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
+    - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
+    - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
+    - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
+    - `[DomainId <String>]`: The unique identifier of domain
+    - `[ExtensionId <String>]`: The unique identifier of extension
+    - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
+    - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
+    - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
+    - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
+    - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+    - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+    - `[ManagementActionId <String>]`: The unique identifier of managementAction
+    - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
+    - `[OrgContactId <String>]`: The unique identifier of orgContact
+    - `[OrganizationId <String>]`: The unique identifier of organization
+    - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+    - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
+    - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+    - `[RecommendationId <String>]`: The unique identifier of recommendation
+    - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
+    - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
+    - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
+    - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+    - `[TenantId <String>]`: The unique identifier of tenant
+    - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
+    - `[TenantTagId <String>]`: The unique identifier of tenantTag
+    - `[UsageRightId <String>]`: The unique identifier of usageRight
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgDirectoryImpactedResource
+  href: /powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryImpactedResource?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaDirectoryImpactedResource -ImpactedResourceId <String> [-AddedDateTime <DateTime>]
+
+   [-AdditionalDetails <IMicrosoftGraphKeyValue[]>] [-AdditionalProperties <Hashtable>] [-ApiUrl <String>]
+
+   [-DisplayName <String>] [-Id <String>] [-LastModifiedBy <String>] [-LastModifiedDateTime <String>]
+
+   [-Owner <String>] [-PortalUrl <String>] [-PostponeUntilDateTime <DateTime>] [-Rank <Int32>]
+
+   [-RecommendationId <String>] [-ResourceType <String>] [-Status <String>] [-SubjectId <String>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaDirectoryImpactedResource -ImpactedResourceId <String>
+
+   -BodyParameter <IMicrosoftGraphImpactedResource> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
+
+   [-AddedDateTime <DateTime>] [-AdditionalDetails <IMicrosoftGraphKeyValue[]>]
+
+   [-AdditionalProperties <Hashtable>] [-ApiUrl <String>] [-DisplayName <String>] [-Id <String>]
+
+   [-LastModifiedBy <String>] [-LastModifiedDateTime <String>] [-Owner <String>] [-PortalUrl <String>]
+
+   [-PostponeUntilDateTime <DateTime>] [-Rank <Int32>] [-RecommendationId <String>] [-ResourceType <String>]
+
+   [-Status <String>] [-SubjectId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
+
+   -BodyParameter <IMicrosoftGraphImpactedResource> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: AddedDateTime
+  description: |+
+    The date and time when the impactedResource object was initially associated with the recommendation.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphKeyValue" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: AdditionalDetails
+  description: |+
+    Additional information unique to the impactedResource to help contextualize the recommendation.
+    To construct, see NOTES section for ADDITIONALDETAILS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ApiUrl
+  description: |+
+    The URL link to the corresponding Azure AD resource.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphImpactedResource" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    impactedResource
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Friendly name of the Azure AD resource.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ImpactedResourceId
+  isRequired: true
+  description: |+
+    The unique identifier of impactedResource
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IIdentityDirectoryManagementIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: LastModifiedBy
+  description: |+
+    Name of the user or service that last updated the status.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    The date and time when the status was last updated.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Owner
+  description: |+
+    The user responsible for maintaining the resource.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PortalUrl
+  description: |+
+    The URL link to the corresponding Azure AD portal page of the resource.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: PostponeUntilDateTime
+  description: |+
+    The future date and time when the status of a postponed impactedResource will be active again.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Rank
+  description: |+
+    Indicates the importance of the resource.
+    A resource with a rank equal to 1 is of the highest importance.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RecommendationId
+  description: |+
+    The unique identifier of the recommendation that the resource is associated with.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ResourceType
+  description: |+
+    Indicates the type of Azure AD resource.
+    Examples include user, application.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Status
+  description: |+
+    recommendationStatus
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SubjectId
+  description: |+
+    The related unique identifier, depending on the resourceType.
+    For example, this property is set to the applicationId if the resourceType is an application.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.DirectoryManagement.Update-MgBetaDirectoryImpactedResource
+name: Update-MgBetaDirectoryImpactedResource
+description: |-
+  Update the navigation property impactedResources in directory
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryimpactedresource
+  schema: 2.0.0

@@ -1,0 +1,57 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Read the properties and relationships of an accessReviewPolicy object.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewPolicy?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.Governance
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgIdentityGovernanceAccessReviewPolicy
+  href: /powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewPolicy?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaIdentityGovernanceAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the Get-MgBetaIdentityGovernanceAccessReviewPolicy Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Identity.Governance
+    Get-MgBetaIdentityGovernanceAccessReviewPolicy
+  description: |-
+    This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewPolicy Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.Governance.Get-MgBetaIdentityGovernanceAccessReviewPolicy
+name: Get-MgBetaIdentityGovernanceAccessReviewPolicy
+description: |-
+  Read the properties and relationships of an accessReviewPolicy object.
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.Governance
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewpolicy
+  schema: 2.0.0

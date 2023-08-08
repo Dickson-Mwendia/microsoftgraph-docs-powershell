@@ -1,0 +1,54 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Settings for the primary mailbox of the signed-in user.
+  You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+  For more information, see User preferences for languages and regional formats.
+  Returned only on $select.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgEducationMeUserMailboxSetting](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUserMailboxSetting?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Education
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailboxSettings" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgEducationMeUserMailboxSetting
+  href: /powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUserMailboxSetting?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaEducationMeUserMailboxSetting [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Education.Get-MgBetaEducationMeUserMailboxSetting
+name: Get-MgBetaEducationMeUserMailboxSetting
+description: |-
+  Settings for the primary mailbox of the signed-in user.
+  You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+  For more information, see User preferences for languages and regional formats.
+  Returned only on $select.
+metadata:
+  external help file: Microsoft.Graph.Beta.Education-help.xml
+  Module Name: Microsoft.Graph.Beta.Education
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationmeusermailboxsetting
+  schema: 2.0.0

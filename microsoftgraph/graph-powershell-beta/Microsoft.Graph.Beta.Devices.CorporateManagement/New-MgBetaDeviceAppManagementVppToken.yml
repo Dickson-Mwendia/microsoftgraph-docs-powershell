@@ -1,0 +1,292 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to vppTokens for deviceAppManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementVppToken?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Devices.CorporateManagement
+notes: |-
+  ALIASES
+
+  New-MgBetaDeviceAppMgtVppToken
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphVppToken>`: You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education. This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP Business or Education token to Intune. You can then synchronize your volume purchase information with Intune and track your volume-purchased app use. You can upload multiple Apple VPP Business or Education tokens.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AppleId <String>]`: The apple Id associated with the given Apple Volume Purchase Program Token.
+    - `[AutomaticallyUpdateApps <Boolean?>]`: Whether or not apps for the VPP token will be automatically updated.
+    - `[ClaimTokenManagementFromExternalMdm <Boolean?>]`: Admin consent to allow claiming token management from external MDM.
+    - `[CountryOrRegion <String>]`: Whether or not apps for the VPP token will be automatically updated.
+    - `[DataSharingConsentGranted <Boolean?>]`: Consent granted for data sharing with the Apple Volume Purchase Program.
+    - `[DisplayName <String>]`: An admin specified token friendly name.
+    - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the Apple Volume Purchase Program Token.
+    - `[LastModifiedDateTime <DateTime?>]`: Last modification date time associated with the Apple Volume Purchase Program Token.
+    - `[LastSyncDateTime <DateTime?>]`: The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
+    - `[LastSyncStatus <VppTokenSyncStatus?>]`: Possible sync statuses associated with an Apple Volume Purchase Program token.
+    - `[LocationName <String>]`: Token location returned from Apple VPP.
+    - `[OrganizationName <String>]`: The organization associated with the Apple Volume Purchase Program Token
+    - `[RoleScopeTagIds <String[]>]`: Role Scope Tags IDs assigned to this entity.
+    - `[State <VppTokenState?>]`: Possible states associated with an Apple Volume Purchase Program token.
+    - `[Token <String>]`: The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
+    - `[TokenActionResults <IMicrosoftGraphVppTokenActionResult[]>]`: The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.
+      - `[ActionName <String>]`: Action name
+      - `[ActionState <String>]`: actionState
+      - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
+      - `[StartDateTime <DateTime?>]`: Time the action was initiated
+    - `[VppTokenAccountType <VppTokenAccountType?>]`: Possible types of an Apple Volume Purchase Program token.
+
+  `TOKENACTIONRESULTS <IMicrosoftGraphVppTokenActionResult[]>`: The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.
+    - `[ActionName <String>]`: Action name
+    - `[ActionState <String>]`: actionState
+    - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
+    - `[StartDateTime <DateTime?>]`: Time the action was initiated
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVppToken" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVppToken" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceAppManagementVppToken
+  href: /powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementVppToken?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDeviceAppManagementVppToken [-AdditionalProperties <Hashtable>] [-AppleId <String>]
+
+   [-AutomaticallyUpdateApps] [-ClaimTokenManagementFromExternalMdm] [-CountryOrRegion <String>]
+
+   [-DataSharingConsentGranted] [-DisplayName <String>] [-ExpirationDateTime <DateTime>] [-Id <String>]
+
+   [-LastModifiedDateTime <DateTime>] [-LastSyncDateTime <DateTime>] [-LastSyncStatus <VppTokenSyncStatus>]
+
+   [-LocationName <String>] [-OrganizationName <String>] [-RoleScopeTagIds <String[]>] [-State <VppTokenState>]
+
+   [-Token <String>] [-TokenActionResults <IMicrosoftGraphVppTokenActionResult[]>]
+
+   [-VppTokenAccountType <VppTokenAccountType>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AppleId
+  description: |+
+    The apple Id associated with the given Apple Volume Purchase Program Token.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: AutomaticallyUpdateApps
+  description: |+
+    Whether or not apps for the VPP token will be automatically updated.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphVppToken" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    You purchase multiple licenses for iOS apps through the Apple Volume Purchase Program for Business or Education.
+    This involves setting up an Apple VPP account from the Apple website and uploading the Apple VPP Business or Education token to Intune.
+    You can then synchronize your volume purchase information with Intune and track your volume-purchased app use.
+    You can upload multiple Apple VPP Business or Education tokens.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: ClaimTokenManagementFromExternalMdm
+  description: |+
+    Admin consent to allow claiming token management from external MDM.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountryOrRegion
+  description: |+
+    Whether or not apps for the VPP token will be automatically updated.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: DataSharingConsentGranted
+  description: |+
+    Consent granted for data sharing with the Apple Volume Purchase Program.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    An admin specified token friendly name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: ExpirationDateTime
+  description: |+
+    The expiration date time of the Apple Volume Purchase Program Token.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    Last modification date time associated with the Apple Volume Purchase Program Token.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastSyncDateTime
+  description: |+
+    The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="VppTokenSyncStatus" data-throw-if-not-resolved="False" />
+  name: LastSyncStatus
+  description: |+
+    Possible sync statuses associated with an Apple Volume Purchase Program token.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: LocationName
+  description: |+
+    Token location returned from Apple VPP.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OrganizationName
+  description: |+
+    The organization associated with the Apple Volume Purchase Program Token
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: RoleScopeTagIds
+  description: |+
+    Role Scope Tags IDs assigned to this entity.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="VppTokenState" data-throw-if-not-resolved="False" />
+  name: State
+  description: |+
+    Possible states associated with an Apple Volume Purchase Program token.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Token
+  description: |+
+    The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphVppTokenActionResult" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: TokenActionResults
+  description: |+
+    The collection of statuses of the actions performed on the Apple Volume Purchase Program Token.
+    To construct, see NOTES section for TOKENACTIONRESULTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="VppTokenAccountType" data-throw-if-not-resolved="False" />
+  name: VppTokenAccountType
+  description: |+
+    Possible types of an Apple Volume Purchase Program token.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Devices.CorporateManagement.New-MgBetaDeviceAppManagementVppToken
+name: New-MgBetaDeviceAppManagementVppToken
+description: |-
+  Create new navigation property to vppTokens for deviceAppManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken
+  schema: 2.0.0

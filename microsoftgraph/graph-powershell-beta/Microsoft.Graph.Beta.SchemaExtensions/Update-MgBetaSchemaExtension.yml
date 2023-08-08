@@ -1,0 +1,260 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update properties in the definition of the specified schemaExtension.
+  Additive updates to the extension can only be made when the extension is in the `InDevelopment` or `Available` status.
+  This means custom properties or target resource types cannot be removed from the definition, but new custom properties can be added and the description of the extension changed.
+  The update applies to all the resources that are included in the **targetTypes** property of the extension.
+  These resources are among the supporting resource types.
+  For delegated flows, the signed-in user can update a schema extension as long as the **owner** property of the extension is set to the **appId** of an application the signed-in user owns.
+  That application can be the one that initially created the extension, or some other application owned by the signed-in user.
+  This criteria for the **owner** property allows a signed-in user to make updates through other applications they don't own, such as Microsoft Graph Explorer.
+  When using Graph Explorer to update a **schemaExtension** resource, include the **owner** property in the PATCH request body.
+  For more information, see the Extensions section in Known issues with Microsoft Graph.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Update-MgSchemaExtension?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.SchemaExtensions
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphSchemaExtension>`: schemaExtension
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Description <String>]`: Description for the schema extension. Supports $filter (eq).
+    - `[Owner <String>]`: The appId of the application that is the owner of the schema extension. The owner of the schema definition must be explicitly specified during the Create and Update operations, or it will be implied and auto-assigned by Azure AD as follows: In delegated access: The signed-in user must be the owner of the app that calls Microsoft Graph to create the schema extension definition.  If the signed-in user isn't the owner of the calling app, they must explicitly specify the owner property, and assign it the appId of an app that they own. In app-only access:  The owner property isn't required in the request body. Instead, the calling app is assigned ownership of the schema extension. So, for example, if creating a new schema extension definition using Graph Explorer, you must supply the owner property. Once set, this property is read-only and cannot be changed. Supports $filter (eq).
+    - `[Properties <IMicrosoftGraphExtensionSchemaProperty[]>]`: The collection of property names and types that make up the schema extension definition.
+      - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
+      - `[Type <String>]`: The type of the property that is defined as part of a schema extension.  Allowed values are Binary, Boolean, DateTime, Integer or String. See the table below for more details.
+    - `[Status <String>]`: The lifecycle state of the schema extension. Possible states are InDevelopment, Available, and Deprecated. Automatically set to InDevelopment on creation. For more information about the possible state transitions and behaviors, see Schema extensions lifecycle. Supports $filter (eq).
+    - `[TargetTypes <String[]>]`: Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from administrativeUnit, contact, device, event, group, message, organization, post, todoTask, todoTaskList, or user.
+
+  `INPUTOBJECT <ISchemaExtensionsIdentity>`: Identity Parameter
+    - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
+
+  `PROPERTIES <IMicrosoftGraphExtensionSchemaProperty[]>`: The collection of property names and types that make up the schema extension definition.
+    - `[Name <String>]`: The name of the strongly typed property defined as part of a schema extension.
+    - `[Type <String>]`: The type of the property that is defined as part of a schema extension.  Allowed values are Binary, Boolean, DateTime, Integer or String. See the table below for more details.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchemaExtension" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.ISchemaExtensionsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchemaExtension" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgSchemaExtension
+  href: /powershell/module/Microsoft.Graph.SchemaExtensions/Update-MgSchemaExtension?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaSchemaExtension -SchemaExtensionId <String> [-AdditionalProperties <Hashtable>]
+
+   [-Description <String>] [-Id <String>] [-Owner <String>]
+
+   [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>] [-TargetTypes <String[]>]
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaSchemaExtension -SchemaExtensionId <String> -BodyParameter <IMicrosoftGraphSchemaExtension>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-AdditionalProperties <Hashtable>]
+
+   [-Description <String>] [-Id <String>] [-Owner <String>]
+
+   [-Properties <IMicrosoftGraphExtensionSchemaProperty[]>] [-Status <String>] [-TargetTypes <String[]>]
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity>
+
+   -BodyParameter <IMicrosoftGraphSchemaExtension> [-WhatIf] [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.SchemaExtensions
+
+    $params = @{
+    	owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa"
+    	properties = @(
+    		@{
+    			name = "courseId"
+    			type = "Integer"
+    		}
+    		@{
+    			name = "courseName"
+    			type = "String"
+    		}
+    		@{
+    			name = "courseType"
+    			type = "String"
+    		}
+    		@{
+    			name = "courseSupervisors"
+    			type = "String"
+    		}
+    	)
+    }
+
+    Update-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
+  description: |-
+    This example shows how to use the Update-MgBetaSchemaExtension Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSchemaExtension" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    schemaExtension
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Description for the schema extension.
+    Supports $filter (eq).
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ISchemaExtensionsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Owner
+  description: |+
+    The appId of the application that is the owner of the schema extension.
+    The owner of the schema definition must be explicitly specified during the Create and Update operations, or it will be implied and auto-assigned by Azure AD as follows: In delegated access: The signed-in user must be the owner of the app that calls Microsoft Graph to create the schema extension definition.
+    If the signed-in user isn't the owner of the calling app, they must explicitly specify the owner property, and assign it the appId of an app that they own.
+    In app-only access: The owner property isn't required in the request body.
+    Instead, the calling app is assigned ownership of the schema extension.
+    So, for example, if creating a new schema extension definition using Graph Explorer, you must supply the owner property.
+    Once set, this property is read-only and cannot be changed.
+    Supports $filter (eq).
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphExtensionSchemaProperty" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Properties
+  description: |+
+    The collection of property names and types that make up the schema extension definition.
+    To construct, see NOTES section for PROPERTIES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SchemaExtensionId
+  isRequired: true
+  description: |+
+    The unique identifier of schemaExtension
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Status
+  description: |+
+    The lifecycle state of the schema extension.
+    Possible states are InDevelopment, Available, and Deprecated.
+    Automatically set to InDevelopment on creation.
+    For more information about the possible state transitions and behaviors, see Schema extensions lifecycle.
+    Supports $filter (eq).
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: TargetTypes
+  description: |+
+    Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to.
+    Select from administrativeUnit, contact, device, event, group, message, organization, post, todoTask, todoTaskList, or user.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.SchemaExtensions.Update-MgBetaSchemaExtension
+name: Update-MgBetaSchemaExtension
+description: |-
+  Update properties in the definition of the specified schemaExtension.
+  Additive updates to the extension can only be made when the extension is in the `InDevelopment` or `Available` status.
+  This means custom properties or target resource types cannot be removed from the definition, but new custom properties can be added and the description of the extension changed.
+  The update applies to all the resources that are included in the **targetTypes** property of the extension.
+  These resources are among the supporting resource types.
+  For delegated flows, the signed-in user can update a schema extension as long as the **owner** property of the extension is set to the **appId** of an application the signed-in user owns.
+  That application can be the one that initially created the extension, or some other application owned by the signed-in user.
+  This criteria for the **owner** property allows a signed-in user to make updates through other applications they don't own, such as Microsoft Graph Explorer.
+  When using Graph Explorer to update a **schemaExtension** resource, include the **owner** property in the PATCH request body.
+  For more information, see the Extensions section in Known issues with Microsoft Graph.
+metadata:
+  external help file: Microsoft.Graph.Beta.SchemaExtensions-help.xml
+  Module Name: Microsoft.Graph.Beta.SchemaExtensions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/update-mgbetaschemaextension
+  schema: 2.0.0

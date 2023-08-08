@@ -1,0 +1,162 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the **selfServiceSignUp** property of an authenticationFlowsPolicy object.
+  The properties **id**, **type**, and **description** cannot be modified.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
+module: Microsoft.Graph.Identity.SignIns
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphAuthenticationFlowsPolicy>`: authenticationFlowsPolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Description <String>]`: Inherited property. A description of the policy. Optional. Read-only.
+    - `[DisplayName <String>]`: Inherited property. The human-readable name of the policy. Optional. Read-only.
+    - `[SelfServiceSignUp <IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration>]`: selfServiceSignUpAuthenticationFlowConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsEnabled <Boolean?>]`: Indicates whether self-service sign-up flow is enabled or disabled. The default value is false. This property is not a key. Required.
+
+  `SELFSERVICESIGNUP <IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration>`: selfServiceSignUpAuthenticationFlowConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsEnabled <Boolean?>]`: Indicates whether self-service sign-up flow is enabled or disabled. The default value is false. This property is not a key. Required.
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationFlowsPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationFlowsPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgBetaPolicyAuthenticationFlowPolicy
+  href: /powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta
+syntaxes:
+- >-
+  Update-MgPolicyAuthenticationFlowPolicy [-AdditionalProperties <Hashtable>] [-Description <String>]
+
+   [-DisplayName <String>] [-Id <String>]
+
+   [-SelfServiceSignUp <IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgPolicyAuthenticationFlowPolicy -BodyParameter <IMicrosoftGraphAuthenticationFlowsPolicy> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.Identity.SignIns
+
+    $params = @{
+    	selfServiceSignUp = @{
+    		isEnabled = $true
+    	}
+    }
+
+    Update-MgPolicyAuthenticationFlowPolicy -BodyParameter $params
+  description: |-
+    This example shows how to use the Update-MgPolicyAuthenticationFlowPolicy Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAuthenticationFlowsPolicy" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    authenticationFlowsPolicy
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Inherited property.
+    A description of the policy.
+    Optional.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Inherited property.
+    The human-readable name of the policy.
+    Optional.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration" data-throw-if-not-resolved="False" />
+  name: SelfServiceSignUp
+  description: |+
+    selfServiceSignUpAuthenticationFlowConfiguration
+    To construct, see NOTES section for SELFSERVICESIGNUP properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Identity.SignIns.Update-MgPolicyAuthenticationFlowPolicy
+name: Update-MgPolicyAuthenticationFlowPolicy
+description: |-
+  Update the **selfServiceSignUp** property of an authenticationFlowsPolicy object.
+  The properties **id**, **type**, and **description** cannot be modified.
+metadata:
+  external help file: Microsoft.Graph.Identity.SignIns-help.xml
+  Module Name: Microsoft.Graph.Identity.SignIns
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy
+  schema: 2.0.0

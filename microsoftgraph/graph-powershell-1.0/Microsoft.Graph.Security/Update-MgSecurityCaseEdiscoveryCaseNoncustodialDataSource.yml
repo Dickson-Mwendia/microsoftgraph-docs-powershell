@@ -1,0 +1,313 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property noncustodialDataSources in security
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-beta)
+module: Microsoft.Graph.Security
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource>`: ediscoveryNoncustodialDataSource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
+    - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
+    - `[HoldStatus <String>]`: dataSourceHoldStatus
+    - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time of the dataSourceContainer.
+    - `[ReleasedDateTime <DateTime?>]`: Date and time that the dataSourceContainer was released from the case.
+    - `[Status <String>]`: dataSourceContainerStatus
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[DataSource <IMicrosoftGraphSecurityDataSource>]`: dataSource
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Application <IMicrosoftGraphIdentity>]`: identity
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
+        - `[Device <IMicrosoftGraphIdentity>]`: identity
+        - `[User <IMicrosoftGraphIdentity>]`: identity
+      - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
+      - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
+      - `[HoldStatus <String>]`: dataSourceHoldStatus
+    - `[LastIndexOperation <IMicrosoftGraphSecurityEdiscoveryIndexOperation>]`: ediscoveryIndexOperation
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Action <String>]`: caseAction
+      - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
+      - `[PercentProgress <Int32?>]`: The progress of the operation.
+      - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Code <Int32?>]`: The result code.
+        - `[Message <String>]`: The message.
+        - `[Subcode <Int32?>]`: The result sub-code.
+      - `[Status <String>]`: caseOperationStatus
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+
+  `DATASOURCE <IMicrosoftGraphSecurityDataSource>`: dataSource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
+    - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
+    - `[HoldStatus <String>]`: dataSourceHoldStatus
+
+  `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
+    - `[AlertId <String>]`: The unique identifier of alert
+    - `[ArticleId <String>]`: The unique identifier of article
+    - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
+    - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+    - `[DataSourceId <String>]`: The unique identifier of dataSource
+    - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+    - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
+    - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
+    - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
+    - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
+    - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
+    - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
+    - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+    - `[HostComponentId <String>]`: The unique identifier of hostComponent
+    - `[HostCookieId <String>]`: The unique identifier of hostCookie
+    - `[HostId <String>]`: The unique identifier of host
+    - `[HostTrackerId <String>]`: The unique identifier of hostTracker
+    - `[IncidentId <String>]`: The unique identifier of incident
+    - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
+    - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+    - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
+    - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
+    - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
+    - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
+    - `[SecureScoreId <String>]`: The unique identifier of secureScore
+    - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
+    - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
+    - `[SimulationId <String>]`: The unique identifier of simulation
+    - `[SiteSourceId <String>]`: The unique identifier of siteSource
+    - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+    - `[UserSourceId <String>]`: The unique identifier of userSource
+    - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
+    - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.ISecurityIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource
+  href: /powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-beta
+syntaxes:
+- >-
+  Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId <String>
+
+   -EdiscoveryNoncustodialDataSourceId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+
+   [-DataSource <IMicrosoftGraphSecurityDataSource>] [-DisplayName <String>] [-HoldStatus <String>]
+
+   [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
+
+   [-ReleasedDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId <String>
+
+   -EdiscoveryNoncustodialDataSourceId <String>
+
+   -BodyParameter <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurityIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+
+   [-DataSource <IMicrosoftGraphSecurityDataSource>] [-DisplayName <String>] [-HoldStatus <String>]
+
+   [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
+
+   [-ReleasedDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurityIdentity>
+
+   -BodyParameter <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    ediscoveryNoncustodialDataSource
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    Created date and time of the dataSourceContainer entity.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecurityDataSource" data-throw-if-not-resolved="False" />
+  name: DataSource
+  description: |+
+    dataSource
+    To construct, see NOTES section for DATASOURCE properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Display name of the dataSourceContainer entity.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EdiscoveryCaseId
+  isRequired: true
+  description: |+
+    The unique identifier of ediscoveryCase
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EdiscoveryNoncustodialDataSourceId
+  isRequired: true
+  description: |+
+    The unique identifier of ediscoveryNoncustodialDataSource
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: HoldStatus
+  description: |+
+    dataSourceHoldStatus
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ISecurityIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: LastIndexOperation
+  description: |+
+    ediscoveryIndexOperation
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    Last modified date and time of the dataSourceContainer.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: ReleasedDateTime
+  description: |+
+    Date and time that the dataSourceContainer was released from the case.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Status
+  description: |+
+    dataSourceContainerStatus
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Security.Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource
+name: Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource
+description: |-
+  Update the navigation property noncustodialDataSources in security
+metadata:
+  external help file: Microsoft.Graph.Security-help.xml
+  Module Name: Microsoft.Graph.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasenoncustodialdatasource
+  schema: 2.0.0

@@ -1,0 +1,185 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create a new cloudPcExportJob resource to initiate downloading the entire or specified portion of a report.
+  Use the GET cloudPcExportJob operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource.
+  When the property result is `completed`, the report has finished downloading to the location specified by the **exportUrl** property.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementVirtualEndpointReportExportJob](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointReportExportJob?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Administration
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphCloudPcExportJob>`: cloudPcExportJob
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ExpirationDateTime <DateTime?>]`: The date and time when the export job expires.
+    - `[ExportJobStatus <String>]`: cloudPcExportJobStatus
+    - `[ExportUrl <String>]`: The storage account URL of the exported report. It can be used to download the file.
+    - `[Filter <String>]`: The filter applied on the report.
+    - `[Format <String>]`: The format of the exported report.
+    - `[ReportName <String>]`: cloudPcReportName
+    - `[RequestDateTime <DateTime?>]`: The date and time when the export job was requested.
+    - `[Select <String[]>]`: The selected columns of the report.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExportJob" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExportJob" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementVirtualEndpointReportExportJob
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointReportExportJob?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDeviceManagementVirtualEndpointReportExportJob [-AdditionalProperties <Hashtable>]
+
+   [-ExpirationDateTime <DateTime>] [-ExportJobStatus <String>] [-ExportUrl <String>] [-Filter <String>]
+
+   [-Format <String>] [-Id <String>] [-Property <String[]>] [-ReportName <String>] [-RequestDateTime <DateTime>]
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaDeviceManagementVirtualEndpointReportExportJob -BodyParameter <IMicrosoftGraphCloudPcExportJob>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphCloudPcExportJob" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    cloudPcExportJob
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: ExpirationDateTime
+  description: |+
+    The date and time when the export job expires.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ExportJobStatus
+  description: |+
+    cloudPcExportJobStatus
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ExportUrl
+  description: |+
+    The storage account URL of the exported report.
+    It can be used to download the file.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    The filter applied on the report.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Format
+  description: |+
+    The format of the exported report.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    The selected columns of the report.
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ReportName
+  description: |+
+    cloudPcReportName
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: RequestDateTime
+  description: |+
+    The date and time when the export job was requested.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Administration.New-MgBetaDeviceManagementVirtualEndpointReportExportJob
+name: New-MgBetaDeviceManagementVirtualEndpointReportExportJob
+description: |-
+  Create a new cloudPcExportJob resource to initiate downloading the entire or specified portion of a report.
+  Use the GET cloudPcExportJob operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource.
+  When the property result is `completed`, the report has finished downloading to the location specified by the **exportUrl** property.
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementvirtualendpointreportexportjob
+  schema: 2.0.0

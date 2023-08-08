@@ -1,0 +1,220 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property managedAppPolicies in deviceAppManagement
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.CorporateManagement
+notes: |-
+  ALIASES
+
+  Update-MgDeviceAppMgtManagedAppPolicy
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphManagedAppPolicy>`: The ManagedAppPolicy resource represents a base type for platform specific policies.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
+    - `[Description <String>]`: The policy's description.
+    - `[DisplayName <String>]`: Policy display name.
+    - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
+    - `[Version <String>]`: Version of the entity.
+
+  `INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
+    - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
+    - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
+    - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
+    - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
+    - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
+    - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+    - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
+    - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
+    - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
+    - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
+    - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
+    - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
+    - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+    - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+    - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+    - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
+    - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+    - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
+    - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
+    - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
+    - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
+    - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+    - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
+    - `[MobileAppId <String>]`: The unique identifier of mobileApp
+    - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
+    - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
+    - `[UserId <String>]`: The unique identifier of user
+    - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
+    - `[VppTokenId <String>]`: The unique identifier of vppToken
+    - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+    - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
+    - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgBetaDeviceAppManagementManagedAppPolicy
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta
+syntaxes:
+- >-
+  Update-MgDeviceAppManagementManagedAppPolicy -ManagedAppPolicyId <String> [-AdditionalProperties <Hashtable>]
+
+   [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+
+   [-LastModifiedDateTime <DateTime>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceAppManagementManagedAppPolicy -ManagedAppPolicyId <String>
+
+   -BodyParameter <IMicrosoftGraphManagedAppPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporateManagementIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
+
+   [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Version <String>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceAppManagementManagedAppPolicy -InputObject <IDevicesCorporateManagementIdentity>
+
+   -BodyParameter <IMicrosoftGraphManagedAppPolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedAppPolicy" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    The ManagedAppPolicy resource represents a base type for platform specific policies.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    The date and time the policy was created.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    The policy's description.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Policy display name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDevicesCorporateManagementIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    Last time the policy was modified.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ManagedAppPolicyId
+  isRequired: true
+  description: |+
+    The unique identifier of managedAppPolicy
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Version
+  description: |+
+    Version of the entity.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.CorporateManagement.Update-MgDeviceAppManagementManagedAppPolicy
+name: Update-MgDeviceAppManagementManagedAppPolicy
+description: |-
+  Update the navigation property managedAppPolicies in deviceAppManagement
+metadata:
+  external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Devices.CorporateManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmanagedapppolicy
+  schema: 2.0.0

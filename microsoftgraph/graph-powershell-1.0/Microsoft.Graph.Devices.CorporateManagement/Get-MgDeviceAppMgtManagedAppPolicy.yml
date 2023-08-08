@@ -1,0 +1,36 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Managed app policies.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtManagedAppPolicy?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.CorporateManagement
+notes: |-
+  Please use Get-Help -Online.
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaDeviceAppMgtManagedAppPolicy
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtManagedAppPolicy?view=graph-powershell-beta
+- text: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedapppolicy
+  href: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedapppolicy
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> {{ Add example code here }}
+  description: |-
+    {{ Add example description here }}
+  summary: ""
+uid: Microsoft.Graph.Devices.CorporateManagement.Get-MgDeviceAppMgtManagedAppPolicy
+name: Get-MgDeviceAppMgtManagedAppPolicy
+description: |-
+  Managed app policies.
+metadata:
+  external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Devices.CorporateManagement
+  online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedapppolicy
+  schema: 2.0.0

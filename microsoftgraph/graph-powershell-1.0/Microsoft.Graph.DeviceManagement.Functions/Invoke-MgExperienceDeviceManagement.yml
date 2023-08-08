@@ -1,0 +1,26 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Invoke-MgBetaExperienceDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgBetaExperienceDeviceManagement?view=graph-powershell-beta)
+module: Microsoft.Graph.DeviceManagement.Functions
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevicesSummary" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Invoke-MgBetaExperienceDeviceManagement
+  href: /powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgBetaExperienceDeviceManagement?view=graph-powershell-beta
+syntaxes:
+- Invoke-MgExperienceDeviceManagement [<CommonParameters>]
+uid: Microsoft.Graph.DeviceManagement.Functions.Invoke-MgExperienceDeviceManagement
+name: Invoke-MgExperienceDeviceManagement
+description: |-
+  Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Functions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgexperiencedevicemanagement
+  schema: 2.0.0

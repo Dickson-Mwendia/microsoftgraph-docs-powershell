@@ -1,0 +1,209 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to attachments for admin
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [New-MgBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.ServiceAnnouncement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphServiceAnnouncementAttachment>`: serviceAnnouncementAttachment
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Content <Byte[]>]`: The attachment content.
+    - `[ContentType <String>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[Name <String>]`: 
+    - `[Size <Int32?>]`: 
+
+  `INPUTOBJECT <IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+    - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
+    - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
+    - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
+    - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgBetaServiceAnnouncementMessageAttachment
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta
+syntaxes:
+- >-
+  New-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String> [-AdditionalProperties <Hashtable>]
+
+   [-ContentInputFile <String>] [-ContentType <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+
+   [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String>
+
+   -BodyParameter <IMicrosoftGraphServiceAnnouncementAttachment> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentType <String>] [-Id <String>]
+
+   [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
+
+   -BodyParameter <IMicrosoftGraphServiceAnnouncementAttachment> [-WhatIf] [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get all attachments of a message in a collection'
+  code: |-
+    Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+
+    Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
+  description: |-
+    This example shows how to use the New-MgServiceAnnouncementMessageAttachment Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+- title: 'Example 2: Get a zip file of all attachments in stream for a message'
+  code: |-
+    Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+
+    Get-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId $serviceUpdateMessageId
+  description: |-
+    This example shows how to use the New-MgServiceAnnouncementMessageAttachment Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphServiceAnnouncementAttachment" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    serviceAnnouncementAttachment
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContentInputFile
+  description: |+
+    Input File for Content (The attachment content.)
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContentType
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDevicesServiceAnnouncementIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Name
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ServiceUpdateMessageId
+  isRequired: true
+  description: |+
+    The unique identifier of serviceUpdateMessage
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Size
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.ServiceAnnouncement.New-MgServiceAnnouncementMessageAttachment
+name: New-MgServiceAnnouncementMessageAttachment
+description: |-
+  Create new navigation property to attachments for admin
+metadata:
+  external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
+  Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessageattachment
+  schema: 2.0.0

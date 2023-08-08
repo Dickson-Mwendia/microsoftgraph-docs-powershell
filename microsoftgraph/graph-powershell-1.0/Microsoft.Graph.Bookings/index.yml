@@ -1,0 +1,59 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Bookings
+  cmdlets:
+  - Microsoft.Graph.Bookings.Get-MgBookingBusiness
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessAppointment
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessAppointmentCount
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessCalendarView
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessCalendarViewCount
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessCount
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessCustomer
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessCustomerCount
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessCustomQuestion
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessCustomQuestionCount
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessService
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessServiceCount
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessStaffAvailability
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessStaffMember
+  - Microsoft.Graph.Bookings.Get-MgBookingBusinessStaffMemberCount
+  - Microsoft.Graph.Bookings.Get-MgBookingCurrency
+  - Microsoft.Graph.Bookings.Get-MgBookingCurrencyCount
+  - Microsoft.Graph.Bookings.New-MgBookingBusiness
+  - Microsoft.Graph.Bookings.New-MgBookingBusinessAppointment
+  - Microsoft.Graph.Bookings.New-MgBookingBusinessCalendarView
+  - Microsoft.Graph.Bookings.New-MgBookingBusinessCustomer
+  - Microsoft.Graph.Bookings.New-MgBookingBusinessCustomQuestion
+  - Microsoft.Graph.Bookings.New-MgBookingBusinessService
+  - Microsoft.Graph.Bookings.New-MgBookingBusinessStaffMember
+  - Microsoft.Graph.Bookings.New-MgBookingCurrency
+  - Microsoft.Graph.Bookings.Publish-MgBookingBusiness
+  - Microsoft.Graph.Bookings.Remove-MgBookingBusiness
+  - Microsoft.Graph.Bookings.Remove-MgBookingBusinessAppointment
+  - Microsoft.Graph.Bookings.Remove-MgBookingBusinessCalendarView
+  - Microsoft.Graph.Bookings.Remove-MgBookingBusinessCustomer
+  - Microsoft.Graph.Bookings.Remove-MgBookingBusinessCustomQuestion
+  - Microsoft.Graph.Bookings.Remove-MgBookingBusinessService
+  - Microsoft.Graph.Bookings.Remove-MgBookingBusinessStaffMember
+  - Microsoft.Graph.Bookings.Remove-MgBookingCurrency
+  - Microsoft.Graph.Bookings.Stop-MgBookingBusinessAppointment
+  - Microsoft.Graph.Bookings.Stop-MgBookingBusinessCalendarView
+  - Microsoft.Graph.Bookings.Unpublish-MgBookingBusiness
+  - Microsoft.Graph.Bookings.Update-MgBookingBusiness
+  - Microsoft.Graph.Bookings.Update-MgBookingBusinessAppointment
+  - Microsoft.Graph.Bookings.Update-MgBookingBusinessCalendarView
+  - Microsoft.Graph.Bookings.Update-MgBookingBusinessCustomer
+  - Microsoft.Graph.Bookings.Update-MgBookingBusinessCustomQuestion
+  - Microsoft.Graph.Bookings.Update-MgBookingBusinessService
+  - Microsoft.Graph.Bookings.Update-MgBookingBusinessStaffMember
+  - Microsoft.Graph.Bookings.Update-MgBookingCurrency
+uid: Microsoft.Graph.Bookings
+name: Microsoft.Graph.Bookings
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Bookings
+  Module Guid: 8e0533cd-37e7-4a28-abf4-e2eb00f2d693
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings
+  Help Version: 1.0.0.0
+  Locale: en-US

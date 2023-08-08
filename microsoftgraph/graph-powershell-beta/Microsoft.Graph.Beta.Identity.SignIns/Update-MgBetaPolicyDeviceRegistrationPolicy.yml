@@ -1,0 +1,213 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the properties of a deviceRegistrationPolicy object.
+  Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDeviceRegistrationPolicy?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.SignIns
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `AZUREADJOIN <IMicrosoftGraphAzureAdJoinPolicy>`: azureAdJoinPolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AllowedGroups <String[]>]`: The identifiers of the groups that are in the scope of the policy. Required when the appliesTo property is set to selected.
+    - `[AllowedUsers <String[]>]`: The identifiers of users that are in the scope of the policy. Required when the appliesTo property is set to selected.
+    - `[AppliesTo <String>]`: policyScope
+    - `[IsAdminConfigurable <Boolean?>]`: Specifies whether this policy scope is configurable by the admin. The default value is false. When an admin has enabled Intune (MEM) to manage devices, this property is set to false and appliesTo defaults to 1 (meaning all).
+
+  `AZUREADREGISTRATION <IMicrosoftGraphAzureAdRegistrationPolicy>`: azureADRegistrationPolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AllowedGroups <String[]>]`: The identifiers of the groups that are in the scope of the policy. Either this property or allowedUsers is required when the appliesTo property is set to selected.
+    - `[AllowedUsers <String[]>]`: The identifiers of users that are in the scope of the policy. Either this property or allowedGroups is required when the appliesTo property is set to selected.
+    - `[AppliesTo <String>]`: policyScope
+    - `[IsAdminConfigurable <Boolean?>]`: Specifies whether this policy scope is configurable by the admin. The default value is false. When an admin has enabled Intune (MEM) to manage devices, this property is set to false and appliesTo defaults to 1 (meaning all).
+
+  `BODYPARAMETER <IMicrosoftGraphDeviceRegistrationPolicy>`: deviceRegistrationPolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AzureAdJoin <IMicrosoftGraphAzureAdJoinPolicy>]`: azureAdJoinPolicy
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AllowedGroups <String[]>]`: The identifiers of the groups that are in the scope of the policy. Required when the appliesTo property is set to selected.
+      - `[AllowedUsers <String[]>]`: The identifiers of users that are in the scope of the policy. Required when the appliesTo property is set to selected.
+      - `[AppliesTo <String>]`: policyScope
+      - `[IsAdminConfigurable <Boolean?>]`: Specifies whether this policy scope is configurable by the admin. The default value is false. When an admin has enabled Intune (MEM) to manage devices, this property is set to false and appliesTo defaults to 1 (meaning all).
+    - `[AzureAdRegistration <IMicrosoftGraphAzureAdRegistrationPolicy>]`: azureADRegistrationPolicy
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AllowedGroups <String[]>]`: The identifiers of the groups that are in the scope of the policy. Either this property or allowedUsers is required when the appliesTo property is set to selected.
+      - `[AllowedUsers <String[]>]`: The identifiers of users that are in the scope of the policy. Either this property or allowedGroups is required when the appliesTo property is set to selected.
+      - `[AppliesTo <String>]`: policyScope
+      - `[IsAdminConfigurable <Boolean?>]`: Specifies whether this policy scope is configurable by the admin. The default value is false. When an admin has enabled Intune (MEM) to manage devices, this property is set to false and appliesTo defaults to 1 (meaning all).
+    - `[Description <String>]`: The description of the device registration policy. It is always set to Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks. Read-only.
+    - `[DisplayName <String>]`: The name of the device registration policy. It is always set to Device Registration Policy. Read-only.
+    - `[LocalAdminPassword <IMicrosoftGraphLocalAdminPasswordSettings>]`: localAdminPasswordSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsEnabled <Boolean?>]`: Specifies whether this policy scope is configurable by the admin. The default value is false. An admin can set it to true to enable Local Admin Password Solution (LAPS) within their organzation.
+    - `[MultiFactorAuthConfiguration <String>]`: multiFactorAuthConfiguration
+    - `[UserDeviceQuota <Int32?>]`: Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. The default value is set to 50. If this property is not specified during the policy update operation, it is automatically reset to 0 to indicate that users are not allowed to join any devices.
+
+  `LOCALADMINPASSWORD <IMicrosoftGraphLocalAdminPasswordSettings>`: localAdminPasswordSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsEnabled <Boolean?>]`: Specifies whether this policy scope is configurable by the admin. The default value is false. An admin can set it to true to enable Local Admin Password Solution (LAPS) within their organzation.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceRegistrationPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceRegistrationPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgPolicyDeviceRegistrationPolicy
+  href: /powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDeviceRegistrationPolicy?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaPolicyDeviceRegistrationPolicy [-AdditionalProperties <Hashtable>]
+
+   [-AzureAdJoin <IMicrosoftGraphAzureAdJoinPolicy>]
+
+   [-AzureAdRegistration <IMicrosoftGraphAzureAdRegistrationPolicy>] [-Description <String>]
+
+   [-DisplayName <String>] [-Id <String>] [-LocalAdminPassword <IMicrosoftGraphLocalAdminPasswordSettings>]
+
+   [-MultiFactorAuthConfiguration <String>] [-UserDeviceQuota <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaPolicyDeviceRegistrationPolicy -BodyParameter <IMicrosoftGraphDeviceRegistrationPolicy> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAzureAdJoinPolicy" data-throw-if-not-resolved="False" />
+  name: AzureAdJoin
+  description: |+
+    azureAdJoinPolicy
+    To construct, see NOTES section for AZUREADJOIN properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAzureAdRegistrationPolicy" data-throw-if-not-resolved="False" />
+  name: AzureAdRegistration
+  description: |+
+    azureADRegistrationPolicy
+    To construct, see NOTES section for AZUREADREGISTRATION properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceRegistrationPolicy" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    deviceRegistrationPolicy
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    The description of the device registration policy.
+    It is always set to Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    The name of the device registration policy.
+    It is always set to Device Registration Policy.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphLocalAdminPasswordSettings" data-throw-if-not-resolved="False" />
+  name: LocalAdminPassword
+  description: |+
+    localAdminPasswordSettings
+    To construct, see NOTES section for LOCALADMINPASSWORD properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MultiFactorAuthConfiguration
+  description: |+
+    multiFactorAuthConfiguration
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: UserDeviceQuota
+  description: |+
+    Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations.
+    The default value is set to 50.
+    If this property is not specified during the policy update operation, it is automatically reset to 0 to indicate that users are not allowed to join any devices.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.SignIns.Update-MgBetaPolicyDeviceRegistrationPolicy
+name: Update-MgBetaPolicyDeviceRegistrationPolicy
+description: |-
+  Update the properties of a deviceRegistrationPolicy object.
+  Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.SignIns
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydeviceregistrationpolicy
+  schema: 2.0.0

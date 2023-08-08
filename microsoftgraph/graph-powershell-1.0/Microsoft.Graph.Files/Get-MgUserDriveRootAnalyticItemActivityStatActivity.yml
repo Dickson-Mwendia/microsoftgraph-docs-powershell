@@ -1,0 +1,155 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Exposes the itemActivities represented in this itemActivityStat resource.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+module: Microsoft.Graph.Files
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivity" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity
+  href: /powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgUserDriveRootAnalyticItemActivityStatActivity -DriveId <String> -ItemActivityStatId <String>
+
+   -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>]
+
+   [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DriveId
+  isRequired: true
+  description: |+
+    The unique identifier of drive
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ItemActivityStatId
+  isRequired: true
+  description: |+
+    The unique identifier of itemActivityStat
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Files.Get-MgUserDriveRootAnalyticItemActivityStatActivity
+name: Get-MgUserDriveRootAnalyticItemActivityStatActivity
+description: |-
+  Exposes the itemActivities represented in this itemActivityStat resource.
+metadata:
+  external help file: Microsoft.Graph.Files-help.xml
+  Module Name: Microsoft.Graph.Files
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/get-mguserdriverootanalyticitemactivitystatactivity
+  schema: 2.0.0

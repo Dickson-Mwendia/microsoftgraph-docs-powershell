@@ -1,0 +1,400 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property comanagementEligibleDevices in deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementComanagementEligibleDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementComanagementEligibleDevice?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Administration
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphComanagementEligibleDevice>`: Device Co-Management eligibility state
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ClientRegistrationStatus <DeviceRegistrationState?>]`: Device registration status.
+    - `[DeviceName <String>]`: DeviceName
+    - `[DeviceType <DeviceType?>]`: Device type.
+    - `[EntitySource <Int32?>]`: EntitySource
+    - `[ManagementAgents <ManagementAgentType?>]`: Management agent type.
+    - `[ManagementState <ManagementState?>]`: Management state of device in Microsoft Intune.
+    - `[Manufacturer <String>]`: Manufacturer
+    - `[MdmStatus <String>]`: MDMStatus
+    - `[Model <String>]`: Model
+    - `[OSDescription <String>]`: OSDescription
+    - `[OSVersion <String>]`: OSVersion
+    - `[OwnerType <OwnerType?>]`: Owner type of device.
+    - `[ReferenceId <String>]`: ReferenceId
+    - `[SerialNumber <String>]`: SerialNumber
+    - `[Status <ComanagementEligibleType?>]`: comanagementEligibleType
+    - `[Upn <String>]`: UPN
+    - `[UserEmail <String>]`: UserEmail
+    - `[UserId <String>]`: UserId
+    - `[UserName <String>]`: UserName
+
+  `INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
+    - `[AuditEventId <String>]`: The unique identifier of auditEvent
+    - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
+    - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
+    - `[CloudPcBulkActionId <String>]`: The unique identifier of cloudPcBulkAction
+    - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+    - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
+    - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
+    - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
+    - `[CloudPcId <String>]`: The unique identifier of cloudPC
+    - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
+    - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
+    - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
+    - `[CloudPcServicePlanId <String>]`: The unique identifier of cloudPcServicePlan
+    - `[CloudPcSharedUseServicePlanId <String>]`: The unique identifier of cloudPcSharedUseServicePlan
+    - `[CloudPcSnapshotId <String>]`: The unique identifier of cloudPcSnapshot
+    - `[CloudPcSupportedRegionId <String>]`: The unique identifier of cloudPcSupportedRegion
+    - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
+    - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
+    - `[ComanagementEligibleDeviceId <String>]`: The unique identifier of comanagementEligibleDevice
+    - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
+    - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
+    - `[DeviceManagementDomainJoinConnectorId <String>]`: The unique identifier of deviceManagementDomainJoinConnector
+    - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+    - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: The unique identifier of deviceManagementExchangeOnPremisesPolicy
+    - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+    - `[GroupPolicyCategoryId <String>]`: The unique identifier of groupPolicyCategory
+    - `[GroupPolicyCategoryId1 <String>]`: The unique identifier of groupPolicyCategory
+    - `[GroupPolicyDefinitionFileId <String>]`: The unique identifier of groupPolicyDefinitionFile
+    - `[GroupPolicyDefinitionId <String>]`: The unique identifier of groupPolicyDefinition
+    - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
+    - `[GroupPolicyObjectFileId <String>]`: The unique identifier of groupPolicyObjectFile
+    - `[GroupPolicyOperationId <String>]`: The unique identifier of groupPolicyOperation
+    - `[GroupPolicyPresentationId <String>]`: The unique identifier of groupPolicyPresentation
+    - `[GroupPolicySettingMappingId <String>]`: The unique identifier of groupPolicySettingMapping
+    - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+    - `[IntuneBrandingProfileAssignmentId <String>]`: The unique identifier of intuneBrandingProfileAssignment
+    - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
+    - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
+    - `[ManagedAllDeviceCertificateStateId <String>]`: The unique identifier of managedAllDeviceCertificateState
+    - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
+    - `[NdesConnectorId <String>]`: The unique identifier of ndesConnector
+    - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+    - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
+    - `[RestrictedAppsViolationId <String>]`: The unique identifier of restrictedAppsViolation
+    - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
+    - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
+    - `[RoleScopeTagAutoAssignmentId <String>]`: The unique identifier of roleScopeTagAutoAssignment
+    - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
+    - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
+    - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
+    - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
+    - `[TermsAndConditionsGroupAssignmentId <String>]`: The unique identifier of termsAndConditionsGroupAssignment
+    - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
+    - `[UnsupportedGroupPolicyExtensionId <String>]`: The unique identifier of unsupportedGroupPolicyExtension
+    - `[UserId <String>]`: The unique identifier of user
+    - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgDeviceManagementComanagementEligibleDevice
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementComanagementEligibleDevice?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaDeviceManagementComanagementEligibleDevice -ComanagementEligibleDeviceId <String>
+
+   [-AdditionalProperties <Hashtable>] [-ClientRegistrationStatus <DeviceRegistrationState>]
+
+   [-DeviceName <String>] [-DeviceType <DeviceType>] [-EntitySource <Int32>] [-Id <String>]
+
+   [-ManagementAgents <ManagementAgentType>] [-ManagementState <ManagementState>] [-Manufacturer <String>]
+
+   [-MdmStatus <String>] [-Model <String>] [-OSDescription <String>] [-OSVersion <String>]
+
+   [-OwnerType <OwnerType>] [-ReferenceId <String>] [-SerialNumber <String>] [-Status <ComanagementEligibleType>]
+
+   [-Upn <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaDeviceManagementComanagementEligibleDevice -ComanagementEligibleDeviceId <String>
+
+   -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaDeviceManagementComanagementEligibleDevice -InputObject <IDeviceManagementAdministrationIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-ClientRegistrationStatus <DeviceRegistrationState>]
+
+   [-DeviceName <String>] [-DeviceType <DeviceType>] [-EntitySource <Int32>] [-Id <String>]
+
+   [-ManagementAgents <ManagementAgentType>] [-ManagementState <ManagementState>] [-Manufacturer <String>]
+
+   [-MdmStatus <String>] [-Model <String>] [-OSDescription <String>] [-OSVersion <String>]
+
+   [-OwnerType <OwnerType>] [-ReferenceId <String>] [-SerialNumber <String>] [-Status <ComanagementEligibleType>]
+
+   [-Upn <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaDeviceManagementComanagementEligibleDevice -InputObject <IDeviceManagementAdministrationIdentity>
+
+   -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphComanagementEligibleDevice" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Device Co-Management eligibility state
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DeviceRegistrationState" data-throw-if-not-resolved="False" />
+  name: ClientRegistrationStatus
+  description: |+
+    Device registration status.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ComanagementEligibleDeviceId
+  isRequired: true
+  description: |+
+    The unique identifier of comanagementEligibleDevice
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceName
+  description: |+
+    DeviceName
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DeviceType" data-throw-if-not-resolved="False" />
+  name: DeviceType
+  description: |+
+    Device type.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: EntitySource
+  description: |+
+    EntitySource
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDeviceManagementAdministrationIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ManagementAgentType" data-throw-if-not-resolved="False" />
+  name: ManagementAgents
+  description: |+
+    Management agent type.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ManagementState" data-throw-if-not-resolved="False" />
+  name: ManagementState
+  description: |+
+    Management state of device in Microsoft Intune.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Manufacturer
+  description: |+
+    Manufacturer
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MdmStatus
+  description: |+
+    MDMStatus
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Model
+  description: |+
+    Model
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OSDescription
+  description: |+
+    OSDescription
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OSVersion
+  description: |+
+    OSVersion
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="OwnerType" data-throw-if-not-resolved="False" />
+  name: OwnerType
+  description: |+
+    Owner type of device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ReferenceId
+  description: |+
+    ReferenceId
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SerialNumber
+  description: |+
+    SerialNumber
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ComanagementEligibleType" data-throw-if-not-resolved="False" />
+  name: Status
+  description: |+
+    comanagementEligibleType
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Upn
+  description: |+
+    UPN
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserEmail
+  description: |+
+    UserEmail
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  description: |+
+    UserId
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserName
+  description: |+
+    UserName
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Administration.Update-MgBetaDeviceManagementComanagementEligibleDevice
+name: Update-MgBetaDeviceManagementComanagementEligibleDevice
+description: |-
+  Update the navigation property comanagementEligibleDevices in deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementcomanagementeligibledevice
+  schema: 2.0.0

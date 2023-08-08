@@ -1,0 +1,73 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.DeviceManagement.Functions
+  cmdlets:
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Compare-MgBetaDeviceManagementIntent
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Compare-MgBetaDeviceManagementTemplate
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Compare-MgBetaDeviceManagementTemplateMigratableTo
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Export-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementAssignedRoleDetail
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementAssignmentFilterPlatformSupportedProperty
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementAssignmentFilterState
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementAssignmentFilterSupportedProperty
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementAuditEventAuditActivityType
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementAuditEventAuditCategory
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementComanagedDeviceCloudPcRemoteActionResult
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementComanagedDeviceCloudPcReviewStatus
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementComanagedDeviceFileVaultKey
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementComanagedDeviceNonCompliantSetting
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementComanagedDeviceSummary
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementComanagementEligibleDeviceSummary
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementConfigManagerCollectionPolicySummary
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementDepOnboardingSettingExpiringVppTokenCount
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementDeviceConfigurationIoAvailableUpdateVersion
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementDeviceHealthScriptRemediationHistory
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementDeviceHealthScriptRemediationSummary
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementEffectivePermission
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementIntentCustomizedSetting
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementManagedDeviceFileVaultKey
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementManagedDeviceNonCompliantSetting
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementMonitoringAlertRecordPortalNotification
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementResourceOperationScopeForUser
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementRoleScopeTagById
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementRoleScopeTagByResource
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementSuggestedEnrollmentLimit
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementTenantAttachRbacState
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointCloudPcConnectivityHistory
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointCloudPcLaunchInfo
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointCloudPcProvisionedCloudPc
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointCloudPcSupportedCloudPcRemoteAction
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionLatency
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointSnapshotStorageAccount
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaAppDeviceManagementComanagedDeviceDiagnostic
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaAppDeviceManagementManagedDeviceDiagnostic
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaCustomDeviceManagementRoleScopeTag
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaExperienceDeviceManagement
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaGraphDeviceManagement
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaIsDeviceManagementDeviceHealthScriptGlobalScriptAvailable
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticRemoteConnectionDeviceRemoteConnection
+  - Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance
+uid: Microsoft.Graph.Beta.DeviceManagement.Functions
+name: Microsoft.Graph.Beta.DeviceManagement.Functions
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+  Module Guid: 0407eff6-a192-4b50-9f05-5192d18a594f
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions
+  Help Version: 1.0.0.0
+  Locale: en-US

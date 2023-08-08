@@ -1,0 +1,204 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create an assignment resource.
+  Only teachers can perform this operation.
+  You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [New-MgBetaEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentResource?view=graph-powershell-beta)
+module: Microsoft.Graph.Education
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphEducationAssignmentResource>`: educationAssignmentResource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[DistributeForStudentWork <Boolean?>]`: Indicates whether this resource should be copied to each student submission for modification and submission. Required
+    - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Application <IMicrosoftGraphIdentity>]`: identity
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
+        - `[Device <IMicrosoftGraphIdentity>]`: identity
+        - `[User <IMicrosoftGraphIdentity>]`: identity
+      - `[DisplayName <String>]`: Display name of resource.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+
+  `INPUTOBJECT <IEducationIdentity>`: Identity Parameter
+    - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
+    - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
+    - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
+    - `[EducationClassId <String>]`: The unique identifier of educationClass
+    - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
+    - `[EducationRubricId <String>]`: The unique identifier of educationRubric
+    - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
+    - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
+    - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
+    - `[EducationUserId <String>]`: The unique identifier of educationUser
+
+  `RESOURCE <IMicrosoftGraphEducationResource>`: educationResource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[DisplayName <String>]`: Display name of resource.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IEducationIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgBetaEducationUserAssignmentResource
+  href: /powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserAssignmentResource?view=graph-powershell-beta
+syntaxes:
+- >-
+  New-MgEducationUserAssignmentResource -EducationAssignmentId <String> -EducationUserId <String>
+
+   [-AdditionalProperties <Hashtable>] [-DistributeForStudentWork] [-Id <String>]
+
+   [-Resource <IMicrosoftGraphEducationResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgEducationUserAssignmentResource -EducationAssignmentId <String> -EducationUserId <String>
+
+   -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgEducationUserAssignmentResource -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
+
+   [-DistributeForStudentWork] [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  New-MgEducationUserAssignmentResource -InputObject <IEducationIdentity>
+
+   -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphEducationAssignmentResource" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    educationAssignmentResource
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: DistributeForStudentWork
+  description: |+
+    Indicates whether this resource should be copied to each student submission for modification and submission.
+    Required
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EducationAssignmentId
+  isRequired: true
+  description: |+
+    The unique identifier of educationAssignment
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EducationUserId
+  isRequired: true
+  description: |+
+    The unique identifier of educationUser
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IEducationIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphEducationResource" data-throw-if-not-resolved="False" />
+  name: Resource
+  description: |+
+    educationResource
+    To construct, see NOTES section for RESOURCE properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Education.New-MgEducationUserAssignmentResource
+name: New-MgEducationUserAssignmentResource
+description: |-
+  Create an assignment resource.
+  Only teachers can perform this operation.
+  You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
+metadata:
+  external help file: Microsoft.Graph.Education-help.xml
+  Module Name: Microsoft.Graph.Education
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentresource
+  schema: 2.0.0

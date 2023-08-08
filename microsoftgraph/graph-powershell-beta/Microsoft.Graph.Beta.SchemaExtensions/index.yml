@@ -1,0 +1,19 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.SchemaExtensions
+  cmdlets:
+  - Microsoft.Graph.Beta.SchemaExtensions.Get-MgBetaSchemaExtension
+  - Microsoft.Graph.Beta.SchemaExtensions.Get-MgBetaSchemaExtensionCount
+  - Microsoft.Graph.Beta.SchemaExtensions.New-MgBetaSchemaExtension
+  - Microsoft.Graph.Beta.SchemaExtensions.Remove-MgBetaSchemaExtension
+  - Microsoft.Graph.Beta.SchemaExtensions.Update-MgBetaSchemaExtension
+uid: Microsoft.Graph.Beta.SchemaExtensions
+name: Microsoft.Graph.Beta.SchemaExtensions
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.SchemaExtensions
+  Module Guid: 29b36d96-19d9-472e-bab8-21a987f9ec6f
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions
+  Help Version: 1.0.0.0
+  Locale: en-US

@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get triggerTypes from security
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerType?view=graph-powershell-beta)
+module: Microsoft.Graph.Security
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityTriggerTypesRoot" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaSecurityTriggerType
+  href: /powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityTriggerType?view=graph-powershell-beta
+syntaxes:
+- Get-MgSecurityTriggerType [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Security.Get-MgSecurityTriggerType
+name: Get-MgSecurityTriggerType
+description: |-
+  Get triggerTypes from security
+metadata:
+  external help file: Microsoft.Graph.Security-help.xml
+  Module Name: Microsoft.Graph.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritytriggertype
+  schema: 2.0.0

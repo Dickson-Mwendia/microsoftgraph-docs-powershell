@@ -1,0 +1,28 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke function userExperienceAnalyticsSummarizedDeviceScopes
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Invoke-MgExperienceDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgExperienceDeviceManagement?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Functions
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScopeSummary" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevicesSummary" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Invoke-MgExperienceDeviceManagement
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgExperienceDeviceManagement?view=graph-powershell-v1.0
+syntaxes:
+- Invoke-MgBetaExperienceDeviceManagement [<CommonParameters>]
+uid: Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaExperienceDeviceManagement
+name: Invoke-MgBetaExperienceDeviceManagement
+description: |-
+  Invoke function userExperienceAnalyticsSummarizedDeviceScopes
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaexperiencedevicemanagement
+  schema: 2.0.0

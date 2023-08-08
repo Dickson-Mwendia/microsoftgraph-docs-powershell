@@ -1,0 +1,131 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to roleAssignmentApprovals for roleManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryRoleAssignmentApproval](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignmentApproval?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.Governance
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphApproval>`: approval
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Steps <IMicrosoftGraphApprovalStep[]>]`: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
+      - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
+      - `[Justification <String>]`: The justification associated with the approval step decision.
+      - `[ReviewResult <String>]`: The result of this approval record. Possible values include: NotReviewed, Approved, Denied.
+      - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+      - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+      - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
+
+  `STEPS <IMicrosoftGraphApprovalStep[]>`: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
+    - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
+    - `[Justification <String>]`: The justification associated with the approval step decision.
+    - `[ReviewResult <String>]`: The result of this approval record. Possible values include: NotReviewed, Approved, Denied.
+    - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApproval" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApproval" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgRoleManagementDirectoryRoleAssignmentApproval
+  href: /powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignmentApproval?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaRoleManagementDirectoryRoleAssignmentApproval [-AdditionalProperties <Hashtable>] [-Id <String>]
+
+   [-Steps <IMicrosoftGraphApprovalStep[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaRoleManagementDirectoryRoleAssignmentApproval -BodyParameter <IMicrosoftGraphApproval> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphApproval" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    approval
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphApprovalStep" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Steps
+  description: |+
+    Used to represent the decision associated with a single step in the approval process configured in approvalStage.
+    To construct, see NOTES section for STEPS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.Governance.New-MgBetaRoleManagementDirectoryRoleAssignmentApproval
+name: New-MgBetaRoleManagementDirectoryRoleAssignmentApproval
+description: |-
+  Create new navigation property to roleAssignmentApprovals for roleManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.Governance
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetarolemanagementdirectoryroleassignmentapproval
+  schema: 2.0.0

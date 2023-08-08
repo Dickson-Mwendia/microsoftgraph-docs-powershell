@@ -1,0 +1,44 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Identity.Partner
+  cmdlets:
+  - Microsoft.Graph.Identity.Partner.Get-MgTenantRelationshipDelegatedAdminCustomer
+  - Microsoft.Graph.Identity.Partner.Get-MgTenantRelationshipDelegatedAdminCustomerCount
+  - Microsoft.Graph.Identity.Partner.Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
+  - Microsoft.Graph.Identity.Partner.Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetailCount
+  - Microsoft.Graph.Identity.Partner.Get-MgTenantRelationshipDelegatedAdminRelationship
+  - Microsoft.Graph.Identity.Partner.Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
+  - Microsoft.Graph.Identity.Partner.Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount
+  - Microsoft.Graph.Identity.Partner.Get-MgTenantRelationshipDelegatedAdminRelationshipCount
+  - Microsoft.Graph.Identity.Partner.Get-MgTenantRelationshipDelegatedAdminRelationshipOperation
+  - Microsoft.Graph.Identity.Partner.Get-MgTenantRelationshipDelegatedAdminRelationshipOperationCount
+  - Microsoft.Graph.Identity.Partner.Get-MgTenantRelationshipDelegatedAdminRelationshipRequest
+  - Microsoft.Graph.Identity.Partner.Get-MgTenantRelationshipDelegatedAdminRelationshipRequestCount
+  - Microsoft.Graph.Identity.Partner.New-MgTenantRelationshipDelegatedAdminCustomer
+  - Microsoft.Graph.Identity.Partner.New-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
+  - Microsoft.Graph.Identity.Partner.New-MgTenantRelationshipDelegatedAdminRelationship
+  - Microsoft.Graph.Identity.Partner.New-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
+  - Microsoft.Graph.Identity.Partner.New-MgTenantRelationshipDelegatedAdminRelationshipOperation
+  - Microsoft.Graph.Identity.Partner.New-MgTenantRelationshipDelegatedAdminRelationshipRequest
+  - Microsoft.Graph.Identity.Partner.Remove-MgTenantRelationshipDelegatedAdminCustomer
+  - Microsoft.Graph.Identity.Partner.Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
+  - Microsoft.Graph.Identity.Partner.Remove-MgTenantRelationshipDelegatedAdminRelationship
+  - Microsoft.Graph.Identity.Partner.Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
+  - Microsoft.Graph.Identity.Partner.Remove-MgTenantRelationshipDelegatedAdminRelationshipOperation
+  - Microsoft.Graph.Identity.Partner.Remove-MgTenantRelationshipDelegatedAdminRelationshipRequest
+  - Microsoft.Graph.Identity.Partner.Update-MgTenantRelationshipDelegatedAdminCustomer
+  - Microsoft.Graph.Identity.Partner.Update-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
+  - Microsoft.Graph.Identity.Partner.Update-MgTenantRelationshipDelegatedAdminRelationship
+  - Microsoft.Graph.Identity.Partner.Update-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment
+  - Microsoft.Graph.Identity.Partner.Update-MgTenantRelationshipDelegatedAdminRelationshipOperation
+  - Microsoft.Graph.Identity.Partner.Update-MgTenantRelationshipDelegatedAdminRelationshipRequest
+uid: Microsoft.Graph.Identity.Partner
+name: Microsoft.Graph.Identity.Partner
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Identity.Partner
+  Module Guid: be0e1ec4-ec8f-4a19-9b17-5ac7de713697
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.partner
+  Help Version: 1.0.0.0
+  Locale: en-US

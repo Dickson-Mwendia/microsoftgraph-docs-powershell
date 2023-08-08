@@ -1,0 +1,192 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to exchangeConnectors for deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementExchangeConnector?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Administration
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphDeviceManagementExchangeConnector>`: Entity which represents a connection to an Exchange environment.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ConnectorServerName <String>]`: The name of the server hosting the Exchange Connector.
+    - `[ExchangeAlias <String>]`: An alias assigned to the Exchange server
+    - `[ExchangeConnectorType <DeviceManagementExchangeConnectorType?>]`: The type of Exchange Connector.
+    - `[ExchangeOrganization <String>]`: Exchange Organization to the Exchange server
+    - `[LastSyncDateTime <DateTime?>]`: Last sync time for the Exchange Connector
+    - `[PrimarySmtpAddress <String>]`: Email address used to configure the Service To Service Exchange Connector.
+    - `[ServerName <String>]`: The name of the Exchange server.
+    - `[Status <DeviceManagementExchangeConnectorStatus?>]`: The current status of the Exchange Connector.
+    - `[Version <String>]`: The version of the ExchangeConnectorAgent
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementExchangeConnector
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementExchangeConnector?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDeviceManagementExchangeConnector [-AdditionalProperties <Hashtable>] [-ConnectorServerName <String>]
+
+   [-ExchangeAlias <String>] [-ExchangeConnectorType <DeviceManagementExchangeConnectorType>]
+
+   [-ExchangeOrganization <String>] [-Id <String>] [-LastSyncDateTime <DateTime>] [-PrimarySmtpAddress <String>]
+
+   [-ServerName <String>] [-Status <DeviceManagementExchangeConnectorStatus>] [-Version <String>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaDeviceManagementExchangeConnector -BodyParameter <IMicrosoftGraphDeviceManagementExchangeConnector>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceManagementExchangeConnector" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Entity which represents a connection to an Exchange environment.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ConnectorServerName
+  description: |+
+    The name of the server hosting the Exchange Connector.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ExchangeAlias
+  description: |+
+    An alias assigned to the Exchange server
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DeviceManagementExchangeConnectorType" data-throw-if-not-resolved="False" />
+  name: ExchangeConnectorType
+  description: |+
+    The type of Exchange Connector.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ExchangeOrganization
+  description: |+
+    Exchange Organization to the Exchange server
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastSyncDateTime
+  description: |+
+    Last sync time for the Exchange Connector
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrimarySmtpAddress
+  description: |+
+    Email address used to configure the Service To Service Exchange Connector.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ServerName
+  description: |+
+    The name of the Exchange server.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DeviceManagementExchangeConnectorStatus" data-throw-if-not-resolved="False" />
+  name: Status
+  description: |+
+    The current status of the Exchange Connector.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Version
+  description: |+
+    The version of the ExchangeConnectorAgent
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Administration.New-MgBetaDeviceManagementExchangeConnector
+name: New-MgBetaDeviceManagementExchangeConnector
+description: |-
+  Create new navigation property to exchangeConnectors for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementexchangeconnector
+  schema: 2.0.0

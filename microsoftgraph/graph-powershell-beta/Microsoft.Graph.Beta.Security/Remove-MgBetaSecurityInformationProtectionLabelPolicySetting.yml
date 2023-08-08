@@ -1,0 +1,67 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Delete navigation property labelPolicySettings for security
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Remove-MgSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Security
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Remove-MgSecurityInformationProtectionLabelPolicySetting
+  href: /powershell/module/Microsoft.Graph.Security/Remove-MgSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Remove-MgBetaSecurityInformationProtectionLabelPolicySetting [-IfMatch <String>] [-PassThru] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: IfMatch
+  description: |+
+    ETag
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Security.Remove-MgBetaSecurityInformationProtectionLabelPolicySetting
+name: Remove-MgBetaSecurityInformationProtectionLabelPolicySetting
+description: |-
+  Delete navigation property labelPolicySettings for security
+metadata:
+  external help file: Microsoft.Graph.Beta.Security-help.xml
+  Module Name: Microsoft.Graph.Beta.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecurityinformationprotectionlabelpolicysetting
+  schema: 2.0.0

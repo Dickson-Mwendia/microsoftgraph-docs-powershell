@@ -1,0 +1,67 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Delete navigation property deviceConfigurationDeviceStateSummaries for deviceManagement
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-beta)
+module: Microsoft.Graph.DeviceManagement
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary
+  href: /powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-beta
+syntaxes:
+- >-
+  Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-IfMatch <String>] [-PassThru] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: IfMatch
+  description: |+
+    ETag
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary
+name: Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary
+description: |-
+  Delete navigation property deviceConfigurationDeviceStateSummaries for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/remove-mgdevicemanagementdeviceconfigurationdevicestatesummary
+  schema: 2.0.0

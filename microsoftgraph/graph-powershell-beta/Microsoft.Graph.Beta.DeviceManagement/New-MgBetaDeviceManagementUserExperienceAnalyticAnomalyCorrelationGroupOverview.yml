@@ -1,0 +1,229 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to userExperienceAnalyticsAnomalyCorrelationGroupOverview for deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview>`: The user experience analytics anomaly correlation group overview entity contains the information for each correlation group of an anomaly.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AnomalyCorrelationGroupCount <Int32?>]`: Indicates the number of correlation groups in the anomaly. Valid values -2147483648 to 2147483647
+    - `[AnomalyId <String>]`: The unique identifier of the anomaly. Anomaly details such as name and type can be found in the UserExperienceAnalyticsAnomalySeverityOverview entity.
+    - `[CorrelationGroupAnomalousDeviceCount <Int32?>]`: Indicates the total number of devices affected by the anomaly in the correlation group. Valid values -2147483648 to 2147483647
+    - `[CorrelationGroupAtRiskDeviceCount <Int32?>]`: Indicates the total number of devices at risk in the correlation group. Valid values -2147483648 to 2147483647
+    - `[CorrelationGroupDeviceCount <Int32?>]`: Indicates the total number of devices in a correlation group. Valid values -2147483648 to 2147483647
+    - `[CorrelationGroupFeatures <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature[]>]`: Describes the features of a device that are shared between all devices in a correlation group.
+      - `[DeviceFeatureType <UserExperienceAnalyticsAnomalyDeviceFeatureType?>]`: Indicates the device's feature type. Possible values are: manufacturer, model, osVersion, application or driver.
+      - `[Values <String[]>]`: Specific metric values that describe the features of the given device feature type.
+    - `[CorrelationGroupId <String>]`: The unique identifier for the correlation group which will uniquely identify one of the correlation group within an anomaly. The correlation Id can be mapped to the correlation group name by concatinating the correlation group features. Example of correlation group name which is the indicative of concatenated features names are  for names, Contoso manufacture 4.4.1 and Windows 11.22621.1485.
+    - `[CorrelationGroupPrevalence <UserExperienceAnalyticsAnomalyCorrelationGroupPrevalence?>]`: Indicates the level of prevalence of the correlation group features in the anomaly. Possible values are: high, medium or low
+    - `[CorrelationGroupPrevalencePercentage <Double?>]`: The percentage of the devices in the correlation group that are anomalous. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+    - `[TotalDeviceCount <Int32?>]`: Indicates the total number of devices in the tenant. Valid values -2147483648 to 2147483647
+
+  `CORRELATIONGROUPFEATURES <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature[]>`: Describes the features of a device that are shared between all devices in a correlation group.
+    - `[DeviceFeatureType <UserExperienceAnalyticsAnomalyDeviceFeatureType?>]`: Indicates the device's feature type. Possible values are: manufacturer, model, osVersion, application or driver.
+    - `[Values <String[]>]`: Specific metric values that describe the features of the given device feature type.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
+  href: /powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
+
+   [-AdditionalProperties <Hashtable>] [-AnomalyCorrelationGroupCount <Int32>] [-AnomalyId <String>]
+
+   [-CorrelationGroupAnomalousDeviceCount <Int32>] [-CorrelationGroupAtRiskDeviceCount <Int32>]
+
+   [-CorrelationGroupDeviceCount <Int32>]
+
+   [-CorrelationGroupFeatures <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature[]>]
+
+   [-CorrelationGroupId <String>]
+
+   [-CorrelationGroupPrevalence <UserExperienceAnalyticsAnomalyCorrelationGroupPrevalence>]
+
+   [-CorrelationGroupPrevalencePercentage <Double>] [-Id <String>] [-TotalDeviceCount <Int32>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
+
+   -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: AnomalyCorrelationGroupCount
+  description: |+
+    Indicates the number of correlation groups in the anomaly.
+    Valid values -2147483648 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AnomalyId
+  description: |+
+    The unique identifier of the anomaly.
+    Anomaly details such as name and type can be found in the UserExperienceAnalyticsAnomalySeverityOverview entity.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupOverview" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    The user experience analytics anomaly correlation group overview entity contains the information for each correlation group of an anomaly.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: CorrelationGroupAnomalousDeviceCount
+  description: |+
+    Indicates the total number of devices affected by the anomaly in the correlation group.
+    Valid values -2147483648 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: CorrelationGroupAtRiskDeviceCount
+  description: |+
+    Indicates the total number of devices at risk in the correlation group.
+    Valid values -2147483648 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: CorrelationGroupDeviceCount
+  description: |+
+    Indicates the total number of devices in a correlation group.
+    Valid values -2147483648 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphUserExperienceAnalyticsAnomalyCorrelationGroupFeature" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: CorrelationGroupFeatures
+  description: |+
+    Describes the features of a device that are shared between all devices in a correlation group.
+    To construct, see NOTES section for CORRELATIONGROUPFEATURES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CorrelationGroupId
+  description: |+
+    The unique identifier for the correlation group which will uniquely identify one of the correlation group within an anomaly.
+    The correlation Id can be mapped to the correlation group name by concatinating the correlation group features.
+    Example of correlation group name which is the indicative of concatenated features names are for names, Contoso manufacture 4.4.1 and Windows 11.22621.1485.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="UserExperienceAnalyticsAnomalyCorrelationGroupPrevalence" data-throw-if-not-resolved="False" />
+  name: CorrelationGroupPrevalence
+  description: |+
+    Indicates the level of prevalence of the correlation group features in the anomaly.
+    Possible values are: high, medium or low
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: CorrelationGroupPrevalencePercentage
+  description: |+
+    The percentage of the devices in the correlation group that are anomalous.
+    Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: TotalDeviceCount
+  description: |+
+    Indicates the total number of devices in the tenant.
+    Valid values -2147483648 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
+name: New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview
+description: |-
+  Create new navigation property to userExperienceAnalyticsAnomalyCorrelationGroupOverview for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomalycorrelationgroupoverview
+  schema: 2.0.0

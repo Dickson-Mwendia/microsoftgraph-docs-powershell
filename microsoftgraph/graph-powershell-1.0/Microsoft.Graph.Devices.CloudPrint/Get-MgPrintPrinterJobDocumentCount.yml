@@ -1,0 +1,107 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJobDocumentCount](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJobDocumentCount?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.CloudPrint
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+    - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+    - `[PrintJobId <String>]`: The unique identifier of printJob
+    - `[PrintOperationId <String>]`: The unique identifier of printOperation
+    - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
+    - `[PrintServiceId <String>]`: The unique identifier of printService
+    - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
+    - `[PrintTaskId <String>]`: The unique identifier of printTask
+    - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
+    - `[PrinterId <String>]`: The unique identifier of printer
+    - `[PrinterShareId <String>]`: The unique identifier of printerShare
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaPrintPrinterJobDocumentCount
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJobDocumentCount?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgPrintPrinterJobDocumentCount -PrintJobId <String> -PrinterId <String> [-Filter <String>]
+
+   [-Search <String>] [<CommonParameters>]
+- >-
+  Get-MgPrintPrinterJobDocumentCount -InputObject <IDevicesCloudPrintIdentity> [-Filter <String>]
+
+   [-Search <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDevicesCloudPrintIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrinterId
+  isRequired: true
+  description: |+
+    The unique identifier of printer
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrintJobId
+  isRequired: true
+  description: |+
+    The unique identifier of printJob
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterJobDocumentCount
+name: Get-MgPrintPrinterJobDocumentCount
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+  Module Name: Microsoft.Graph.Devices.CloudPrint
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinterjobdocumentcount
+  schema: 2.0.0

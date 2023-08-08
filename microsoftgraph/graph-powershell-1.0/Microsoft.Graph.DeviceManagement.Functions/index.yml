@@ -1,0 +1,22 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.DeviceManagement.Functions
+  cmdlets:
+  - Microsoft.Graph.DeviceManagement.Functions.Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery
+  - Microsoft.Graph.DeviceManagement.Functions.Get-MgDeviceManagementAuditEventAuditActivityType
+  - Microsoft.Graph.DeviceManagement.Functions.Get-MgDeviceManagementAuditEventAuditCategory
+  - Microsoft.Graph.DeviceManagement.Functions.Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue
+  - Microsoft.Graph.DeviceManagement.Functions.Get-MgDeviceManagementEffectivePermission
+  - Microsoft.Graph.DeviceManagement.Functions.Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
+  - Microsoft.Graph.DeviceManagement.Functions.Invoke-MgExperienceDeviceManagement
+  - Microsoft.Graph.DeviceManagement.Functions.Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice
+uid: Microsoft.Graph.DeviceManagement.Functions
+name: Microsoft.Graph.DeviceManagement.Functions
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.DeviceManagement.Functions
+  Module Guid: 5f547acf-1f5c-4a14-9824-0965421e921c
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions
+  Help Version: 1.0.0.0
+  Locale: en-US

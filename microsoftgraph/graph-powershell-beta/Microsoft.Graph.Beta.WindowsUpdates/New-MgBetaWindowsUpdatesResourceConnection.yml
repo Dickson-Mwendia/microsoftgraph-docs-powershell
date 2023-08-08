@@ -1,0 +1,123 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create a new operationalInsightsConnection object.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgWindowsUpdatesResourceConnection](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesResourceConnection?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.WindowsUpdates
+notes: |-
+  ALIASES
+
+  New-MgBetaWuResourceConnection
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphWindowsUpdatesResourceConnection>`: resourceConnection
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[State <String>]`: resourceConnectionState
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesResourceConnection" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesResourceConnection" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgWindowsUpdatesResourceConnection
+  href: /powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesResourceConnection?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaWindowsUpdatesResourceConnection [-AdditionalProperties <Hashtable>] [-Id <String>] [-State <String>]
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaWindowsUpdatesResourceConnection -BodyParameter <IMicrosoftGraphWindowsUpdatesResourceConnection>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the New-MgBetaWindowsUpdatesResourceConnection Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.WindowsUpdates
+    $params = @{
+    	"@odata.type" = "#microsoft.graph.windowsUpdates.operationalInsightsConnection"
+    	AzureSubscriptionId = "322ec614-e9c2-4cd5-a55c-5711fdecf02e"
+    	AzureResourceGroupName = "target-resource-group"
+    	WorkspaceName = "my-workspace"
+    }
+    New-MgBetaWindowsUpdatesResourceConnection -BodyParameter $params
+  description: |-
+    This example shows how to use the New-MgBetaWindowsUpdatesResourceConnection Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphWindowsUpdatesResourceConnection" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    resourceConnection
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: State
+  description: |+
+    resourceConnectionState
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.WindowsUpdates.New-MgBetaWindowsUpdatesResourceConnection
+name: New-MgBetaWindowsUpdatesResourceConnection
+description: |-
+  Create a new operationalInsightsConnection object.
+metadata:
+  external help file: Microsoft.Graph.Beta.WindowsUpdates-help.xml
+  Module Name: Microsoft.Graph.Beta.WindowsUpdates
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatesresourceconnection
+  schema: 2.0.0

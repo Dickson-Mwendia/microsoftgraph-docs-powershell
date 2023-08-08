@@ -1,0 +1,59 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Users.Functions
+  cmdlets:
+  - Microsoft.Graph.Users.Functions.Export-MgUserDeviceAndAppManagementData
+  - Microsoft.Graph.Users.Functions.Get-MgAllUserChatMessage
+  - Microsoft.Graph.Users.Functions.Get-MgUserCalendarEventDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserChatMessageDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserChatMessageReplyDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserContactDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserContactFolderChildFolderContactDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserContactFolderChildFolderDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserContactFolderContactDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserContactFolderDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserDriveItemActivityByInterval
+  - Microsoft.Graph.Users.Functions.Get-MgUserDriveItemDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserDriveItemListItemActivityByInterval
+  - Microsoft.Graph.Users.Functions.Get-MgUserDriveListContentTypeCompatibleHubContentType
+  - Microsoft.Graph.Users.Functions.Get-MgUserDriveListItemActivityByInterval
+  - Microsoft.Graph.Users.Functions.Get-MgUserDriveRootActivityByInterval
+  - Microsoft.Graph.Users.Functions.Get-MgUserDriveRootDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserDriveRootListItemActivityByInterval
+  - Microsoft.Graph.Users.Functions.Get-MgUserEventDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserEventInstanceDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserMailFolderChildFolderDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserMailFolderChildFolderMessageDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserMailFolderDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserMailFolderMessageDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserManagedAppDiagnosticStatus
+  - Microsoft.Graph.Users.Functions.Get-MgUserManagedAppPolicy
+  - Microsoft.Graph.Users.Functions.Get-MgUserManagedDeviceWithAppFailure
+  - Microsoft.Graph.Users.Functions.Get-MgUserMessageDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserOnenoteRecentNotebook
+  - Microsoft.Graph.Users.Functions.Get-MgUserOnlineMeetingVirtualAppointmentJoinWebUrl
+  - Microsoft.Graph.Users.Functions.Get-MgUserTodoListDelta
+  - Microsoft.Graph.Users.Functions.Get-MgUserTodoTaskDelta
+  - Microsoft.Graph.Users.Functions.Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles
+  - Microsoft.Graph.Users.Functions.Invoke-MgGraphUserDrive
+  - Microsoft.Graph.Users.Functions.Invoke-MgPreviewUserOnenotePage
+  - Microsoft.Graph.Users.Functions.Invoke-MgRecentUserActivity
+  - Microsoft.Graph.Users.Functions.Invoke-MgRecentUserDrive
+  - Microsoft.Graph.Users.Functions.Invoke-MgSupportedUserOutlookLanguage
+  - Microsoft.Graph.Users.Functions.Invoke-MgTimeUserOutlook
+  - Microsoft.Graph.Users.Functions.Invoke-MgViewUserReminder
+  - Microsoft.Graph.Users.Functions.Search-MgUserDrive
+  - Microsoft.Graph.Users.Functions.Search-MgUserDriveItem
+  - Microsoft.Graph.Users.Functions.Search-MgUserDriveRoot
+  - Microsoft.Graph.Users.Functions.Test-MgUserDriveListContentTypePublished
+uid: Microsoft.Graph.Users.Functions
+name: Microsoft.Graph.Users.Functions
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Users.Functions
+  Module Guid: f9fdaff4-bdeb-4e38-9f29-4d00de8982a6
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users.functions
+  Help Version: 1.0.0.0
+  Locale: en-US

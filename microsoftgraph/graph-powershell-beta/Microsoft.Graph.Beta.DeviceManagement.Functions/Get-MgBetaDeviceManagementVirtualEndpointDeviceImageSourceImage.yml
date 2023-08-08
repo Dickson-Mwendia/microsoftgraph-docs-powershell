@@ -1,0 +1,84 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke function getSourceImages
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Functions
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcSourceDeviceImage" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage [-Count] [-Filter <String>] [-Search <String>]
+
+   [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
+    Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage
+  description: |-
+    This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Count
+  description: |+
+    Include count of items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage
+name: Get-MgBetaDeviceManagementVirtualEndpointDeviceImageSourceImage
+description: |-
+  Invoke function getSourceImages
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementvirtualendpointdeviceimagesourceimage
+  schema: 2.0.0

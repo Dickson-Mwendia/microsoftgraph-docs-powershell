@@ -1,0 +1,219 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  A list of Group Policy migration reports.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementGroupPolicyMigrationReport](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyMigrationReport?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Administration
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
+    - `[AuditEventId <String>]`: The unique identifier of auditEvent
+    - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
+    - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
+    - `[CloudPcBulkActionId <String>]`: The unique identifier of cloudPcBulkAction
+    - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+    - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
+    - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
+    - `[CloudPcGalleryImageId <String>]`: The unique identifier of cloudPcGalleryImage
+    - `[CloudPcId <String>]`: The unique identifier of cloudPC
+    - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
+    - `[CloudPcProvisioningPolicyAssignmentId <String>]`: The unique identifier of cloudPcProvisioningPolicyAssignment
+    - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
+    - `[CloudPcServicePlanId <String>]`: The unique identifier of cloudPcServicePlan
+    - `[CloudPcSharedUseServicePlanId <String>]`: The unique identifier of cloudPcSharedUseServicePlan
+    - `[CloudPcSnapshotId <String>]`: The unique identifier of cloudPcSnapshot
+    - `[CloudPcSupportedRegionId <String>]`: The unique identifier of cloudPcSupportedRegion
+    - `[CloudPcUserSettingAssignmentId <String>]`: The unique identifier of cloudPcUserSettingAssignment
+    - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
+    - `[ComanagementEligibleDeviceId <String>]`: The unique identifier of comanagementEligibleDevice
+    - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
+    - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
+    - `[DeviceManagementDomainJoinConnectorId <String>]`: The unique identifier of deviceManagementDomainJoinConnector
+    - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+    - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: The unique identifier of deviceManagementExchangeOnPremisesPolicy
+    - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+    - `[GroupPolicyCategoryId <String>]`: The unique identifier of groupPolicyCategory
+    - `[GroupPolicyCategoryId1 <String>]`: The unique identifier of groupPolicyCategory
+    - `[GroupPolicyDefinitionFileId <String>]`: The unique identifier of groupPolicyDefinitionFile
+    - `[GroupPolicyDefinitionId <String>]`: The unique identifier of groupPolicyDefinition
+    - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
+    - `[GroupPolicyObjectFileId <String>]`: The unique identifier of groupPolicyObjectFile
+    - `[GroupPolicyOperationId <String>]`: The unique identifier of groupPolicyOperation
+    - `[GroupPolicyPresentationId <String>]`: The unique identifier of groupPolicyPresentation
+    - `[GroupPolicySettingMappingId <String>]`: The unique identifier of groupPolicySettingMapping
+    - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+    - `[IntuneBrandingProfileAssignmentId <String>]`: The unique identifier of intuneBrandingProfileAssignment
+    - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
+    - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
+    - `[ManagedAllDeviceCertificateStateId <String>]`: The unique identifier of managedAllDeviceCertificateState
+    - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
+    - `[NdesConnectorId <String>]`: The unique identifier of ndesConnector
+    - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+    - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
+    - `[RestrictedAppsViolationId <String>]`: The unique identifier of restrictedAppsViolation
+    - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
+    - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
+    - `[RoleScopeTagAutoAssignmentId <String>]`: The unique identifier of roleScopeTagAutoAssignment
+    - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
+    - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
+    - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
+    - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
+    - `[TermsAndConditionsGroupAssignmentId <String>]`: The unique identifier of termsAndConditionsGroupAssignment
+    - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
+    - `[UnsupportedGroupPolicyExtensionId <String>]`: The unique identifier of unsupportedGroupPolicyExtension
+    - `[UserId <String>]`: The unique identifier of user
+    - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyMigrationReport" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgDeviceManagementGroupPolicyMigrationReport
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyMigrationReport?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaDeviceManagementGroupPolicyMigrationReport [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+
+   [-All] [-CountVariable <String>] [<CommonParameters>]
+- >-
+  Get-MgBetaDeviceManagementGroupPolicyMigrationReport -GroupPolicyMigrationReportId <String>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgBetaDeviceManagementGroupPolicyMigrationReport -InputObject <IDeviceManagementAdministrationIdentity>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GroupPolicyMigrationReportId
+  isRequired: true
+  description: |+
+    The unique identifier of groupPolicyMigrationReport
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDeviceManagementAdministrationIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Administration.Get-MgBetaDeviceManagementGroupPolicyMigrationReport
+name: Get-MgBetaDeviceManagementGroupPolicyMigrationReport
+description: |-
+  A list of Group Policy migration reports.
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicymigrationreport
+  schema: 2.0.0

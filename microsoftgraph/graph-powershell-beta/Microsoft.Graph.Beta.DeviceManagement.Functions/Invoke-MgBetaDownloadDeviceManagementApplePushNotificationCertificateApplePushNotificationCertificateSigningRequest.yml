@@ -1,0 +1,29 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Download Apple push notification certificate signing request
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Functions
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
+
+   [<CommonParameters>]
+uid: Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
+name: Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
+description: |-
+  Download Apple push notification certificate signing request
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetadownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest
+  schema: 2.0.0

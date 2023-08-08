@@ -1,0 +1,44 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.Identity.Partner
+  cmdlets:
+  - Microsoft.Graph.Beta.Identity.Partner.Get-MgBetaTenantRelationshipDelegatedAdminCustomer
+  - Microsoft.Graph.Beta.Identity.Partner.Get-MgBetaTenantRelationshipDelegatedAdminCustomerCount
+  - Microsoft.Graph.Beta.Identity.Partner.Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
+  - Microsoft.Graph.Beta.Identity.Partner.Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetailCount
+  - Microsoft.Graph.Beta.Identity.Partner.Get-MgBetaTenantRelationshipDelegatedAdminRelationship
+  - Microsoft.Graph.Beta.Identity.Partner.Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
+  - Microsoft.Graph.Beta.Identity.Partner.Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount
+  - Microsoft.Graph.Beta.Identity.Partner.Get-MgBetaTenantRelationshipDelegatedAdminRelationshipCount
+  - Microsoft.Graph.Beta.Identity.Partner.Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation
+  - Microsoft.Graph.Beta.Identity.Partner.Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperationCount
+  - Microsoft.Graph.Beta.Identity.Partner.Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest
+  - Microsoft.Graph.Beta.Identity.Partner.Get-MgBetaTenantRelationshipDelegatedAdminRelationshipRequestCount
+  - Microsoft.Graph.Beta.Identity.Partner.New-MgBetaTenantRelationshipDelegatedAdminCustomer
+  - Microsoft.Graph.Beta.Identity.Partner.New-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
+  - Microsoft.Graph.Beta.Identity.Partner.New-MgBetaTenantRelationshipDelegatedAdminRelationship
+  - Microsoft.Graph.Beta.Identity.Partner.New-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
+  - Microsoft.Graph.Beta.Identity.Partner.New-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation
+  - Microsoft.Graph.Beta.Identity.Partner.New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest
+  - Microsoft.Graph.Beta.Identity.Partner.Remove-MgBetaTenantRelationshipDelegatedAdminCustomer
+  - Microsoft.Graph.Beta.Identity.Partner.Remove-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
+  - Microsoft.Graph.Beta.Identity.Partner.Remove-MgBetaTenantRelationshipDelegatedAdminRelationship
+  - Microsoft.Graph.Beta.Identity.Partner.Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
+  - Microsoft.Graph.Beta.Identity.Partner.Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation
+  - Microsoft.Graph.Beta.Identity.Partner.Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest
+  - Microsoft.Graph.Beta.Identity.Partner.Update-MgBetaTenantRelationshipDelegatedAdminCustomer
+  - Microsoft.Graph.Beta.Identity.Partner.Update-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
+  - Microsoft.Graph.Beta.Identity.Partner.Update-MgBetaTenantRelationshipDelegatedAdminRelationship
+  - Microsoft.Graph.Beta.Identity.Partner.Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
+  - Microsoft.Graph.Beta.Identity.Partner.Update-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation
+  - Microsoft.Graph.Beta.Identity.Partner.Update-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest
+uid: Microsoft.Graph.Beta.Identity.Partner
+name: Microsoft.Graph.Beta.Identity.Partner
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.Identity.Partner
+  Module Guid: 329ac602-03b6-4f99-a48b-6983e0486eec
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.partner
+  Help Version: 1.0.0.0
+  Locale: en-US

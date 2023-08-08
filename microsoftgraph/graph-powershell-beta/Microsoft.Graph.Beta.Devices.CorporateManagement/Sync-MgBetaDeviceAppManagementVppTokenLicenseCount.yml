@@ -1,0 +1,57 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke action syncLicenseCounts
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Sync-MgDeviceAppManagementVppTokenLicenseCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicenseCount?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Devices.CorporateManagement
+notes: |-
+  ALIASES
+
+  Sync-MgBetaDeviceAppMgtVppTokenLicenseCount
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Sync-MgDeviceAppManagementVppTokenLicenseCount
+  href: /powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicenseCount?view=graph-powershell-v1.0
+syntaxes:
+- Sync-MgBetaDeviceAppManagementVppTokenLicenseCount [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Devices.CorporateManagement.Sync-MgBetaDeviceAppManagementVppTokenLicenseCount
+name: Sync-MgBetaDeviceAppManagementVppTokenLicenseCount
+description: |-
+  Invoke action syncLicenseCounts
+metadata:
+  external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/sync-mgbetadeviceappmanagementvpptokenlicensecount
+  schema: 2.0.0

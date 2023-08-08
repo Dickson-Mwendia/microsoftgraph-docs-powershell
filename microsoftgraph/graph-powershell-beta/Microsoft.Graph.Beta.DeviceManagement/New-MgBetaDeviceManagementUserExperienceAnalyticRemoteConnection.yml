@@ -1,0 +1,241 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to userExperienceAnalyticsRemoteConnection for deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticRemoteConnection](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticRemoteConnection?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection>`: The user experience analyte remote connection entity.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[CloudPcFailurePercentage <Double?>]`: The sign in failure percentage of Cloud PC Device. Valid values 0 to 100
+    - `[CloudPcRoundTripTime <Double?>]`: The round tip time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
+    - `[CloudPcSignInTime <Double?>]`: The sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
+    - `[CoreBootTime <Double?>]`: The core boot time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
+    - `[CoreSignInTime <Double?>]`: The core sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
+    - `[DeviceCount <Int32?>]`: The count of remote connection. Valid values 0 to 2147483647
+    - `[DeviceId <String>]`: The id of the device.
+    - `[DeviceName <String>]`: The name of the device.
+    - `[Manufacturer <String>]`: The user experience analytics manufacturer.
+    - `[Model <String>]`: The user experience analytics device model.
+    - `[RemoteSignInTime <Double?>]`: The remote sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
+    - `[UserPrincipalName <String>]`: The user experience analytics userPrincipalName.
+    - `[VirtualNetwork <String>]`: The user experience analytics virtual network.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementUserExperienceAnalyticRemoteConnection
+  href: /powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticRemoteConnection?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection [-AdditionalProperties <Hashtable>]
+
+   [-CloudPcFailurePercentage <Double>] [-CloudPcRoundTripTime <Double>] [-CloudPcSignInTime <Double>]
+
+   [-CoreBootTime <Double>] [-CoreSignInTime <Double>] [-DeviceCount <Int32>] [-DeviceId <String>]
+
+   [-DeviceName <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-RemoteSignInTime <Double>]
+
+   [-UserPrincipalName <String>] [-VirtualNetwork <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection
+
+   -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphUserExperienceAnalyticsRemoteConnection" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    The user experience analyte remote connection entity.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: CloudPcFailurePercentage
+  description: |+
+    The sign in failure percentage of Cloud PC Device.
+    Valid values 0 to 100
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: CloudPcRoundTripTime
+  description: |+
+    The round tip time of Cloud PC Device.
+    Valid values 0 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: CloudPcSignInTime
+  description: |+
+    The sign in time of Cloud PC Device.
+    Valid values 0 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: CoreBootTime
+  description: |+
+    The core boot time of Cloud PC Device.
+    Valid values 0 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: CoreSignInTime
+  description: |+
+    The core sign in time of Cloud PC Device.
+    Valid values 0 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: DeviceCount
+  description: |+
+    The count of remote connection.
+    Valid values 0 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceId
+  description: |+
+    The id of the device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceName
+  description: |+
+    The name of the device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Manufacturer
+  description: |+
+    The user experience analytics manufacturer.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Model
+  description: |+
+    The user experience analytics device model.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: RemoteSignInTime
+  description: |+
+    The remote sign in time of Cloud PC Device.
+    Valid values 0 to 1.79769313486232E+308
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserPrincipalName
+  description: |+
+    The user experience analytics userPrincipalName.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: VirtualNetwork
+  description: |+
+    The user experience analytics virtual network.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection
+name: New-MgBetaDeviceManagementUserExperienceAnalyticRemoteConnection
+description: |-
+  Create new navigation property to userExperienceAnalyticsRemoteConnection for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticremoteconnection
+  schema: 2.0.0

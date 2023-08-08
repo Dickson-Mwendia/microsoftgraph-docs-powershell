@@ -1,0 +1,112 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Remove the favorite status of serviceUpdateMessages for the signed in user.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Invoke-MgBetaUnfavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaUnfavoriteServiceAnnouncementMessage?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.ServiceAnnouncement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODY <IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[MessageIds <String[]>]`:
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Invoke-MgBetaUnfavoriteServiceAnnouncementMessage
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaUnfavoriteServiceAnnouncementMessage?view=graph-powershell-beta
+syntaxes:
+- >-
+  Invoke-MgUnfavoriteServiceAnnouncementMessage [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Invoke-MgUnfavoriteServiceAnnouncementMessage
+
+   -Body <IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostRequestbodyContentApplicationJsonSchema>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the Invoke-MgUnfavoriteServiceAnnouncementMessage Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+    $params = @{
+    	MessageIds = @(
+    		"MC172851"
+    		"MC167983"
+    	)
+    }
+    Invoke-MgUnfavoriteServiceAnnouncementMessage -BodyParameter $params
+  description: |-
+    This example shows how to use the Invoke-MgUnfavoriteServiceAnnouncementMessage Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPaths1U36FhAdminServiceannouncementMessagesMicrosoftGraphUnfavoritePostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: Body
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODY properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: MessageIds
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.ServiceAnnouncement.Invoke-MgUnfavoriteServiceAnnouncementMessage
+name: Invoke-MgUnfavoriteServiceAnnouncementMessage
+description: |-
+  Remove the favorite status of serviceUpdateMessages for the signed in user.
+metadata:
+  external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
+  Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgunfavoriteserviceannouncementmessage
+  schema: 2.0.0

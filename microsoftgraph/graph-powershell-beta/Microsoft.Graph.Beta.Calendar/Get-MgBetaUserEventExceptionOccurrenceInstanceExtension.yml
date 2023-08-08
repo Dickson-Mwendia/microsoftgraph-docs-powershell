@@ -1,0 +1,213 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get an open extension (openTypeExtension object) identified by name or fully qualified name.
+  The table in the Permissions section lists the resources that support open extensions.
+  The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgUserEventExceptionOccurrenceInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventExceptionOccurrenceInstanceExtension?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Calendar
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
+    - `[AttachmentId <String>]`: The unique identifier of attachment
+    - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+    - `[CalendarId <String>]`: The unique identifier of calendar
+    - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+    - `[EventId <String>]`: The unique identifier of event
+    - `[EventId1 <String>]`: The unique identifier of event
+    - `[EventId2 <String>]`: The unique identifier of event
+    - `[ExtensionId <String>]`: The unique identifier of extension
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PlaceId <String>]`: The unique identifier of place
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExtension" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgUserEventExceptionOccurrenceInstanceExtension
+  href: /powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventExceptionOccurrenceInstanceExtension?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaUserEventExceptionOccurrenceInstanceExtension -EventId <String> -EventId1 <String> -EventId2 <String>
+
+   -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
+
+   [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+- >-
+  Get-MgBetaUserEventExceptionOccurrenceInstanceExtension -EventId <String> -EventId1 <String> -EventId2 <String>
+
+   -ExtensionId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [<CommonParameters>]
+- >-
+  Get-MgBetaUserEventExceptionOccurrenceInstanceExtension -InputObject <ICalendarIdentity>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EventId
+  isRequired: true
+  description: |+
+    The unique identifier of event
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EventId1
+  isRequired: true
+  description: |+
+    The unique identifier of event
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EventId2
+  isRequired: true
+  description: |+
+    The unique identifier of event
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ExtensionId
+  isRequired: true
+  description: |+
+    The unique identifier of extension
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ICalendarIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Calendar.Get-MgBetaUserEventExceptionOccurrenceInstanceExtension
+name: Get-MgBetaUserEventExceptionOccurrenceInstanceExtension
+description: |-
+  Get an open extension (openTypeExtension object) identified by name or fully qualified name.
+  The table in the Permissions section lists the resources that support open extensions.
+  The following table lists the three scenarios where you can get an open extension from a supported resource instance.
+metadata:
+  external help file: Microsoft.Graph.Beta.Calendar-help.xml
+  Module Name: Microsoft.Graph.Beta.Calendar
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausereventexceptionoccurrenceinstanceextension
+  schema: 2.0.0

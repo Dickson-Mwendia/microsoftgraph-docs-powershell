@@ -1,0 +1,722 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property contacts in users
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgUserContactFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderContact?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.PersonalContacts
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphContact>`: contact
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Categories <String[]>]`: 
+    - `[ChangeKey <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AssistantName <String>]`: The name of the contact's assistant.
+    - `[Birthday <DateTime?>]`: The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Children <String[]>]`: The names of the contact's children.
+    - `[CompanyName <String>]`: The name of the contact's company.
+    - `[Department <String>]`: The contact's department.
+    - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
+    - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]`: The contact's email addresses.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
+      - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
+      - `[Type <String>]`: emailType
+    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Nullable.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[FileAs <String>]`: The name the contact is filed under.
+    - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+      - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[FlagStatus <String>]`: followupFlagStatus
+      - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[Gender <String>]`: The contact's gender.
+    - `[Generation <String>]`: The contact's generation.
+    - `[GivenName <String>]`: The contact's given name.
+    - `[ImAddresses <String[]>]`: 
+    - `[Initials <String>]`: 
+    - `[IsFavorite <Boolean?>]`: 
+    - `[JobTitle <String>]`: 
+    - `[Manager <String>]`: 
+    - `[MiddleName <String>]`: 
+    - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Value <String[]>]`: A collection of property values.
+    - `[NickName <String>]`: 
+    - `[OfficeLocation <String>]`: 
+    - `[ParentFolderId <String>]`: 
+    - `[PersonalNotes <String>]`: 
+    - `[Phones <IMicrosoftGraphPhone[]>]`: 
+      - `[Number <String>]`: The phone number.
+      - `[Type <String>]`: phoneType
+    - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Height <Int32?>]`: The height of the photo. Read-only.
+      - `[Width <Int32?>]`: The width of the photo. Read-only.
+    - `[PostalAddresses <IMicrosoftGraphPhysicalAddress[]>]`: 
+      - `[City <String>]`: The city.
+      - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
+      - `[PostOfficeBox <String>]`: The post office box number.
+      - `[PostalCode <String>]`: The postal code.
+      - `[State <String>]`: The state.
+      - `[Street <String>]`: The street.
+      - `[Type <String>]`: physicalAddressType
+    - `[Profession <String>]`: 
+    - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Value <String>]`: A property value.
+    - `[SpouseName <String>]`: 
+    - `[Surname <String>]`: 
+    - `[Title <String>]`: 
+    - `[Websites <IMicrosoftGraphWebsite[]>]`: 
+      - `[Address <String>]`: The URL of the website.
+      - `[DisplayName <String>]`: The display name of the web site.
+      - `[Type <String>]`: websiteType
+    - `[WeddingAnniversary <DateTime?>]`: 
+    - `[YomiCompanyName <String>]`: 
+    - `[YomiGivenName <String>]`: 
+    - `[YomiSurname <String>]`: 
+
+  `EMAILADDRESSES <IMicrosoftGraphTypedEmailAddress[]>`: The contact's email addresses.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
+    - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
+    - `[Type <String>]`: emailType
+
+  `EXTENSIONS <IMicrosoftGraphExtension[]>`: The collection of open extensions defined for the contact. Nullable.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+
+  `FLAG <IMicrosoftGraphFollowupFlag>`: followupFlag
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+    - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[FlagStatus <String>]`: followupFlagStatus
+    - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+
+  `INPUTOBJECT <IPersonalContactsIdentity>`: Identity Parameter
+    - `[ContactFolderId <String>]`: The unique identifier of contactFolder
+    - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
+    - `[ContactId <String>]`: The unique identifier of contact
+    - `[ExtensionId <String>]`: The unique identifier of extension
+    - `[UserId <String>]`: The unique identifier of user
+
+  `MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Value <String[]>]`: A collection of property values.
+
+  `PHONES <IMicrosoftGraphPhone[]>`: .
+    - `[Number <String>]`: The phone number.
+    - `[Type <String>]`: phoneType
+
+  `PHOTO <IMicrosoftGraphProfilePhoto>`: profilePhoto
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Height <Int32?>]`: The height of the photo. Read-only.
+    - `[Width <Int32?>]`: The width of the photo. Read-only.
+
+  `POSTALADDRESSES <IMicrosoftGraphPhysicalAddress[]>`: .
+    - `[City <String>]`: The city.
+    - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
+    - `[PostOfficeBox <String>]`: The post office box number.
+    - `[PostalCode <String>]`: The postal code.
+    - `[State <String>]`: The state.
+    - `[Street <String>]`: The street.
+    - `[Type <String>]`: physicalAddressType
+
+  `SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Value <String>]`: A property value.
+
+  `WEBSITES <IMicrosoftGraphWebsite[]>`: .
+    - `[Address <String>]`: The URL of the website.
+    - `[DisplayName <String>]`: The display name of the web site.
+    - `[Type <String>]`: websiteType
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContact" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPersonalContactsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContact" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgUserContactFolderContact
+  href: /powershell/module/Microsoft.Graph.PersonalContacts/Update-MgUserContactFolderContact?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaUserContactFolderContact -ContactFolderId <String> -ContactId <String> -UserId <String>
+
+   [-AdditionalProperties <Hashtable>] [-AssistantName <String>] [-Birthday <DateTime>] [-Categories <String[]>]
+
+   [-ChangeKey <String>] [-Children <String[]>] [-CompanyName <String>] [-CreatedDateTime <DateTime>]
+
+   [-Department <String>] [-DisplayName <String>] [-EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]
+
+   [-Extensions <IMicrosoftGraphExtension[]>] [-FileAs <String>] [-Flag <IMicrosoftGraphFollowupFlag>]
+
+   [-Gender <String>] [-Generation <String>] [-GivenName <String>] [-Id <String>] [-ImAddresses <String[]>]
+
+   [-Initials <String>] [-IsFavorite] [-JobTitle <String>] [-LastModifiedDateTime <DateTime>] [-Manager <String>]
+
+   [-MiddleName <String>] [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+
+   [-NickName <String>] [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
+
+   [-Phones <IMicrosoftGraphPhone[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
+
+   [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <String>]
+
+   [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
+
+   [-Surname <String>] [-Title <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-WeddingAnniversary <DateTime>]
+
+   [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaUserContactFolderContact -ContactFolderId <String> -ContactId <String> -UserId <String>
+
+   -BodyParameter <IMicrosoftGraphContact> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaUserContactFolderContact -InputObject <IPersonalContactsIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-AssistantName <String>] [-Birthday <DateTime>] [-Categories <String[]>]
+
+   [-ChangeKey <String>] [-Children <String[]>] [-CompanyName <String>] [-CreatedDateTime <DateTime>]
+
+   [-Department <String>] [-DisplayName <String>] [-EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]
+
+   [-Extensions <IMicrosoftGraphExtension[]>] [-FileAs <String>] [-Flag <IMicrosoftGraphFollowupFlag>]
+
+   [-Gender <String>] [-Generation <String>] [-GivenName <String>] [-Id <String>] [-ImAddresses <String[]>]
+
+   [-Initials <String>] [-IsFavorite] [-JobTitle <String>] [-LastModifiedDateTime <DateTime>] [-Manager <String>]
+
+   [-MiddleName <String>] [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+
+   [-NickName <String>] [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
+
+   [-Phones <IMicrosoftGraphPhone[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
+
+   [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <String>]
+
+   [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
+
+   [-Surname <String>] [-Title <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-WeddingAnniversary <DateTime>]
+
+   [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaUserContactFolderContact -InputObject <IPersonalContactsIdentity>
+
+   -BodyParameter <IMicrosoftGraphContact> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AssistantName
+  description: |+
+    The name of the contact's assistant.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: Birthday
+  description: |+
+    The contact's birthday.
+    The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphContact" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    contact
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Categories
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ChangeKey
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Children
+  description: |+
+    The names of the contact's children.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CompanyName
+  description: |+
+    The name of the contact's company.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContactFolderId
+  isRequired: true
+  description: |+
+    The unique identifier of contactFolder
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContactId
+  isRequired: true
+  description: |+
+    The unique identifier of contact
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Department
+  description: |+
+    The contact's department.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    The contact's display name.
+    You can specify the display name in a create or update operation.
+    Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified.
+    To preserve a pre-existing value, always include it as displayName in an update operation.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphTypedEmailAddress" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: EmailAddresses
+  description: |+
+    The contact's email addresses.
+    To construct, see NOTES section for EMAILADDRESSES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphExtension" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Extensions
+  description: |+
+    The collection of open extensions defined for the contact.
+    Nullable.
+    To construct, see NOTES section for EXTENSIONS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: FileAs
+  description: |+
+    The name the contact is filed under.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphFollowupFlag" data-throw-if-not-resolved="False" />
+  name: Flag
+  description: |+
+    followupFlag
+    To construct, see NOTES section for FLAG properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Gender
+  description: |+
+    The contact's gender.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Generation
+  description: |+
+    The contact's generation.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GivenName
+  description: |+
+    The contact's given name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ImAddresses
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Initials
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPersonalContactsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsFavorite
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: JobTitle
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Manager
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MiddleName
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphMultiValueLegacyExtendedProperty" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: MultiValueExtendedProperties
+  description: |+
+    The collection of multi-value extended properties defined for the contact.
+    Read-only.
+    Nullable.
+    To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: NickName
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OfficeLocation
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ParentFolderId
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PersonalNotes
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphPhone" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Phones
+  description: |+
+    .
+    To construct, see NOTES section for PHONES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphProfilePhoto" data-throw-if-not-resolved="False" />
+  name: Photo
+  description: |+
+    profilePhoto
+    To construct, see NOTES section for PHOTO properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphPhysicalAddress" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: PostalAddresses
+  description: |+
+    .
+    To construct, see NOTES section for POSTALADDRESSES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Profession
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSingleValueLegacyExtendedProperty" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: SingleValueExtendedProperties
+  description: |+
+    The collection of single-value extended properties defined for the contact.
+    Read-only.
+    Nullable.
+    To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SpouseName
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Surname
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Title
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphWebsite" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Websites
+  description: |+
+    .
+    To construct, see NOTES section for WEBSITES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: WeddingAnniversary
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: YomiCompanyName
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: YomiGivenName
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: YomiSurname
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.PersonalContacts.Update-MgBetaUserContactFolderContact
+name: Update-MgBetaUserContactFolderContact
+description: |-
+  Update the navigation property contacts in users
+metadata:
+  external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
+  Module Name: Microsoft.Graph.Beta.PersonalContacts
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/update-mgbetausercontactfoldercontact
+  schema: 2.0.0

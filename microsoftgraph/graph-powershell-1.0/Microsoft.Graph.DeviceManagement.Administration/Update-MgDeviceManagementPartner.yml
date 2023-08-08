@@ -1,0 +1,262 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property deviceManagementPartners in deviceManagement
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementPartner?view=graph-powershell-beta)
+module: Microsoft.Graph.DeviceManagement.Administration
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphDeviceManagementPartner>`: Entity which represents a connection to device management partner.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[DisplayName <String>]`: Partner display name
+    - `[GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>]`: User groups that specifies whether enrollment is through partner.
+      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsConfigured <Boolean?>]`: Whether device management partner is configured or not
+    - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
+    - `[PartnerAppType <DeviceManagementPartnerAppType?>]`: Partner App Type.
+    - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
+    - `[SingleTenantAppId <String>]`: Partner Single tenant App id
+    - `[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant
+    - `[WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed
+
+  `GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignment[]>`: User groups that specifies whether enrollment is through partner.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+
+  `INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
+    - `[AuditEventId <String>]`: The unique identifier of auditEvent
+    - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
+    - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
+    - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+    - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+    - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
+    - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
+    - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+    - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
+    - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
+    - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
+    - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
+    - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
+    - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
+    - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgBetaDeviceManagementPartner
+  href: /powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementPartner?view=graph-powershell-beta
+syntaxes:
+- >-
+  Update-MgDeviceManagementPartner -DeviceManagementPartnerId <String> [-AdditionalProperties <Hashtable>]
+
+   [-DisplayName <String>]
+
+   [-GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>] [-Id <String>]
+
+   [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
+
+   [-PartnerState <DeviceManagementPartnerTenantState>] [-SingleTenantAppId <String>]
+
+   [-WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime>]
+
+   [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementPartner -DeviceManagementPartnerId <String>
+
+   -BodyParameter <IMicrosoftGraphDeviceManagementPartner> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+
+   [-GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>] [-Id <String>]
+
+   [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
+
+   [-PartnerState <DeviceManagementPartnerTenantState>] [-SingleTenantAppId <String>]
+
+   [-WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime>]
+
+   [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
+
+   -BodyParameter <IMicrosoftGraphDeviceManagementPartner> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceManagementPartner" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Entity which represents a connection to device management partner.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceManagementPartnerId
+  isRequired: true
+  description: |+
+    The unique identifier of deviceManagementPartner
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Partner display name
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceManagementPartnerAssignment" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: GroupsRequiringPartnerEnrollment
+  description: |+
+    User groups that specifies whether enrollment is through partner.
+    To construct, see NOTES section for GROUPSREQUIRINGPARTNERENROLLMENT properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDeviceManagementAdministrationIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsConfigured
+  description: |+
+    Whether device management partner is configured or not
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastHeartbeatDateTime
+  description: |+
+    Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DeviceManagementPartnerAppType" data-throw-if-not-resolved="False" />
+  name: PartnerAppType
+  description: |+
+    Partner App Type.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DeviceManagementPartnerTenantState" data-throw-if-not-resolved="False" />
+  name: PartnerState
+  description: |+
+    Partner state of this tenant.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SingleTenantAppId
+  description: |+
+    Partner Single tenant App id
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime
+  description: |+
+    DateTime in UTC when PartnerDevices will be marked as NonCompliant
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: WhenPartnerDevicesWillBeRemovedDateTime
+  description: |+
+    DateTime in UTC when PartnerDevices will be removed
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementPartner
+name: Update-MgDeviceManagementPartner
+description: |-
+  Update the navigation property deviceManagementPartners in deviceManagement
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Administration
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementpartner
+  schema: 2.0.0

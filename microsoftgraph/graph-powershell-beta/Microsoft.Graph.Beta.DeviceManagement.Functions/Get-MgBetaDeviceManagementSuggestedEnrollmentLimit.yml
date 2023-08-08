@@ -1,0 +1,91 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke function getSuggestedEnrollmentLimit
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementSuggestedEnrollmentLimit](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementSuggestedEnrollmentLimit?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Functions
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IDeviceManagementFunctionsIdentity>`: Identity Parameter
+    - `[Category <String>]`: Usage: category='{category}'
+    - `[CloudPcId <String>]`: The unique identifier of cloudPC
+    - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
+    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
+    - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+    - `[DeviceHealthScriptId <String>]`: The unique identifier of deviceHealthScript
+    - `[DeviceManagementIntentId <String>]`: The unique identifier of deviceManagementIntent
+    - `[DeviceManagementTemplateId <String>]`: The unique identifier of deviceManagementTemplate
+    - `[DeviceManagementTemplateId1 <String>]`: The unique identifier of deviceManagementTemplate
+    - `[DomainName <String>]`: Usage: domainName='{domainName}'
+    - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
+    - `[EnrollmentType <String>]`: Usage: enrollmentType='{enrollmentType}'
+    - `[ExpiringBeforeDateTime <String>]`: Usage: expiringBeforeDateTime='{expiringBeforeDateTime}'
+    - `[GroupId <String>]`: Usage: groupId='{groupId}'
+    - `[Ids <String[]>]`: Usage: ids={ids}
+    - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+    - `[Platform <DevicePlatformType?>]`: Usage: platform='{platform}'
+    - `[PolicyId <String>]`: Usage: policyId='{policyId}'
+    - `[Resource <String>]`: Usage: resource='{resource}'
+    - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
+    - `[Scope <String>]`: Usage: scope='{scope}'
+    - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
+    - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
+    - `[SubscriptionId <String>]`: Usage: subscriptionId='{subscriptionId}'
+    - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
+    - `[TemplateId <String>]`: Usage: templateId='{templateId}'
+    - `[Upn <String>]`: Usage: upn='{upn}'
+    - `[Userid <String>]`: Usage: userid='{userid}'
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgDeviceManagementSuggestedEnrollmentLimit
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementSuggestedEnrollmentLimit?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaDeviceManagementSuggestedEnrollmentLimit -EnrollmentType <String> [<CommonParameters>]
+- >-
+  Get-MgBetaDeviceManagementSuggestedEnrollmentLimit -InputObject <IDeviceManagementFunctionsIdentity>
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EnrollmentType
+  isRequired: true
+  description: |+
+    Usage: enrollmentType='{enrollmentType}'
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDeviceManagementFunctionsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Functions.Get-MgBetaDeviceManagementSuggestedEnrollmentLimit
+name: Get-MgBetaDeviceManagementSuggestedEnrollmentLimit
+description: |-
+  Invoke function getSuggestedEnrollmentLimit
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementsuggestedenrollmentlimit
+  schema: 2.0.0

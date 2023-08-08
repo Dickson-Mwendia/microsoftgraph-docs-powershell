@@ -1,0 +1,51 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+  cmdlets:
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Get-MgBetaServiceAnnouncementHealthOverview
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Get-MgBetaServiceAnnouncementHealthOverviewCount
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Get-MgBetaServiceAnnouncementHealthOverviewIssue
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Get-MgBetaServiceAnnouncementHealthOverviewIssueCount
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Get-MgBetaServiceAnnouncementIssue
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Get-MgBetaServiceAnnouncementIssueCount
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Get-MgBetaServiceAnnouncementMessage
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Get-MgBetaServiceAnnouncementMessageAttachment
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Get-MgBetaServiceAnnouncementMessageAttachmentArchive
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Get-MgBetaServiceAnnouncementMessageAttachmentContent
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Get-MgBetaServiceAnnouncementMessageAttachmentCount
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Get-MgBetaServiceAnnouncementMessageCount
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Invoke-MgBetaArchiveServiceAnnouncementMessage
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Invoke-MgBetaFavoriteServiceAnnouncementMessage
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Invoke-MgBetaMarkServiceAnnouncementMessageRead
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Invoke-MgBetaMarkServiceAnnouncementMessageUnread
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Invoke-MgBetaReportServiceAnnouncementHealthOverviewIssueIncident
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Invoke-MgBetaReportServiceAnnouncementIssueIncident
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Invoke-MgBetaUnarchiveServiceAnnouncementMessage
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Invoke-MgBetaUnfavoriteServiceAnnouncementMessage
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.New-MgBetaServiceAnnouncementHealthOverview
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.New-MgBetaServiceAnnouncementHealthOverviewIssue
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.New-MgBetaServiceAnnouncementIssue
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.New-MgBetaServiceAnnouncementMessage
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.New-MgBetaServiceAnnouncementMessageAttachment
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Remove-MgBetaServiceAnnouncementHealthOverview
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Remove-MgBetaServiceAnnouncementHealthOverviewIssue
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Remove-MgBetaServiceAnnouncementIssue
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Remove-MgBetaServiceAnnouncementMessage
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Remove-MgBetaServiceAnnouncementMessageAttachment
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Set-MgBetaServiceAnnouncementMessageAttachmentArchive
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Set-MgBetaServiceAnnouncementMessageAttachmentContent
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Update-MgBetaServiceAnnouncementHealthOverview
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Update-MgBetaServiceAnnouncementHealthOverviewIssue
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Update-MgBetaServiceAnnouncementIssue
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Update-MgBetaServiceAnnouncementMessage
+  - Microsoft.Graph.Beta.Devices.ServiceAnnouncement.Update-MgBetaServiceAnnouncementMessageAttachment
+uid: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+  Module Guid: eaa16715-80fa-4016-a898-a40b0511988f
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement
+  Help Version: 1.0.0.0
+  Locale: en-US

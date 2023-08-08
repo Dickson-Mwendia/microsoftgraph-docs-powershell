@@ -1,0 +1,27 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Compliance
+  cmdlets:
+  - Microsoft.Graph.Compliance.Get-MgCompliance
+  - Microsoft.Graph.Compliance.Get-MgPrivacySubjectRightsRequest
+  - Microsoft.Graph.Compliance.Get-MgPrivacySubjectRightsRequestCount
+  - Microsoft.Graph.Compliance.Get-MgPrivacySubjectRightsRequestNote
+  - Microsoft.Graph.Compliance.Get-MgPrivacySubjectRightsRequestNoteCount
+  - Microsoft.Graph.Compliance.Get-MgPrivacySubjectRightsRequestTeam
+  - Microsoft.Graph.Compliance.New-MgPrivacySubjectRightsRequest
+  - Microsoft.Graph.Compliance.New-MgPrivacySubjectRightsRequestNote
+  - Microsoft.Graph.Compliance.Remove-MgPrivacySubjectRightsRequest
+  - Microsoft.Graph.Compliance.Remove-MgPrivacySubjectRightsRequestNote
+  - Microsoft.Graph.Compliance.Update-MgCompliance
+  - Microsoft.Graph.Compliance.Update-MgPrivacySubjectRightsRequest
+  - Microsoft.Graph.Compliance.Update-MgPrivacySubjectRightsRequestNote
+uid: Microsoft.Graph.Compliance
+name: Microsoft.Graph.Compliance
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Compliance
+  Module Guid: 4d328dfc-a0bc-4540-9985-d6f209c1ab17
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.compliance
+  Help Version: 1.0.0.0
+  Locale: en-US

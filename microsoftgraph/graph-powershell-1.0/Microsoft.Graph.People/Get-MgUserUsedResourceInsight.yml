@@ -1,0 +1,97 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Used for navigating to the item that was used.
+  For file attachments, the type is fileAttachment.
+  For linked attachments, the type is driveItem.
+module: Microsoft.Graph.People
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IPeopleIdentity>`: Identity Parameter
+    - `[PersonId <String>]`: The unique identifier of person
+    - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
+    - `[TrendingId <String>]`: The unique identifier of trending
+    - `[UsedInsightId <String>]`: The unique identifier of usedInsight
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IPeopleIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Get-MgUserUsedResourceInsight -UsedInsightId <String> -UserId <String> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgUserUsedResourceInsight -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="IPeopleIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UsedInsightId
+  isRequired: true
+  description: |+
+    The unique identifier of usedInsight
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.People.Get-MgUserUsedResourceInsight
+name: Get-MgUserUsedResourceInsight
+description: |-
+  Used for navigating to the item that was used.
+  For file attachments, the type is fileAttachment.
+  For linked attachments, the type is driveItem.
+metadata:
+  external help file: Microsoft.Graph.People-help.xml
+  Module Name: Microsoft.Graph.People
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mguserusedresourceinsight
+  schema: 2.0.0

@@ -1,0 +1,19 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.SchemaExtensions
+  cmdlets:
+  - Microsoft.Graph.SchemaExtensions.Get-MgSchemaExtension
+  - Microsoft.Graph.SchemaExtensions.Get-MgSchemaExtensionCount
+  - Microsoft.Graph.SchemaExtensions.New-MgSchemaExtension
+  - Microsoft.Graph.SchemaExtensions.Remove-MgSchemaExtension
+  - Microsoft.Graph.SchemaExtensions.Update-MgSchemaExtension
+uid: Microsoft.Graph.SchemaExtensions
+name: Microsoft.Graph.SchemaExtensions
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.SchemaExtensions
+  Module Guid: 61c7f9a3-5dd6-4462-b5fd-a2ebe6cef7fd
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions
+  Help Version: 1.0.0.0
+  Locale: en-US

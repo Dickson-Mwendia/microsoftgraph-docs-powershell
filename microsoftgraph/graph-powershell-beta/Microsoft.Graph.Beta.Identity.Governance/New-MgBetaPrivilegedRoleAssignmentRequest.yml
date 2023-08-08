@@ -1,0 +1,323 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Add new entity to privilegedRoleAssignmentRequests
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgPrivilegedRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.Governance
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphPrivilegedRoleAssignmentRequest>`: privilegedRoleAssignmentRequest
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AssignmentState <String>]`: 
+    - `[Duration <String>]`: 
+    - `[Reason <String>]`: 
+    - `[RequestedDateTime <DateTime?>]`: 
+    - `[RoleId <String>]`: 
+    - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: 
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[ExpirationDateTime <DateTime?>]`: 
+        - `[IsElevated <Boolean?>]`: 
+        - `[ResultMessage <String>]`: 
+        - `[RoleId <String>]`: 
+        - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
+        - `[UserId <String>]`: 
+      - `[Name <String>]`: 
+      - `[Settings <IMicrosoftGraphPrivilegedRoleSettings>]`: privilegedRoleSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[ApprovalOnElevation <Boolean?>]`: 
+        - `[ApproverIds <String[]>]`: 
+        - `[ElevationDuration <TimeSpan?>]`: 
+        - `[IsMfaOnElevationConfigurable <Boolean?>]`: 
+        - `[LastGlobalAdmin <Boolean?>]`: 
+        - `[MaxElavationDuration <TimeSpan?>]`: 
+        - `[MfaOnElevation <Boolean?>]`: 
+        - `[MinElevationDuration <TimeSpan?>]`: 
+        - `[NotificationToUserOnElevation <Boolean?>]`: 
+        - `[TicketingInfoOnElevation <Boolean?>]`: 
+      - `[Summary <IMicrosoftGraphPrivilegedRoleSummary>]`: privilegedRoleSummary
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[ElevatedCount <Int32?>]`: 
+        - `[ManagedCount <Int32?>]`: 
+        - `[MfaEnabled <Boolean?>]`: 
+        - `[Status <String>]`: roleSummaryStatus
+        - `[UsersCount <Int32?>]`: 
+    - `[Schedule <IMicrosoftGraphGovernanceSchedule>]`: governanceSchedule
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Duration <TimeSpan?>]`: The duration of a role assignment. It is in format of a TimeSpan.
+      - `[EndDateTime <DateTime?>]`: The end time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Note: if the value is null, it indicates a permanent assignment.
+      - `[StartDateTime <DateTime?>]`: The start time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[Type <String>]`: The role assignment schedule type. Only Once is supported for now.
+    - `[Status <String>]`: 
+    - `[TicketNumber <String>]`: 
+    - `[TicketSystem <String>]`: 
+    - `[Type <String>]`: 
+    - `[UserId <String>]`: 
+
+  `ROLEINFO <IMicrosoftGraphPrivilegedRole>`: privilegedRole
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: 
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ExpirationDateTime <DateTime?>]`: 
+      - `[IsElevated <Boolean?>]`: 
+      - `[ResultMessage <String>]`: 
+      - `[RoleId <String>]`: 
+      - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
+      - `[UserId <String>]`: 
+    - `[Name <String>]`: 
+    - `[Settings <IMicrosoftGraphPrivilegedRoleSettings>]`: privilegedRoleSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ApprovalOnElevation <Boolean?>]`: 
+      - `[ApproverIds <String[]>]`: 
+      - `[ElevationDuration <TimeSpan?>]`: 
+      - `[IsMfaOnElevationConfigurable <Boolean?>]`: 
+      - `[LastGlobalAdmin <Boolean?>]`: 
+      - `[MaxElavationDuration <TimeSpan?>]`: 
+      - `[MfaOnElevation <Boolean?>]`: 
+      - `[MinElevationDuration <TimeSpan?>]`: 
+      - `[NotificationToUserOnElevation <Boolean?>]`: 
+      - `[TicketingInfoOnElevation <Boolean?>]`: 
+    - `[Summary <IMicrosoftGraphPrivilegedRoleSummary>]`: privilegedRoleSummary
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ElevatedCount <Int32?>]`: 
+      - `[ManagedCount <Int32?>]`: 
+      - `[MfaEnabled <Boolean?>]`: 
+      - `[Status <String>]`: roleSummaryStatus
+      - `[UsersCount <Int32?>]`: 
+
+  `SCHEDULE <IMicrosoftGraphGovernanceSchedule>`: governanceSchedule
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Duration <TimeSpan?>]`: The duration of a role assignment. It is in format of a TimeSpan.
+    - `[EndDateTime <DateTime?>]`: The end time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Note: if the value is null, it indicates a permanent assignment.
+    - `[StartDateTime <DateTime?>]`: The start time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Type <String>]`: The role assignment schedule type. Only Once is supported for now.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignmentRequest" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignmentRequest" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgPrivilegedRoleAssignmentRequest
+  href: /powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaPrivilegedRoleAssignmentRequest [-AdditionalProperties <Hashtable>] [-AssignmentState <String>]
+
+   [-Duration <String>] [-Id <String>] [-Reason <String>] [-RequestedDateTime <DateTime>] [-RoleId <String>]
+
+   [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-Schedule <IMicrosoftGraphGovernanceSchedule>] [-Status <String>]
+
+   [-TicketNumber <String>] [-TicketSystem <String>] [-Type <String>] [-UserId <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  New-MgBetaPrivilegedRoleAssignmentRequest -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignmentRequest>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the New-MgBetaPrivilegedRoleAssignmentRequest Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Identity.Governance
+    $params = @{
+    	Duration = "2"
+    	Reason = "Activate the role for business purpose"
+    	TicketNumber = "234"
+    	TicketSystem = "system"
+    	Schedule = @{
+    		StartDateTime = [System.DateTime]::Parse("2018-02-08T02:35:17.903Z")
+    	}
+    	Type = "UserAdd"
+    	AssignmentState = "Active"
+    	RoleId = "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+    }
+    New-MgBetaPrivilegedRoleAssignmentRequest -BodyParameter $params
+  description: |-
+    This example shows how to use the New-MgBetaPrivilegedRoleAssignmentRequest Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AssignmentState
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphPrivilegedRoleAssignmentRequest" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    privilegedRoleAssignmentRequest
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Duration
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Reason
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: RequestedDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RoleId
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphPrivilegedRole" data-throw-if-not-resolved="False" />
+  name: RoleInfo
+  description: |+
+    privilegedRole
+    To construct, see NOTES section for ROLEINFO properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphGovernanceSchedule" data-throw-if-not-resolved="False" />
+  name: Schedule
+  description: |+
+    governanceSchedule
+    To construct, see NOTES section for SCHEDULE properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Status
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TicketNumber
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TicketSystem
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Type
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.Governance.New-MgBetaPrivilegedRoleAssignmentRequest
+name: New-MgBetaPrivilegedRoleAssignmentRequest
+description: |-
+  Add new entity to privilegedRoleAssignmentRequests
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.Governance
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignmentrequest
+  schema: 2.0.0

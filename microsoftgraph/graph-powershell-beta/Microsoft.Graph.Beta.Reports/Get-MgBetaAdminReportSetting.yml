@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the tenant-level settings for Microsoft 365 reports.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Get-MgAdminReportSetting?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Reports
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdminReportSettings" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgAdminReportSetting
+  href: /powershell/module/Microsoft.Graph.Reports/Get-MgAdminReportSetting?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaAdminReportSetting [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Reports.Get-MgBetaAdminReportSetting
+name: Get-MgBetaAdminReportSetting
+description: |-
+  Get the tenant-level settings for Microsoft 365 reports.
+metadata:
+  external help file: Microsoft.Graph.Beta.Reports-help.xml
+  Module Name: Microsoft.Graph.Beta.Reports
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetaadminreportsetting
+  schema: 2.0.0

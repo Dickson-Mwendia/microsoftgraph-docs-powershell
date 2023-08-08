@@ -1,0 +1,162 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The owners of the group who can be users or service principals.
+  Nullable.
+  If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+  Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
+  For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgGroupOwner](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwner?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Groups
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgGroupOwner
+  href: /powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwner?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaGroupOwner -GroupId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+
+   [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>]
+
+   [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get an owner of a group'
+  code: |-
+    Get-MgBetaGroupOwner -GroupId '4d5f57a1-85e0-41dd-8282-ff995ad5e1c3'
+
+    Id                                   DeletedDateTime
+    --                                   ---------------
+    5fc5c052-8774-4258-8705-0b4ab3e9a2df
+  description: |-
+    This example gets the owner of the specified group.
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ConsistencyLevel
+  description: |+
+    Indicates the requested consistency level.
+    Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GroupId
+  isRequired: true
+  description: |+
+    The unique identifier of group
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Groups.Get-MgBetaGroupOwner
+name: Get-MgBetaGroupOwner
+description: |-
+  The owners of the group who can be users or service principals.
+  Nullable.
+  If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+  Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Supports $expand including nested $select.
+  For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+metadata:
+  external help file: Microsoft.Graph.Beta.Groups-help.xml
+  Module Name: Microsoft.Graph.Beta.Groups
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupowner
+  schema: 2.0.0

@@ -1,0 +1,94 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.WindowsUpdates
+  cmdlets:
+  - Microsoft.Graph.Beta.WindowsUpdates.Add-MgBetaWindowsUpdatesDeploymentAudienceExclusionMemberById
+  - Microsoft.Graph.Beta.WindowsUpdates.Add-MgBetaWindowsUpdatesDeploymentAudienceMember
+  - Microsoft.Graph.Beta.WindowsUpdates.Add-MgBetaWindowsUpdatesDeploymentAudienceMemberById
+  - Microsoft.Graph.Beta.WindowsUpdates.Add-MgBetaWindowsUpdatesPolicyAudienceExclusionMember
+  - Microsoft.Graph.Beta.WindowsUpdates.Add-MgBetaWindowsUpdatesPolicyAudienceExclusionMemberById
+  - Microsoft.Graph.Beta.WindowsUpdates.Add-MgBetaWindowsUpdatesPolicyAudienceMember
+  - Microsoft.Graph.Beta.WindowsUpdates.Add-MgBetaWindowsUpdatesPolicyAudienceMemberById
+  - Microsoft.Graph.Beta.WindowsUpdates.Add-MgBetaWindowsUpdatesUpdatableAssetMember
+  - Microsoft.Graph.Beta.WindowsUpdates.Add-MgBetaWindowsUpdatesUpdatableAssetMemberById
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesCatalogEntry
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesCatalogEntryCount
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesDeployment
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesDeploymentAudienceExclusion
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesDeploymentAudienceExclusionCount
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesDeploymentAudienceMember
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesDeploymentAudienceMemberCount
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesDeploymentCount
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesPolicy
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesPolicyAudience
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesPolicyAudienceExclusion
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesPolicyAudienceExclusionCount
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesPolicyAudienceMember
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesPolicyAudienceMemberCount
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesPolicyComplianceChange
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesPolicyComplianceChangeCount
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesPolicyComplianceChangeUpdatePolicy
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesPolicyCount
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesResourceConnection
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesResourceConnectionCount
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesUpdatableAsset
+  - Microsoft.Graph.Beta.WindowsUpdates.Get-MgBetaWindowsUpdatesUpdatableAssetCount
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceExclusionAssetById
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaEnrollWindowsUpdatesDeploymentAudienceMemberAssetById
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaEnrollWindowsUpdatesPolicyAudienceExclusionAsset
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaEnrollWindowsUpdatesPolicyAudienceExclusionAssetById
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaEnrollWindowsUpdatesPolicyAudienceMemberAsset
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaEnrollWindowsUpdatesPolicyAudienceMemberAssetById
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaEnrollWindowsUpdatesUpdatableAsset
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaEnrollWindowsUpdatesUpdatableAssetById
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaGraphWindowsUpdatesDeploymentAudienceExclusion
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaGraphWindowsUpdatesDeploymentAudienceMember
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaGraphWindowsUpdatesPolicyAudienceExclusion
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaGraphWindowsUpdatesPolicyAudienceMember
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaGraphWindowsUpdatesUpdatableAsset
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaUnenrollWindowsUpdatesPolicyAudienceExclusionAsset
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaUnenrollWindowsUpdatesPolicyAudienceMemberAsset
+  - Microsoft.Graph.Beta.WindowsUpdates.Invoke-MgBetaUnenrollWindowsUpdatesUpdatableAsset
+  - Microsoft.Graph.Beta.WindowsUpdates.New-MgBetaWindowsUpdatesDeployment
+  - Microsoft.Graph.Beta.WindowsUpdates.New-MgBetaWindowsUpdatesPolicy
+  - Microsoft.Graph.Beta.WindowsUpdates.New-MgBetaWindowsUpdatesPolicyAudienceExclusion
+  - Microsoft.Graph.Beta.WindowsUpdates.New-MgBetaWindowsUpdatesPolicyAudienceMember
+  - Microsoft.Graph.Beta.WindowsUpdates.New-MgBetaWindowsUpdatesPolicyComplianceChange
+  - Microsoft.Graph.Beta.WindowsUpdates.New-MgBetaWindowsUpdatesResourceConnection
+  - Microsoft.Graph.Beta.WindowsUpdates.New-MgBetaWindowsUpdatesUpdatableAsset
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesDeployment
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesDeploymentAudienceExclusionMemberById
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesDeploymentAudienceMemberById
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesPolicy
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesPolicyAudience
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesPolicyAudienceExclusion
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMember
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMemberById
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesPolicyAudienceMember
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesPolicyAudienceMemberById
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesPolicyComplianceChange
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesResourceConnection
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesUpdatableAsset
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesUpdatableAssetMember
+  - Microsoft.Graph.Beta.WindowsUpdates.Remove-MgBetaWindowsUpdatesUpdatableAssetMemberById
+  - Microsoft.Graph.Beta.WindowsUpdates.Update-MgBetaWindowsUpdatesDeployment
+  - Microsoft.Graph.Beta.WindowsUpdates.Update-MgBetaWindowsUpdatesDeploymentAudience
+  - Microsoft.Graph.Beta.WindowsUpdates.Update-MgBetaWindowsUpdatesDeploymentAudienceById
+  - Microsoft.Graph.Beta.WindowsUpdates.Update-MgBetaWindowsUpdatesPolicy
+  - Microsoft.Graph.Beta.WindowsUpdates.Update-MgBetaWindowsUpdatesPolicyAudience
+  - Microsoft.Graph.Beta.WindowsUpdates.Update-MgBetaWindowsUpdatesPolicyAudienceById
+  - Microsoft.Graph.Beta.WindowsUpdates.Update-MgBetaWindowsUpdatesPolicyAudienceExclusion
+  - Microsoft.Graph.Beta.WindowsUpdates.Update-MgBetaWindowsUpdatesPolicyAudienceMember
+  - Microsoft.Graph.Beta.WindowsUpdates.Update-MgBetaWindowsUpdatesPolicyComplianceChange
+  - Microsoft.Graph.Beta.WindowsUpdates.Update-MgBetaWindowsUpdatesResourceConnection
+  - Microsoft.Graph.Beta.WindowsUpdates.Update-MgBetaWindowsUpdatesUpdatableAsset
+uid: Microsoft.Graph.Beta.WindowsUpdates
+name: Microsoft.Graph.Beta.WindowsUpdates
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.WindowsUpdates
+  Module Guid: 250a9f57-3b30-4fca-b014-ba208088f0b8
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates
+  Help Version: 1.0.0.0
+  Locale: en-US

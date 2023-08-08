@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get directory from roleManagement
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectory?view=graph-powershell-beta)
+module: Microsoft.Graph.Identity.Governance
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaRoleManagementDirectory
+  href: /powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectory?view=graph-powershell-beta
+syntaxes:
+- Get-MgRoleManagementDirectory [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Identity.Governance.Get-MgRoleManagementDirectory
+name: Get-MgRoleManagementDirectory
+description: |-
+  Get directory from roleManagement
+metadata:
+  external help file: Microsoft.Graph.Identity.Governance-help.xml
+  Module Name: Microsoft.Graph.Identity.Governance
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgrolemanagementdirectory
+  schema: 2.0.0

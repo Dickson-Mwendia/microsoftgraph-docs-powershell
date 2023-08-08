@@ -1,0 +1,231 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Add new entity to privilegedRoleAssignments
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgPrivilegedRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRoleAssignment?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.Governance
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphPrivilegedRoleAssignment>`: privilegedRoleAssignment
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ExpirationDateTime <DateTime?>]`: 
+    - `[IsElevated <Boolean?>]`: 
+    - `[ResultMessage <String>]`: 
+    - `[RoleId <String>]`: 
+    - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: 
+      - `[Name <String>]`: 
+      - `[Settings <IMicrosoftGraphPrivilegedRoleSettings>]`: privilegedRoleSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[ApprovalOnElevation <Boolean?>]`: 
+        - `[ApproverIds <String[]>]`: 
+        - `[ElevationDuration <TimeSpan?>]`: 
+        - `[IsMfaOnElevationConfigurable <Boolean?>]`: 
+        - `[LastGlobalAdmin <Boolean?>]`: 
+        - `[MaxElavationDuration <TimeSpan?>]`: 
+        - `[MfaOnElevation <Boolean?>]`: 
+        - `[MinElevationDuration <TimeSpan?>]`: 
+        - `[NotificationToUserOnElevation <Boolean?>]`: 
+        - `[TicketingInfoOnElevation <Boolean?>]`: 
+      - `[Summary <IMicrosoftGraphPrivilegedRoleSummary>]`: privilegedRoleSummary
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[ElevatedCount <Int32?>]`: 
+        - `[ManagedCount <Int32?>]`: 
+        - `[MfaEnabled <Boolean?>]`: 
+        - `[Status <String>]`: roleSummaryStatus
+        - `[UsersCount <Int32?>]`: 
+    - `[UserId <String>]`: 
+
+  `ROLEINFO <IMicrosoftGraphPrivilegedRole>`: privilegedRole
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: 
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ExpirationDateTime <DateTime?>]`: 
+      - `[IsElevated <Boolean?>]`: 
+      - `[ResultMessage <String>]`: 
+      - `[RoleId <String>]`: 
+      - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
+      - `[UserId <String>]`: 
+    - `[Name <String>]`: 
+    - `[Settings <IMicrosoftGraphPrivilegedRoleSettings>]`: privilegedRoleSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ApprovalOnElevation <Boolean?>]`: 
+      - `[ApproverIds <String[]>]`: 
+      - `[ElevationDuration <TimeSpan?>]`: 
+      - `[IsMfaOnElevationConfigurable <Boolean?>]`: 
+      - `[LastGlobalAdmin <Boolean?>]`: 
+      - `[MaxElavationDuration <TimeSpan?>]`: 
+      - `[MfaOnElevation <Boolean?>]`: 
+      - `[MinElevationDuration <TimeSpan?>]`: 
+      - `[NotificationToUserOnElevation <Boolean?>]`: 
+      - `[TicketingInfoOnElevation <Boolean?>]`: 
+    - `[Summary <IMicrosoftGraphPrivilegedRoleSummary>]`: privilegedRoleSummary
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ElevatedCount <Int32?>]`: 
+      - `[ManagedCount <Int32?>]`: 
+      - `[MfaEnabled <Boolean?>]`: 
+      - `[Status <String>]`: roleSummaryStatus
+      - `[UsersCount <Int32?>]`:
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgPrivilegedRoleAssignment
+  href: /powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRoleAssignment?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaPrivilegedRoleAssignment [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>]
+
+   [-Id <String>] [-IsElevated] [-ResultMessage <String>] [-RoleId <String>]
+
+   [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaPrivilegedRoleAssignment -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignment> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the New-MgBetaPrivilegedRoleAssignment Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Identity.Governance
+    $params = @{
+    	UserId = "userId-value"
+    	RoleId = "roleId-value"
+    }
+    New-MgBetaPrivilegedRoleAssignment -BodyParameter $params
+  description: |-
+    This example shows how to use the New-MgBetaPrivilegedRoleAssignment Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphPrivilegedRoleAssignment" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    privilegedRoleAssignment
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: ExpirationDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsElevated
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ResultMessage
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RoleId
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphPrivilegedRole" data-throw-if-not-resolved="False" />
+  name: RoleInfo
+  description: |+
+    privilegedRole
+    To construct, see NOTES section for ROLEINFO properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.Governance.New-MgBetaPrivilegedRoleAssignment
+name: New-MgBetaPrivilegedRoleAssignment
+description: |-
+  Add new entity to privilegedRoleAssignments
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.Governance
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignment
+  schema: 2.0.0

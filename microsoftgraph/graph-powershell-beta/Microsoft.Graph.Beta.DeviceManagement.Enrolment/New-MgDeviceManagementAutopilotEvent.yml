@@ -1,0 +1,407 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to autopilotEvents for deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementAutopilotEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementAutopilotEvent?view=graph-powershell-v1.0)
+module: Microsoft.Graph.DeviceManagement.Enrolment
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotEvent>`: Represents an Autopilot flow event.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[AccountSetupDuration <TimeSpan?>]`: Time spent in user ESP.
+    - `[AccountSetupStatus <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
+    - `[DeploymentDuration <TimeSpan?>]`: Autopilot deployment duration including enrollment.
+    - `[DeploymentEndDateTime <DateTime?>]`: Deployment end time.
+    - `[DeploymentStartDateTime <DateTime?>]`: Deployment start time.
+    - `[DeploymentState <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
+    - `[DeploymentTotalDuration <TimeSpan?>]`: Total deployment duration from enrollment to Desktop screen.
+    - `[DeviceId <String>]`: Device id associated with the object
+    - `[DevicePreparationDuration <TimeSpan?>]`: Time spent in device enrollment.
+    - `[DeviceRegisteredDateTime <DateTime?>]`: Device registration date.
+    - `[DeviceSerialNumber <String>]`: Device serial number.
+    - `[DeviceSetupDuration <TimeSpan?>]`: Time spent in device ESP.
+    - `[DeviceSetupStatus <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
+    - `[EnrollmentFailureDetails <String>]`: Enrollment failure details.
+    - `[EnrollmentStartDateTime <DateTime?>]`: Device enrollment start date.
+    - `[EnrollmentState <EnrollmentState?>]`: 
+    - `[EnrollmentType <String>]`: windowsAutopilotEnrollmentType
+    - `[EventDateTime <DateTime?>]`: Time when the event occurred .
+    - `[ManagedDeviceName <String>]`: Managed device name.
+    - `[OSVersion <String>]`: Device operating system version.
+    - `[PolicyStatusDetails <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]>]`: Policy and application status details for this device.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
+      - `[DisplayName <String>]`: The friendly name of the policy.
+      - `[ErrorCode <Int32?>]`: The errorode associated with the compliance or enforcement status of the policy. Error code for enforcement status takes precedence if it exists.
+      - `[LastReportedDateTime <DateTime?>]`: Timestamp of the reported policy status
+      - `[PolicyType <String>]`: deviceManagementAutopilotPolicyType
+      - `[TrackedOnEnrollmentStatus <Boolean?>]`: Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
+    - `[TargetedAppCount <Int32?>]`: Count of applications targeted.
+    - `[TargetedPolicyCount <Int32?>]`: Count of policies targeted.
+    - `[UserPrincipalName <String>]`: User principal name used to enroll the device.
+    - `[Windows10EnrollmentCompletionPageConfigurationDisplayName <String>]`: Enrollment Status Page profile name
+    - `[Windows10EnrollmentCompletionPageConfigurationId <String>]`: Enrollment Status Page profile ID
+    - `[WindowsAutopilotDeploymentProfileDisplayName <String>]`: Autopilot profile name.
+
+  POLICYSTATUSDETAILS <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail\[]>: Policy and application status details for this device.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
+    - `[DisplayName <String>]`: The friendly name of the policy.
+    - `[ErrorCode <Int32?>]`: The errorode associated with the compliance or enforcement status of the policy. Error code for enforcement status takes precedence if it exists.
+    - `[LastReportedDateTime <DateTime?>]`: Timestamp of the reported policy status
+    - `[PolicyType <String>]`: deviceManagementAutopilotPolicyType
+    - `[TrackedOnEnrollmentStatus <Boolean?>]`: Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementAutopilotEvent
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementAutopilotEvent?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgDeviceManagementAutopilotEvent [-AccountSetupDuration <TimeSpan>]
+
+   [-AccountSetupStatus <WindowsAutopilotDeploymentState>] [-AdditionalProperties <Hashtable>]
+
+   [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>] [-DeploymentStartDateTime <DateTime>]
+
+   [-DeploymentState <WindowsAutopilotDeploymentState>] [-DeploymentTotalDuration <TimeSpan>]
+
+   [-DeviceId <String>] [-DevicePreparationDuration <TimeSpan>] [-DeviceRegisteredDateTime <DateTime>]
+
+   [-DeviceSerialNumber <String>] [-DeviceSetupDuration <TimeSpan>]
+
+   [-DeviceSetupStatus <WindowsAutopilotDeploymentState>] [-EnrollmentFailureDetails <String>]
+
+   [-EnrollmentStartDateTime <DateTime>] [-EnrollmentState <EnrollmentState>] [-EnrollmentType <String>]
+
+   [-EventDateTime <DateTime>] [-Id <String>] [-ManagedDeviceName <String>] [-OSVersion <String>]
+
+   [-PolicyStatusDetails <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]>]
+
+   [-TargetedAppCount <Int32>] [-TargetedPolicyCount <Int32>] [-UserPrincipalName <String>]
+
+   [-Windows10EnrollmentCompletionPageConfigurationDisplayName <String>]
+
+   [-Windows10EnrollmentCompletionPageConfigurationId <String>]
+
+   [-WindowsAutopilotDeploymentProfileDisplayName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgDeviceManagementAutopilotEvent -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotEvent> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="TimeSpan" data-throw-if-not-resolved="False" />
+  name: AccountSetupDuration
+  description: |+
+    Time spent in user ESP.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="WindowsAutopilotDeploymentState" data-throw-if-not-resolved="False" />
+  name: AccountSetupStatus
+  description: |+
+    Deployment states for Autopilot devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceManagementAutopilotEvent" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Represents an Autopilot flow event.
+    To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="TimeSpan" data-throw-if-not-resolved="False" />
+  name: DeploymentDuration
+  description: |+
+    Autopilot deployment duration including enrollment.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: DeploymentEndDateTime
+  description: |+
+    Deployment end time.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: DeploymentStartDateTime
+  description: |+
+    Deployment start time.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="WindowsAutopilotDeploymentState" data-throw-if-not-resolved="False" />
+  name: DeploymentState
+  description: |+
+    Deployment states for Autopilot devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="TimeSpan" data-throw-if-not-resolved="False" />
+  name: DeploymentTotalDuration
+  description: |+
+    Total deployment duration from enrollment to Desktop screen.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceId
+  description: |+
+    Device id associated with the object
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="TimeSpan" data-throw-if-not-resolved="False" />
+  name: DevicePreparationDuration
+  description: |+
+    Time spent in device enrollment.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: DeviceRegisteredDateTime
+  description: |+
+    Device registration date.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceSerialNumber
+  description: |+
+    Device serial number.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="TimeSpan" data-throw-if-not-resolved="False" />
+  name: DeviceSetupDuration
+  description: |+
+    Time spent in device ESP.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="WindowsAutopilotDeploymentState" data-throw-if-not-resolved="False" />
+  name: DeviceSetupStatus
+  description: |+
+    Deployment states for Autopilot devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EnrollmentFailureDetails
+  description: |+
+    Enrollment failure details.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: EnrollmentStartDateTime
+  description: |+
+    Device enrollment start date.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="EnrollmentState" data-throw-if-not-resolved="False" />
+  name: EnrollmentState
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EnrollmentType
+  description: |+
+    windowsAutopilotEnrollmentType
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: EventDateTime
+  description: |+
+    Time when the event occurred .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ManagedDeviceName
+  description: |+
+    Managed device name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OSVersion
+  description: |+
+    Device operating system version.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: PolicyStatusDetails
+  description: |+
+    Policy and application status details for this device.
+    To construct, please use Get-Help -Online and see NOTES section for POLICYSTATUSDETAILS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: TargetedAppCount
+  description: |+
+    Count of applications targeted.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: TargetedPolicyCount
+  description: |+
+    Count of policies targeted.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserPrincipalName
+  description: |+
+    User principal name used to enroll the device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Windows10EnrollmentCompletionPageConfigurationDisplayName
+  description: |+
+    Enrollment Status Page profile name
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Windows10EnrollmentCompletionPageConfigurationId
+  description: |+
+    Enrollment Status Page profile ID
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: WindowsAutopilotDeploymentProfileDisplayName
+  description: |+
+    Autopilot profile name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Enrolment.New-MgDeviceManagementAutopilotEvent
+name: New-MgDeviceManagementAutopilotEvent
+description: |-
+  Create new navigation property to autopilotEvents for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+  online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgdevicemanagementautopilotevent
+  schema: 2.0.0

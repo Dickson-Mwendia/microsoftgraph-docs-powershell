@@ -1,0 +1,731 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property androidManagedAppProtections in deviceAppManagement
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.CorporateManagement
+notes: |-
+  ALIASES
+
+  Update-MgDeviceAppMgtAndroidManagedAppProtection
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `APPS <IMicrosoftGraphManagedMobileApp[]>`: List of apps to which the policy is deployed.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Version <String>]`: Version of the entity.
+
+  `ASSIGNMENTS <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+
+  `BODYPARAMETER <IMicrosoftGraphAndroidManagedAppProtection>`: Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>]`: Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsAssigned <Boolean?>]`: Indicates if the policy is deployed to any inclusion groups or not.
+    - `[AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]`: Data storage locations where a user may store managed data.
+    - `[AllowedInboundDataTransferSources <ManagedAppDataTransferLevel?>]`: Data can be transferred from/to these classes of apps
+    - `[AllowedOutboundClipboardSharingLevel <ManagedAppClipboardSharingLevel?>]`: Represents the level to which the device's clipboard may be shared between apps
+    - `[AllowedOutboundDataTransferDestinations <ManagedAppDataTransferLevel?>]`: Data can be transferred from/to these classes of apps
+    - `[ContactSyncBlocked <Boolean?>]`: Indicates whether contacts can be synced to the user's device.
+    - `[DataBackupBlocked <Boolean?>]`: Indicates whether the backup of a managed app's data is blocked.
+    - `[DeviceComplianceRequired <Boolean?>]`: Indicates whether device compliance is required.
+    - `[DisableAppPinIfDevicePinIsSet <Boolean?>]`: Indicates whether use of the app pin is required if the device pin is set.
+    - `[FingerprintBlocked <Boolean?>]`: Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
+    - `[ManagedBrowser <ManagedBrowserType?>]`: Type of managed browser
+    - `[ManagedBrowserToOpenLinksRequired <Boolean?>]`: Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
+    - `[MaximumPinRetries <Int32?>]`: Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
+    - `[MinimumPinLength <Int32?>]`: Minimum pin length required for an app-level pin if PinRequired is set to True
+    - `[MinimumRequiredAppVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
+    - `[MinimumRequiredOSVersion <String>]`: Versions less than the specified version will block the managed app from accessing company data.
+    - `[MinimumWarningAppVersion <String>]`: Versions less than the specified version will result in warning message on the managed app.
+    - `[MinimumWarningOSVersion <String>]`: Versions less than the specified version will result in warning message on the managed app from accessing company data.
+    - `[OrganizationalCredentialsRequired <Boolean?>]`: Indicates whether organizational credentials are required for app use.
+    - `[PeriodBeforePinReset <TimeSpan?>]`: TimePeriod before the all-level pin must be reset if PinRequired is set to True.
+    - `[PeriodOfflineBeforeAccessCheck <TimeSpan?>]`: The period after which access is checked when the device is not connected to the internet.
+    - `[PeriodOfflineBeforeWipeIsEnforced <TimeSpan?>]`: The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
+    - `[PeriodOnlineBeforeAccessCheck <TimeSpan?>]`: The period after which access is checked when the device is connected to the internet.
+    - `[PinCharacterSet <ManagedAppPinCharacterSet?>]`: Character set which is to be used for a user's app PIN
+    - `[PinRequired <Boolean?>]`: Indicates whether an app-level pin is required.
+    - `[PrintBlocked <Boolean?>]`: Indicates whether printing is allowed from managed apps.
+    - `[SaveAsBlocked <Boolean?>]`: Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
+    - `[SimplePinBlocked <Boolean?>]`: Indicates whether simplePin is blocked.
+    - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
+    - `[Description <String>]`: The policy's description.
+    - `[DisplayName <String>]`: Policy display name.
+    - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
+    - `[Version <String>]`: Version of the entity.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Apps <IMicrosoftGraphManagedMobileApp[]>]`: List of apps to which the policy is deployed.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Version <String>]`: Version of the entity.
+    - `[CustomBrowserDisplayName <String>]`: Friendly name of the preferred custom browser to open weblink on Android. When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+    - `[CustomBrowserPackageId <String>]`: Unique identifier of the preferred custom browser to open weblink on Android. When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+    - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
+    - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[ConfigurationDeployedUserCount <Int32?>]`: Not yet documented
+      - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]`: Not yet documented
+        - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
+        - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
+      - `[DisplayName <String>]`: Not yet documented
+      - `[LastRefreshTime <DateTime?>]`: Not yet documented
+      - `[Version <String>]`: Version of the entity.
+    - `[DisableAppEncryptionIfDeviceEncryptionIsEnabled <Boolean?>]`: When this setting is enabled, app level encryption is disabled if device level encryption is enabled
+    - `[EncryptAppData <Boolean?>]`: Indicates whether application data for managed apps should be encrypted
+    - `[MinimumRequiredPatchVersion <String>]`: Define the oldest required Android security patch level a user can have to gain secure access to the app.
+    - `[MinimumWarningPatchVersion <String>]`: Define the oldest recommended Android security patch level a user can have for secure access to the app.
+    - `[ScreenCaptureBlocked <Boolean?>]`: Indicates whether a managed user can take screen captures of managed apps
+
+  `DEPLOYMENTSUMMARY <IMicrosoftGraphManagedAppPolicyDeploymentSummary>`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[ConfigurationDeployedUserCount <Int32?>]`: Not yet documented
+    - `[ConfigurationDeploymentSummaryPerApp <IMicrosoftGraphManagedAppPolicyDeploymentSummaryPerApp[]>]`: Not yet documented
+      - `[ConfigurationAppliedUserCount <Int32?>]`: Number of users the policy is applied.
+      - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: Not yet documented
+    - `[LastRefreshTime <DateTime?>]`: Not yet documented
+    - `[Version <String>]`: Version of the entity.
+
+  `INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
+    - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
+    - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
+    - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
+    - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
+    - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
+    - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+    - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
+    - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
+    - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
+    - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
+    - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
+    - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
+    - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+    - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+    - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+    - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
+    - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+    - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
+    - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
+    - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
+    - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
+    - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+    - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
+    - `[MobileAppId <String>]`: The unique identifier of mobileApp
+    - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
+    - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
+    - `[UserId <String>]`: The unique identifier of user
+    - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
+    - `[VppTokenId <String>]`: The unique identifier of vppToken
+    - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+    - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
+    - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
+
+  ## RELATED LINKS
+  [Update-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
+
+  ## RELATED LINKS
+  [Update-MgBetaDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-beta)
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Update-MgDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppProtectionId <String>
+
+   [-AdditionalProperties <Hashtable>] [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
+
+   [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>]
+
+   [-AllowedOutboundClipboardSharingLevel <ManagedAppClipboardSharingLevel>]
+
+   [-AllowedOutboundDataTransferDestinations <ManagedAppDataTransferLevel>]
+
+   [-Apps <IMicrosoftGraphManagedMobileApp[]>]
+
+   [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>] [-ContactSyncBlocked]
+
+   [-CreatedDateTime <DateTime>] [-CustomBrowserDisplayName <String>] [-CustomBrowserPackageId <String>]
+
+   [-DataBackupBlocked] [-DeployedAppCount <Int32>]
+
+   [-DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>] [-Description <String>]
+
+   [-DeviceComplianceRequired] [-DisableAppEncryptionIfDeviceEncryptionIsEnabled]
+
+   [-DisableAppPinIfDevicePinIsSet] [-DisplayName <String>] [-EncryptAppData] [-FingerprintBlocked]
+
+   [-Id <String>] [-IsAssigned] [-LastModifiedDateTime <DateTime>] [-ManagedBrowser <ManagedBrowserType>]
+
+   [-ManagedBrowserToOpenLinksRequired] [-MaximumPinRetries <Int32>] [-MinimumPinLength <Int32>]
+
+   [-MinimumRequiredAppVersion <String>] [-MinimumRequiredOSVersion <String>]
+
+   [-MinimumRequiredPatchVersion <String>] [-MinimumWarningAppVersion <String>]
+
+   [-MinimumWarningOSVersion <String>] [-MinimumWarningPatchVersion <String>]
+
+   [-OrganizationalCredentialsRequired] [-PeriodBeforePinReset <TimeSpan>]
+
+   [-PeriodOfflineBeforeAccessCheck <TimeSpan>] [-PeriodOfflineBeforeWipeIsEnforced <TimeSpan>]
+
+   [-PeriodOnlineBeforeAccessCheck <TimeSpan>] [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
+
+   [-PrintBlocked] [-SaveAsBlocked] [-ScreenCaptureBlocked] [-SimplePinBlocked] [-Version <String>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppProtectionId <String>
+
+   -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-AllowedDataStorageLocations <ManagedAppDataStorageLocation[]>]
+
+   [-AllowedInboundDataTransferSources <ManagedAppDataTransferLevel>]
+
+   [-AllowedOutboundClipboardSharingLevel <ManagedAppClipboardSharingLevel>]
+
+   [-AllowedOutboundDataTransferDestinations <ManagedAppDataTransferLevel>]
+
+   [-Apps <IMicrosoftGraphManagedMobileApp[]>]
+
+   [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>] [-ContactSyncBlocked]
+
+   [-CreatedDateTime <DateTime>] [-CustomBrowserDisplayName <String>] [-CustomBrowserPackageId <String>]
+
+   [-DataBackupBlocked] [-DeployedAppCount <Int32>]
+
+   [-DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>] [-Description <String>]
+
+   [-DeviceComplianceRequired] [-DisableAppEncryptionIfDeviceEncryptionIsEnabled]
+
+   [-DisableAppPinIfDevicePinIsSet] [-DisplayName <String>] [-EncryptAppData] [-FingerprintBlocked]
+
+   [-Id <String>] [-IsAssigned] [-LastModifiedDateTime <DateTime>] [-ManagedBrowser <ManagedBrowserType>]
+
+   [-ManagedBrowserToOpenLinksRequired] [-MaximumPinRetries <Int32>] [-MinimumPinLength <Int32>]
+
+   [-MinimumRequiredAppVersion <String>] [-MinimumRequiredOSVersion <String>]
+
+   [-MinimumRequiredPatchVersion <String>] [-MinimumWarningAppVersion <String>]
+
+   [-MinimumWarningOSVersion <String>] [-MinimumWarningPatchVersion <String>]
+
+   [-OrganizationalCredentialsRequired] [-PeriodBeforePinReset <TimeSpan>]
+
+   [-PeriodOfflineBeforeAccessCheck <TimeSpan>] [-PeriodOfflineBeforeWipeIsEnforced <TimeSpan>]
+
+   [-PeriodOnlineBeforeAccessCheck <TimeSpan>] [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
+
+   [-PrintBlocked] [-SaveAsBlocked] [-ScreenCaptureBlocked] [-SimplePinBlocked] [-Version <String>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
+
+   -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ManagedAppDataStorageLocation" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: AllowedDataStorageLocations
+  description: |+
+    Data storage locations where a user may store managed data.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ManagedAppDataTransferLevel" data-throw-if-not-resolved="False" />
+  name: AllowedInboundDataTransferSources
+  description: |+
+    Data can be transferred from/to these classes of apps
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ManagedAppClipboardSharingLevel" data-throw-if-not-resolved="False" />
+  name: AllowedOutboundClipboardSharingLevel
+  description: |+
+    Represents the level to which the device's clipboard may be shared between apps
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ManagedAppDataTransferLevel" data-throw-if-not-resolved="False" />
+  name: AllowedOutboundDataTransferDestinations
+  description: |+
+    Data can be transferred from/to these classes of apps
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AndroidManagedAppProtectionId
+  isRequired: true
+  description: |+
+    The unique identifier of androidManagedAppProtection
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedMobileApp" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Apps
+  description: |+
+    List of apps to which the policy is deployed.
+    To construct, see NOTES section for APPS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphTargetedManagedAppPolicyAssignment" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Assignments
+  description: |+
+    Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+    To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAndroidManagedAppProtection" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on an Android device
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: ContactSyncBlocked
+  description: |+
+    Indicates whether contacts can be synced to the user's device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    The date and time the policy was created.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CustomBrowserDisplayName
+  description: |+
+    Friendly name of the preferred custom browser to open weblink on Android.
+    When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CustomBrowserPackageId
+  description: |+
+    Unique identifier of the preferred custom browser to open weblink on Android.
+    When this property is configured, ManagedBrowserToOpenLinksRequired should be true.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: DataBackupBlocked
+  description: |+
+    Indicates whether the backup of a managed app's data is blocked.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: DeployedAppCount
+  description: |+
+    Count of apps to which the current policy is deployed.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedAppPolicyDeploymentSummary" data-throw-if-not-resolved="False" />
+  name: DeploymentSummary
+  description: |+
+    The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
+    To construct, see NOTES section for DEPLOYMENTSUMMARY properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    The policy's description.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: DeviceComplianceRequired
+  description: |+
+    Indicates whether device compliance is required.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: DisableAppEncryptionIfDeviceEncryptionIsEnabled
+  description: |+
+    When this setting is enabled, app level encryption is disabled if device level encryption is enabled
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: DisableAppPinIfDevicePinIsSet
+  description: |+
+    Indicates whether use of the app pin is required if the device pin is set.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Policy display name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: EncryptAppData
+  description: |+
+    Indicates whether application data for managed apps should be encrypted
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: FingerprintBlocked
+  description: |+
+    Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDevicesCorporateManagementIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsAssigned
+  description: |+
+    Indicates if the policy is deployed to any inclusion groups or not.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    Last time the policy was modified.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ManagedBrowserType" data-throw-if-not-resolved="False" />
+  name: ManagedBrowser
+  description: |+
+    Type of managed browser
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: ManagedBrowserToOpenLinksRequired
+  description: |+
+    Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: MaximumPinRetries
+  description: |+
+    Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: MinimumPinLength
+  description: |+
+    Minimum pin length required for an app-level pin if PinRequired is set to True
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MinimumRequiredAppVersion
+  description: |+
+    Versions less than the specified version will block the managed app from accessing company data.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MinimumRequiredOSVersion
+  description: |+
+    Versions less than the specified version will block the managed app from accessing company data.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MinimumRequiredPatchVersion
+  description: |+
+    Define the oldest required Android security patch level a user can have to gain secure access to the app.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MinimumWarningAppVersion
+  description: |+
+    Versions less than the specified version will result in warning message on the managed app.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MinimumWarningOSVersion
+  description: |+
+    Versions less than the specified version will result in warning message on the managed app from accessing company data.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MinimumWarningPatchVersion
+  description: |+
+    Define the oldest recommended Android security patch level a user can have for secure access to the app.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: OrganizationalCredentialsRequired
+  description: |+
+    Indicates whether organizational credentials are required for app use.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="TimeSpan" data-throw-if-not-resolved="False" />
+  name: PeriodBeforePinReset
+  description: |+
+    TimePeriod before the all-level pin must be reset if PinRequired is set to True.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="TimeSpan" data-throw-if-not-resolved="False" />
+  name: PeriodOfflineBeforeAccessCheck
+  description: |+
+    The period after which access is checked when the device is not connected to the internet.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="TimeSpan" data-throw-if-not-resolved="False" />
+  name: PeriodOfflineBeforeWipeIsEnforced
+  description: |+
+    The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="TimeSpan" data-throw-if-not-resolved="False" />
+  name: PeriodOnlineBeforeAccessCheck
+  description: |+
+    The period after which access is checked when the device is connected to the internet.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ManagedAppPinCharacterSet" data-throw-if-not-resolved="False" />
+  name: PinCharacterSet
+  description: |+
+    Character set which is to be used for a user's app PIN
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PinRequired
+  description: |+
+    Indicates whether an app-level pin is required.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PrintBlocked
+  description: |+
+    Indicates whether printing is allowed from managed apps.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: SaveAsBlocked
+  description: |+
+    Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: ScreenCaptureBlocked
+  description: |+
+    Indicates whether a managed user can take screen captures of managed apps
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: SimplePinBlocked
+  description: |+
+    Indicates whether simplePin is blocked.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Version
+  description: |+
+    Version of the entity.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.CorporateManagement.Update-MgDeviceAppManagementAndroidManagedAppProtection
+name: Update-MgDeviceAppManagementAndroidManagedAppProtection
+description: |-
+  Update the navigation property androidManagedAppProtections in deviceAppManagement
+metadata:
+  external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Devices.CorporateManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementandroidmanagedappprotection
+  schema: 2.0.0

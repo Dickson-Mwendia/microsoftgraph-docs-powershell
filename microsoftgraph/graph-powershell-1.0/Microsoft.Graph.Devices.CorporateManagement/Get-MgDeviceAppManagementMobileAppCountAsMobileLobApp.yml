@@ -1,0 +1,50 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.CorporateManagement
+notes: |-
+  ALIASES
+
+  Get-MgDeviceAppMgtMobileAppCountAsMobileLobApp
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgDeviceAppManagementMobileAppCountAsMobileLobApp [-Filter <String>] [-Search <String>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.CorporateManagement.Get-MgDeviceAppManagementMobileAppCountAsMobileLobApp
+name: Get-MgDeviceAppManagementMobileAppCountAsMobileLobApp
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Devices.CorporateManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmanagementmobileappcountasmobilelobapp
+  schema: 2.0.0

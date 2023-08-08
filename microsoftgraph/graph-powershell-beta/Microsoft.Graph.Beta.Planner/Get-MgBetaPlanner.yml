@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get planner
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Get-MgPlanner?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Planner
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlanner" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgPlanner
+  href: /powershell/module/Microsoft.Graph.Planner/Get-MgPlanner?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Planner.Get-MgBetaPlanner
+name: Get-MgBetaPlanner
+description: |-
+  Get planner
+metadata:
+  external help file: Microsoft.Graph.Beta.Planner-help.xml
+  Module Name: Microsoft.Graph.Beta.Planner
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplanner
+  schema: 2.0.0

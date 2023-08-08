@@ -1,0 +1,46 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke action disconnect
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Disconnect-MgDeviceManagementChromeOSOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Disconnect-MgDeviceManagementChromeOSOnboardingSetting?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Actions
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Support.ChromeOSOnboardingStatus" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Disconnect-MgDeviceManagementChromeOSOnboardingSetting
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Actions/Disconnect-MgDeviceManagementChromeOSOnboardingSetting?view=graph-powershell-v1.0
+syntaxes:
+- Disconnect-MgBetaDeviceManagementChromeOSOnboardingSetting [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Actions.Disconnect-MgBetaDeviceManagementChromeOSOnboardingSetting
+name: Disconnect-MgBetaDeviceManagementChromeOSOnboardingSetting
+description: |-
+  Invoke action disconnect
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/disconnect-mgbetadevicemanagementchromeosonboardingsetting
+  schema: 2.0.0

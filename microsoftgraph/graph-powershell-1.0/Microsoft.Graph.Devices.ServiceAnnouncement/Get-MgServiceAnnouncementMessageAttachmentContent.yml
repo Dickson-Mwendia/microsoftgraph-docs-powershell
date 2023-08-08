@@ -1,0 +1,99 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The attachment content.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessageAttachmentContent?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.ServiceAnnouncement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+    - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
+    - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
+    - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
+    - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaServiceAnnouncementMessageAttachmentContent
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementMessageAttachmentContent?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgServiceAnnouncementMessageAttachmentContent -ServiceAnnouncementAttachmentId <String>
+
+   -ServiceUpdateMessageId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+- >-
+  Get-MgServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServiceAnnouncementIdentity>
+
+   -OutFile <String> [-PassThru] [<CommonParameters>]
+parameters:
+- type: <xref href="IDevicesServiceAnnouncementIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OutFile
+  isRequired: true
+  description: |+
+    Path to write output file to
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ServiceAnnouncementAttachmentId
+  isRequired: true
+  description: |+
+    The unique identifier of serviceAnnouncementAttachment
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ServiceUpdateMessageId
+  isRequired: true
+  description: |+
+    The unique identifier of serviceUpdateMessage
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementMessageAttachmentContent
+name: Get-MgServiceAnnouncementMessageAttachmentContent
+description: |-
+  The attachment content.
+metadata:
+  external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
+  Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentcontent
+  schema: 2.0.0

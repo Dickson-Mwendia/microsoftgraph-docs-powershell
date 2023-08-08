@@ -1,0 +1,212 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get a set of contacts that have been added, deleted, or updated in a specified folder.
+  A **delta** function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
+  This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderContactDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserContactFolderContactDelta?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Users.Functions
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IUsersFunctionsIdentity>`: Identity Parameter
+    - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
+    - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
+    - `[CalendarId <String>]`: The unique identifier of calendar
+    - `[ChatId <String>]`: The unique identifier of chat
+    - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+    - `[CloudPcId <String>]`: The unique identifier of cloudPC
+    - `[ContactFolderId <String>]`: The unique identifier of contactFolder
+    - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
+    - `[ContentTypeId <String>]`: The unique identifier of contentType
+    - `[DriveId <String>]`: The unique identifier of drive
+    - `[DriveItemId <String>]`: The unique identifier of driveItem
+    - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+    - `[EventId <String>]`: The unique identifier of event
+    - `[GroupId <String>]`: Usage: groupId='{groupId}'
+    - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+    - `[Interval <String>]`: Usage: interval='{interval}'
+    - `[ListItemId <String>]`: The unique identifier of listItem
+    - `[MailFolderId <String>]`: The unique identifier of mailFolder
+    - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+    - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+    - `[On <String>]`: Usage: on='{on}'
+    - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+    - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+    - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+    - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+    - `[Q <String>]`: Usage: q='{q}'
+    - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
+    - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
+    - `[Skip <Int32?>]`: Usage: skip={skip}
+    - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+    - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
+    - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+    - `[Token <String>]`: Usage: token='{token}'
+    - `[Top <Int32?>]`: Usage: top={top}
+    - `[Upn <String>]`: Usage: upn='{upn}'
+    - `[User <String>]`: Usage: User='{User}'
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContact" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgUserContactFolderContactDelta
+  href: /powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserContactFolderContactDelta?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaUserContactFolderContactDelta -ContactFolderId <String> -UserId <String> [-Filter <String>]
+
+   [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+
+   [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+- >-
+  Get-MgBetaUserContactFolderContactDelta -InputObject <IUsersFunctionsIdentity> [-Filter <String>]
+
+   [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContactFolderId
+  isRequired: true
+  description: |+
+    The unique identifier of contactFolder
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Count
+  description: |+
+    Include count of items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IUsersFunctionsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserContactFolderContactDelta
+name: Get-MgBetaUserContactFolderContactDelta
+description: |-
+  Get a set of contacts that have been added, deleted, or updated in a specified folder.
+  A **delta** function call for contacts in a folder is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the contacts in \nthat folder.
+  This allows you to maintain and synchronize a local store of a user's contacts without \nhaving to fetch the entire set of contacts from the server every time.
+metadata:
+  external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
+  Module Name: Microsoft.Graph.Beta.Users.Functions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercontactfoldercontactdelta
+  schema: 2.0.0

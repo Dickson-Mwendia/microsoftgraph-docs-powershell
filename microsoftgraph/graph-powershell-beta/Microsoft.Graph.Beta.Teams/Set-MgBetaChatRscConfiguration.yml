@@ -1,0 +1,68 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update Chat RSC configuration for tenant.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Set-MgChatRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Set-MgChatRscConfiguration?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Teams
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Set-MgChatRscConfiguration
+  href: /powershell/module/Microsoft.Graph.Teams/Set-MgChatRscConfiguration?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Set-MgBetaChatRscConfiguration -State <MicrosoftGraphRscConfigurationState> [-AdditionalProperties <Hashtable>]
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="MicrosoftGraphRscConfigurationState" data-throw-if-not-resolved="False" />
+  name: State
+  isRequired: true
+  description: |+
+    Rsc Configuration State.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: DisabledForAllApps, EnabledForPreApprovedAppsOnly, EnabledForAllApps
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Teams.Set-MgBetaChatRscConfiguration
+name: Set-MgBetaChatRscConfiguration
+description: |-
+  Update Chat RSC configuration for tenant.
+metadata:
+  external help file: Microsoft.Graph.Beta.Teams-help.xml
+  Module Name: Microsoft.Graph.Beta.Teams
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetachatrscconfiguration
+  schema: 2.0.0

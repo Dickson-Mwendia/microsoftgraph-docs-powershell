@@ -1,0 +1,94 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.Users.Functions
+  cmdlets:
+  - Microsoft.Graph.Beta.Users.Functions.Export-MgBetaUserDeviceAndAppManagementData
+  - Microsoft.Graph.Beta.Users.Functions.Find-MgBetaUserRoom
+  - Microsoft.Graph.Beta.Users.Functions.Find-MgBetaUserRoomList
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaAllUserChatMessage
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserCalendarEventDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserChatMessageDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserChatMessageReplyDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserChatPermissionGrantDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserCloudPcConnectivityHistory
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserCloudPcLaunchInfo
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserCloudPcProvisionedCloudPc
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserCloudPcShiftWorkCloudPcAccessState
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserCloudPcSupportedCloudPcRemoteAction
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserContactDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserContactFolderChildFolderContactDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserContactFolderChildFolderDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserContactFolderContactDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserContactFolderDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserDeviceDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserDriveItemActivityByInterval
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserDriveItemDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserDriveItemListItemActivityByInterval
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserDriveListContentTypeCompatibleHubContentType
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserDriveListItemActivityByInterval
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserDriveListItemDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserDriveRootActivityByInterval
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserDriveRootDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserDriveRootListItemActivityByInterval
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserEffectiveDeviceEnrollmentConfiguration
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserEventDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserEventInstanceDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserLoggedOnManagedDevice
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserMailFolderChildFolderDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserMailFolderChildFolderMessageDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserMailFolderDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserMailFolderMessageDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserManagedAppBlockedUser
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserManagedAppDiagnosticStatus
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserManagedAppPolicy
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserManagedDeviceCloudPcRemoteActionResult
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserManagedDeviceCloudPcReviewStatus
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserManagedDeviceFileVaultKey
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserManagedDeviceNonCompliantSetting
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserManagedDeviceWithAppFailure
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserManagedDeviceWithFailedApp
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserMessageDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserOnenoteRecentNotebook
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserPermissionGrantDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserPlannerAllDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserPlannerPlanBucketDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserPlannerPlanBucketTaskDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserPlannerPlanDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserPlannerPlanTaskDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserPlannerTaskDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserTodoListDelta
+  - Microsoft.Graph.Beta.Users.Functions.Get-MgBetaUserTodoTaskDelta
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaAppUserManagedDeviceDiagnostic
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaCalendarUserCalendarAllowedCalendarSharingRoles
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaFilterUserAppConsentRequestForApprovalByCurrentUser
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaFilterUserAppConsentRequestForApprovalUserConsentRequestByCurrentUser
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaFilterUserApprovalByCurrentUser
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaFilterUserPendingAccessReviewInstanceByCurrentUser
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaFilterUserPendingAccessReviewInstanceDecisionByCurrentUser
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaFilterUserPendingAccessReviewInstanceStageByCurrentUser
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaGraphUserDrive
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaMessageUserChat
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaPendingUserApp
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaPreviewUserOnenotePage
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaRecentUserActivity
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaRecentUserDrive
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaSupportedUserOutlookLanguage
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaTimeUserOutlook
+  - Microsoft.Graph.Beta.Users.Functions.Invoke-MgBetaViewUserReminder
+  - Microsoft.Graph.Beta.Users.Functions.Search-MgBetaUserDrive
+  - Microsoft.Graph.Beta.Users.Functions.Search-MgBetaUserDriveItem
+  - Microsoft.Graph.Beta.Users.Functions.Search-MgBetaUserDriveRoot
+  - Microsoft.Graph.Beta.Users.Functions.Test-MgBetaUserDriveListContentTypePublished
+  - Microsoft.Graph.Beta.Users.Functions.Test-MgBetaUserManagedAppUserBlocked
+uid: Microsoft.Graph.Beta.Users.Functions
+name: Microsoft.Graph.Beta.Users.Functions
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.Users.Functions
+  Module Guid: 25b65e8e-7d00-4ee9-8000-8404df7d1878
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions
+  Help Version: 1.0.0.0
+  Locale: en-US

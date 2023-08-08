@@ -1,0 +1,95 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.DeviceManagement.Administration
+  cmdlets:
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementApplePushNotificationCertificate
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementAuditEvent
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementAuditEventCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementComplianceManagementPartner
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementComplianceManagementPartnerCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementExchangeConnector
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementExchangeConnectorCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementIoUpdateStatus
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementIoUpdateStatusCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementMobileThreatDefenseConnector
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementMobileThreatDefenseConnectorCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementPartner
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementPartnerCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementRemoteAssistancePartner
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementRemoteAssistancePartnerCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementResourceOperation
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementResourceOperationCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementRoleAssignment
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementRoleAssignmentCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementRoleAssignmentRoleDefinition
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementRoleDefinition
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementRoleDefinitionCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementRoleDefinitionRoleAssignment
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementRoleDefinitionRoleAssignmentCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementTelecomExpenseManagementPartner
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementTelecomExpenseManagementPartnerCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementTermAndCondition
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementTermAndConditionAcceptanceStatus
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementTermAndConditionAcceptanceStatusCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementTermAndConditionAssignment
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementTermAndConditionAssignmentCount
+  - Microsoft.Graph.DeviceManagement.Administration.Get-MgDeviceManagementTermAndConditionCount
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementAuditEvent
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementComplianceManagementPartner
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementExchangeConnector
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementIoUpdateStatus
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementMobileThreatDefenseConnector
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementPartner
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementRemoteAssistancePartner
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementResourceOperation
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementRoleAssignment
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementRoleDefinition
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementRoleDefinitionRoleAssignment
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementTelecomExpenseManagementPartner
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementTermAndCondition
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementTermAndConditionAcceptanceStatus
+  - Microsoft.Graph.DeviceManagement.Administration.New-MgDeviceManagementTermAndConditionAssignment
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementApplePushNotificationCertificate
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementAuditEvent
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementComplianceManagementPartner
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementExchangeConnector
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementIoUpdateStatus
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementMobileThreatDefenseConnector
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementPartner
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementRemoteAssistancePartner
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementResourceOperation
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementRoleAssignment
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementRoleDefinition
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementRoleDefinitionRoleAssignment
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementTelecomExpenseManagementPartner
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementTermAndCondition
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementTermAndConditionAcceptanceStatus
+  - Microsoft.Graph.DeviceManagement.Administration.Remove-MgDeviceManagementTermAndConditionAssignment
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementApplePushNotificationCertificate
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementAuditEvent
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementComplianceManagementPartner
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementExchangeConnector
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementIoUpdateStatus
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementMobileThreatDefenseConnector
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementPartner
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementRemoteAssistancePartner
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementResourceOperation
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementRoleAssignment
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementRoleDefinition
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementRoleDefinitionRoleAssignment
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementTelecomExpenseManagementPartner
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementTermAndCondition
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementTermAndConditionAcceptanceStatus
+  - Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementTermAndConditionAssignment
+uid: Microsoft.Graph.DeviceManagement.Administration
+name: Microsoft.Graph.DeviceManagement.Administration
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.DeviceManagement.Administration
+  Module Guid: 23e2a635-ac16-45f4-8dee-f23061af4aa2
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration
+  Help Version: 1.0.0.0
+  Locale: en-US

@@ -1,0 +1,305 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property auditEvents in deviceManagement
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
+module: Microsoft.Graph.DeviceManagement.Administration
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `ACTOR <IMicrosoftGraphAuditActor>`: A class containing the properties for Audit Actor.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ApplicationDisplayName <String>]`: Name of the Application.
+    - `[ApplicationId <String>]`: AAD Application Id.
+    - `[AuditActorType <String>]`: Actor Type.
+    - `[IPAddress <String>]`: IPAddress.
+    - `[ServicePrincipalName <String>]`: Service Principal Name (SPN).
+    - `[UserId <String>]`: User Id.
+    - `[UserPermissions <String[]>]`: List of user permissions when the audit was performed.
+    - `[UserPrincipalName <String>]`: User Principal Name (UPN).
+
+  `BODYPARAMETER <IMicrosoftGraphAuditEvent>`: A class containing the properties for Audit Event.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Activity <String>]`: Friendly name of the activity.
+    - `[ActivityDateTime <DateTime?>]`: The date time in UTC when the activity was performed.
+    - `[ActivityOperationType <String>]`: The HTTP operation type of the activity.
+    - `[ActivityResult <String>]`: The result of the activity.
+    - `[ActivityType <String>]`: The type of activity that was being performed.
+    - `[Actor <IMicrosoftGraphAuditActor>]`: A class containing the properties for Audit Actor.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ApplicationDisplayName <String>]`: Name of the Application.
+      - `[ApplicationId <String>]`: AAD Application Id.
+      - `[AuditActorType <String>]`: Actor Type.
+      - `[IPAddress <String>]`: IPAddress.
+      - `[ServicePrincipalName <String>]`: Service Principal Name (SPN).
+      - `[UserId <String>]`: User Id.
+      - `[UserPermissions <String[]>]`: List of user permissions when the audit was performed.
+      - `[UserPrincipalName <String>]`: User Principal Name (UPN).
+    - `[Category <String>]`: Audit category.
+    - `[ComponentName <String>]`: Component name.
+    - `[CorrelationId <String>]`: The client request Id that is used to correlate activity within the system.
+    - `[DisplayName <String>]`: Event display name.
+    - `[Resources <IMicrosoftGraphAuditResource[]>]`: Resources being modified.
+      - `[AuditResourceType <String>]`: Audit resource's type.
+      - `[DisplayName <String>]`: Display name.
+      - `[ModifiedProperties <IMicrosoftGraphAuditProperty[]>]`: List of modified properties.
+        - `[DisplayName <String>]`: Display name.
+        - `[NewValue <String>]`: New value.
+        - `[OldValue <String>]`: Old value.
+      - `[ResourceId <String>]`: Audit resource's Id.
+
+  `INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
+    - `[AuditEventId <String>]`: The unique identifier of auditEvent
+    - `[ComplianceManagementPartnerId <String>]`: The unique identifier of complianceManagementPartner
+    - `[DeviceAndAppManagementRoleAssignmentId <String>]`: The unique identifier of deviceAndAppManagementRoleAssignment
+    - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+    - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+    - `[IosUpdateDeviceStatusId <String>]`: The unique identifier of iosUpdateDeviceStatus
+    - `[MobileThreatDefenseConnectorId <String>]`: The unique identifier of mobileThreatDefenseConnector
+    - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+    - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
+    - `[RoleAssignmentId <String>]`: The unique identifier of roleAssignment
+    - `[RoleDefinitionId <String>]`: The unique identifier of roleDefinition
+    - `[TelecomExpenseManagementPartnerId <String>]`: The unique identifier of telecomExpenseManagementPartner
+    - `[TermsAndConditionsAcceptanceStatusId <String>]`: The unique identifier of termsAndConditionsAcceptanceStatus
+    - `[TermsAndConditionsAssignmentId <String>]`: The unique identifier of termsAndConditionsAssignment
+    - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
+
+  `RESOURCES <IMicrosoftGraphAuditResource[]>`: Resources being modified.
+    - `[AuditResourceType <String>]`: Audit resource's type.
+    - `[DisplayName <String>]`: Display name.
+    - `[ModifiedProperties <IMicrosoftGraphAuditProperty[]>]`: List of modified properties.
+      - `[DisplayName <String>]`: Display name.
+      - `[NewValue <String>]`: New value.
+      - `[OldValue <String>]`: Old value.
+    - `[ResourceId <String>]`: Audit resource's Id.
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgBetaDeviceManagementAuditEvent
+  href: /powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta
+syntaxes:
+- >-
+  Update-MgDeviceManagementAuditEvent -AuditEventId <String> [-Activity <String>] [-ActivityDateTime <DateTime>]
+
+   [-ActivityOperationType <String>] [-ActivityResult <String>] [-ActivityType <String>]
+
+   [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>] [-Category <String>]
+
+   [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>] [-Id <String>]
+
+   [-Resources <IMicrosoftGraphAuditResource[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementAuditEvent -AuditEventId <String> -BodyParameter <IMicrosoftGraphAuditEvent> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity> [-Activity <String>]
+
+   [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>] [-ActivityResult <String>]
+
+   [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>]
+
+   [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>]
+
+   [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
+
+   -BodyParameter <IMicrosoftGraphAuditEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Activity
+  description: |+
+    Friendly name of the activity.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: ActivityDateTime
+  description: |+
+    The date time in UTC when the activity was performed.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ActivityOperationType
+  description: |+
+    The HTTP operation type of the activity.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ActivityResult
+  description: |+
+    The result of the activity.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ActivityType
+  description: |+
+    The type of activity that was being performed.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAuditActor" data-throw-if-not-resolved="False" />
+  name: Actor
+  description: |+
+    A class containing the properties for Audit Actor.
+    To construct, see NOTES section for ACTOR properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AuditEventId
+  isRequired: true
+  description: |+
+    The unique identifier of auditEvent
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAuditEvent" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    A class containing the properties for Audit Event.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Category
+  description: |+
+    Audit category.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ComponentName
+  description: |+
+    Component name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CorrelationId
+  description: |+
+    The client request Id that is used to correlate activity within the system.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Event display name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDeviceManagementAdministrationIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAuditResource" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Resources
+  description: |+
+    Resources being modified.
+    To construct, see NOTES section for RESOURCES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Administration.Update-MgDeviceManagementAuditEvent
+name: Update-MgDeviceManagementAuditEvent
+description: |-
+  Update the navigation property auditEvents in deviceManagement
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Administration
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent
+  schema: 2.0.0

@@ -1,0 +1,105 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.Mail
+  cmdlets:
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserInferenceClassification
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserInferenceClassificationOverride
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserInferenceClassificationOverrideCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolder
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolder
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderMessage
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderMessageAttachment
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderMessageAttachmentCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderMessageContent
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderMessageCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderMessageExtension
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderMessageExtensionCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderMessageMention
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderMessageMentionCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderMessageRule
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderMessageRuleCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderUserConfiguration
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderChildFolderUserConfigurationCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderMessage
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderMessageAttachment
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderMessageAttachmentCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderMessageContent
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderMessageCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderMessageExtension
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderMessageExtensionCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderMessageMention
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderMessageMentionCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderMessageRule
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderMessageRuleCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderUserConfiguration
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMailFolderUserConfigurationCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMessage
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMessageAttachment
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMessageAttachmentCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMessageContent
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMessageCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMessageExtension
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMessageExtensionCount
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMessageMention
+  - Microsoft.Graph.Beta.Mail.Get-MgBetaUserMessageMentionCount
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserInferenceClassificationOverride
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMailFolder
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMailFolderChildFolder
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMailFolderChildFolderMessage
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMailFolderChildFolderMessageAttachment
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMailFolderChildFolderMessageExtension
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMailFolderChildFolderMessageMention
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMailFolderChildFolderMessageRule
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMailFolderMessage
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMailFolderMessageAttachment
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMailFolderMessageExtension
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMailFolderMessageMention
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMailFolderMessageRule
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMessage
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMessageAttachment
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMessageExtension
+  - Microsoft.Graph.Beta.Mail.New-MgBetaUserMessageMention
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserInferenceClassificationOverride
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMailFolder
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMailFolderChildFolder
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMailFolderChildFolderMessage
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMailFolderChildFolderMessageAttachment
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMailFolderChildFolderMessageExtension
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMailFolderChildFolderMessageMention
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMailFolderChildFolderMessageRule
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMailFolderMessage
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMailFolderMessageAttachment
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMailFolderMessageExtension
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMailFolderMessageMention
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMailFolderMessageRule
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMessage
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMessageAttachment
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMessageExtension
+  - Microsoft.Graph.Beta.Mail.Remove-MgBetaUserMessageMention
+  - Microsoft.Graph.Beta.Mail.Set-MgBetaUserMailFolderChildFolderMessageContent
+  - Microsoft.Graph.Beta.Mail.Set-MgBetaUserMailFolderMessageContent
+  - Microsoft.Graph.Beta.Mail.Set-MgBetaUserMessageContent
+  - Microsoft.Graph.Beta.Mail.Update-MgBetaUserInferenceClassification
+  - Microsoft.Graph.Beta.Mail.Update-MgBetaUserInferenceClassificationOverride
+  - Microsoft.Graph.Beta.Mail.Update-MgBetaUserMailFolder
+  - Microsoft.Graph.Beta.Mail.Update-MgBetaUserMailFolderChildFolder
+  - Microsoft.Graph.Beta.Mail.Update-MgBetaUserMailFolderChildFolderMessage
+  - Microsoft.Graph.Beta.Mail.Update-MgBetaUserMailFolderChildFolderMessageExtension
+  - Microsoft.Graph.Beta.Mail.Update-MgBetaUserMailFolderChildFolderMessageRule
+  - Microsoft.Graph.Beta.Mail.Update-MgBetaUserMailFolderMessage
+  - Microsoft.Graph.Beta.Mail.Update-MgBetaUserMailFolderMessageExtension
+  - Microsoft.Graph.Beta.Mail.Update-MgBetaUserMailFolderMessageRule
+  - Microsoft.Graph.Beta.Mail.Update-MgBetaUserMessage
+  - Microsoft.Graph.Beta.Mail.Update-MgBetaUserMessageExtension
+uid: Microsoft.Graph.Beta.Mail
+name: Microsoft.Graph.Beta.Mail
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.Mail
+  Module Guid: b26fea97-5103-4280-9ab8-984e4f4cd2cd
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail
+  Help Version: 1.0.0.0
+  Locale: en-US

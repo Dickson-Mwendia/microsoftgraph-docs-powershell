@@ -1,0 +1,364 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the properties of a qna object.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Update-MgSearchQna?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Search
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphSearchQna>`: qna
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Description <String>]`: Search answer description shown on search results page.
+    - `[DisplayName <String>]`: Search answer name displayed in search results.
+    - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: 
+        - `[Id <String>]`: 
+      - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
+      - `[User <IMicrosoftGraphSearchIdentity>]`: identity
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
+    - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna will stop to appear as a search result. Set as null for always available.
+    - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna will start to appear as a search result. Set as null for always available.
+    - `[GroupIds <String[]>]`: List of security groups able to view this qna.
+    - `[IsSuggested <Boolean?>]`: True if this qna was suggested to the admin by a user or was mined and suggested by Microsoft. Read-only.
+    - `[Keywords <IMicrosoftGraphSearchAnswerKeyword>]`: answerKeyword
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Keywords <String[]>]`: A collection of keywords used to trigger the search answer.
+      - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
+      - `[ReservedKeywords <String[]>]`: Unique keywords that will guarantee the search answer is triggered.
+    - `[LanguageTags <String[]>]`: A list of language names that are geographically specific and that this QnA can be viewed in. Each language tag value follows the pattern {language}-{region}. As an example, en-us is English as used in the United States. For the list of possible values, see supported language tags.
+    - `[Platforms <DevicePlatformType[]>]`: List of devices and operating systems able to view this qna. Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
+    - `[State <String>]`: answerState
+    - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
+      - `[Description <String>]`: Answer variation description shown on search results page.
+      - `[DisplayName <String>]`: Answer variation name displayed in search results.
+      - `[LanguageTag <String>]`: 
+      - `[Platform <DevicePlatformType?>]`: Supported platform types.
+      - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
+
+  `INPUTOBJECT <ISearchIdentity>`: Identity Parameter
+    - `[AcronymId <String>]`: The unique identifier of acronym
+    - `[BookmarkId <String>]`: The unique identifier of bookmark
+    - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
+    - `[ExternalActivityId <String>]`: The unique identifier of externalActivity
+    - `[ExternalConnectionId <String>]`: The unique identifier of externalConnection
+    - `[ExternalGroupId <String>]`: The unique identifier of externalGroup
+    - `[ExternalItemId <String>]`: The unique identifier of externalItem
+    - `[IdentityId <String>]`: The unique identifier of identity
+    - `[InboundFlowId <String>]`: The unique identifier of inboundFlow
+    - `[IndustryDataConnectorId <String>]`: The unique identifier of industryDataConnector
+    - `[IndustryDataRunActivityId <String>]`: The unique identifier of industryDataRunActivity
+    - `[IndustryDataRunId <String>]`: The unique identifier of industryDataRun
+    - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+    - `[QnaId <String>]`: The unique identifier of qna
+    - `[ReferenceDefinitionId <String>]`: The unique identifier of referenceDefinition
+    - `[RoleGroupId <String>]`: The unique identifier of roleGroup
+    - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
+    - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
+
+  `KEYWORDS <IMicrosoftGraphSearchAnswerKeyword>`: answerKeyword
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Keywords <String[]>]`: A collection of keywords used to trigger the search answer.
+    - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
+    - `[ReservedKeywords <String[]>]`: Unique keywords that will guarantee the search answer is triggered.
+
+  `LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
+    - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
+    - `[User <IMicrosoftGraphSearchIdentity>]`: identity
+
+  `TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant[]>`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
+    - `[Description <String>]`: Answer variation description shown on search results page.
+    - `[DisplayName <String>]`: Answer variation name displayed in search results.
+    - `[LanguageTag <String>]`: 
+    - `[Platform <DevicePlatformType?>]`: Supported platform types.
+    - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchQna" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchQna" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgSearchQna
+  href: /powershell/module/Microsoft.Graph.Search/Update-MgSearchQna?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaSearchQna -QnaId <String> [-AdditionalProperties <Hashtable>]
+
+   [-AvailabilityEndDateTime <DateTime>] [-AvailabilityStartDateTime <DateTime>] [-Description <String>]
+
+   [-DisplayName <String>] [-GroupIds <String[]>] [-Id <String>] [-IsSuggested]
+
+   [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
+
+   [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
+
+   [-Platforms <DevicePlatformType[]>] [-State <String>]
+
+   [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaSearchQna -QnaId <String> -BodyParameter <IMicrosoftGraphSearchQna> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaSearchQna -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
+
+   [-AvailabilityEndDateTime <DateTime>] [-AvailabilityStartDateTime <DateTime>] [-Description <String>]
+
+   [-DisplayName <String>] [-GroupIds <String[]>] [-Id <String>] [-IsSuggested]
+
+   [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
+
+   [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
+
+   [-Platforms <DevicePlatformType[]>] [-State <String>]
+
+   [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaSearchQna -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGraphSearchQna> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: AvailabilityEndDateTime
+  description: |+
+    Timestamp of when the qna will stop to appear as a search result.
+    Set as null for always available.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: AvailabilityStartDateTime
+  description: |+
+    Timestamp of when the qna will start to appear as a search result.
+    Set as null for always available.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSearchQna" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    qna
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Search answer description shown on search results page.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Search answer name displayed in search results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: GroupIds
+  description: |+
+    List of security groups able to view this qna.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ISearchIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsSuggested
+  description: |+
+    True if this qna was suggested to the admin by a user or was mined and suggested by Microsoft.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSearchAnswerKeyword" data-throw-if-not-resolved="False" />
+  name: Keywords
+  description: |+
+    answerKeyword
+    To construct, see NOTES section for KEYWORDS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: LanguageTags
+  description: |+
+    A list of language names that are geographically specific and that this QnA can be viewed in.
+    Each language tag value follows the pattern {language}-{region}.
+    As an example, en-us is English as used in the United States.
+    For the list of possible values, see supported language tags.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSearchIdentitySet" data-throw-if-not-resolved="False" />
+  name: LastModifiedBy
+  description: |+
+    identitySet
+    To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    Timestamp of when the search answer is created or edited.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DevicePlatformType" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Platforms
+  description: |+
+    List of devices and operating systems able to view this qna.
+    Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: QnaId
+  isRequired: true
+  description: |+
+    The unique identifier of qna
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: State
+  description: |+
+    answerState
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSearchAnswerVariant" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: TargetedVariations
+  description: |+
+    Variations of a qna for different countries or devices.
+    Use when you need to show different content to users based on their device, country/region, or both.
+    The date and group settings will apply to all variations.
+    To construct, see NOTES section for TARGETEDVARIATIONS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: WebUrl
+  description: |+
+    Search answer URL link.
+    When users click this search answer in search results, they will go to this URL.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Search.Update-MgBetaSearchQna
+name: Update-MgBetaSearchQna
+description: |-
+  Update the properties of a qna object.
+metadata:
+  external help file: Microsoft.Graph.Beta.Search-help.xml
+  Module Name: Microsoft.Graph.Beta.Search
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchqna
+  schema: 2.0.0

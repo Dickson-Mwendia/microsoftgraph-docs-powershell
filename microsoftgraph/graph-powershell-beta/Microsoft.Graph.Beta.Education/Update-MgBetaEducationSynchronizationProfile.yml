@@ -1,0 +1,299 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property synchronizationProfiles in education
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Education
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphEducationSynchronizationProfile>`: educationSynchronizationProfile
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[DataProvider <IMicrosoftGraphEducationSynchronizationDataProvider>]`: educationSynchronizationDataProvider
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: Name of the configuration profile for syncing identities.
+    - `[Errors <IMicrosoftGraphEducationSynchronizationError[]>]`: All errors associated with this synchronization profile.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[EntryType <String>]`: Represents the sync entity (school, section, student, teacher).
+      - `[ErrorCode <String>]`: Represents the error code for this error.
+      - `[ErrorMessage <String>]`: Contains a description of the error.
+      - `[JoiningValue <String>]`: The unique identifier for the entry.
+      - `[RecordedDateTime <DateTime?>]`: The time of occurrence of this error.
+      - `[ReportableIdentifier <String>]`: The identifier of this error entry.
+    - `[ExpirationDate <DateTime?>]`: The date the profile should be considered expired and cease syncing. Provide the date in YYYY-MM-DD format, following ISO 8601. Maximum value is 18 months from profile creation.  (optional)
+    - `[HandleSpecialCharacterConstraint <Boolean?>]`: Determines if School Data Sync should automatically replace unsupported special characters while syncing from source.
+    - `[IdentitySynchronizationConfiguration <IMicrosoftGraphEducationIdentitySynchronizationConfiguration>]`: educationIdentitySynchronizationConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[LicensesToAssign <IMicrosoftGraphEducationSynchronizationLicenseAssignment[]>]`: License setup configuration.
+      - `[AppliesTo <String>]`: educationUserRole
+      - `[SkuIds <String[]>]`: Represents the SKU identifiers of the licenses to assign.
+    - `[ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>]`: educationSynchronizationProfileStatus
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ErrorCount <Int64?>]`: Number of errors during synchronization.
+      - `[LastActivityDateTime <DateTime?>]`: Date and time when most recent changes were observed in the profile.
+      - `[LastSynchronizationDateTime <DateTime?>]`: Date and time of the most recent successful synchronization.
+      - `[Status <String>]`: educationSynchronizationStatus
+      - `[StatusMessage <String>]`: Status message for the synchronization stage of the current profile.
+    - `[State <String>]`: educationSynchronizationProfileState
+
+  `ERRORS <IMicrosoftGraphEducationSynchronizationError[]>`: All errors associated with this synchronization profile.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[EntryType <String>]`: Represents the sync entity (school, section, student, teacher).
+    - `[ErrorCode <String>]`: Represents the error code for this error.
+    - `[ErrorMessage <String>]`: Contains a description of the error.
+    - `[JoiningValue <String>]`: The unique identifier for the entry.
+    - `[RecordedDateTime <DateTime?>]`: The time of occurrence of this error.
+    - `[ReportableIdentifier <String>]`: The identifier of this error entry.
+
+  `INPUTOBJECT <IEducationIdentity>`: Identity Parameter
+    - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
+    - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
+    - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
+    - `[EducationClassId <String>]`: The unique identifier of educationClass
+    - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+    - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
+    - `[EducationRubricId <String>]`: The unique identifier of educationRubric
+    - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
+    - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
+    - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
+    - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
+    - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
+    - `[EducationUserId <String>]`: The unique identifier of educationUser
+
+  `LICENSESTOASSIGN <IMicrosoftGraphEducationSynchronizationLicenseAssignment[]>`: License setup configuration.
+    - `[AppliesTo <String>]`: educationUserRole
+    - `[SkuIds <String[]>]`: Represents the SKU identifiers of the licenses to assign.
+
+  `PROFILESTATUS <IMicrosoftGraphEducationSynchronizationProfileStatus>`: educationSynchronizationProfileStatus
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ErrorCount <Int64?>]`: Number of errors during synchronization.
+    - `[LastActivityDateTime <DateTime?>]`: Date and time when most recent changes were observed in the profile.
+    - `[LastSynchronizationDateTime <DateTime?>]`: Date and time of the most recent successful synchronization.
+    - `[Status <String>]`: educationSynchronizationStatus
+    - `[StatusMessage <String>]`: Status message for the synchronization stage of the current profile.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationProfile" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationProfile" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgEducationSynchronizationProfile
+  href: /powershell/module/Microsoft.Graph.Education/Update-MgEducationSynchronizationProfile?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId <String>
+
+   [-AdditionalProperties <Hashtable>] [-DataProvider <Hashtable>] [-DisplayName <String>]
+
+   [-Errors <IMicrosoftGraphEducationSynchronizationError[]>] [-ExpirationDate <DateTime>]
+
+   [-HandleSpecialCharacterConstraint] [-Id <String>] [-IdentitySynchronizationConfiguration <Hashtable>]
+
+   [-LicensesToAssign <IMicrosoftGraphEducationSynchronizationLicenseAssignment[]>]
+
+   [-ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>] [-State <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId <String>
+
+   -BodyParameter <IMicrosoftGraphEducationSynchronizationProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-DataProvider <Hashtable>] [-DisplayName <String>]
+
+   [-Errors <IMicrosoftGraphEducationSynchronizationError[]>] [-ExpirationDate <DateTime>]
+
+   [-HandleSpecialCharacterConstraint] [-Id <String>] [-IdentitySynchronizationConfiguration <Hashtable>]
+
+   [-LicensesToAssign <IMicrosoftGraphEducationSynchronizationLicenseAssignment[]>]
+
+   [-ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>] [-State <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity>
+
+   -BodyParameter <IMicrosoftGraphEducationSynchronizationProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphEducationSynchronizationProfile" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    educationSynchronizationProfile
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: DataProvider
+  description: |+
+    educationSynchronizationDataProvider
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Name of the configuration profile for syncing identities.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EducationSynchronizationProfileId
+  isRequired: true
+  description: |+
+    The unique identifier of educationSynchronizationProfile
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphEducationSynchronizationError" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Errors
+  description: |+
+    All errors associated with this synchronization profile.
+    To construct, see NOTES section for ERRORS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: ExpirationDate
+  description: |+
+    The date the profile should be considered expired and cease syncing.
+    Provide the date in YYYY-MM-DD format, following ISO 8601.
+    Maximum value is 18 months from profile creation.
+    (optional)
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: HandleSpecialCharacterConstraint
+  description: |+
+    Determines if School Data Sync should automatically replace unsupported special characters while syncing from source.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: IdentitySynchronizationConfiguration
+  description: |+
+    educationIdentitySynchronizationConfiguration
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IEducationIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphEducationSynchronizationLicenseAssignment" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: LicensesToAssign
+  description: |+
+    License setup configuration.
+    To construct, see NOTES section for LICENSESTOASSIGN properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphEducationSynchronizationProfileStatus" data-throw-if-not-resolved="False" />
+  name: ProfileStatus
+  description: |+
+    educationSynchronizationProfileStatus
+    To construct, see NOTES section for PROFILESTATUS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: State
+  description: |+
+    educationSynchronizationProfileState
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Education.Update-MgBetaEducationSynchronizationProfile
+name: Update-MgBetaEducationSynchronizationProfile
+description: |-
+  Update the navigation property synchronizationProfiles in education
+metadata:
+  external help file: Microsoft.Graph.Beta.Education-help.xml
+  Module Name: Microsoft.Graph.Beta.Education
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationsynchronizationprofile
+  schema: 2.0.0

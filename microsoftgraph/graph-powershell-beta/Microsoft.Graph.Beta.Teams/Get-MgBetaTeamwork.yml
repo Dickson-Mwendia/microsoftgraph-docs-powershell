@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get teamwork
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgTeamwork](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamwork?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Teams
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamwork" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgTeamwork
+  href: /powershell/module/Microsoft.Graph.Teams/Get-MgTeamwork?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaTeamwork [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Teams.Get-MgBetaTeamwork
+name: Get-MgBetaTeamwork
+description: |-
+  Get teamwork
+metadata:
+  external help file: Microsoft.Graph.Beta.Teams-help.xml
+  Module Name: Microsoft.Graph.Beta.Teams
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamwork
+  schema: 2.0.0

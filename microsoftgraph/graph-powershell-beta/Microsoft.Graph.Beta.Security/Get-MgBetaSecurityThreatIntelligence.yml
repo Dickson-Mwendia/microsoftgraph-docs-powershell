@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get threatIntelligence from security
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligence?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Security
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatIntelligence" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgSecurityThreatIntelligence
+  href: /powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligence?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaSecurityThreatIntelligence [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Security.Get-MgBetaSecurityThreatIntelligence
+name: Get-MgBetaSecurityThreatIntelligence
+description: |-
+  Get threatIntelligence from security
+metadata:
+  external help file: Microsoft.Graph.Beta.Security-help.xml
+  Module Name: Microsoft.Graph.Beta.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatintelligence
+  schema: 2.0.0

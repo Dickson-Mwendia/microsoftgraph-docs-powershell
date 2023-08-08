@@ -1,0 +1,287 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to documents for print
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgPrintShareJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareJobDocument?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Devices.CloudPrint
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphPrintDocument>`: printDocument
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Collate <Boolean?>]`: 
+      - `[ColorMode <String>]`: printColorMode
+      - `[Copies <Int32?>]`: 
+      - `[Dpi <Int32?>]`: 
+      - `[DuplexMode <String>]`: printDuplexMode
+      - `[FeedDirection <String>]`: printerFeedDirection
+      - `[FeedOrientation <String>]`: printerFeedOrientation
+      - `[Finishings <String[]>]`: 
+      - `[FitPdfToPage <Boolean?>]`: 
+      - `[InputBin <String>]`: 
+      - `[Margin <IMicrosoftGraphPrintMargin>]`: printMargin
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Bottom <Int32?>]`: The margin in microns from the bottom edge.
+        - `[Left <Int32?>]`: The margin in microns from the left edge.
+        - `[Right <Int32?>]`: The margin in microns from the right edge.
+        - `[Top <Int32?>]`: The margin in microns from the top edge.
+      - `[MediaSize <String>]`: 
+      - `[MediaType <String>]`: 
+      - `[MultipageLayout <String>]`: printMultipageLayout
+      - `[Orientation <String>]`: printOrientation
+      - `[OutputBin <String>]`: 
+      - `[PageRanges <IMicrosoftGraphIntegerRange[]>]`: 
+        - `[End <Int64?>]`: The inclusive upper bound of the integer range.
+        - `[Maximum <Int64?>]`: 
+        - `[Minimum <Int64?>]`: 
+        - `[Start <Int64?>]`: The inclusive lower bound of the integer range.
+      - `[PagesPerSheet <Int32?>]`: 
+      - `[Quality <String>]`: printQuality
+      - `[Scaling <String>]`: printScaling
+    - `[ContentType <String>]`: The document's content (MIME) type. Read-only.
+    - `[DisplayName <String>]`: The document's name. Read-only.
+    - `[DownloadedDateTime <DateTime?>]`: 
+    - `[Size <Int64?>]`: The document's size in bytes. Read-only.
+    - `[UploadedDateTime <DateTime?>]`: 
+
+  `CONFIGURATION <IMicrosoftGraphPrinterDocumentConfiguration>`: printerDocumentConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Collate <Boolean?>]`: 
+    - `[ColorMode <String>]`: printColorMode
+    - `[Copies <Int32?>]`: 
+    - `[Dpi <Int32?>]`: 
+    - `[DuplexMode <String>]`: printDuplexMode
+    - `[FeedDirection <String>]`: printerFeedDirection
+    - `[FeedOrientation <String>]`: printerFeedOrientation
+    - `[Finishings <String[]>]`: 
+    - `[FitPdfToPage <Boolean?>]`: 
+    - `[InputBin <String>]`: 
+    - `[Margin <IMicrosoftGraphPrintMargin>]`: printMargin
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Bottom <Int32?>]`: The margin in microns from the bottom edge.
+      - `[Left <Int32?>]`: The margin in microns from the left edge.
+      - `[Right <Int32?>]`: The margin in microns from the right edge.
+      - `[Top <Int32?>]`: The margin in microns from the top edge.
+    - `[MediaSize <String>]`: 
+    - `[MediaType <String>]`: 
+    - `[MultipageLayout <String>]`: printMultipageLayout
+    - `[Orientation <String>]`: printOrientation
+    - `[OutputBin <String>]`: 
+    - `[PageRanges <IMicrosoftGraphIntegerRange[]>]`: 
+      - `[End <Int64?>]`: The inclusive upper bound of the integer range.
+      - `[Maximum <Int64?>]`: 
+      - `[Minimum <Int64?>]`: 
+      - `[Start <Int64?>]`: The inclusive lower bound of the integer range.
+    - `[PagesPerSheet <Int32?>]`: 
+    - `[Quality <String>]`: printQuality
+    - `[Scaling <String>]`: printScaling
+
+  `INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+    - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+    - `[PrintJobId <String>]`: The unique identifier of printJob
+    - `[PrintOperationId <String>]`: The unique identifier of printOperation
+    - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
+    - `[PrintServiceId <String>]`: The unique identifier of printService
+    - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
+    - `[PrintTaskId <String>]`: The unique identifier of printTask
+    - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
+    - `[PrinterId <String>]`: The unique identifier of printer
+    - `[PrinterShareId <String>]`: The unique identifier of printerShare
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintDocument" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintDocument" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgPrintShareJobDocument
+  href: /powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareJobDocument?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaPrintShareJobDocument -PrintJobId <String> -PrinterShareId <String>
+
+   [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]
+
+   [-ContentType <String>] [-DisplayName <String>] [-DownloadedDateTime <DateTime>] [-Id <String>]
+
+   [-Size <Int64>] [-UploadedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaPrintShareJobDocument -PrintJobId <String> -PrinterShareId <String>
+
+   -BodyParameter <IMicrosoftGraphPrintDocument> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaPrintShareJobDocument -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
+
+   [-Configuration <IMicrosoftGraphPrinterDocumentConfiguration>] [-ContentType <String>] [-DisplayName <String>]
+
+   [-DownloadedDateTime <DateTime>] [-Id <String>] [-Size <Int64>] [-UploadedDateTime <DateTime>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaPrintShareJobDocument -InputObject <IDevicesCloudPrintIdentity>
+
+   -BodyParameter <IMicrosoftGraphPrintDocument> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphPrintDocument" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    printDocument
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphPrinterDocumentConfiguration" data-throw-if-not-resolved="False" />
+  name: Configuration
+  description: |+
+    printerDocumentConfiguration
+    To construct, see NOTES section for CONFIGURATION properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContentType
+  description: |+
+    The document's content (MIME) type.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    The document's name.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: DownloadedDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDevicesCloudPrintIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrinterShareId
+  isRequired: true
+  description: |+
+    The unique identifier of printerShare
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrintJobId
+  isRequired: true
+  description: |+
+    The unique identifier of printJob
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int64" data-throw-if-not-resolved="False" />
+  name: Size
+  description: |+
+    The document's size in bytes.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: UploadedDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Devices.CloudPrint.New-MgBetaPrintShareJobDocument
+name: New-MgBetaPrintShareJobDocument
+description: |-
+  Create new navigation property to documents for print
+metadata:
+  external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+  Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/new-mgbetaprintsharejobdocument
+  schema: 2.0.0

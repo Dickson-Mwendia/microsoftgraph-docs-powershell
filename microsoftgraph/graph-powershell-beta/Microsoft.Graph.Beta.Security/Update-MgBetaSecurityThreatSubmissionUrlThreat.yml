@@ -1,0 +1,373 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property urlThreats in security
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatSubmissionUrlThreat](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatSubmissionUrlThreat?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Security
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `ADMINREVIEW <IMicrosoftGraphSecuritySubmissionAdminReview>`: submissionAdminReview
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
+    - `[ReviewDateTime <DateTime?>]`: Specifies the date time when the review occurred.
+    - `[ReviewResult <String>]`: submissionResultCategory
+
+  `BODYPARAMETER <IMicrosoftGraphSecurityUrlThreatSubmission>`: urlThreatSubmission
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
+      - `[ReviewDateTime <DateTime?>]`: Specifies the date time when the review occurred.
+      - `[ReviewResult <String>]`: submissionResultCategory
+    - `[Category <String>]`: submissionCategory
+    - `[ClientSource <String>]`: submissionClientSource
+    - `[ContentType <String>]`: submissionContentType
+    - `[CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]`: submissionUserIdentity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+      - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
+    - `[CreatedDateTime <DateTime?>]`: Specifies when the threat submission was created. Supports $filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z.
+    - `[Result <IMicrosoftGraphSecuritySubmissionResult>]`: submissionResult
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Category <String>]`: submissionResultCategory
+      - `[Detail <String>]`: submissionResultDetail
+      - `[DetectedFiles <IMicrosoftGraphSecuritySubmissionDetectedFile[]>]`: Specifies the files detected by Microsoft in the submitted emails.
+        - `[FileHash <String>]`: The file hash.
+        - `[FileName <String>]`: The file name.
+      - `[DetectedUrls <String[]>]`: Specifes the URLs detected by Microsoft in the submitted email.
+      - `[UserMailboxSetting <String>]`: userMailboxSetting
+    - `[Source <String>]`: submissionSource
+    - `[Status <String>]`: longRunningOperationStatus
+    - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
+
+  `CREATEDBY <IMicrosoftGraphSecuritySubmissionUserIdentity>`: submissionUserIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
+    - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
+
+  `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
+    - `[AlertId <String>]`: The unique identifier of alert
+    - `[ArticleId <String>]`: The unique identifier of article
+    - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
+    - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
+    - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+    - `[AuthorityTemplateId <String>]`: The unique identifier of authorityTemplate
+    - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+    - `[CategoryTemplateId <String>]`: The unique identifier of categoryTemplate
+    - `[CitationTemplateId <String>]`: The unique identifier of citationTemplate
+    - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
+    - `[DataSourceId <String>]`: The unique identifier of dataSource
+    - `[DepartmentTemplateId <String>]`: The unique identifier of departmentTemplate
+    - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
+    - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
+    - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+    - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
+    - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
+    - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy
+    - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
+    - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
+    - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
+    - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
+    - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
+    - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+    - `[EmailThreatSubmissionId <String>]`: The unique identifier of emailThreatSubmission
+    - `[EmailThreatSubmissionPolicyId <String>]`: The unique identifier of emailThreatSubmissionPolicy
+    - `[EndUserNotificationDetailId <String>]`: The unique identifier of endUserNotificationDetail
+    - `[EndUserNotificationId <String>]`: The unique identifier of endUserNotification
+    - `[FilePlanReferenceTemplateId <String>]`: The unique identifier of filePlanReferenceTemplate
+    - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
+    - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
+    - `[HostComponentId <String>]`: The unique identifier of hostComponent
+    - `[HostCookieId <String>]`: The unique identifier of hostCookie
+    - `[HostId <String>]`: The unique identifier of host
+    - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
+    - `[HostTrackerId <String>]`: The unique identifier of hostTracker
+    - `[IPSecurityProfileId <String>]`: The unique identifier of ipSecurityProfile
+    - `[IncidentId <String>]`: The unique identifier of incident
+    - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
+    - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+    - `[LandingPageDetailId <String>]`: The unique identifier of landingPageDetail
+    - `[LandingPageId <String>]`: The unique identifier of landingPage
+    - `[LoginPageId <String>]`: The unique identifier of loginPage
+    - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
+    - `[PayloadId <String>]`: The unique identifier of payload
+    - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
+    - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
+    - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
+    - `[RetentionLabelId <String>]`: The unique identifier of retentionLabel
+    - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
+    - `[SecureScoreId <String>]`: The unique identifier of secureScore
+    - `[SecurityActionId <String>]`: The unique identifier of securityAction
+    - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+    - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
+    - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
+    - `[SimulationId <String>]`: The unique identifier of simulation
+    - `[SiteSourceId <String>]`: The unique identifier of siteSource
+    - `[SubCategoryTemplateId <String>]`: The unique identifier of subCategoryTemplate
+    - `[SubdomainId <String>]`: The unique identifier of subdomain
+    - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+    - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
+    - `[TrainingId <String>]`: The unique identifier of training
+    - `[TrainingLanguageDetailId <String>]`: The unique identifier of trainingLanguageDetail
+    - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+    - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
+    - `[UserId <String>]`: The unique identifier of user
+    - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
+    - `[UserSourceId <String>]`: The unique identifier of userSource
+    - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
+    - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+
+  `RESULT <IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Category <String>]`: submissionResultCategory
+    - `[Detail <String>]`: submissionResultDetail
+    - `[DetectedFiles <IMicrosoftGraphSecuritySubmissionDetectedFile[]>]`: Specifies the files detected by Microsoft in the submitted emails.
+      - `[FileHash <String>]`: The file hash.
+      - `[FileName <String>]`: The file name.
+    - `[DetectedUrls <String[]>]`: Specifes the URLs detected by Microsoft in the submitted email.
+    - `[UserMailboxSetting <String>]`: userMailboxSetting
+
+  ## RELATED LINKS
+  [Update-MgSecurityThreatSubmissionUrlThreat](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatSubmissionUrlThreat?view=graph-powershell-v1.0)
+
+  ## RELATED LINKS
+  [Update-MgSecurityThreatSubmissionUrlThreat](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatSubmissionUrlThreat?view=graph-powershell-v1.0)
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityUrlThreatSubmission" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityUrlThreatSubmission" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Update-MgBetaSecurityThreatSubmissionUrlThreat -UrlThreatSubmissionId <String>
+
+   [-AdditionalProperties <Hashtable>] [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
+
+   [-Category <String>] [-ClientSource <String>] [-ContentType <String>]
+
+   [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>] [-CreatedDateTime <DateTime>] [-Id <String>]
+
+   [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Source <String>] [-Status <String>] [-TenantId <String>]
+
+   [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaSecurityThreatSubmissionUrlThreat -UrlThreatSubmissionId <String>
+
+   -BodyParameter <IMicrosoftGraphSecurityUrlThreatSubmission> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaSecurityThreatSubmissionUrlThreat -InputObject <ISecurityIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
+
+   [-Category <String>] [-ClientSource <String>] [-ContentType <String>]
+
+   [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>] [-CreatedDateTime <DateTime>] [-Id <String>]
+
+   [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Source <String>] [-Status <String>] [-TenantId <String>]
+
+   [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaSecurityThreatSubmissionUrlThreat -InputObject <ISecurityIdentity>
+
+   -BodyParameter <IMicrosoftGraphSecurityUrlThreatSubmission> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecuritySubmissionAdminReview" data-throw-if-not-resolved="False" />
+  name: AdminReview
+  description: |+
+    submissionAdminReview
+    To construct, see NOTES section for ADMINREVIEW properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecurityUrlThreatSubmission" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    urlThreatSubmission
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Category
+  description: |+
+    submissionCategory
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ClientSource
+  description: |+
+    submissionClientSource
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContentType
+  description: |+
+    submissionContentType
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecuritySubmissionUserIdentity" data-throw-if-not-resolved="False" />
+  name: CreatedBy
+  description: |+
+    submissionUserIdentity
+    To construct, see NOTES section for CREATEDBY properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    Specifies when the threat submission was created.
+    Supports $filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ISecurityIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecuritySubmissionResult" data-throw-if-not-resolved="False" />
+  name: Result
+  description: |+
+    submissionResult
+    To construct, see NOTES section for RESULT properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Source
+  description: |+
+    submissionSource
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Status
+  description: |+
+    longRunningOperationStatus
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    Indicates the tenant id of the submitter.
+    Not required when created using a POST operation.
+    It is extracted from the token of the post API call.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UrlThreatSubmissionId
+  isRequired: true
+  description: |+
+    The unique identifier of urlThreatSubmission
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: WebUrl
+  description: |+
+    Denotes the webUrl that needs to be submitted.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Security.Update-MgBetaSecurityThreatSubmissionUrlThreat
+name: Update-MgBetaSecurityThreatSubmissionUrlThreat
+description: |-
+  Update the navigation property urlThreats in security
+metadata:
+  external help file: Microsoft.Graph.Beta.Security-help.xml
+  Module Name: Microsoft.Graph.Beta.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionurlthreat
+  schema: 2.0.0

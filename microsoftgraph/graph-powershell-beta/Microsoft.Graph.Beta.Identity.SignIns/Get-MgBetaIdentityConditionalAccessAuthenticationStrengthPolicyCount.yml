@@ -1,0 +1,48 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessAuthenticationStrengthPolicyCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessAuthenticationStrengthPolicyCount?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.SignIns
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgIdentityConditionalAccessAuthenticationStrengthPolicyCount
+  href: /powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessAuthenticationStrengthPolicyCount?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCount [-Filter <String>] [-Search <String>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.SignIns.Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCount
+name: Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCount
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.SignIns
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccessauthenticationstrengthpolicycount
+  schema: 2.0.0

@@ -1,0 +1,48 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  User experience analytics work from anywhere hardware readiness metrics.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric?view=graph-powershell-beta)
+module: Microsoft.Graph.DeviceManagement
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+  href: /powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+name: Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric
+description: |-
+  User experience analytics work from anywhere hardware readiness metrics.
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticworkfromanywherehardwarereadinessmetric
+  schema: 2.0.0

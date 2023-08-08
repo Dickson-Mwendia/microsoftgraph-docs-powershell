@@ -1,0 +1,206 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Read-only collection referencing the directory objects that are scope of the assignment.
+  Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
+  Read-only.
+  Supports $expand.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScope?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Enrollment
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IDeviceManagementEnrollmentIdentity>`: Identity Parameter
+    - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
+    - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
+    - `[AppScopeId <String>]`: The unique identifier of appScope
+    - `[AppleEnrollmentProfileAssignmentId <String>]`: The unique identifier of appleEnrollmentProfileAssignment
+    - `[AppleUserInitiatedEnrollmentProfileId <String>]`: The unique identifier of appleUserInitiatedEnrollmentProfile
+    - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
+    - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
+    - `[DeviceManagementAutopilotEventId <String>]`: The unique identifier of deviceManagementAutopilotEvent
+    - `[DeviceManagementAutopilotPolicyStatusDetailId <String>]`: The unique identifier of deviceManagementAutopilotPolicyStatusDetail
+    - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+    - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
+    - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
+    - `[ImportedAppleDeviceIdentityId <String>]`: The unique identifier of importedAppleDeviceIdentity
+    - `[ImportedDeviceIdentityId <String>]`: The unique identifier of importedDeviceIdentity
+    - `[ImportedWindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of importedWindowsAutopilotDeviceIdentity
+    - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
+    - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
+    - `[UnifiedRoleAssignmentMultipleId <String>]`: The unique identifier of unifiedRoleAssignmentMultiple
+    - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
+    - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
+    - `[WindowsAutopilotDeploymentProfileAssignmentId <String>]`: The unique identifier of windowsAutopilotDeploymentProfileAssignment
+    - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
+    - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
+    - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: The unique identifier of windowsFeatureUpdateProfileAssignment
+    - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScope
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScope?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope -UnifiedRoleAssignmentMultipleId <String>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+
+   [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+- >-
+  Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope -DirectoryObjectId <String>
+
+   -UnifiedRoleAssignmentMultipleId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [<CommonParameters>]
+- >-
+  Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope -InputObject <IDeviceManagementEnrollmentIdentity>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DirectoryObjectId
+  isRequired: true
+  description: |+
+    The unique identifier of directoryObject
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDeviceManagementEnrollmentIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UnifiedRoleAssignmentMultipleId
+  isRequired: true
+  description: |+
+    The unique identifier of unifiedRoleAssignmentMultiple
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Enrollment.Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope
+name: Get-MgBetaRoleManagementCloudPcRoleAssignmentDirectoryScope
+description: |-
+  Read-only collection referencing the directory objects that are scope of the assignment.
+  Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
+  Read-only.
+  Supports $expand.
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagementcloudpcroleassignmentdirectoryscope
+  schema: 2.0.0

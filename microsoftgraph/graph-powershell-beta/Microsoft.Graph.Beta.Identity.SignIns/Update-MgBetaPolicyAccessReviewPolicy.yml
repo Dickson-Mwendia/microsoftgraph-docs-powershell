@@ -1,0 +1,142 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the properties of an accessReviewPolicy object.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgPolicyAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAccessReviewPolicy?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.SignIns
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphAccessReviewPolicy>`: accessReviewPolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Description <String>]`: Description for this policy. Read-only.
+    - `[DisplayName <String>]`: Display name for this policy. Read-only.
+    - `[IsGroupOwnerManagementEnabled <Boolean?>]`: If true, group owners can create and manage access reviews on groups they own.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewPolicy" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgPolicyAccessReviewPolicy
+  href: /powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAccessReviewPolicy?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaPolicyAccessReviewPolicy [-AdditionalProperties <Hashtable>] [-Description <String>]
+
+   [-DisplayName <String>] [-Id <String>] [-IsGroupOwnerManagementEnabled] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaPolicyAccessReviewPolicy -BodyParameter <IMicrosoftGraphAccessReviewPolicy> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the Update-MgBetaPolicyAccessReviewPolicy Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Identity.SignIns
+    $params = @{
+    	IsGroupOwnerManagementEnabled = $true
+    }
+    Update-MgBetaPolicyAccessReviewPolicy -BodyParameter $params
+  description: |-
+    This example shows how to use the Update-MgBetaPolicyAccessReviewPolicy Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAccessReviewPolicy" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    accessReviewPolicy
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Description for this policy.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Display name for this policy.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsGroupOwnerManagementEnabled
+  description: |+
+    If true, group owners can create and manage access reviews on groups they own.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.SignIns.Update-MgBetaPolicyAccessReviewPolicy
+name: Update-MgBetaPolicyAccessReviewPolicy
+description: |-
+  Update the properties of an accessReviewPolicy object.
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.SignIns
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyaccessreviewpolicy
+  schema: 2.0.0

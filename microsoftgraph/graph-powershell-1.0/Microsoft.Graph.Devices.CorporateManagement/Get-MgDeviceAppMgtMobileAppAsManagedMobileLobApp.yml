@@ -1,0 +1,36 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedMobileLobApp
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtMobileAppAsManagedMobileLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtMobileAppAsManagedMobileLobApp?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.CorporateManagement
+notes: |-
+  Please use Get-Help -Online.
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedMobileLobApp" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaDeviceAppMgtMobileAppAsManagedMobileLobApp
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtMobileAppAsManagedMobileLobApp?view=graph-powershell-beta
+- text: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmobileappasmanagedmobilelobapp
+  href: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmobileappasmanagedmobilelobapp
+examples:
+- title: Example 1
+  code: |-
+    PS C:\> {{ Add example code here }}
+  description: |-
+    {{ Add example description here }}
+  summary: ""
+uid: Microsoft.Graph.Devices.CorporateManagement.Get-MgDeviceAppMgtMobileAppAsManagedMobileLobApp
+name: Get-MgDeviceAppMgtMobileAppAsManagedMobileLobApp
+description: |-
+  Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedMobileLobApp
+metadata:
+  external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Devices.CorporateManagement
+  online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmobileappasmanagedmobilelobapp
+  schema: 2.0.0

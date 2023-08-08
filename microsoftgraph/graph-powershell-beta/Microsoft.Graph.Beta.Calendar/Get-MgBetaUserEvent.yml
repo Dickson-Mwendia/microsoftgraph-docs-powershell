@@ -1,0 +1,175 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retrieve a list of events in a calendar.
+  The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+  The list of events contains single instance meetings and series masters.
+  To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEvent?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Calendar
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvent" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgUserEvent
+  href: /powershell/module/Microsoft.Graph.Calendar/Get-MgUserEvent?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaUserDefaultCalendarEvent -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+
+   [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+
+   [-CountVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get a specified event'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Calendar
+
+    # A UPN can also be used as -UserId.
+    Get-MgBetaUserEvent -UserId $userId -EventId $eventId -Property "subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees"
+  description: |-
+    This example shows how to use the Get-MgBetaUserEvent Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+- title: 'Example 2: Get the body property in text format'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Calendar
+
+    # A UPN can also be used as -UserId.
+    Get-MgBetaUserEvent -UserId $userId -EventId $eventId -Property "subject,body,bodyPreview"
+  description: |-
+    This example shows how to use the Get-MgBetaUserEvent Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+- title: 'Example 3: Get an event that specifies more than one location'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Calendar
+
+    # A UPN can also be used as -UserId.
+    Get-MgBetaUserEvent -UserId $userId -EventId $eventId -Property "subject,body,bodyPreview,organizer,attendees,start,end,location,locations"
+  description: |-
+    This example shows how to use the Get-MgBetaUserEvent Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+- title: 'Example 4: Expand a series master event'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Calendar
+
+    # A UPN can also be used as -UserId.
+    Get-MgBetaUserEvent -UserId $userId -EventId $eventId -Property "subject,start,end,occurrenceId,exceptionOccurrences,cancelledOccurrences" -ExpandProperty "exceptionOccurrences"
+  description: |-
+    This example shows how to use the Get-MgBetaUserEvent Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Calendar.Get-MgBetaUserEvent
+name: Get-MgBetaUserEvent
+description: |-
+  Retrieve a list of events in a calendar.
+  The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+  The list of events contains single instance meetings and series masters.
+  To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
+metadata:
+  external help file: Microsoft.Graph.Beta.Calendar-help.xml
+  Module Name: Microsoft.Graph.Beta.Calendar
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetauserdefaultcalendarevent
+  schema: 2.0.0

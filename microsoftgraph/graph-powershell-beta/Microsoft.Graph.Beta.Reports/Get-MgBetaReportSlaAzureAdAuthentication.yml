@@ -1,0 +1,52 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Read the properties and relationships of an azureADAuthentication object to find the level of Azure AD authentication availability for your tenant.
+  The Azure AD Service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in Azure Active Directory SLA performance.
+  This object provides you with your tenant's actual performance against this commitment.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgReportSlaAzureAdAuthentication](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSlaAzureAdAuthentication?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Reports
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAzureAdAuthentication" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgReportSlaAzureAdAuthentication
+  href: /powershell/module/Microsoft.Graph.Reports/Get-MgReportSlaAzureAdAuthentication?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaReportSlaAzureAdAuthentication [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Reports.Get-MgBetaReportSlaAzureAdAuthentication
+name: Get-MgBetaReportSlaAzureAdAuthentication
+description: |-
+  Read the properties and relationships of an azureADAuthentication object to find the level of Azure AD authentication availability for your tenant.
+  The Azure AD Service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in Azure Active Directory SLA performance.
+  This object provides you with your tenant's actual performance against this commitment.
+metadata:
+  external help file: Microsoft.Graph.Beta.Reports-help.xml
+  Module Name: Microsoft.Graph.Beta.Reports
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportslaazureadauthentication
+  schema: 2.0.0

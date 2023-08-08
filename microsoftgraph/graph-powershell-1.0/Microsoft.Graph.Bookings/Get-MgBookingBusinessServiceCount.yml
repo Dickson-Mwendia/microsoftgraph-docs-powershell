@@ -1,0 +1,91 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessServiceCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessServiceCount?view=graph-powershell-beta)
+module: Microsoft.Graph.Bookings
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
+    - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
+    - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
+    - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
+    - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
+    - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
+    - `[BookingServiceId <String>]`: The unique identifier of bookingService
+    - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IBookingsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaBookingBusinessServiceCount
+  href: /powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessServiceCount?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgBookingBusinessServiceCount -BookingBusinessId <String> [-Filter <String>] [-Search <String>]
+
+   [<CommonParameters>]
+- >-
+  Get-MgBookingBusinessServiceCount -InputObject <IBookingsIdentity> [-Filter <String>] [-Search <String>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: BookingBusinessId
+  isRequired: true
+  description: |+
+    The unique identifier of bookingBusiness
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IBookingsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Bookings.Get-MgBookingBusinessServiceCount
+name: Get-MgBookingBusinessServiceCount
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Bookings-help.xml
+  Module Name: Microsoft.Graph.Bookings
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/get-mgbookingbusinessservicecount
+  schema: 2.0.0

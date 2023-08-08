@@ -1,0 +1,132 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Delete a bookingBusiness object.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusiness?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Bookings
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
+    - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+    - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
+    - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
+    - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
+    - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
+    - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
+    - `[BookingServiceId <String>]`: The unique identifier of bookingService
+    - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
+    - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
+    - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+    - `[CallRecordingId <String>]`: The unique identifier of callRecording
+    - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+    - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+    - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
+    - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
+    - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+    - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
+    - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
+    - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
+    - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Remove-MgBookingBusiness
+  href: /powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusiness?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Remove-MgBetaBookingBusiness -BookingBusinessId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Remove-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the Remove-MgBetaBookingBusiness Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Bookings
+    Remove-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId
+  description: |-
+    This example shows how to use the Remove-MgBetaBookingBusiness Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: BookingBusinessId
+  isRequired: true
+  description: |+
+    The unique identifier of bookingBusiness
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: IfMatch
+  description: |+
+    ETag
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IBookingsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Bookings.Remove-MgBetaBookingBusiness
+name: Remove-MgBetaBookingBusiness
+description: |-
+  Delete a bookingBusiness object.
+metadata:
+  external help file: Microsoft.Graph.Beta.Bookings-help.xml
+  Module Name: Microsoft.Graph.Beta.Bookings
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusiness
+  schema: 2.0.0

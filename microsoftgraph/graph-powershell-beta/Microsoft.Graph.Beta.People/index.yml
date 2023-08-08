@@ -1,0 +1,119 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.People
+  cmdlets:
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserActivityStatistics
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserAnalyticActivityStatisticsCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserPerson
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserPersonCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfile
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileAccount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileAccountCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileAddress
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileAddressCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileAnniversary
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileAnniversaryCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileAward
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileAwardCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileCertification
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileCertificationCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileEducationalActivity
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileEducationalActivityCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileEmail
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileEmailCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileInterest
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileInterestCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileLanguage
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileLanguageCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileName
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileNameCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileNote
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileNoteCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfilePatent
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfilePatentCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfilePhone
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfilePhoneCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfilePosition
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfilePositionCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileProject
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileProjectCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfilePublication
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfilePublicationCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileSkill
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileSkillCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileWebAccount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileWebAccountCount
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileWebsite
+  - Microsoft.Graph.Beta.People.Get-MgBetaUserProfileWebsiteCount
+  - Microsoft.Graph.Beta.People.New-MgBetaUserActivityStatistics
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileAccount
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileAddress
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileAnniversary
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileAward
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileCertification
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileEducationalActivity
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileEmail
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileInterest
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileLanguage
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileName
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileNote
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfilePatent
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfilePhone
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfilePosition
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileProject
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfilePublication
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileSkill
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileWebAccount
+  - Microsoft.Graph.Beta.People.New-MgBetaUserProfileWebsite
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserActivityStatistics
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfile
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileAccount
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileAddress
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileAnniversary
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileAward
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileCertification
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileEducationalActivity
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileEmail
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileInterest
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileLanguage
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileName
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileNote
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfilePatent
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfilePhone
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfilePosition
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileProject
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfilePublication
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileSkill
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileWebAccount
+  - Microsoft.Graph.Beta.People.Remove-MgBetaUserProfileWebsite
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserActivityStatistics
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfile
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileAccount
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileAddress
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileAnniversary
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileAward
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileCertification
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileEducationalActivity
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileEmail
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileInterest
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileLanguage
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileName
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileNote
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfilePatent
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfilePhone
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfilePosition
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileProject
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfilePublication
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileSkill
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileWebAccount
+  - Microsoft.Graph.Beta.People.Update-MgBetaUserProfileWebsite
+uid: Microsoft.Graph.Beta.People
+name: Microsoft.Graph.Beta.People
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.People
+  Module Guid: dab24c58-bc8c-400f-a94d-f7183d4b44a9
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people
+  Help Version: 1.0.0.0
+  Locale: en-US

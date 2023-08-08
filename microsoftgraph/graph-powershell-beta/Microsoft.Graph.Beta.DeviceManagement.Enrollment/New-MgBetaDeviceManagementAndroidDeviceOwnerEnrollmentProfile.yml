@@ -1,0 +1,331 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to androidDeviceOwnerEnrollmentProfiles for deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Enrollment
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile>`: Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AccountId <String>]`: Tenant GUID the enrollment profile belongs to.
+    - `[ConfigureWifi <Boolean?>]`: Boolean that indicates that the Wi-Fi network should be configured during device provisioning. When set to TRUE, device provisioning will use Wi-Fi related properties to automatically connect to Wi-Fi networks. When set to FALSE or undefined, other Wi-Fi related properties will be ignored. Default value is TRUE. Returned by default.
+    - `[CreatedDateTime <DateTime?>]`: Date time the enrollment profile was created.
+    - `[Description <String>]`: Description for the enrollment profile.
+    - `[DisplayName <String>]`: Display name for the enrollment profile.
+    - `[EnrolledDeviceCount <Int32?>]`: Total number of Android devices that have enrolled using this enrollment profile.
+    - `[EnrollmentMode <AndroidDeviceOwnerEnrollmentMode?>]`: The enrollment mode for an enrollment profile.
+    - `[EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType?>]`: The enrollment token type for an enrollment profile.
+    - `[EnrollmentTokenUsageCount <Int32?>]`: Total number of AOSP devices that have enrolled using the current token.
+    - `[IsTeamsDeviceProfile <Boolean?>]`: Boolean indicating if this profile is an Android AOSP for Teams device profile.
+    - `[LastModifiedDateTime <DateTime?>]`: Date time the enrollment profile was last modified.
+    - `[QrCodeContent <String>]`: String used to generate a QR code for the token.
+    - `[QrCodeImage <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Type <String>]`: Indicates the content mime type.
+      - `[Value <Byte[]>]`: The byte array that contains the actual content.
+    - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
+    - `[TokenCreationDateTime <DateTime?>]`: Date time the most recently created token was created.
+    - `[TokenExpirationDateTime <DateTime?>]`: Date time the most recently created token will expire.
+    - `[TokenValue <String>]`: Value of the most recently created token for this enrollment profile.
+    - `[WifiHidden <Boolean?>]`: Boolean that indicates if hidden wifi networks are enabled
+    - `[WifiPassword <String>]`: String that contains the wi-fi login password
+    - `[WifiSecurityType <AospWifiSecurityType?>]`: This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios.
+    - `[WifiSsid <String>]`: String that contains the wi-fi login ssid
+
+  `QRCODEIMAGE <IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Type <String>]`: Indicates the content mime type.
+    - `[Value <Byte[]>]`: The byte array that contains the actual content.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile [-AccountId <String>]
+
+   [-AdditionalProperties <Hashtable>] [-ConfigureWifi] [-CreatedDateTime <DateTime>] [-Description <String>]
+
+   [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
+
+   [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
+
+   [-Id <String>] [-IsTeamsDeviceProfile] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
+
+   [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
+
+   [-TokenExpirationDateTime <DateTime>] [-TokenValue <String>] [-WifiHidden] [-WifiPassword <String>]
+
+   [-WifiSecurityType <AospWifiSecurityType>] [-WifiSsid <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
+
+   -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AccountId
+  description: |+
+    Tenant GUID the enrollment profile belongs to.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: ConfigureWifi
+  description: |+
+    Boolean that indicates that the Wi-Fi network should be configured during device provisioning.
+    When set to TRUE, device provisioning will use Wi-Fi related properties to automatically connect to Wi-Fi networks.
+    When set to FALSE or undefined, other Wi-Fi related properties will be ignored.
+    Default value is TRUE.
+    Returned by default.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    Date time the enrollment profile was created.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Description for the enrollment profile.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Display name for the enrollment profile.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: EnrolledDeviceCount
+  description: |+
+    Total number of Android devices that have enrolled using this enrollment profile.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="AndroidDeviceOwnerEnrollmentMode" data-throw-if-not-resolved="False" />
+  name: EnrollmentMode
+  description: |+
+    The enrollment mode for an enrollment profile.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="AndroidDeviceOwnerEnrollmentTokenType" data-throw-if-not-resolved="False" />
+  name: EnrollmentTokenType
+  description: |+
+    The enrollment token type for an enrollment profile.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: EnrollmentTokenUsageCount
+  description: |+
+    Total number of AOSP devices that have enrolled using the current token.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsTeamsDeviceProfile
+  description: |+
+    Boolean indicating if this profile is an Android AOSP for Teams device profile.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    Date time the enrollment profile was last modified.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: QrCodeContent
+  description: |+
+    String used to generate a QR code for the token.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphMimeContent" data-throw-if-not-resolved="False" />
+  name: QrCodeImage
+  description: |+
+    Contains properties for a generic mime content.
+    To construct, see NOTES section for QRCODEIMAGE properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: RoleScopeTagIds
+  description: |+
+    List of Scope Tags for this Entity instance.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: TokenCreationDateTime
+  description: |+
+    Date time the most recently created token was created.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: TokenExpirationDateTime
+  description: |+
+    Date time the most recently created token will expire.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TokenValue
+  description: |+
+    Value of the most recently created token for this enrollment profile.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WifiHidden
+  description: |+
+    Boolean that indicates if hidden wifi networks are enabled
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: WifiPassword
+  description: |+
+    String that contains the wi-fi login password
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="AospWifiSecurityType" data-throw-if-not-resolved="False" />
+  name: WifiSecurityType
+  description: |+
+    This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: WifiSsid
+  description: |+
+    String that contains the wi-fi login ssid
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Enrollment.New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
+name: New-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
+description: |-
+  Create new navigation property to androidDeviceOwnerEnrollmentProfiles for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementandroiddeviceownerenrollmentprofile
+  schema: 2.0.0

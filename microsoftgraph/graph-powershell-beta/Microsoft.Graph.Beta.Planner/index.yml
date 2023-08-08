@@ -1,0 +1,82 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.Planner
+  cmdlets:
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaGroupPlanner
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaGroupPlannerPlan
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaGroupPlannerPlanBucket
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaGroupPlannerPlanCount
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaGroupPlannerPlanDetail
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaGroupPlannerPlanTask
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlanner
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerBucket
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerBucketCount
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerBucketDelta
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerBucketTask
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerPlan
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerPlanBucket
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerPlanCount
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerPlanDelta
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerPlanDetail
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerPlanTask
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerRoster
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerRosterCount
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerRosterMember
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerRosterMemberCount
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerRosterPlan
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerRosterPlanCount
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerTask
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerTaskAssignedToTaskBoardFormat
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerTaskBucketTaskBoardFormat
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerTaskCount
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerTaskDelta
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerTaskDetail
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerTaskProgressTaskBoardFormat
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaUserPlanner
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaUserPlannerAllCount
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaUserPlannerFavoritePlan
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaUserPlannerFavoritePlanCount
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaUserPlannerPlan
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaUserPlannerRecentPlan
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaUserPlannerRecentPlanCount
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaUserPlannerRosterPlan
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaUserPlannerRosterPlanCount
+  - Microsoft.Graph.Beta.Planner.Get-MgBetaUserPlannerTask
+  - Microsoft.Graph.Beta.Planner.New-MgBetaPlannerBucket
+  - Microsoft.Graph.Beta.Planner.New-MgBetaPlannerPlan
+  - Microsoft.Graph.Beta.Planner.New-MgBetaPlannerRoster
+  - Microsoft.Graph.Beta.Planner.New-MgBetaPlannerRosterMember
+  - Microsoft.Graph.Beta.Planner.New-MgBetaPlannerTask
+  - Microsoft.Graph.Beta.Planner.Remove-MgBetaGroupPlannerPlanDetail
+  - Microsoft.Graph.Beta.Planner.Remove-MgBetaPlannerBucket
+  - Microsoft.Graph.Beta.Planner.Remove-MgBetaPlannerPlan
+  - Microsoft.Graph.Beta.Planner.Remove-MgBetaPlannerRoster
+  - Microsoft.Graph.Beta.Planner.Remove-MgBetaPlannerRosterMember
+  - Microsoft.Graph.Beta.Planner.Remove-MgBetaPlannerTask
+  - Microsoft.Graph.Beta.Planner.Remove-MgBetaPlannerTaskAssignedToTaskBoardFormat
+  - Microsoft.Graph.Beta.Planner.Remove-MgBetaPlannerTaskBucketTaskBoardFormat
+  - Microsoft.Graph.Beta.Planner.Remove-MgBetaPlannerTaskProgressTaskBoardFormat
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaGroupPlanner
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaGroupPlannerPlanDetail
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaPlanner
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaPlannerBucket
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaPlannerPlan
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaPlannerPlanDetail
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaPlannerRoster
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaPlannerRosterMember
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaPlannerTask
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaPlannerTaskAssignedToTaskBoardFormat
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaPlannerTaskBucketTaskBoardFormat
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaPlannerTaskDetail
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaPlannerTaskProgressTaskBoardFormat
+  - Microsoft.Graph.Beta.Planner.Update-MgBetaUserPlanner
+uid: Microsoft.Graph.Beta.Planner
+name: Microsoft.Graph.Beta.Planner
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.Planner
+  Module Guid: 396bc331-3bb3-4b93-adc3-cb760762ed87
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner
+  Help Version: 1.0.0.0
+  Locale: en-US

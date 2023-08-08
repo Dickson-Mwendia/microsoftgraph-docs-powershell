@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get roleManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagement?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Enrollment
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleManagement" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgRoleManagement
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagement?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaRoleManagement [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Enrollment.Get-MgBetaRoleManagement
+name: Get-MgBetaRoleManagement
+description: |-
+  Get roleManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetarolemanagement
+  schema: 2.0.0

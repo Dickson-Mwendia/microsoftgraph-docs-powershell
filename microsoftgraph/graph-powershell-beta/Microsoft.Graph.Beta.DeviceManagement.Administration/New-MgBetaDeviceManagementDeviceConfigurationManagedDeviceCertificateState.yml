@@ -1,0 +1,226 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to deviceConfigurationsAllManagedDeviceCertificateStates for deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Administration
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphManagedAllDeviceCertificateState>`: managedAllDeviceCertificateState
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[CertificateExpirationDateTime <DateTime?>]`: Certificate expiry date
+    - `[CertificateExtendedKeyUsages <String>]`: Enhanced Key Usage
+    - `[CertificateIssuanceDateTime <DateTime?>]`: Issuance date
+    - `[CertificateIssuerName <String>]`: Issuer
+    - `[CertificateKeyUsages <Int32?>]`: Key Usage
+    - `[CertificateRevokeStatus <CertificateRevocationStatus?>]`: Certificate Revocation Status.
+    - `[CertificateRevokeStatusLastChangeDateTime <DateTime?>]`: The time the revoke status was last changed
+    - `[CertificateSerialNumber <String>]`: Serial number
+    - `[CertificateSubjectName <String>]`: Certificate subject name
+    - `[CertificateThumbprint <String>]`: Thumbprint
+    - `[ManagedDeviceDisplayName <String>]`: Device display name
+    - `[UserPrincipalName <String>]`: User principal name
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState [-AdditionalProperties <Hashtable>]
+
+   [-CertificateExpirationDateTime <DateTime>] [-CertificateExtendedKeyUsages <String>]
+
+   [-CertificateIssuanceDateTime <DateTime>] [-CertificateIssuerName <String>] [-CertificateKeyUsages <Int32>]
+
+   [-CertificateRevokeStatus <CertificateRevocationStatus>]
+
+   [-CertificateRevokeStatusLastChangeDateTime <DateTime>] [-CertificateSerialNumber <String>]
+
+   [-CertificateSubjectName <String>] [-CertificateThumbprint <String>] [-Id <String>]
+
+   [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState
+
+   -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedAllDeviceCertificateState" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    managedAllDeviceCertificateState
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CertificateExpirationDateTime
+  description: |+
+    Certificate expiry date
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CertificateExtendedKeyUsages
+  description: |+
+    Enhanced Key Usage
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CertificateIssuanceDateTime
+  description: |+
+    Issuance date
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CertificateIssuerName
+  description: |+
+    Issuer
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: CertificateKeyUsages
+  description: |+
+    Key Usage
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="CertificateRevocationStatus" data-throw-if-not-resolved="False" />
+  name: CertificateRevokeStatus
+  description: |+
+    Certificate Revocation Status.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CertificateRevokeStatusLastChangeDateTime
+  description: |+
+    The time the revoke status was last changed
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CertificateSerialNumber
+  description: |+
+    Serial number
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CertificateSubjectName
+  description: |+
+    Certificate subject name
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CertificateThumbprint
+  description: |+
+    Thumbprint
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ManagedDeviceDisplayName
+  description: |+
+    Device display name
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserPrincipalName
+  description: |+
+    User principal name
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Administration.New-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState
+name: New-MgBetaDeviceManagementDeviceConfigurationManagedDeviceCertificateState
+description: |-
+  Create new navigation property to deviceConfigurationsAllManagedDeviceCertificateStates for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdeviceconfigurationmanageddevicecertificatestate
+  schema: 2.0.0

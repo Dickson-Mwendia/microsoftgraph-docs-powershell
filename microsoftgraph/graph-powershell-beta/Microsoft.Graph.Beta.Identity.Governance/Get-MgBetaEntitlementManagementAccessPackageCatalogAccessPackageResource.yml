@@ -1,0 +1,198 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
+  To request to add or remove an accessPackageResource, use create accessPackageResourceRequest.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.Governance
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResource" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource
+  href: /powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId <String>
+
+   [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+
+   [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get catalog resources by catalog id'
+  code: |-
+    Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+    Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' | Format-List
+
+    AccessPackageResourceEnvironment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceEnvironment
+    AccessPackageResourceRoles       :
+    AccessPackageResourceScopes      :
+    AddedBy                          : admin@M365x814237.onmicrosoft.com
+    AddedOn                          : 10/19/2021 2:50:24 PM
+    Attributes                       : {}
+    Description                      : Marketing resources
+    DisplayName                      : Marketing resources
+    Id                               : 36d8d18f-b081-4867-acf5-4a8b893761e8
+    IsPendingOnboarding              : False
+    OriginId                         : b5cd9d19-91c0-4622-93e2-537ad8a0b3ad
+    OriginSystem                     : AadGroup
+    ResourceType                     : Security Group
+    Url                              : https://account.activedirectory.windowsazure.com/r?tenantId=c265ddcc-4694-4bb0-b771-4829ca21177d#/manageMembership?objectType=Group&objectId=b5cd9d19-91c0-4622-93e2-537ad8a0b3ad
+    AdditionalProperties             : {}
+
+    AccessPackageResourceEnvironment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceEnvironment
+    AccessPackageResourceRoles       :
+    AccessPackageResourceScopes      :
+    AddedBy                          : admin@M365x814237.onmicrosoft.com
+    AddedOn                          : 10/13/2021 8:51:24 AM
+    Attributes                       : {}
+    Description                      : Marketing group2
+    DisplayName                      : Marketing resources2
+    Id                               : 99cbe4a3-d7d2-4f19-90af-cc7c9dccd7f8
+    IsPendingOnboarding              : False
+    OriginId                         : c41e321d-2907-4183-8224-b4cec9c9381b
+    OriginSystem                     : AadGroup
+    ResourceType                     : Security Group
+    Url                              : https://account.activedirectory.windowsazure.com/r?tenantId=c265ddcc-4694-4bb0-b771-4829ca21177d#/manageMembership?objectType=Group&objectId=c41e321d-2907-4183-8224-b4cec9c9381b
+    AdditionalProperties             : {}
+  description: |-
+    This example returns all access package catalog resources for the specified catalog.
+  summary: ""
+- title: "Example 2: Use -Filter to get all catalog resources with the display name 'Marketing resources'"
+  code: |-
+    Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+    Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "DisplayName eq 'Marketing resources'" | Format-List
+
+    AccessPackageResourceEnvironment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceEnvironment
+    AccessPackageResourceRoles       :
+    AccessPackageResourceScopes      :
+    AddedBy                          : admin@M365x814237.onmicrosoft.com
+    AddedOn                          : 10/19/2021 2:50:24 PM
+    Attributes                       : {}
+    Description                      : Marketing resources
+    DisplayName                      : Marketing resources
+    Id                               : 36d8d18f-b081-4867-acf5-4a8b893761e8
+    IsPendingOnboarding              : False
+    OriginId                         : b5cd9d19-91c0-4622-93e2-537ad8a0b3ad
+    OriginSystem                     : AadGroup
+    ResourceType                     : Security Group
+    Url                              : https://account.activedirectory.windowsazure.com/r?tenantId=c265ddcc-4694-4bb0-b771-4829ca21177d#/manageMembership?objectType=Group&objectId=b5cd9d19-91c0-4622-93e2-537ad8a0b3ad
+    AdditionalProperties             : {}
+  description: |-
+    This example returns the resources in the specified catalog whose display name is `marketing resources`.
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AccessPackageCatalogId
+  isRequired: true
+  description: |+
+    The unique identifier of accessPackageCatalog
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.Governance.Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource
+name: Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource
+description: |-
+  Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
+  To request to add or remove an accessPackageResource, use create accessPackageResourceRequest.
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.Governance
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresource
+  schema: 2.0.0

@@ -1,0 +1,164 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to resourceNamespaces for roleManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDeviceManagementResourceNamespace](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementDeviceManagementResourceNamespace?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Enrollment
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphUnifiedRbacResourceNamespace>`: unifiedRbacResourceNamespace
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Name <String>]`: Name of the resource namespace. Typically, the same name as the id property, such as microsoft.aad.b2c. Required. Supports $filter (eq, startsWith).
+    - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+      - `[AuthenticationContext <IMicrosoftGraphAuthenticationContextClassReference>]`: authenticationContextClassReference
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences. For example, selection UX.
+        - `[DisplayName <String>]`: A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences. For example, a selection UX.
+        - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to false, it should not be shown in selection UX used to tag resources with authentication context class values. It will still be shown in the Conditionall Access policy authoring experience.  Supports $filter (eq).
+      - `[AuthenticationContextId <String>]`: 
+      - `[Description <String>]`: Description for the action. Supports $filter (eq).
+      - `[IsAuthenticationContextSettable <Boolean?>]`: 
+      - `[IsPrivileged <Boolean?>]`: 
+      - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
+      - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[DisplayName <String>]`: 
+        - `[Scope <String>]`: 
+        - `[Type <String>]`: 
+      - `[ResourceScopeId <String>]`: Not implemented.
+
+  `RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction[]>`: Operations that an authorized principal are allowed to perform.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+    - `[AuthenticationContext <IMicrosoftGraphAuthenticationContextClassReference>]`: authenticationContextClassReference
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences. For example, selection UX.
+      - `[DisplayName <String>]`: A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences. For example, a selection UX.
+      - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to false, it should not be shown in selection UX used to tag resources with authentication context class values. It will still be shown in the Conditionall Access policy authoring experience.  Supports $filter (eq).
+    - `[AuthenticationContextId <String>]`: 
+    - `[Description <String>]`: Description for the action. Supports $filter (eq).
+    - `[IsAuthenticationContextSettable <Boolean?>]`: 
+    - `[IsPrivileged <Boolean?>]`: 
+    - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
+    - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[DisplayName <String>]`: 
+      - `[Scope <String>]`: 
+      - `[Type <String>]`: 
+    - `[ResourceScopeId <String>]`: Not implemented.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgRoleManagementDeviceManagementResourceNamespace
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementDeviceManagementResourceNamespace?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaRoleManagementDeviceManagementResourceNamespace [-AdditionalProperties <Hashtable>] [-Id <String>]
+
+   [-Name <String>] [-ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  New-MgBetaRoleManagementDeviceManagementResourceNamespace
+
+   -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphUnifiedRbacResourceNamespace" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    unifiedRbacResourceNamespace
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Name
+  description: |+
+    Name of the resource namespace.
+    Typically, the same name as the id property, such as microsoft.aad.b2c.
+    Required.
+    Supports $filter (eq, startsWith).
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphUnifiedRbacResourceAction" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ResourceActions
+  description: |+
+    Operations that an authorized principal are allowed to perform.
+    To construct, see NOTES section for RESOURCEACTIONS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Enrollment.New-MgBetaRoleManagementDeviceManagementResourceNamespace
+name: New-MgBetaRoleManagementDeviceManagementResourceNamespace
+description: |-
+  Create new navigation property to resourceNamespaces for roleManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementresourcenamespace
+  schema: 2.0.0

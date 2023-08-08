@@ -1,0 +1,216 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke action windowsPrivacyAccessControls
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Invoke-MgDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Actions
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[WindowsPrivacyAccessControls <IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]>]`: 
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[AccessLevel <WindowsPrivacyDataAccessLevel?>]`: Determine the access level to specific Windows privacy data category.
+      - `[AppDisplayName <String>]`: The Package Family Name of a Windows app. When set, the access level applies to the specified application.
+      - `[AppPackageFamilyName <String>]`: The Package Family Name of a Windows app. When set, the access level applies to the specified application.
+      - `[DataCategory <WindowsPrivacyDataCategory?>]`: Windows privacy data category specifier for privacy data access.
+
+  `INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
+    - `[AlertRecordId <String>]`: The unique identifier of alertRecord
+    - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
+    - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
+    - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+    - `[AppleUserInitiatedEnrollmentProfileId <String>]`: The unique identifier of appleUserInitiatedEnrollmentProfile
+    - `[CertificateConnectorDetailsId <String>]`: The unique identifier of certificateConnectorDetails
+    - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
+    - `[CloudPcId <String>]`: The unique identifier of cloudPC
+    - `[CloudPcOnPremisesConnectionId <String>]`: The unique identifier of cloudPcOnPremisesConnection
+    - `[CloudPcProvisioningPolicyId <String>]`: The unique identifier of cloudPcProvisioningPolicy
+    - `[CloudPcUserSettingId <String>]`: The unique identifier of cloudPcUserSetting
+    - `[DataSharingConsentId <String>]`: The unique identifier of dataSharingConsent
+    - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
+    - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
+    - `[DeviceComplianceScriptId <String>]`: The unique identifier of deviceComplianceScript
+    - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+    - `[DeviceCustomAttributeShellScriptId <String>]`: The unique identifier of deviceCustomAttributeShellScript
+    - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
+    - `[DeviceHealthScriptId <String>]`: The unique identifier of deviceHealthScript
+    - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+    - `[DeviceManagementCompliancePolicyId <String>]`: The unique identifier of deviceManagementCompliancePolicy
+    - `[DeviceManagementConfigurationPolicyId <String>]`: The unique identifier of deviceManagementConfigurationPolicy
+    - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+    - `[DeviceManagementIntentId <String>]`: The unique identifier of deviceManagementIntent
+    - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+    - `[DeviceManagementResourceAccessProfileBaseId <String>]`: The unique identifier of deviceManagementResourceAccessProfileBase
+    - `[DeviceManagementReusablePolicySettingId <String>]`: The unique identifier of deviceManagementReusablePolicySetting
+    - `[DeviceManagementScriptId <String>]`: The unique identifier of deviceManagementScript
+    - `[DeviceManagementTemplateId <String>]`: The unique identifier of deviceManagementTemplate
+    - `[DeviceManagementTemplateId1 <String>]`: The unique identifier of deviceManagementTemplate
+    - `[DeviceShellScriptId <String>]`: The unique identifier of deviceShellScript
+    - `[EmbeddedSimActivationCodePoolId <String>]`: The unique identifier of embeddedSIMActivationCodePool
+    - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
+    - `[GroupPolicyConfigurationId <String>]`: The unique identifier of groupPolicyConfiguration
+    - `[GroupPolicyMigrationReportId <String>]`: The unique identifier of groupPolicyMigrationReport
+    - `[GroupPolicyUploadedDefinitionFileId <String>]`: The unique identifier of groupPolicyUploadedDefinitionFile
+    - `[IntuneBrandingProfileId <String>]`: The unique identifier of intuneBrandingProfile
+    - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+    - `[MicrosoftTunnelServerId <String>]`: The unique identifier of microsoftTunnelServer
+    - `[MicrosoftTunnelServerLogCollectionResponseId <String>]`: The unique identifier of microsoftTunnelServerLogCollectionResponse
+    - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
+    - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
+    - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
+    - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+    - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
+    - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
+    - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
+    - `[WindowsDriverUpdateProfileId <String>]`: The unique identifier of windowsDriverUpdateProfile
+    - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
+    - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
+    - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
+
+  `WINDOWSPRIVACYACCESSCONTROLS <IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]>`: .
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AccessLevel <WindowsPrivacyDataAccessLevel?>]`: Determine the access level to specific Windows privacy data category.
+    - `[AppDisplayName <String>]`: The Package Family Name of a Windows app. When set, the access level applies to the specified application.
+    - `[AppPackageFamilyName <String>]`: The Package Family Name of a Windows app. When set, the access level applies to the specified application.
+    - `[DataCategory <WindowsPrivacyDataCategory?>]`: Windows privacy data category specifier for privacy data access.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Invoke-MgDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl -DeviceConfigurationId <String>
+
+   [-AdditionalProperties <Hashtable>]
+
+   [-WindowsPrivacyAccessControls <IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]>] [-PassThru] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl -DeviceConfigurationId <String>
+
+   -BodyParameter <IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl
+
+   -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+
+   [-WindowsPrivacyAccessControls <IMicrosoftGraphWindowsPrivacyDataAccessControlItem[]>] [-PassThru] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl
+
+   -InputObject <IDeviceManagementActionsIdentity>
+
+   -BodyParameter <IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPathsB12D8ODevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphWindowsprivacyaccesscontrolsPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceConfigurationId
+  isRequired: true
+  description: |+
+    The unique identifier of deviceConfiguration
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDeviceManagementActionsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphWindowsPrivacyDataAccessControlItem" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: WindowsPrivacyAccessControls
+  description: |+
+    .
+    To construct, see NOTES section for WINDOWSPRIVACYACCESSCONTROLS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Actions.Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl
+name: Invoke-MgBetaDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl
+description: |-
+  Invoke action windowsPrivacyAccessControls
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetadevicemanagementdeviceconfigurationwindowsprivacyaccesscontrol
+  schema: 2.0.0

@@ -1,0 +1,123 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Delete calendarPermission.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Remove-MgBetaGroupCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupCalendarPermission?view=graph-powershell-beta)
+module: Microsoft.Graph.Calendar
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
+    - `[AttachmentId <String>]`: The unique identifier of attachment
+    - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+    - `[CalendarId <String>]`: The unique identifier of calendar
+    - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+    - `[EventId <String>]`: The unique identifier of event
+    - `[EventId1 <String>]`: The unique identifier of event
+    - `[ExtensionId <String>]`: The unique identifier of extension
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PlaceId <String>]`: The unique identifier of place
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.ICalendarIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Remove-MgBetaGroupCalendarPermission
+  href: /powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaGroupCalendarPermission?view=graph-powershell-beta
+syntaxes:
+- >-
+  Remove-MgGroupCalendarPermission -CalendarPermissionId <String> -GroupId <String> [-IfMatch <String>]
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Remove-MgGroupCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CalendarPermissionId
+  isRequired: true
+  description: |+
+    The unique identifier of calendarPermission
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GroupId
+  isRequired: true
+  description: |+
+    The unique identifier of group
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: IfMatch
+  description: |+
+    ETag
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ICalendarIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Calendar.Remove-MgGroupCalendarPermission
+name: Remove-MgGroupCalendarPermission
+description: |-
+  Delete calendarPermission.
+metadata:
+  external help file: Microsoft.Graph.Calendar-help.xml
+  Module Name: Microsoft.Graph.Calendar
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mggroupcalendarpermission
+  schema: 2.0.0

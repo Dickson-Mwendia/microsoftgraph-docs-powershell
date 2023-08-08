@@ -1,0 +1,502 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the properties of an alert object in an organization based on the specified alert **id** property.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta)
+module: Microsoft.Graph.Security
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphSecurityAlert>`: alert
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
+    - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
+    - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
+    - `[Category <String>]`: The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.
+    - `[Classification <String>]`: alertClassification
+    - `[Comments <IMicrosoftGraphSecurityAlertComment[]>]`: Array of comments created by the Security Operations (SecOps) team during the alert management process.
+      - `[Comment <String>]`: The comment text.
+      - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
+      - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
+    - `[CreatedDateTime <DateTime?>]`: Time when Microsoft 365 Defender created the alert.
+    - `[Description <String>]`: String value describing each alert.
+    - `[DetectionSource <String>]`: detectionSource
+    - `[DetectorId <String>]`: The ID of the detector that triggered the alert.
+    - `[Determination <String>]`: alertDetermination
+    - `[Evidence <IMicrosoftGraphSecurityAlertEvidence[]>]`: Collection of evidence related to the alert.
+      - `[CreatedDateTime <DateTime?>]`: The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[DetailedRoles <String[]>]`: 
+      - `[RemediationStatus <String>]`: evidenceRemediationStatus
+      - `[RemediationStatusDetails <String>]`: Details about the remediation status.
+      - `[Roles <String[]>]`: One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role Attacker.
+      - `[Tags <String[]>]`: Array of custom tags associated with an evidence instance. For example, to denote a group of devices or high value assets.
+      - `[Verdict <String>]`: evidenceVerdict
+    - `[FirstActivityDateTime <DateTime?>]`: The earliest activity associated with the alert.
+    - `[IncidentId <String>]`: Unique identifier to represent the incident this alert resource is associated with.
+    - `[IncidentWebUrl <String>]`: URL for the incident page in the Microsoft 365 Defender portal.
+    - `[LastActivityDateTime <DateTime?>]`: The oldest activity associated with the alert.
+    - `[LastUpdateDateTime <DateTime?>]`: Time when the alert was last updated at Microsoft 365 Defender.
+    - `[MitreTechniques <String[]>]`: The attack techniques, as aligned with the MITRE ATT&CK framework.
+    - `[ProviderAlertId <String>]`: The ID of the alert as it appears in the security provider product that generated the alert.
+    - `[RecommendedActions <String>]`: Recommended response and remediation actions to take in the event this alert was generated.
+    - `[ResolvedDateTime <DateTime?>]`: Time when the alert was resolved.
+    - `[ServiceSource <String>]`: serviceSource
+    - `[Severity <String>]`: alertSeverity
+    - `[Status <String>]`: alertStatus
+    - `[TenantId <String>]`: The Azure Active Directory tenant the alert was created in.
+    - `[ThreatDisplayName <String>]`: The threat associated with this alert.
+    - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
+    - `[Title <String>]`: Brief identifying string value describing the alert.
+
+  `COMMENTS <IMicrosoftGraphSecurityAlertComment[]>`: Array of comments created by the Security Operations (SecOps) team during the alert management process.
+    - `[Comment <String>]`: The comment text.
+    - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
+    - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
+
+  `EVIDENCE <IMicrosoftGraphSecurityAlertEvidence[]>`: Collection of evidence related to the alert.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the evidence was created and added to the alert. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[DetailedRoles <String[]>]`: 
+    - `[RemediationStatus <String>]`: evidenceRemediationStatus
+    - `[RemediationStatusDetails <String>]`: Details about the remediation status.
+    - `[Roles <String[]>]`: One or more roles that an evidence entity represents in an alert. For example, an IP address that is associated with an attacker has the evidence role Attacker.
+    - `[Tags <String[]>]`: Array of custom tags associated with an evidence instance. For example, to denote a group of devices or high value assets.
+    - `[Verdict <String>]`: evidenceVerdict
+
+  `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
+    - `[AlertId <String>]`: The unique identifier of alert
+    - `[ArticleId <String>]`: The unique identifier of article
+    - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
+    - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+    - `[DataSourceId <String>]`: The unique identifier of dataSource
+    - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+    - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
+    - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
+    - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
+    - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
+    - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
+    - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
+    - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+    - `[HostComponentId <String>]`: The unique identifier of hostComponent
+    - `[HostCookieId <String>]`: The unique identifier of hostCookie
+    - `[HostId <String>]`: The unique identifier of host
+    - `[HostTrackerId <String>]`: The unique identifier of hostTracker
+    - `[IncidentId <String>]`: The unique identifier of incident
+    - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
+    - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+    - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
+    - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
+    - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
+    - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
+    - `[SecureScoreId <String>]`: The unique identifier of secureScore
+    - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
+    - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
+    - `[SimulationId <String>]`: The unique identifier of simulation
+    - `[SiteSourceId <String>]`: The unique identifier of siteSource
+    - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+    - `[UserSourceId <String>]`: The unique identifier of userSource
+    - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
+    - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlert" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.ISecurityIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlert" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgBetaSecurityAlertV2
+  href: /powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta
+syntaxes:
+- >-
+  Update-MgSecurityAlertV2 -AlertId <String> [-ActorDisplayName <String>] [-AdditionalProperties <Hashtable>]
+
+   [-AlertWebUrl <String>] [-AssignedTo <String>] [-Category <String>] [-Classification <String>]
+
+   [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
+
+   [-DetectionSource <String>] [-DetectorId <String>] [-Determination <String>]
+
+   [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <DateTime>] [-Id <String>]
+
+   [-IncidentId <String>] [-IncidentWebUrl <String>] [-LastActivityDateTime <DateTime>]
+
+   [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>] [-ProviderAlertId <String>]
+
+   [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>] [-ServiceSource <String>] [-Severity <String>]
+
+   [-Status <String>] [-TenantId <String>] [-ThreatDisplayName <String>] [-ThreatFamilyName <String>]
+
+   [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgSecurityAlertV2 -AlertId <String> -BodyParameter <IMicrosoftGraphSecurityAlert> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ActorDisplayName <String>]
+
+   [-AdditionalProperties <Hashtable>] [-AlertWebUrl <String>] [-AssignedTo <String>] [-Category <String>]
+
+   [-Classification <String>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>]
+
+   [-Description <String>] [-DetectionSource <String>] [-DetectorId <String>] [-Determination <String>]
+
+   [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <DateTime>] [-Id <String>]
+
+   [-IncidentId <String>] [-IncidentWebUrl <String>] [-LastActivityDateTime <DateTime>]
+
+   [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>] [-ProviderAlertId <String>]
+
+   [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>] [-ServiceSource <String>] [-Severity <String>]
+
+   [-Status <String>] [-TenantId <String>] [-ThreatDisplayName <String>] [-ThreatFamilyName <String>]
+
+   [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphSecurityAlert>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ActorDisplayName
+  description: |+
+    The adversary or activity group that is associated with this alert.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AlertId
+  isRequired: true
+  description: |+
+    The unique identifier of alert
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AlertWebUrl
+  description: |+
+    URL for the alert page in the Microsoft 365 Defender portal.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AssignedTo
+  description: |+
+    Owner of the alert, or null if no owner is assigned.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecurityAlert" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    alert
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Category
+  description: |+
+    The attack kill-chain category that the alert belongs to.
+    Aligned with the MITRE ATT&CK framework.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Classification
+  description: |+
+    alertClassification
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecurityAlertComment" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Comments
+  description: |+
+    Array of comments created by the Security Operations (SecOps) team during the alert management process.
+    To construct, see NOTES section for COMMENTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    Time when Microsoft 365 Defender created the alert.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    String value describing each alert.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DetectionSource
+  description: |+
+    detectionSource
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DetectorId
+  description: |+
+    The ID of the detector that triggered the alert.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Determination
+  description: |+
+    alertDetermination
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecurityAlertEvidence" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Evidence
+  description: |+
+    Collection of evidence related to the alert.
+    To construct, see NOTES section for EVIDENCE properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: FirstActivityDateTime
+  description: |+
+    The earliest activity associated with the alert.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: IncidentId
+  description: |+
+    Unique identifier to represent the incident this alert resource is associated with.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: IncidentWebUrl
+  description: |+
+    URL for the incident page in the Microsoft 365 Defender portal.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ISecurityIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastActivityDateTime
+  description: |+
+    The oldest activity associated with the alert.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastUpdateDateTime
+  description: |+
+    Time when the alert was last updated at Microsoft 365 Defender.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: MitreTechniques
+  description: |+
+    The attack techniques, as aligned with the MITRE ATT&CK framework.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ProviderAlertId
+  description: |+
+    The ID of the alert as it appears in the security provider product that generated the alert.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RecommendedActions
+  description: |+
+    Recommended response and remediation actions to take in the event this alert was generated.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: ResolvedDateTime
+  description: |+
+    Time when the alert was resolved.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ServiceSource
+  description: |+
+    serviceSource
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Severity
+  description: |+
+    alertSeverity
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Status
+  description: |+
+    alertStatus
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TenantId
+  description: |+
+    The Azure Active Directory tenant the alert was created in.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ThreatDisplayName
+  description: |+
+    The threat associated with this alert.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ThreatFamilyName
+  description: |+
+    Threat family associated with this alert.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Title
+  description: |+
+    Brief identifying string value describing the alert.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Security.Update-MgSecurityAlertV2
+name: Update-MgSecurityAlertV2
+description: |-
+  Update the properties of an alert object in an organization based on the specified alert **id** property.
+metadata:
+  external help file: Microsoft.Graph.Security-help.xml
+  Module Name: Microsoft.Graph.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecurityalertv2
+  schema: 2.0.0

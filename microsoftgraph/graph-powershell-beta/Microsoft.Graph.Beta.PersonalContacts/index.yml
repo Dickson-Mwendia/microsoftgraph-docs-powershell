@@ -1,0 +1,66 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.PersonalContacts
+  cmdlets:
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContact
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactCount
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactExtension
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactExtensionCount
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolder
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderChildFolder
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderChildFolderContact
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderChildFolderContactCount
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderChildFolderContactExtension
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderChildFolderContactExtensionCount
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderChildFolderContactPhoto
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderChildFolderContactPhotoContent
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderChildFolderCount
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderContact
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderContactCount
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderContactExtension
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderContactExtensionCount
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderContactPhoto
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderContactPhotoContent
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderCount
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactPhoto
+  - Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactPhotoContent
+  - Microsoft.Graph.Beta.PersonalContacts.New-MgBetaUserContact
+  - Microsoft.Graph.Beta.PersonalContacts.New-MgBetaUserContactExtension
+  - Microsoft.Graph.Beta.PersonalContacts.New-MgBetaUserContactFolder
+  - Microsoft.Graph.Beta.PersonalContacts.New-MgBetaUserContactFolderChildFolder
+  - Microsoft.Graph.Beta.PersonalContacts.New-MgBetaUserContactFolderChildFolderContact
+  - Microsoft.Graph.Beta.PersonalContacts.New-MgBetaUserContactFolderChildFolderContactExtension
+  - Microsoft.Graph.Beta.PersonalContacts.New-MgBetaUserContactFolderContact
+  - Microsoft.Graph.Beta.PersonalContacts.New-MgBetaUserContactFolderContactExtension
+  - Microsoft.Graph.Beta.PersonalContacts.Remove-MgBetaUserContact
+  - Microsoft.Graph.Beta.PersonalContacts.Remove-MgBetaUserContactExtension
+  - Microsoft.Graph.Beta.PersonalContacts.Remove-MgBetaUserContactFolder
+  - Microsoft.Graph.Beta.PersonalContacts.Remove-MgBetaUserContactFolderChildFolder
+  - Microsoft.Graph.Beta.PersonalContacts.Remove-MgBetaUserContactFolderChildFolderContact
+  - Microsoft.Graph.Beta.PersonalContacts.Remove-MgBetaUserContactFolderChildFolderContactExtension
+  - Microsoft.Graph.Beta.PersonalContacts.Remove-MgBetaUserContactFolderContact
+  - Microsoft.Graph.Beta.PersonalContacts.Remove-MgBetaUserContactFolderContactExtension
+  - Microsoft.Graph.Beta.PersonalContacts.Set-MgBetaUserContactFolderChildFolderContactPhotoContent
+  - Microsoft.Graph.Beta.PersonalContacts.Set-MgBetaUserContactFolderContactPhotoContent
+  - Microsoft.Graph.Beta.PersonalContacts.Set-MgBetaUserContactPhotoContent
+  - Microsoft.Graph.Beta.PersonalContacts.Update-MgBetaUserContact
+  - Microsoft.Graph.Beta.PersonalContacts.Update-MgBetaUserContactExtension
+  - Microsoft.Graph.Beta.PersonalContacts.Update-MgBetaUserContactFolder
+  - Microsoft.Graph.Beta.PersonalContacts.Update-MgBetaUserContactFolderChildFolder
+  - Microsoft.Graph.Beta.PersonalContacts.Update-MgBetaUserContactFolderChildFolderContact
+  - Microsoft.Graph.Beta.PersonalContacts.Update-MgBetaUserContactFolderChildFolderContactExtension
+  - Microsoft.Graph.Beta.PersonalContacts.Update-MgBetaUserContactFolderChildFolderContactPhoto
+  - Microsoft.Graph.Beta.PersonalContacts.Update-MgBetaUserContactFolderContact
+  - Microsoft.Graph.Beta.PersonalContacts.Update-MgBetaUserContactFolderContactExtension
+  - Microsoft.Graph.Beta.PersonalContacts.Update-MgBetaUserContactFolderContactPhoto
+  - Microsoft.Graph.Beta.PersonalContacts.Update-MgBetaUserContactPhoto
+uid: Microsoft.Graph.Beta.PersonalContacts
+name: Microsoft.Graph.Beta.PersonalContacts
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.PersonalContacts
+  Module Guid: 3ebe8967-4c36-4635-a410-75278cd71cfe
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts
+  Help Version: 1.0.0.0
+  Locale: en-US

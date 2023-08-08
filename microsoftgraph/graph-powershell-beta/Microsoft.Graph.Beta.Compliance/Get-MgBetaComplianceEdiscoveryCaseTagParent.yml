@@ -1,0 +1,111 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Returns the parent tag of the specified tag.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseTagParent](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseTagParent?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Compliance
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
+    - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+    - `[CaseId <String>]`: The unique identifier of case
+    - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+    - `[CustodianId <String>]`: The unique identifier of custodian
+    - `[DataSourceId <String>]`: The unique identifier of dataSource
+    - `[LegalHoldId <String>]`: The unique identifier of legalHold
+    - `[NoncustodialDataSourceId <String>]`: The unique identifier of noncustodialDataSource
+    - `[ReviewSetId <String>]`: The unique identifier of reviewSet
+    - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
+    - `[SiteSourceId <String>]`: The unique identifier of siteSource
+    - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
+    - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+    - `[TagId <String>]`: The unique identifier of tag
+    - `[TagId1 <String>]`: The unique identifier of tag
+    - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+    - `[UserId <String>]`: The unique identifier of user
+    - `[UserSourceId <String>]`: The unique identifier of userSource
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryTag" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgComplianceEdiscoveryCaseTagParent
+  href: /powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseTagParent?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaComplianceEdiscoveryCaseTagParent -CaseId <String> -TagId <String> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgBetaComplianceEdiscoveryCaseTagParent -InputObject <IComplianceIdentity> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CaseId
+  isRequired: true
+  description: |+
+    The unique identifier of case
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="IComplianceIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TagId
+  isRequired: true
+  description: |+
+    The unique identifier of tag
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Compliance.Get-MgBetaComplianceEdiscoveryCaseTagParent
+name: Get-MgBetaComplianceEdiscoveryCaseTagParent
+description: |-
+  Returns the parent tag of the specified tag.
+metadata:
+  external help file: Microsoft.Graph.Beta.Compliance-help.xml
+  Module Name: Microsoft.Graph.Beta.Compliance
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasetagparent
+  schema: 2.0.0

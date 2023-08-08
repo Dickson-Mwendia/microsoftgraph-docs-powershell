@@ -1,0 +1,166 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property reports in deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Update-MgDeviceManagementReport?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Reports
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphDeviceManagementReports>`: Singleton entity that acts as a container for all reports functionality.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[CachedReportConfigurations <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>]`: Entity representing the configuration of a cached report
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ExpirationDateTime <DateTime?>]`: Time that the cached report expires
+      - `[Filter <String>]`: Filters applied on report creation.
+      - `[LastRefreshDateTime <DateTime?>]`: Time that the cached report was last refreshed
+      - `[Metadata <String>]`: Caller-managed metadata associated with the report
+      - `[OrderBy <String[]>]`: Ordering of columns in the report
+      - `[ReportName <String>]`: Name of the report
+      - `[Select <String[]>]`: Columns selected from the report
+      - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
+    - `[ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]`: Entity representing a job to export a report
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
+      - `[Filter <String>]`: Filters applied on the report
+      - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report
+      - `[LocalizationType <DeviceManagementExportJobLocalizationType?>]`: Configures how the requested export job is localized
+      - `[ReportName <String>]`: Name of the report
+      - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested
+      - `[Select <String[]>]`: Columns selected from the report
+      - `[SnapshotId <String>]`: A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
+      - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
+      - `[Url <String>]`: Temporary location of the exported report
+
+  `CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>`: Entity representing the configuration of a cached report
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ExpirationDateTime <DateTime?>]`: Time that the cached report expires
+    - `[Filter <String>]`: Filters applied on report creation.
+    - `[LastRefreshDateTime <DateTime?>]`: Time that the cached report was last refreshed
+    - `[Metadata <String>]`: Caller-managed metadata associated with the report
+    - `[OrderBy <String[]>]`: Ordering of columns in the report
+    - `[ReportName <String>]`: Name of the report
+    - `[Select <String[]>]`: Columns selected from the report
+    - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
+
+  `EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob[]>`: Entity representing a job to export a report
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
+    - `[Filter <String>]`: Filters applied on the report
+    - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report
+    - `[LocalizationType <DeviceManagementExportJobLocalizationType?>]`: Configures how the requested export job is localized
+    - `[ReportName <String>]`: Name of the report
+    - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested
+    - `[Select <String[]>]`: Columns selected from the report
+    - `[SnapshotId <String>]`: A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
+    - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
+    - `[Url <String>]`: Temporary location of the exported report
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementReports" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementReports" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgDeviceManagementReport
+  href: /powershell/module/Microsoft.Graph.Reports/Update-MgDeviceManagementReport?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaDeviceManagementReport [-AdditionalProperties <Hashtable>]
+
+   [-CachedReportConfigurations <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>]
+
+   [-ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>] [-Id <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementReports> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceManagementReports" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Singleton entity that acts as a container for all reports functionality.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceManagementCachedReportConfiguration" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: CachedReportConfigurations
+  description: |+
+    Entity representing the configuration of a cached report
+    To construct, see NOTES section for CACHEDREPORTCONFIGURATIONS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceManagementExportJob" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExportJobs
+  description: |+
+    Entity representing a job to export a report
+    To construct, see NOTES section for EXPORTJOBS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Reports.Update-MgBetaDeviceManagementReport
+name: Update-MgBetaDeviceManagementReport
+description: |-
+  Update the navigation property reports in deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.Reports-help.xml
+  Module Name: Microsoft.Graph.Beta.Reports
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetadevicemanagementreport
+  schema: 2.0.0

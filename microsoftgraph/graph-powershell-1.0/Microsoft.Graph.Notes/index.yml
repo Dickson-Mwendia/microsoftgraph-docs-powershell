@@ -1,0 +1,125 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Notes
+  cmdlets:
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteNotebook
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteNotebookCount
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteNotebookSection
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteNotebookSectionGroup
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteOperation
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteOperationCount
+  - Microsoft.Graph.Notes.Get-MgGroupOnenotePage
+  - Microsoft.Graph.Notes.Get-MgGroupOnenotePageContent
+  - Microsoft.Graph.Notes.Get-MgGroupOnenotePageCount
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteResource
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteResourceContent
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteResourceCount
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteSection
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteSectionCount
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteSectionGroup
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteSectionGroupCount
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteSectionGroupSection
+  - Microsoft.Graph.Notes.Get-MgGroupOnenoteSectionPage
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteNotebook
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteNotebookCount
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteNotebookSection
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteNotebookSectionGroup
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteOperation
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteOperationCount
+  - Microsoft.Graph.Notes.Get-MgSiteOnenotePage
+  - Microsoft.Graph.Notes.Get-MgSiteOnenotePageContent
+  - Microsoft.Graph.Notes.Get-MgSiteOnenotePageCount
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteResource
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteResourceContent
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteResourceCount
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteSection
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteSectionCount
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteSectionGroup
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteSectionGroupCount
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteSectionGroupSection
+  - Microsoft.Graph.Notes.Get-MgSiteOnenoteSectionPage
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteNotebook
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteNotebookCount
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteNotebookSection
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteNotebookSectionGroup
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteOperation
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteOperationCount
+  - Microsoft.Graph.Notes.Get-MgUserOnenotePage
+  - Microsoft.Graph.Notes.Get-MgUserOnenotePageContent
+  - Microsoft.Graph.Notes.Get-MgUserOnenotePageCount
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteResource
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteResourceContent
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteResourceCount
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteSection
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteSectionCount
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteSectionGroup
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteSectionGroupCount
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteSectionGroupSection
+  - Microsoft.Graph.Notes.Get-MgUserOnenoteSectionPage
+  - Microsoft.Graph.Notes.New-MgGroupOnenoteNotebook
+  - Microsoft.Graph.Notes.New-MgGroupOnenoteNotebookSection
+  - Microsoft.Graph.Notes.New-MgGroupOnenoteNotebookSectionGroup
+  - Microsoft.Graph.Notes.New-MgGroupOnenotePage
+  - Microsoft.Graph.Notes.New-MgGroupOnenoteSection
+  - Microsoft.Graph.Notes.New-MgGroupOnenoteSectionGroup
+  - Microsoft.Graph.Notes.New-MgGroupOnenoteSectionGroupSection
+  - Microsoft.Graph.Notes.New-MgGroupOnenoteSectionPage
+  - Microsoft.Graph.Notes.New-MgSiteOnenoteNotebook
+  - Microsoft.Graph.Notes.New-MgSiteOnenoteNotebookSection
+  - Microsoft.Graph.Notes.New-MgSiteOnenoteNotebookSectionGroup
+  - Microsoft.Graph.Notes.New-MgSiteOnenotePage
+  - Microsoft.Graph.Notes.New-MgSiteOnenoteSection
+  - Microsoft.Graph.Notes.New-MgSiteOnenoteSectionGroup
+  - Microsoft.Graph.Notes.New-MgSiteOnenoteSectionGroupSection
+  - Microsoft.Graph.Notes.New-MgSiteOnenoteSectionPage
+  - Microsoft.Graph.Notes.New-MgUserOnenoteNotebook
+  - Microsoft.Graph.Notes.New-MgUserOnenoteNotebookSection
+  - Microsoft.Graph.Notes.New-MgUserOnenoteNotebookSectionGroup
+  - Microsoft.Graph.Notes.New-MgUserOnenotePage
+  - Microsoft.Graph.Notes.New-MgUserOnenoteSection
+  - Microsoft.Graph.Notes.New-MgUserOnenoteSectionGroup
+  - Microsoft.Graph.Notes.New-MgUserOnenoteSectionGroupSection
+  - Microsoft.Graph.Notes.New-MgUserOnenoteSectionPage
+  - Microsoft.Graph.Notes.Remove-MgGroupOnenoteNotebook
+  - Microsoft.Graph.Notes.Remove-MgGroupOnenotePage
+  - Microsoft.Graph.Notes.Remove-MgGroupOnenoteSection
+  - Microsoft.Graph.Notes.Remove-MgGroupOnenoteSectionGroup
+  - Microsoft.Graph.Notes.Remove-MgSiteOnenoteNotebook
+  - Microsoft.Graph.Notes.Remove-MgSiteOnenotePage
+  - Microsoft.Graph.Notes.Remove-MgSiteOnenoteSection
+  - Microsoft.Graph.Notes.Remove-MgSiteOnenoteSectionGroup
+  - Microsoft.Graph.Notes.Remove-MgUserOnenoteNotebook
+  - Microsoft.Graph.Notes.Remove-MgUserOnenotePage
+  - Microsoft.Graph.Notes.Remove-MgUserOnenoteSection
+  - Microsoft.Graph.Notes.Remove-MgUserOnenoteSectionGroup
+  - Microsoft.Graph.Notes.Set-MgGroupOnenotePageContent
+  - Microsoft.Graph.Notes.Set-MgGroupOnenoteResourceContent
+  - Microsoft.Graph.Notes.Set-MgGroupOnenoteSectionPageContent
+  - Microsoft.Graph.Notes.Set-MgSiteOnenotePageContent
+  - Microsoft.Graph.Notes.Set-MgSiteOnenoteResourceContent
+  - Microsoft.Graph.Notes.Set-MgSiteOnenoteSectionPageContent
+  - Microsoft.Graph.Notes.Set-MgUserOnenotePageContent
+  - Microsoft.Graph.Notes.Set-MgUserOnenoteResourceContent
+  - Microsoft.Graph.Notes.Set-MgUserOnenoteSectionPageContent
+  - Microsoft.Graph.Notes.Update-MgGroupOnenoteNotebook
+  - Microsoft.Graph.Notes.Update-MgGroupOnenotePage
+  - Microsoft.Graph.Notes.Update-MgGroupOnenoteSection
+  - Microsoft.Graph.Notes.Update-MgGroupOnenoteSectionGroup
+  - Microsoft.Graph.Notes.Update-MgSiteOnenoteNotebook
+  - Microsoft.Graph.Notes.Update-MgSiteOnenotePage
+  - Microsoft.Graph.Notes.Update-MgSiteOnenoteSection
+  - Microsoft.Graph.Notes.Update-MgSiteOnenoteSectionGroup
+  - Microsoft.Graph.Notes.Update-MgUserOnenoteNotebook
+  - Microsoft.Graph.Notes.Update-MgUserOnenotePage
+  - Microsoft.Graph.Notes.Update-MgUserOnenoteSection
+  - Microsoft.Graph.Notes.Update-MgUserOnenoteSectionGroup
+uid: Microsoft.Graph.Notes
+name: Microsoft.Graph.Notes
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Notes
+  Module Guid: b43089fe-fcc1-41b3-89c4-9effc710b7ce
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.notes
+  Help Version: 1.0.0.0
+  Locale: en-US

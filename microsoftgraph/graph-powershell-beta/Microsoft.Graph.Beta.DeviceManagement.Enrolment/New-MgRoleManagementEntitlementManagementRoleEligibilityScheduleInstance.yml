@@ -1,0 +1,305 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to roleEligibilityScheduleInstances for roleManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance?view=graph-powershell-v1.0)
+module: Microsoft.Graph.DeviceManagement.Enrolment
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
+    - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
+
+  BODYPARAMETER `<IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance1>`: unifiedRoleEligibilityScheduleInstance
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
+      - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
+    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app. The scope of an assignment or role eligibility determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment or role eligibility. The scope of an assignment or role eligibility determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
+    - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[PrincipalId <String>]`: Identifier of the principal that has been granted the role assignment or that's eligible for a role.
+    - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
+      - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
+      - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
+      - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
+      - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
+      - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+      - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
+      - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
+        - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
+        - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
+        - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
+      - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
+      - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
+    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that the principal is eligible for.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[EndDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will expire.
+    - `[MemberType <String>]`: Membership type of the assignment. It can either be Inherited, Direct, or Group.
+    - `[RoleEligibilityScheduleId <String>]`: Identifier of the parent roleEligibilitySchedule for this instance.
+    - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start.
+
+  DIRECTORYSCOPE `<IMicrosoftGraphDirectoryObject>`: directoryObject
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+
+  PRINCIPAL `<IMicrosoftGraphDirectoryObject>`: directoryObject
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+
+  ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[AllowedPrincipalTypes <String>]`: allowedRolePrincipalTypes
+    - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
+    - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
+    - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
+    - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
+    - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+    - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
+    - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
+      - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
+      - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
+      - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
+    - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
+    - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance1" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance1" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance [-AdditionalProperties <Hashtable>]
+
+   [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
+
+   [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>] [-EndDateTime <DateTime>]
+
+   [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
+
+   [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
+
+   [-RoleEligibilityScheduleId <String>] [-StartDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
+
+   -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance1> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.DeviceManagement.Enrolment
+
+    Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance
+  description: |-
+    This example shows how to use the New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAppScope" data-throw-if-not-resolved="False" />
+  name: AppScope
+  description: |+
+    appScope
+    To construct, please use Get-Help -Online and see NOTES section for APPSCOPE properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AppScopeId
+  description: |+
+    Identifier of the app-specific scope when the assignment or role eligibility is scoped to an app.
+    The scope of an assignment or role eligibility determines the set of resources for which the principal has been granted access.
+    App scopes are scopes that are defined and understood by this application only.
+    Use / for tenant-wide app scopes.
+    Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance1" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    unifiedRoleEligibilityScheduleInstance
+    To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDirectoryObject" data-throw-if-not-resolved="False" />
+  name: DirectoryScope
+  description: |+
+    directoryObject
+    To construct, please use Get-Help -Online and see NOTES section for DIRECTORYSCOPE properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DirectoryScopeId
+  description: |+
+    Identifier of the directory object representing the scope of the assignment or role eligibility.
+    The scope of an assignment or role eligibility determines the set of resources for which the principal has been granted access.
+    Directory scopes are shared scopes stored in the directory that are understood by multiple applications.
+    Use / for tenant-wide scope.
+    Use appScopeId to limit the scope to an application only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: EndDateTime
+  description: |+
+    Time that the roleEligibilityScheduleInstance will expire.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MemberType
+  description: |+
+    Membership type of the assignment.
+    It can either be Inherited, Direct, or Group.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDirectoryObject" data-throw-if-not-resolved="False" />
+  name: Principal
+  description: |+
+    directoryObject
+    To construct, please use Get-Help -Online and see NOTES section for PRINCIPAL properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrincipalId
+  description: |+
+    Identifier of the principal that has been granted the role assignment or that's eligible for a role.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphUnifiedRoleDefinition" data-throw-if-not-resolved="False" />
+  name: RoleDefinition
+  description: |+
+    unifiedRoleDefinition
+    To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITION properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RoleDefinitionId
+  description: |+
+    Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that the principal is eligible for.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RoleEligibilityScheduleId
+  description: |+
+    Identifier of the parent roleEligibilitySchedule for this instance.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: StartDateTime
+  description: |+
+    Time that the roleEligibilityScheduleInstance will start.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Enrolment.New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
+name: New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance
+description: |-
+  Create new navigation property to roleEligibilityScheduleInstances for roleManagement
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+  online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagemententitlementmanagementroleeligibilityscheduleinstance
+  schema: 2.0.0

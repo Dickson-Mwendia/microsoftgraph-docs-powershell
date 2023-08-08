@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get compliance
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Get-MgCompliance?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Compliance
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryEdiscoveryroot" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgCompliance
+  href: /powershell/module/Microsoft.Graph.Compliance/Get-MgCompliance?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaCompliance [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Compliance.Get-MgBetaCompliance
+name: Get-MgBetaCompliance
+description: |-
+  Get compliance
+metadata:
+  external help file: Microsoft.Graph.Beta.Compliance-help.xml
+  Module Name: Microsoft.Graph.Beta.Compliance
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacompliance
+  schema: 2.0.0

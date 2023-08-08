@@ -1,0 +1,195 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Read-only.
+  Nullable.
+  Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgUserPlannerRecentPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerRecentPlan?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Planner
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+    - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
+    - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+    - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
+    - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
+    - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgUserPlannerRecentPlan
+  href: /powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerRecentPlan?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaUserPlannerRecentPlan -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+
+   [-All] [-CountVariable <String>] [<CommonParameters>]
+- >-
+  Get-MgBetaUserPlannerRecentPlan -PlannerPlanId <String> -UserId <String> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgBetaUserPlannerRecentPlan -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the Get-MgBetaUserPlannerRecentPlan Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Planner
+    # A UPN can also be used as -UserId.
+    Get-MgBetaUserPlannerRecentPlan -UserId $userId
+  description: |-
+    This example shows how to use the Get-MgBetaUserPlannerRecentPlan Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPlannerIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PlannerPlanId
+  isRequired: true
+  description: |+
+    The unique identifier of plannerPlan
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Planner.Get-MgBetaUserPlannerRecentPlan
+name: Get-MgBetaUserPlannerRecentPlan
+description: |-
+  Read-only.
+  Nullable.
+  Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+metadata:
+  external help file: Microsoft.Graph.Beta.Planner-help.xml
+  Module Name: Microsoft.Graph.Beta.Planner
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetauserplannerrecentplan
+  schema: 2.0.0

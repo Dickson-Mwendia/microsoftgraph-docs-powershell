@@ -1,0 +1,215 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to appleUserInitiatedEnrollmentProfiles for deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementAppleUserInitiatedEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAppleUserInitiatedEnrollmentProfile?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Enrollment
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `ASSIGNMENTS <IMicrosoftGraphAppleEnrollmentProfileAssignment[]>`: The list of assignments for this profile.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+
+  `AVAILABLEENROLLMENTTYPEOPTIONS <IMicrosoftGraphAppleOwnerTypeEnrollmentType[]>`: List of available enrollment type options
+    - `[EnrollmentType <AppleUserInitiatedEnrollmentType?>]`: appleUserInitiatedEnrollmentType
+    - `[OwnerType <ManagedDeviceOwnerType?>]`: Owner type of device.
+
+  `BODYPARAMETER <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile>`: The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged. Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Assignments <IMicrosoftGraphAppleEnrollmentProfileAssignment[]>]`: The list of assignments for this profile.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+        - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+    - `[AvailableEnrollmentTypeOptions <IMicrosoftGraphAppleOwnerTypeEnrollmentType[]>]`: List of available enrollment type options
+      - `[EnrollmentType <AppleUserInitiatedEnrollmentType?>]`: appleUserInitiatedEnrollmentType
+      - `[OwnerType <ManagedDeviceOwnerType?>]`: Owner type of device.
+    - `[CreatedDateTime <DateTime?>]`: Profile creation time
+    - `[DefaultEnrollmentType <AppleUserInitiatedEnrollmentType?>]`: appleUserInitiatedEnrollmentType
+    - `[Description <String>]`: Description of the profile
+    - `[DisplayName <String>]`: Name of the profile
+    - `[LastModifiedDateTime <DateTime?>]`: Profile last modified time
+    - `[Platform <DevicePlatformType?>]`: Supported platform types.
+    - `[Priority <Int32?>]`: Priority, 0 is highest
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppleUserInitiatedEnrollmentProfile" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppleUserInitiatedEnrollmentProfile" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementAppleUserInitiatedEnrollmentProfile
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAppleUserInitiatedEnrollmentProfile?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile [-AdditionalProperties <Hashtable>]
+
+   [-Assignments <IMicrosoftGraphAppleEnrollmentProfileAssignment[]>]
+
+   [-AvailableEnrollmentTypeOptions <IMicrosoftGraphAppleOwnerTypeEnrollmentType[]>]
+
+   [-CreatedDateTime <DateTime>] [-DefaultEnrollmentType <AppleUserInitiatedEnrollmentType>]
+
+   [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+
+   [-Platform <DevicePlatformType>] [-Priority <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
+
+   -BodyParameter <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAppleEnrollmentProfileAssignment" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Assignments
+  description: |+
+    The list of assignments for this profile.
+    To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAppleOwnerTypeEnrollmentType" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: AvailableEnrollmentTypeOptions
+  description: |+
+    List of available enrollment type options
+    To construct, see NOTES section for AVAILABLEENROLLMENTTYPEOPTIONS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAppleUserInitiatedEnrollmentProfile" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged.
+    Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    Profile creation time
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="AppleUserInitiatedEnrollmentType" data-throw-if-not-resolved="False" />
+  name: DefaultEnrollmentType
+  description: |+
+    appleUserInitiatedEnrollmentType
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Description of the profile
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Name of the profile
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    Profile last modified time
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DevicePlatformType" data-throw-if-not-resolved="False" />
+  name: Platform
+  description: |+
+    Supported platform types.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Priority
+  description: |+
+    Priority, 0 is highest
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Enrollment.New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
+name: New-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
+description: |-
+  Create new navigation property to appleUserInitiatedEnrollmentProfiles for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementappleuserinitiatedenrollmentprofile
+  schema: 2.0.0

@@ -1,0 +1,284 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Copy a file to a default content location in a [content type][contentType].
+  The file can then be added as a default file or template via a POST operation.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Copy-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebook?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Sites
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPaths1Sx36MwSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DestinationFileName <String>]`: 
+    - `[SourceFile <IMicrosoftGraphItemReference>]`: itemReference
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
+      - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][].  See [drive][] resource for values.
+      - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
+      - `[Name <String>]`: The name of the item being referenced. Read-only.
+      - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
+      - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
+      - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
+        - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
+        - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
+        - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
+        - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
+        - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
+        - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
+      - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+
+  `INPUTOBJECT <ISitesIdentity>`: Identity Parameter
+    - `[BaseItemId <String>]`: The unique identifier of baseItem
+    - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
+    - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
+    - `[ColumnLinkId <String>]`: The unique identifier of columnLink
+    - `[ContentTypeId <String>]`: The unique identifier of contentType
+    - `[ContentTypeId1 <String>]`: The unique identifier of contentType
+    - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
+    - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
+    - `[DriveId <String>]`: The unique identifier of drive
+    - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[GroupId1 <String>]`: The unique identifier of group
+    - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
+    - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
+    - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+    - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+    - `[Interval <String>]`: Usage: interval='{interval}'
+    - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+    - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+    - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
+    - `[ListId <String>]`: The unique identifier of list
+    - `[ListItemId <String>]`: The unique identifier of listItem
+    - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
+    - `[NotebookId <String>]`: The unique identifier of notebook
+    - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
+    - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+    - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
+    - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+    - `[Path <String>]`: Usage: path='{path}'
+    - `[PermissionId <String>]`: The unique identifier of permission
+    - `[RelationId <String>]`: The unique identifier of relation
+    - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+    - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+    - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
+    - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+    - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
+    - `[SetId <String>]`: The unique identifier of set
+    - `[SetId1 <String>]`: The unique identifier of set
+    - `[SiteId <String>]`: The unique identifier of site
+    - `[SiteId1 <String>]`: The unique identifier of site
+    - `[SitePageId <String>]`: The unique identifier of sitePage
+    - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
+    - `[SubscriptionId <String>]`: The unique identifier of subscription
+    - `[TermId <String>]`: The unique identifier of term
+    - `[TermId1 <String>]`: The unique identifier of term
+    - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
+    - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
+    - `[Token <String>]`: Usage: token='{token}'
+    - `[UserId <String>]`: The unique identifier of user
+    - `[WebPartId <String>]`: The unique identifier of webPart
+
+  `SOURCEFILE <IMicrosoftGraphItemReference>`: itemReference
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
+    - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][].  See [drive][] resource for values.
+    - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
+    - `[Name <String>]`: The name of the item being referenced. Read-only.
+    - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
+    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
+    - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
+      - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
+      - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
+      - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
+      - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
+      - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
+      - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
+    - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPaths1Sx36MwSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Copy-MgSiteOnenoteNotebook
+  href: /powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebook?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Copy-MgBetaSiteListContentTypeToDefaultContentLocation -ContentTypeId <String> -ListId <String>
+
+   -SiteId <String> [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
+
+   [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Copy-MgBetaSiteListContentTypeToDefaultContentLocation -ContentTypeId <String> -ListId <String>
+
+   -SiteId <String>
+
+   -BodyParameter <IPaths1Sx36MwSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Copy-MgBetaSiteListContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
+
+   [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Copy-MgBetaSiteListContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
+
+   -BodyParameter <IPaths1Sx36MwSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Users.Actions
+
+    $params = @{
+    	GroupId = "groupId-value"
+    	RenameAs = "renameAs-value"
+    }
+
+    # A UPN can also be used as -UserId.
+    Copy-MgBetaUserOnenoteNotebook -UserId $userId -NotebookId $notebookId -BodyParameter $params
+  description: |-
+    This example shows how to use the Copy-MgBetaSiteOnenoteNotebook Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPaths1Sx36MwSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContentTypeId
+  isRequired: true
+  description: |+
+    The unique identifier of contentType
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DestinationFileName
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ISitesIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ListId
+  isRequired: true
+  description: |+
+    The unique identifier of list
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SiteId
+  isRequired: true
+  description: |+
+    The unique identifier of site
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphItemReference" data-throw-if-not-resolved="False" />
+  name: SourceFile
+  description: |+
+    itemReference
+    To construct, see NOTES section for SOURCEFILE properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Sites.Copy-MgBetaSiteOnenoteNotebook
+name: Copy-MgBetaSiteOnenoteNotebook
+description: |-
+  Copy a file to a default content location in a [content type][contentType].
+  The file can then be added as a default file or template via a POST operation.
+metadata:
+  external help file: Microsoft.Graph.Beta.Sites-help.xml
+  Module Name: Microsoft.Graph.Beta.Sites
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasitelistcontenttypetodefaultcontentlocation
+  schema: 2.0.0

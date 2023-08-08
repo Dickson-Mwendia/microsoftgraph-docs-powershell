@@ -1,0 +1,128 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retrieve the properties and relationships of a profile object for a given user.
+  The **profile** resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
+  To get one of these navigation properties, use the corresponding GET method on that property.
+  See the methods exposed by **profile**.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgUserProfile](/powershell/module/Microsoft.Graph.People/Get-MgUserProfile?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.People
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IPeopleIdentity>`: Identity Parameter
+    - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
+    - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
+    - `[ItemAddressId <String>]`: The unique identifier of itemAddress
+    - `[ItemEmailId <String>]`: The unique identifier of itemEmail
+    - `[ItemPatentId <String>]`: The unique identifier of itemPatent
+    - `[ItemPhoneId <String>]`: The unique identifier of itemPhone
+    - `[ItemPublicationId <String>]`: The unique identifier of itemPublication
+    - `[LanguageProficiencyId <String>]`: The unique identifier of languageProficiency
+    - `[PersonAnnotationId <String>]`: The unique identifier of personAnnotation
+    - `[PersonAnnualEventId <String>]`: The unique identifier of personAnnualEvent
+    - `[PersonAwardId <String>]`: The unique identifier of personAward
+    - `[PersonCertificationId <String>]`: The unique identifier of personCertification
+    - `[PersonId <String>]`: The unique identifier of person
+    - `[PersonInterestId <String>]`: The unique identifier of personInterest
+    - `[PersonNameId <String>]`: The unique identifier of personName
+    - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
+    - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
+    - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
+    - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
+    - `[UserId <String>]`: The unique identifier of user
+    - `[WebAccountId <String>]`: The unique identifier of webAccount
+    - `[WorkPositionId <String>]`: The unique identifier of workPosition
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProfile" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgUserProfile
+  href: /powershell/module/Microsoft.Graph.People/Get-MgUserProfile?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaUserProfile -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgBetaUserProfile -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the Get-MgBetaUserProfile Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.People
+    # A UPN can also be used as -UserId.
+    Get-MgBetaUserProfile -UserId $userId
+  description: |-
+    This example shows how to use the Get-MgBetaUserProfile Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+- title: 'Example 2: Using the Get-MgBetaUserProfile Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.People
+    # A UPN can also be used as -UserId.
+    Get-MgBetaUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last),skills(`$select=displayName)"
+  description: |-
+    This example shows how to use the Get-MgBetaUserProfile Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="IPeopleIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.People.Get-MgBetaUserProfile
+name: Get-MgBetaUserProfile
+description: |-
+  Retrieve the properties and relationships of a profile object for a given user.
+  The **profile** resource exposes various rich properties that are descriptive of the user as relationships, for example, anniversaries and education activities.
+  To get one of these navigation properties, use the corresponding GET method on that property.
+  See the methods exposed by **profile**.
+metadata:
+  external help file: Microsoft.Graph.Beta.People-help.xml
+  Module Name: Microsoft.Graph.Beta.People
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserprofile
+  schema: 2.0.0

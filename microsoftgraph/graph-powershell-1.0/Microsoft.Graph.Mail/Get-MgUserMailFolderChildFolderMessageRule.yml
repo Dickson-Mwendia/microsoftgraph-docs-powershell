@@ -1,0 +1,183 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the properties and relationships of a messageRule object.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
+module: Microsoft.Graph.Mail
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IMailIdentity>`: Identity Parameter
+    - `[AttachmentId <String>]`: The unique identifier of attachment
+    - `[ExtensionId <String>]`: The unique identifier of extension
+    - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
+    - `[MailFolderId <String>]`: The unique identifier of mailFolder
+    - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+    - `[MessageId <String>]`: The unique identifier of message
+    - `[MessageRuleId <String>]`: The unique identifier of messageRule
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMailIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRule" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaUserMailFolderChildFolderMessageRule
+  href: /powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgUserMailFolderChildFolderMessageRule -MailFolderId <String> -MailFolderId1 <String> -UserId <String>
+
+   [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+
+   [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+- >-
+  Get-MgUserMailFolderChildFolderMessageRule -MailFolderId <String> -MailFolderId1 <String>
+
+   -MessageRuleId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity> [-Property <String[]>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMailIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MailFolderId
+  isRequired: true
+  description: |+
+    The unique identifier of mailFolder
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MailFolderId1
+  isRequired: true
+  description: |+
+    The unique identifier of mailFolder
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MessageRuleId
+  isRequired: true
+  description: |+
+    The unique identifier of messageRule
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Mail.Get-MgUserMailFolderChildFolderMessageRule
+name: Get-MgUserMailFolderChildFolderMessageRule
+description: |-
+  Get the properties and relationships of a messageRule object.
+metadata:
+  external help file: Microsoft.Graph.Mail-help.xml
+  Module Name: Microsoft.Graph.Mail
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfolderchildfoldermessagerule
+  schema: 2.0.0

@@ -1,0 +1,194 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property deviceCompliancePolicyDeviceStateSummary in deviceManagement
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary?view=graph-powershell-beta)
+module: Microsoft.Graph.DeviceManagement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary>`: deviceCompliancePolicyDeviceStateSummary
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
+    - `[ConfigManagerCount <Int32?>]`: Number of devices that have compliance managed by System Center Configuration Manager
+    - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
+    - `[ErrorDeviceCount <Int32?>]`: Number of error devices
+    - `[InGracePeriodCount <Int32?>]`: Number of devices that are in grace period
+    - `[NonCompliantDeviceCount <Int32?>]`: Number of NonCompliant devices
+    - `[NotApplicableDeviceCount <Int32?>]`: Number of not applicable devices
+    - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
+    - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary
+  href: /powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary?view=graph-powershell-beta
+syntaxes:
+- >-
+  Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-AdditionalProperties <Hashtable>]
+
+   [-CompliantDeviceCount <Int32>] [-ConfigManagerCount <Int32>] [-ConflictDeviceCount <Int32>]
+
+   [-ErrorDeviceCount <Int32>] [-Id <String>] [-InGracePeriodCount <Int32>] [-NonCompliantDeviceCount <Int32>]
+
+   [-NotApplicableDeviceCount <Int32>] [-RemediatedDeviceCount <Int32>] [-UnknownDeviceCount <Int32>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
+
+   -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    deviceCompliancePolicyDeviceStateSummary
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: CompliantDeviceCount
+  description: |+
+    Number of compliant devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: ConfigManagerCount
+  description: |+
+    Number of devices that have compliance managed by System Center Configuration Manager
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: ConflictDeviceCount
+  description: |+
+    Number of conflict devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: ErrorDeviceCount
+  description: |+
+    Number of error devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: InGracePeriodCount
+  description: |+
+    Number of devices that are in grace period
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: NonCompliantDeviceCount
+  description: |+
+    Number of NonCompliant devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: NotApplicableDeviceCount
+  description: |+
+    Number of not applicable devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: RemediatedDeviceCount
+  description: |+
+    Number of remediated devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: UnknownDeviceCount
+  description: |+
+    Number of unknown devices
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
+name: Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
+description: |-
+  Update the navigation property deviceCompliancePolicyDeviceStateSummary in deviceManagement
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicydevicestatesummary
+  schema: 2.0.0

@@ -1,0 +1,153 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Add new entity to directorySettingTemplates
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDirectorySettingTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectorySettingTemplate?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.DirectoryManagement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphDirectorySettingTemplate>`: directorySettingTemplate
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Description <String>]`: Description of the template. Read-only.
+    - `[DisplayName <String>]`: Display name of the template. Read-only.
+    - `[Values <IMicrosoftGraphSettingTemplateValue[]>]`: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.  Read-only.
+      - `[DefaultValue <String>]`: Default value for the setting. Read-only.
+      - `[Description <String>]`: Description of the setting. Read-only.
+      - `[Name <String>]`: Name of the setting. Read-only.
+      - `[Type <String>]`: Type of the setting. Read-only.
+
+  `VALUES <IMicrosoftGraphSettingTemplateValue[]>`: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template. Read-only.
+    - `[DefaultValue <String>]`: Default value for the setting. Read-only.
+    - `[Description <String>]`: Description of the setting. Read-only.
+    - `[Name <String>]`: Name of the setting. Read-only.
+    - `[Type <String>]`: Type of the setting. Read-only.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectorySettingTemplate" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectorySettingTemplate" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDirectorySettingTemplate
+  href: /powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectorySettingTemplate?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDirectorySettingTemplate [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
+
+   [-Description <String>] [-DisplayName <String>] [-Id <String>]
+
+   [-Values <IMicrosoftGraphSettingTemplateValue[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaDirectorySettingTemplate -BodyParameter <IMicrosoftGraphDirectorySettingTemplate> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDirectorySettingTemplate" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    directorySettingTemplate
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: DeletedDateTime
+  description: |+
+    Date and time when this object was deleted.
+    Always null when the object hasn't been deleted.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Description of the template.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Display name of the template.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSettingTemplateValue" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Values
+  description: |+
+    Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
+    Read-only.
+    To construct, see NOTES section for VALUES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.DirectoryManagement.New-MgBetaDirectorySettingTemplate
+name: New-MgBetaDirectorySettingTemplate
+description: |-
+  Add new entity to directorySettingTemplates
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectorysettingtemplate
+  schema: 2.0.0

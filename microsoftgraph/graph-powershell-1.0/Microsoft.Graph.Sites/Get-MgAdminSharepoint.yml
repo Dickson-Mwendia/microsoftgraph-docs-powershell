@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get sharepoint from admin
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAdminSharepoint?view=graph-powershell-beta)
+module: Microsoft.Graph.Sites
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharepoint" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaAdminSharepoint
+  href: /powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaAdminSharepoint?view=graph-powershell-beta
+syntaxes:
+- Get-MgAdminSharepoint [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Sites.Get-MgAdminSharepoint
+name: Get-MgAdminSharepoint
+description: |-
+  Get sharepoint from admin
+metadata:
+  external help file: Microsoft.Graph.Sites-help.xml
+  Module Name: Microsoft.Graph.Sites
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mgadminsharepoint
+  schema: 2.0.0

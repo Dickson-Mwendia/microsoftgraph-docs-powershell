@@ -1,0 +1,289 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to trainings for security
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulationTraining](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationTraining?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Security
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphTraining>`: training
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AvailabilityStatus <String>]`: trainingAvailabilityStatus
+    - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+      - `[Email <String>]`: Email address of the user.
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[Description <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[DurationInMinutes <Int32?>]`: 
+    - `[HasEvaluation <Boolean?>]`: 
+    - `[LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>]`: 
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Content <String>]`: 
+      - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+      - `[CreatedDateTime <DateTime?>]`: 
+      - `[Description <String>]`: 
+      - `[DisplayName <String>]`: 
+      - `[IsDefaultLangauge <Boolean?>]`: 
+      - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+      - `[LastModifiedDateTime <DateTime?>]`: 
+      - `[Locale <String>]`: 
+    - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[Source <String>]`: simulationContentSource
+    - `[SupportedLocales <String[]>]`: 
+    - `[Tags <String[]>]`: 
+    - `[Type <String>]`: trainingType
+
+  `CREATEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
+    - `[Email <String>]`: Email address of the user.
+
+  `LANGUAGEDETAILS <IMicrosoftGraphTrainingLanguageDetail[]>`: .
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Content <String>]`: 
+    - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+      - `[Email <String>]`: Email address of the user.
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[Description <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[IsDefaultLangauge <Boolean?>]`: 
+    - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[Locale <String>]`: 
+
+  `LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
+    - `[Email <String>]`: Email address of the user.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTraining" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTraining" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgSecurityAttackSimulationTraining
+  href: /powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationTraining?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaSecurityAttackSimulationTraining [-AdditionalProperties <Hashtable>] [-AvailabilityStatus <String>]
+
+   [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
+
+   [-DisplayName <String>] [-DurationInMinutes <Int32>] [-HasEvaluation] [-Id <String>]
+
+   [-LanguageDetails <IMicrosoftGraphTrainingLanguageDetail[]>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
+
+   [-LastModifiedDateTime <DateTime>] [-Source <String>] [-SupportedLocales <String[]>] [-Tags <String[]>]
+
+   [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaSecurityAttackSimulationTraining -BodyParameter <IMicrosoftGraphTraining> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AvailabilityStatus
+  description: |+
+    trainingAvailabilityStatus
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphTraining" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    training
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphEmailIdentity" data-throw-if-not-resolved="False" />
+  name: CreatedBy
+  description: |+
+    emailIdentity
+    To construct, see NOTES section for CREATEDBY properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: DurationInMinutes
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: HasEvaluation
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphTrainingLanguageDetail" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: LanguageDetails
+  description: |+
+    .
+    To construct, see NOTES section for LANGUAGEDETAILS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphEmailIdentity" data-throw-if-not-resolved="False" />
+  name: LastModifiedBy
+  description: |+
+    emailIdentity
+    To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Source
+  description: |+
+    simulationContentSource
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: SupportedLocales
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Tags
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Type
+  description: |+
+    trainingType
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Security.New-MgBetaSecurityAttackSimulationTraining
+name: New-MgBetaSecurityAttackSimulationTraining
+description: |-
+  Create new navigation property to trainings for security
+metadata:
+  external help file: Microsoft.Graph.Beta.Security-help.xml
+  Module Name: Microsoft.Graph.Beta.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulationtraining
+  schema: 2.0.0

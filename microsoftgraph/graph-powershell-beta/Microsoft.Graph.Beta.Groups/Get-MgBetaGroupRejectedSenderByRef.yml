@@ -1,0 +1,119 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get a list of users or groups that are in the rejected-senders list for this group.
+  Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL).
+  Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupRejectedSenderByRef?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Groups
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgGroupRejectedSenderByRef
+  href: /powershell/module/Microsoft.Graph.Groups/Get-MgGroupRejectedSenderByRef?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaGroupRejectedSenderByRef -GroupId <String> [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
+
+   [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Groups
+
+    Get-MgBetaGroupRejectedSender -GroupId $groupId
+  description: |-
+    This example shows how to use the Get-MgBetaGroupRejectedSenderByRef Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GroupId
+  isRequired: true
+  description: |+
+    The unique identifier of group
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Groups.Get-MgBetaGroupRejectedSenderByRef
+name: Get-MgBetaGroupRejectedSenderByRef
+description: |-
+  Get a list of users or groups that are in the rejected-senders list for this group.
+  Users in the rejected senders list cannot post to conversations of the group (identified in the GET request URL).
+  Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
+metadata:
+  external help file: Microsoft.Graph.Beta.Groups-help.xml
+  Module Name: Microsoft.Graph.Beta.Groups
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagrouprejectedsenderbyref
+  schema: 2.0.0

@@ -1,0 +1,118 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get media content for the navigation property documents from print
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgPrintShareJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJobDocumentContent?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Devices.CloudPrint
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+    - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+    - `[PrintJobId <String>]`: The unique identifier of printJob
+    - `[PrintOperationId <String>]`: The unique identifier of printOperation
+    - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
+    - `[PrintServiceId <String>]`: The unique identifier of printService
+    - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
+    - `[PrintTaskId <String>]`: The unique identifier of printTask
+    - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
+    - `[PrinterId <String>]`: The unique identifier of printer
+    - `[PrinterShareId <String>]`: The unique identifier of printerShare
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgPrintShareJobDocumentContent
+  href: /powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJobDocumentContent?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaPrintShareJobDocumentContent -PrintDocumentId <String> -PrintJobId <String> -PrinterShareId <String>
+
+   -OutFile <String> [-PassThru] [<CommonParameters>]
+- >-
+  Get-MgBetaPrintShareJobDocumentContent -InputObject <IDevicesCloudPrintIdentity> -OutFile <String> [-PassThru]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="IDevicesCloudPrintIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OutFile
+  isRequired: true
+  description: |+
+    Path to write output file to
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrintDocumentId
+  isRequired: true
+  description: |+
+    The unique identifier of printDocument
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrinterShareId
+  isRequired: true
+  description: |+
+    The unique identifier of printerShare
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrintJobId
+  isRequired: true
+  description: |+
+    The unique identifier of printJob
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Devices.CloudPrint.Get-MgBetaPrintShareJobDocumentContent
+name: Get-MgBetaPrintShareJobDocumentContent
+description: |-
+  Get media content for the navigation property documents from print
+metadata:
+  external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+  Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintsharejobdocumentcontent
+  schema: 2.0.0

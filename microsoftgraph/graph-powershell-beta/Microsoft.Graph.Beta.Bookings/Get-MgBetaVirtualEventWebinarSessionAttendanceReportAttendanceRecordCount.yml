@@ -1,0 +1,126 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Bookings
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
+    - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+    - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
+    - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
+    - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
+    - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
+    - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
+    - `[BookingServiceId <String>]`: The unique identifier of bookingService
+    - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
+    - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
+    - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
+    - `[CallRecordingId <String>]`: The unique identifier of callRecording
+    - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+    - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+    - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
+    - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
+    - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
+    - `[VirtualEventId <String>]`: The unique identifier of virtualEvent
+    - `[VirtualEventPresenterId <String>]`: The unique identifier of virtualEventPresenter
+    - `[VirtualEventSessionId <String>]`: The unique identifier of virtualEventSession
+    - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount
+  href: /powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount -MeetingAttendanceReportId <String>
+
+   -VirtualEventSessionId <String> -VirtualEventWebinarId <String> [-Filter <String>] [-Search <String>]
+
+   [<CommonParameters>]
+- >-
+  Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount -InputObject <IBookingsIdentity>
+
+   [-Filter <String>] [-Search <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IBookingsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MeetingAttendanceReportId
+  isRequired: true
+  description: |+
+    The unique identifier of meetingAttendanceReport
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: VirtualEventSessionId
+  isRequired: true
+  description: |+
+    The unique identifier of virtualEventSession
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: VirtualEventWebinarId
+  isRequired: true
+  description: |+
+    The unique identifier of virtualEventWebinar
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Bookings.Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount
+name: Get-MgBetaVirtualEventWebinarSessionAttendanceReportAttendanceRecordCount
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Beta.Bookings-help.xml
+  Module Name: Microsoft.Graph.Beta.Bookings
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetavirtualeventwebinarsessionattendancereportattendancerecordcount
+  schema: 2.0.0

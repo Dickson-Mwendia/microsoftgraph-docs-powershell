@@ -1,0 +1,49 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke action importOffice365DeviceConfigurationPolicies
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Import-MgDeviceManagementTemplateOffice365DeviceConfigurationPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Import-MgDeviceManagementTemplateOffice365DeviceConfigurationPolicy?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Actions
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Import-MgDeviceManagementTemplateOffice365DeviceConfigurationPolicy
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Actions/Import-MgDeviceManagementTemplateOffice365DeviceConfigurationPolicy?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Import-MgBetaDeviceManagementTemplateOffice365DeviceConfigurationPolicy [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Actions.Import-MgBetaDeviceManagementTemplateOffice365DeviceConfigurationPolicy
+name: Import-MgBetaDeviceManagementTemplateOffice365DeviceConfigurationPolicy
+description: |-
+  Invoke action importOffice365DeviceConfigurationPolicies
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementtemplateoffice365deviceconfigurationpolicy
+  schema: 2.0.0

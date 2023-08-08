@@ -1,0 +1,229 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to windowsFeatureUpdateProfiles for deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementWindowFeatureUpdateProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementWindowFeatureUpdateProfile?view=graph-powershell-v1.0)
+module: Microsoft.Graph.DeviceManagement.Enrolment
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  ASSIGNMENTS <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment\[]>: The list of group assignments of the profile.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+
+  BODYPARAMETER `<IMicrosoftGraphWindowsFeatureUpdateProfile>`: Windows Feature Update Profile
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>]`: The list of group assignments of the profile.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
+        - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
+    - `[CreatedDateTime <DateTime?>]`: The date time that the profile was created.
+    - `[DeployableContentDisplayName <String>]`: Friendly display name of the quality update profile deployable content
+    - `[Description <String>]`: The description of the profile which is specified by the user.
+    - `[DisplayName <String>]`: The display name of the profile.
+    - `[EndOfSupportDate <DateTime?>]`: The last supported date for a feature update
+    - `[FeatureUpdateVersion <String>]`: The feature update version that will be deployed to the devices targeted by this profile. The version could be any supported version for example 1709, 1803 or 1809 and so on.
+    - `[LastModifiedDateTime <DateTime?>]`: The date time that the profile was last modified.
+    - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Feature Update entity.
+    - `[RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>]`: A complex type to store the windows update rollout settings including offer start date time, offer end date time, and days between each set of offers.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[OfferEndDateTimeInUtc <DateTime?>]`: The feature update's ending  of release date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
+      - `[OfferIntervalInDays <Int32?>]`: The number of day(s) between each set of offers to be set, updated, and displayed for a feature update profile, for example: if OfferStartDateTimeInUTC is 2020-06-09T10:00:00Z, and OfferIntervalInDays is 1, then the next two sets of offers will be made consecutively on 2020-06-10T10:00:00Z (next day at the same specified time) and 2020-06-11T10:00:00Z (next next day at the same specified time) with 1 day in between each set of offers.
+      - `[OfferStartDateTimeInUtc <DateTime?>]`: The feature update's starting date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
+
+  ROLLOUTSETTINGS `<IMicrosoftGraphWindowsUpdateRolloutSettings>`: A complex type to store the windows update rollout settings including offer start date time, offer end date time, and days between each set of offers.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[OfferEndDateTimeInUtc <DateTime?>]`: The feature update's ending  of release date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
+    - `[OfferIntervalInDays <Int32?>]`: The number of day(s) between each set of offers to be set, updated, and displayed for a feature update profile, for example: if OfferStartDateTimeInUTC is 2020-06-09T10:00:00Z, and OfferIntervalInDays is 1, then the next two sets of offers will be made consecutively on 2020-06-10T10:00:00Z (next day at the same specified time) and 2020-06-11T10:00:00Z (next next day at the same specified time) with 1 day in between each set of offers.
+    - `[OfferStartDateTimeInUtc <DateTime?>]`: The feature update's starting date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsFeatureUpdateProfile" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsFeatureUpdateProfile" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementWindowFeatureUpdateProfile
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/New-MgDeviceManagementWindowFeatureUpdateProfile?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgDeviceManagementWindowFeatureUpdateProfile [-AdditionalProperties <Hashtable>]
+
+   [-Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>] [-CreatedDateTime <DateTime>]
+
+   [-DeployableContentDisplayName <String>] [-Description <String>] [-DisplayName <String>]
+
+   [-EndOfSupportDate <DateTime>] [-FeatureUpdateVersion <String>] [-Id <String>]
+
+   [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
+
+   [-RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgDeviceManagementWindowFeatureUpdateProfile -BodyParameter <IMicrosoftGraphWindowsFeatureUpdateProfile>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphWindowsFeatureUpdateProfileAssignment" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Assignments
+  description: |+
+    The list of group assignments of the profile.
+    To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphWindowsFeatureUpdateProfile" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Windows Feature Update Profile
+    To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    The date time that the profile was created.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeployableContentDisplayName
+  description: |+
+    Friendly display name of the quality update profile deployable content
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    The description of the profile which is specified by the user.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    The display name of the profile.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: EndOfSupportDate
+  description: |+
+    The last supported date for a feature update
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: FeatureUpdateVersion
+  description: |+
+    The feature update version that will be deployed to the devices targeted by this profile.
+    The version could be any supported version for example 1709, 1803 or 1809 and so on.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    The date time that the profile was last modified.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: RoleScopeTagIds
+  description: |+
+    List of Scope Tags for this Feature Update entity.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphWindowsUpdateRolloutSettings" data-throw-if-not-resolved="False" />
+  name: RolloutSettings
+  description: |+
+    A complex type to store the windows update rollout settings including offer start date time, offer end date time, and days between each set of offers.
+    To construct, please use Get-Help -Online and see NOTES section for ROLLOUTSETTINGS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Enrolment.New-MgDeviceManagementWindowFeatureUpdateProfile
+name: New-MgDeviceManagementWindowFeatureUpdateProfile
+description: |-
+  Create new navigation property to windowsFeatureUpdateProfiles for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+  online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgdevicemanagementwindowfeatureupdateprofile
+  schema: 2.0.0

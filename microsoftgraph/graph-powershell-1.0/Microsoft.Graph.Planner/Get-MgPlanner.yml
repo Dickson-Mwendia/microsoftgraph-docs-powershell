@@ -1,0 +1,54 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get planner
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlanner?view=graph-powershell-beta)
+module: Microsoft.Graph.Planner
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlanner" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaPlanner
+  href: /powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlanner?view=graph-powershell-beta
+syntaxes:
+- Get-MgPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the Get-MgPlanner Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Planner
+    Get-MgPlanner
+  description: |-
+    This example shows how to use the Get-MgPlanner Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Planner.Get-MgPlanner
+name: Get-MgPlanner
+description: |-
+  Get planner
+metadata:
+  external help file: Microsoft.Graph.Planner-help.xml
+  Module Name: Microsoft.Graph.Planner
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner
+  schema: 2.0.0

@@ -1,0 +1,101 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Delete navigation property default for policies
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Remove-MgBetaPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-beta)
+module: Microsoft.Graph.Identity.SignIns
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Remove-MgBetaPolicyCrossTenantAccessPolicyDefault
+  href: /powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-beta
+syntaxes:
+- >-
+  Remove-MgPolicyCrossTenantAccessPolicyDefault [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.Identity.SignIns
+
+    $params = @{
+    	b2bCollaborationOutbound = @{
+    		usersAndGroups = @{
+    			accessType = "blocked"
+    			targets = @(
+    				@{
+    					target = "0be493dc-cb56-4a53-936f-9cf64410b8b0"
+    					targetType = "group"
+    				}
+    			)
+    		}
+    		applications = @{
+    			accessType = "blocked"
+    			targets = @(
+    				@{
+    					target = "AllApplications"
+    					targetType = "application"
+    				}
+    			)
+    		}
+    	}
+    }
+
+    Update-MgPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
+  description: |-
+    This example shows how to use the Remove-MgPolicyCrossTenantAccessPolicyDefault Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: IfMatch
+  description: |+
+    ETag
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Identity.SignIns.Remove-MgPolicyCrossTenantAccessPolicyDefault
+name: Remove-MgPolicyCrossTenantAccessPolicyDefault
+description: |-
+  Delete navigation property default for policies
+metadata:
+  external help file: Microsoft.Graph.Identity.SignIns-help.xml
+  Module Name: Microsoft.Graph.Identity.SignIns
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicycrosstenantaccesspolicydefault
+  schema: 2.0.0

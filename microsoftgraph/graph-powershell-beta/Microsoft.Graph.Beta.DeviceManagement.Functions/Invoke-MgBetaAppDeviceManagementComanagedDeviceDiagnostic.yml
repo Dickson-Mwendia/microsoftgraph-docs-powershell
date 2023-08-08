@@ -1,0 +1,139 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke function appDiagnostics
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Invoke-MgAppDeviceManagementComanagedDeviceDiagnostic](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgAppDeviceManagementComanagedDeviceDiagnostic?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Functions
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IDeviceManagementFunctionsIdentity>`: Identity Parameter
+    - `[Category <String>]`: Usage: category='{category}'
+    - `[CloudPcId <String>]`: The unique identifier of cloudPC
+    - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
+    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
+    - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+    - `[DeviceHealthScriptId <String>]`: The unique identifier of deviceHealthScript
+    - `[DeviceManagementIntentId <String>]`: The unique identifier of deviceManagementIntent
+    - `[DeviceManagementTemplateId <String>]`: The unique identifier of deviceManagementTemplate
+    - `[DeviceManagementTemplateId1 <String>]`: The unique identifier of deviceManagementTemplate
+    - `[DomainName <String>]`: Usage: domainName='{domainName}'
+    - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
+    - `[EnrollmentType <String>]`: Usage: enrollmentType='{enrollmentType}'
+    - `[ExpiringBeforeDateTime <String>]`: Usage: expiringBeforeDateTime='{expiringBeforeDateTime}'
+    - `[GroupId <String>]`: Usage: groupId='{groupId}'
+    - `[Ids <String[]>]`: Usage: ids={ids}
+    - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+    - `[Platform <DevicePlatformType?>]`: Usage: platform='{platform}'
+    - `[PolicyId <String>]`: Usage: policyId='{policyId}'
+    - `[Resource <String>]`: Usage: resource='{resource}'
+    - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
+    - `[Scope <String>]`: Usage: scope='{scope}'
+    - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
+    - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
+    - `[SubscriptionId <String>]`: Usage: subscriptionId='{subscriptionId}'
+    - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
+    - `[TemplateId <String>]`: Usage: templateId='{templateId}'
+    - `[Upn <String>]`: Usage: upn='{upn}'
+    - `[Userid <String>]`: Usage: userid='{userid}'
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPowerliftIncidentMetadata" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Invoke-MgAppDeviceManagementComanagedDeviceDiagnostic
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgAppDeviceManagementComanagedDeviceDiagnostic?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Invoke-MgBetaAppDeviceManagementComanagedDeviceDiagnostic -Upn <String> [-Count] [-Filter <String>]
+
+   [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+- >-
+  Invoke-MgBetaAppDeviceManagementComanagedDeviceDiagnostic -InputObject <IDeviceManagementFunctionsIdentity>
+
+   [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Count
+  description: |+
+    Include count of items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDeviceManagementFunctionsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Upn
+  isRequired: true
+  description: |+
+    Usage: upn='{upn}'
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Functions.Invoke-MgBetaAppDeviceManagementComanagedDeviceDiagnostic
+name: Invoke-MgBetaAppDeviceManagementComanagedDeviceDiagnostic
+description: |-
+  Invoke function appDiagnostics
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/invoke-mgbetaappdevicemanagementcomanageddevicediagnostic
+  schema: 2.0.0

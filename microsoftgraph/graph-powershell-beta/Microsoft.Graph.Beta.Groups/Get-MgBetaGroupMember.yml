@@ -1,0 +1,165 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Direct members of this group, who can be users, devices, other groups, or service principals.
+  Supports the List members, Add member, and Remove member operations.
+  Nullable.
+  Supports $expand including nested $select.
+  For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgGroupMember](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMember?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Groups
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgGroupMember
+  href: /powershell/module/Microsoft.Graph.Groups/Get-MgGroupMember?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaGroupMember -GroupId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+
+   [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>]
+
+   [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get members of a group'
+  code: |-
+    Get-MgBetaGroupMember -GroupId '7b7be3ab-d2b3-441c-8111-2e89b8493fff'
+
+    Id                                   DeletedDateTime
+    --                                   ---------------
+    6733b39d-1b5d-46af-adf3-4589718be012
+    0107d1b2-0402-4ef9-a58c-eb0661c5d596
+    f9f1bd4f-16ca-4404-925e-5b08b6a3832f
+    5441e919-583c-4292-aa3f-98250d8d217b
+  description: |-
+    This examples gets the members of the specified group.
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ConsistencyLevel
+  description: |+
+    Indicates the requested consistency level.
+    Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GroupId
+  isRequired: true
+  description: |+
+    The unique identifier of group
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Groups.Get-MgBetaGroupMember
+name: Get-MgBetaGroupMember
+description: |-
+  Direct members of this group, who can be users, devices, other groups, or service principals.
+  Supports the List members, Add member, and Remove member operations.
+  Nullable.
+  Supports $expand including nested $select.
+  For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
+metadata:
+  external help file: Microsoft.Graph.Beta.Groups-help.xml
+  Module Name: Microsoft.Graph.Beta.Groups
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/get-mgbetagroupmember
+  schema: 2.0.0

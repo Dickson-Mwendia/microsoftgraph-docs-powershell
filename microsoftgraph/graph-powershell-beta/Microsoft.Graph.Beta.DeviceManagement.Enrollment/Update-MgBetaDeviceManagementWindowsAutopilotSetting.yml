@@ -1,0 +1,128 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property windowsAutopilotSettings in deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementWindowsAutopilotSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementWindowsAutopilotSetting?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Enrollment
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphWindowsAutopilotSettings>`: The windowsAutopilotSettings resource represents a Windows Autopilot Account to sync data with Windows device data sync service.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[LastManualSyncTriggerDateTime <DateTime?>]`: Last data sync date time with DDS service.
+    - `[LastSyncDateTime <DateTime?>]`: Last data sync date time with DDS service.
+    - `[SyncStatus <WindowsAutopilotSyncStatus?>]`: windowsAutopilotSyncStatus
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotSettings" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotSettings" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgDeviceManagementWindowsAutopilotSetting
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementWindowsAutopilotSetting?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaDeviceManagementWindowsAutopilotSetting [-AdditionalProperties <Hashtable>] [-Id <String>]
+
+   [-LastManualSyncTriggerDateTime <DateTime>] [-LastSyncDateTime <DateTime>]
+
+   [-SyncStatus <WindowsAutopilotSyncStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaDeviceManagementWindowsAutopilotSetting -BodyParameter <IMicrosoftGraphWindowsAutopilotSettings>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphWindowsAutopilotSettings" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    The windowsAutopilotSettings resource represents a Windows Autopilot Account to sync data with Windows device data sync service.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastManualSyncTriggerDateTime
+  description: |+
+    Last data sync date time with DDS service.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastSyncDateTime
+  description: |+
+    Last data sync date time with DDS service.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="WindowsAutopilotSyncStatus" data-throw-if-not-resolved="False" />
+  name: SyncStatus
+  description: |+
+    windowsAutopilotSyncStatus
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Enrollment.Update-MgBetaDeviceManagementWindowsAutopilotSetting
+name: Update-MgBetaDeviceManagementWindowsAutopilotSetting
+description: |-
+  Update the navigation property windowsAutopilotSettings in deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotsetting
+  schema: 2.0.0

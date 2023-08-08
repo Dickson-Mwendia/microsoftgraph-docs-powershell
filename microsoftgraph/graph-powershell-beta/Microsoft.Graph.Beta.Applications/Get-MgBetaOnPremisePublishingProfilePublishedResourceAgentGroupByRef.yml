@@ -1,0 +1,129 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  List of onPremisesAgentGroups that a publishedResource is assigned to.
+  Read-only.
+  Nullable.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgOnPremisePublishingProfilePublishedResourceAgentGroupByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfilePublishedResourceAgentGroupByRef?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Applications
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgOnPremisePublishingProfilePublishedResourceAgentGroupByRef
+  href: /powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfilePublishedResourceAgentGroupByRef?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef -OnPremisesPublishingProfileId <String>
+
+   -PublishedResourceId <String> [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+
+   [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OnPremisesPublishingProfileId
+  isRequired: true
+  description: |+
+    The unique identifier of onPremisesPublishingProfile
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PublishedResourceId
+  isRequired: true
+  description: |+
+    The unique identifier of publishedResource
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Applications.Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef
+name: Get-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef
+description: |-
+  List of onPremisesAgentGroups that a publishedResource is assigned to.
+  Read-only.
+  Nullable.
+metadata:
+  external help file: Microsoft.Graph.Beta.Applications-help.xml
+  Module Name: Microsoft.Graph.Beta.Applications
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/get-mgbetaonpremisepublishingprofilepublishedresourceagentgroupbyref
+  schema: 2.0.0

@@ -1,0 +1,184 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to userExperienceAnalyticsBatteryHealthModelPerformance for deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance>`: The user experience analytics battery health model performance entity contains battery related information for all unique device models in their organization.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ActiveDevices <Int32?>]`: Number of active devices for that model. Valid values -2147483648 to 2147483647
+    - `[AverageBatteryAgeInDays <Int32?>]`: The mean of the battery age for all devices of a given model in a tenant. Unit in days. Valid values -2147483648 to 2147483647
+    - `[AverageEstimatedRuntimeInMinutes <Int32?>]`: The mean of the estimated runtimes on full charge for all devices of a given model. Unit in minutes. Valid values -2147483648 to 2147483647
+    - `[AverageMaxCapacityPercentage <Int32?>]`: The mean of the maximum capacity for all devices of a given model. Maximum capacity measures the full charge vs. design capacity for a device's batteries.. Valid values -2147483648 to 2147483647
+    - `[Manufacturer <String>]`: Name of the device manufacturer.
+    - `[Model <String>]`: The model name of the device.
+    - `[ModelBatteryHealthScore <Int32?>]`: A weighted average of a model's maximum capacity score and runtime estimate score. Values range from 0-100. Valid values -2147483648 to 2147483647
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
+  href: /powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance [-ActiveDevices <Int32>]
+
+   [-AdditionalProperties <Hashtable>] [-AverageBatteryAgeInDays <Int32>]
+
+   [-AverageEstimatedRuntimeInMinutes <Int32>] [-AverageMaxCapacityPercentage <Int32>] [-Id <String>]
+
+   [-Manufacturer <String>] [-Model <String>] [-ModelBatteryHealthScore <Int32>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
+
+   -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: ActiveDevices
+  description: |+
+    Number of active devices for that model.
+    Valid values -2147483648 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: AverageBatteryAgeInDays
+  description: |+
+    The mean of the battery age for all devices of a given model in a tenant.
+    Unit in days.
+    Valid values -2147483648 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: AverageEstimatedRuntimeInMinutes
+  description: |+
+    The mean of the estimated runtimes on full charge for all devices of a given model.
+    Unit in minutes.
+    Valid values -2147483648 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: AverageMaxCapacityPercentage
+  description: |+
+    The mean of the maximum capacity for all devices of a given model.
+    Maximum capacity measures the full charge vs.
+    design capacity for a device's batteries..
+    Valid values -2147483648 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    The user experience analytics battery health model performance entity contains battery related information for all unique device models in their organization.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Manufacturer
+  description: |+
+    Name of the device manufacturer.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Model
+  description: |+
+    The model name of the device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: ModelBatteryHealthScore
+  description: |+
+    A weighted average of a model's maximum capacity score and runtime estimate score.
+    Values range from 0-100.
+    Valid values -2147483648 to 2147483647
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
+name: New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
+description: |-
+  Create new navigation property to userExperienceAnalyticsBatteryHealthModelPerformance for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticbatteryhealthmodelperformance
+  schema: 2.0.0

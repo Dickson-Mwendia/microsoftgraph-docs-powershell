@@ -1,0 +1,51 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Devices.ServiceAnnouncement
+  cmdlets:
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementHealthOverview
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementHealthOverviewCount
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementHealthOverviewIssue
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementHealthOverviewIssueCount
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementIssue
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementIssueCount
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementMessage
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementMessageAttachment
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementMessageAttachmentArchive
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementMessageAttachmentContent
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementMessageAttachmentCount
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementMessageCount
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Invoke-MgArchiveServiceAnnouncementMessage
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Invoke-MgFavoriteServiceAnnouncementMessage
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Invoke-MgMarkServiceAnnouncementMessageRead
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Invoke-MgMarkServiceAnnouncementMessageUnread
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Invoke-MgReportServiceAnnouncementIssueIncident
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Invoke-MgUnarchiveServiceAnnouncementMessage
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Invoke-MgUnfavoriteServiceAnnouncementMessage
+  - Microsoft.Graph.Devices.ServiceAnnouncement.New-MgServiceAnnouncementHealthOverview
+  - Microsoft.Graph.Devices.ServiceAnnouncement.New-MgServiceAnnouncementHealthOverviewIssue
+  - Microsoft.Graph.Devices.ServiceAnnouncement.New-MgServiceAnnouncementIssue
+  - Microsoft.Graph.Devices.ServiceAnnouncement.New-MgServiceAnnouncementMessage
+  - Microsoft.Graph.Devices.ServiceAnnouncement.New-MgServiceAnnouncementMessageAttachment
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Remove-MgServiceAnnouncementHealthOverview
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Remove-MgServiceAnnouncementHealthOverviewIssue
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Remove-MgServiceAnnouncementIssue
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Remove-MgServiceAnnouncementMessage
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Remove-MgServiceAnnouncementMessageAttachment
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Set-MgServiceAnnouncementMessageAttachmentArchive
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Set-MgServiceAnnouncementMessageAttachmentContent
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Update-MgServiceAnnouncementHealthOverview
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Update-MgServiceAnnouncementHealthOverviewIssue
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Update-MgServiceAnnouncementIssue
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Update-MgServiceAnnouncementMessage
+  - Microsoft.Graph.Devices.ServiceAnnouncement.Update-MgServiceAnnouncementMessageAttachment
+uid: Microsoft.Graph.Devices.ServiceAnnouncement
+name: Microsoft.Graph.Devices.ServiceAnnouncement
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
+  Module Guid: c1241e9e-085b-4031-972c-a584e0f583d9
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement
+  Help Version: 1.0.0.0
+  Locale: en-US

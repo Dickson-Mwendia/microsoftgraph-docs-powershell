@@ -1,0 +1,346 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to secureScoreControlProfiles for security
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySecureScoreControlProfile?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Security
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlProfile
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ActionType <String>]`: Control action type (Config, Review, Behavior).
+    - `[ActionUrl <String>]`: URL to where the control can be actioned.
+    - `[AzureTenantId <String>]`: GUID string for tenant ID.
+    - `[ComplianceInformation <IMicrosoftGraphComplianceInformation[]>]`: The collection of compliance information associated with secure score control
+      - `[CertificationControls <IMicrosoftGraphCertificationControl[]>]`: 
+        - `[Name <String>]`: 
+        - `[Url <String>]`: 
+      - `[CertificationName <String>]`: 
+    - `[ControlCategory <String>]`: Control action category (Account, Data, Device, Apps, Infrastructure).
+    - `[ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>]`: Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
+      - `[AssignedTo <String>]`: 
+      - `[Comment <String>]`: 
+      - `[State <String>]`: 
+      - `[UpdatedBy <String>]`: 
+      - `[UpdatedDateTime <DateTime?>]`: 
+    - `[Deprecated <Boolean?>]`: Flag to indicate if a control is depreciated.
+    - `[ImplementationCost <String>]`: Resource cost of implemmentating control (low, moderate, high).
+    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[MaxScore <Double?>]`: Current obtained max score on specified date.
+    - `[Rank <Int32?>]`: Microsoft's stack ranking of control.
+    - `[Remediation <String>]`: Description of what the control will help remediate.
+    - `[RemediationImpact <String>]`: Description of the impact on users of the remediation.
+    - `[Service <String>]`: Service that owns the control (Exchange, Sharepoint, Azure AD).
+    - `[Threats <String[]>]`: List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).
+    - `[Tier <String>]`: Control tier (Core, Defense in Depth, Advanced.)
+    - `[Title <String>]`: Title of the control.
+    - `[UserImpact <String>]`: User impact of implementing control (low, moderate, high).
+    - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+      - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
+      - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+      - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
+
+  `COMPLIANCEINFORMATION <IMicrosoftGraphComplianceInformation[]>`: The collection of compliance information associated with secure score control
+    - `[CertificationControls <IMicrosoftGraphCertificationControl[]>]`: 
+      - `[Name <String>]`: 
+      - `[Url <String>]`: 
+    - `[CertificationName <String>]`: 
+
+  `CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate[]>`: Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
+    - `[AssignedTo <String>]`: 
+    - `[Comment <String>]`: 
+    - `[State <String>]`: 
+    - `[UpdatedBy <String>]`: 
+    - `[UpdatedDateTime <DateTime?>]`: 
+
+  `VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
+    - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
+    - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
+    - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgSecuritySecureScoreControlProfile
+  href: /powershell/module/Microsoft.Graph.Security/New-MgSecuritySecureScoreControlProfile?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaSecuritySecureScoreControlProfile [-ActionType <String>] [-ActionUrl <String>]
+
+   [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
+
+   [-ComplianceInformation <IMicrosoftGraphComplianceInformation[]>] [-ControlCategory <String>]
+
+   [-ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>] [-Deprecated] [-Id <String>]
+
+   [-ImplementationCost <String>] [-LastModifiedDateTime <DateTime>] [-MaxScore <Double>] [-Rank <Int32>]
+
+   [-Remediation <String>] [-RemediationImpact <String>] [-Service <String>] [-Threats <String[]>]
+
+   [-Tier <String>] [-Title <String>] [-UserImpact <String>]
+
+   [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaSecuritySecureScoreControlProfile -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Security
+
+    Get-MgBetaSecuritySecureScoreControlProfile
+  description: |-
+    This example shows how to use the New-MgBetaBetaSecuritySecureScoreControlProfile Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ActionType
+  description: |+
+    Control action type (Config, Review, Behavior).
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ActionUrl
+  description: |+
+    URL to where the control can be actioned.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AzureTenantId
+  description: |+
+    GUID string for tenant ID.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecureScoreControlProfile" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    secureScoreControlProfile
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphComplianceInformation" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ComplianceInformation
+  description: |+
+    The collection of compliance information associated with secure score control
+    To construct, see NOTES section for COMPLIANCEINFORMATION properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ControlCategory
+  description: |+
+    Control action category (Account, Data, Device, Apps, Infrastructure).
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecureScoreControlStateUpdate" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ControlStateUpdates
+  description: |+
+    Flag to indicate where the tenant has marked a control (ignore, thirdParty, reviewed) (supports update).
+    To construct, see NOTES section for CONTROLSTATEUPDATES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Deprecated
+  description: |+
+    Flag to indicate if a control is depreciated.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ImplementationCost
+  description: |+
+    Resource cost of implemmentating control (low, moderate, high).
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Double" data-throw-if-not-resolved="False" />
+  name: MaxScore
+  description: |+
+    Current obtained max score on specified date.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Rank
+  description: |+
+    Microsoft's stack ranking of control.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Remediation
+  description: |+
+    Description of what the control will help remediate.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: RemediationImpact
+  description: |+
+    Description of the impact on users of the remediation.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Service
+  description: |+
+    Service that owns the control (Exchange, Sharepoint, Azure AD).
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Threats
+  description: |+
+    List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Tier
+  description: |+
+    Control tier (Core, Defense in Depth, Advanced.)
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Title
+  description: |+
+    Title of the control.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserImpact
+  description: |+
+    User impact of implementing control (low, moderate, high).
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecurityVendorInformation" data-throw-if-not-resolved="False" />
+  name: VendorInformation
+  description: |+
+    securityVendorInformation
+    To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Security.New-MgBetaSecuritySecureScoreControlProfile
+name: New-MgBetaSecuritySecureScoreControlProfile
+description: |-
+  Create new navigation property to secureScoreControlProfiles for security
+metadata:
+  external help file: Microsoft.Graph.Beta.Security-help.xml
+  Module Name: Microsoft.Graph.Beta.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescorecontrolprofile
+  schema: 2.0.0

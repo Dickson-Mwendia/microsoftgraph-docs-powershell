@@ -1,0 +1,77 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke function getUserIdsWithFlaggedAppRegistration
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Devices.CorporateManagement
+notes: |-
+  ALIASES
+
+  Get-MgBetaDeviceAppMgtManagedAppRegistrationUserIdGraphWPreFlaggedAppRegistration
+outputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration
+  href: /powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration [-Count] [-Filter <String>]
+
+   [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Count
+  description: |+
+    Include count of items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Devices.CorporateManagement.Get-MgBetaDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration
+name: Get-MgBetaDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration
+description: |-
+  Invoke function getUserIdsWithFlaggedAppRegistration
+metadata:
+  external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmanagedappregistrationuseridwithflaggedappregistration
+  schema: 2.0.0

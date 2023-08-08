@@ -1,0 +1,116 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke action createMigrationReport
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementGroupPolicyMigrationReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementGroupPolicyMigrationReport?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Actions
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[GroupPolicyObjectFile <IMicrosoftGraphGroupPolicyObjectFile>]`: The Group Policy Object file uploaded by admin.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Content <String>]`: The Group Policy Object file content.
+      - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicy was first uploaded.
+      - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content
+      - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyObjectFile was last modified.
+      - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
+      - `[RoleScopeTagIds <String[]>]`: The list of scope tags for the configuration.
+
+  `GROUPPOLICYOBJECTFILE <IMicrosoftGraphGroupPolicyObjectFile>`: The Group Policy Object file uploaded by admin.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Content <String>]`: The Group Policy Object file content.
+    - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicy was first uploaded.
+    - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyObjectFile was last modified.
+    - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
+    - `[RoleScopeTagIds <String[]>]`: The list of scope tags for the configuration.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceManagementGroupPolicyMigrationReport
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementGroupPolicyMigrationReport?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDeviceManagementGroupPolicyMigrationReport [-AdditionalProperties <Hashtable>]
+
+   [-GroupPolicyObjectFile <IMicrosoftGraphGroupPolicyObjectFile>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaDeviceManagementGroupPolicyMigrationReport
+
+   -BodyParameter <IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphGroupPolicyObjectFile" data-throw-if-not-resolved="False" />
+  name: GroupPolicyObjectFile
+  description: |+
+    The Group Policy Object file uploaded by admin.
+    To construct, see NOTES section for GROUPPOLICYOBJECTFILE properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Actions.New-MgBetaDeviceManagementGroupPolicyMigrationReport
+name: New-MgBetaDeviceManagementGroupPolicyMigrationReport
+description: |-
+  Invoke action createMigrationReport
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementgrouppolicymigrationreport
+  schema: 2.0.0

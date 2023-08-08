@@ -1,0 +1,151 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Compute the sensitivity label that should be applied and return the set of actions that must be taken to correctly label the information.
+  This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
+  Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Test-MgSecurityInformationProtectionSensitivityLabelApplication](/powershell/module/Microsoft.Graph.Security/Test-MgSecurityInformationProtectionSensitivityLabelApplication?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Security
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ContentInfo <IMicrosoftGraphSecurityContentInfo>]`: contentInfo
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
+      - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
+      - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIP_Label_GUID_PropName.
+        - `[Name <String>]`: Name for this key-value pair.
+        - `[Value <String>]`: Value for this key-value pair.
+      - `[State <String>]`: contentState
+    - `[LabelingOptions <IMicrosoftGraphSecurityLabelingOptions>]`: labelingOptions
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AssignmentMethod <String>]`: assignmentMethod
+      - `[DowngradeJustification <IMicrosoftGraphSecurityDowngradeJustification>]`: downgradeJustification
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or is not justified.
+        - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified. The message will appear in administrative logs.
+      - `[ExtendedProperties <IMicrosoftGraphSecurityKeyValuePair[]>]`: Extended properties will be parsed and returned in the standard Microsoft Purview Information Protection labeled metadata format as part of the label information.
+      - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
+
+  `CONTENTINFO <IMicrosoftGraphSecurityContentInfo>`: contentInfo
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
+    - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
+    - `[Metadata <IMicrosoftGraphSecurityKeyValuePair[]>]`: Existing Microsoft Purview Information Protection metadata is passed as key-value pairs, where the key is the MSIP_Label_GUID_PropName.
+      - `[Name <String>]`: Name for this key-value pair.
+      - `[Value <String>]`: Value for this key-value pair.
+    - `[State <String>]`: contentState
+
+  `LABELINGOPTIONS <IMicrosoftGraphSecurityLabelingOptions>`: labelingOptions
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AssignmentMethod <String>]`: assignmentMethod
+    - `[DowngradeJustification <IMicrosoftGraphSecurityDowngradeJustification>]`: downgradeJustification
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or is not justified.
+      - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified. The message will appear in administrative logs.
+    - `[ExtendedProperties <IMicrosoftGraphSecurityKeyValuePair[]>]`: Extended properties will be parsed and returned in the standard Microsoft Purview Information Protection labeled metadata format as part of the label information.
+      - `[Name <String>]`: Name for this key-value pair.
+      - `[Value <String>]`: Value for this key-value pair.
+    - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionAction" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Test-MgSecurityInformationProtectionSensitivityLabelApplication
+  href: /powershell/module/Microsoft.Graph.Security/Test-MgSecurityInformationProtectionSensitivityLabelApplication?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Test-MgBetaSecurityInformationProtectionSensitivityLabelApplication [-AdditionalProperties <Hashtable>]
+
+   [-ContentInfo <IMicrosoftGraphSecurityContentInfo>]
+
+   [-LabelingOptions <IMicrosoftGraphSecurityLabelingOptions>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Test-MgBetaSecurityInformationProtectionSensitivityLabelApplication
+
+   -BodyParameter <IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecurityContentInfo" data-throw-if-not-resolved="False" />
+  name: ContentInfo
+  description: |+
+    contentInfo
+    To construct, see NOTES section for CONTENTINFO properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSecurityLabelingOptions" data-throw-if-not-resolved="False" />
+  name: LabelingOptions
+  description: |+
+    labelingOptions
+    To construct, see NOTES section for LABELINGOPTIONS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Security.Test-MgBetaSecurityInformationProtectionSensitivityLabelApplication
+name: Test-MgBetaSecurityInformationProtectionSensitivityLabelApplication
+description: |-
+  Compute the sensitivity label that should be applied and return the set of actions that must be taken to correctly label the information.
+  This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
+  Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
+metadata:
+  external help file: Microsoft.Graph.Beta.Security-help.xml
+  Module Name: Microsoft.Graph.Beta.Security
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelapplication
+  schema: 2.0.0

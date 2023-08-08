@@ -1,0 +1,128 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke action import
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Import-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Import-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
+module: Microsoft.Graph.DeviceManagement.Actions
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPaths1Jc0WclDevicemanagementImportedwindowsautopilotdeviceidentitiesMicrosoftGraphImportPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ImportedWindowsAutopilotDeviceIdentities <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[AssignedUserPrincipalName <String>]`: UPN of the user the device will be assigned
+      - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
+      - `[HardwareIdentifier <Byte[]>]`: Hardware Blob of the Windows autopilot device.
+      - `[ImportId <String>]`: The Import Id of the Windows autopilot device.
+      - `[ProductKey <String>]`: Product Key of the Windows autopilot device.
+      - `[SerialNumber <String>]`: Serial number of the Windows autopilot device.
+      - `[State <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>]`: importedWindowsAutopilotDeviceIdentityState
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DeviceErrorCode <Int32?>]`: Device error code reported by Device Directory Service(DDS).
+        - `[DeviceErrorName <String>]`: Device error name reported by Device Directory Service(DDS).
+        - `[DeviceImportStatus <ImportedWindowsAutopilotDeviceIdentityImportStatus?>]`: importedWindowsAutopilotDeviceIdentityImportStatus
+        - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
+
+  `IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]>`: .
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[AssignedUserPrincipalName <String>]`: UPN of the user the device will be assigned
+    - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
+    - `[HardwareIdentifier <Byte[]>]`: Hardware Blob of the Windows autopilot device.
+    - `[ImportId <String>]`: The Import Id of the Windows autopilot device.
+    - `[ProductKey <String>]`: Product Key of the Windows autopilot device.
+    - `[SerialNumber <String>]`: Serial number of the Windows autopilot device.
+    - `[State <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>]`: importedWindowsAutopilotDeviceIdentityState
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceErrorCode <Int32?>]`: Device error code reported by Device Directory Service(DDS).
+      - `[DeviceErrorName <String>]`: Device error name reported by Device Directory Service(DDS).
+      - `[DeviceImportStatus <ImportedWindowsAutopilotDeviceIdentityImportStatus?>]`: importedWindowsAutopilotDeviceIdentityImportStatus
+      - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IPaths1Jc0WclDevicemanagementImportedwindowsautopilotdeviceidentitiesMicrosoftGraphImportPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Import-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity
+  href: /powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Import-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentity?view=graph-powershell-beta
+syntaxes:
+- >-
+  Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity [-AdditionalProperties <Hashtable>]
+
+   [-ImportedWindowsAutopilotDeviceIdentities <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]>]
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
+
+   -BodyParameter <IPaths1Jc0WclDevicemanagementImportedwindowsautopilotdeviceidentitiesMicrosoftGraphImportPostRequestbodyContentApplicationJsonSchema>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPaths1Jc0WclDevicemanagementImportedwindowsautopilotdeviceidentitiesMicrosoftGraphImportPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ImportedWindowsAutopilotDeviceIdentities
+  description: |+
+    .
+    To construct, see NOTES section for IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Actions.Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
+name: Import-MgDeviceManagementImportedWindowsAutopilotDeviceIdentity
+description: |-
+  Invoke action import
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Actions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementimportedwindowsautopilotdeviceidentity
+  schema: 2.0.0

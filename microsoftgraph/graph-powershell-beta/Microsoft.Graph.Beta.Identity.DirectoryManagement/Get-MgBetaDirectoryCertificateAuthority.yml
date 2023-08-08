@@ -1,0 +1,48 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get certificateAuthorities from directory
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgDirectoryCertificateAuthority](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCertificateAuthority?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.DirectoryManagement
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateAuthorityPath" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgDirectoryCertificateAuthority
+  href: /powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCertificateAuthority?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaDirectoryCertificateAuthority [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.DirectoryManagement.Get-MgBetaDirectoryCertificateAuthority
+name: Get-MgBetaDirectoryCertificateAuthority
+description: |-
+  Get certificateAuthorities from directory
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectorycertificateauthority
+  schema: 2.0.0

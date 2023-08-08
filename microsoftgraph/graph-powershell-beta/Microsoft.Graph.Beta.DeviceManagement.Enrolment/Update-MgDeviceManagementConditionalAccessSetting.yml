@@ -1,0 +1,151 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property conditionalAccessSettings in deviceManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-v1.0)
+module: Microsoft.Graph.DeviceManagement.Enrolment
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  BODYPARAMETER `<IMicrosoftGraphOnPremisesConditionalAccessSettings>`: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Enabled <Boolean?>]`: Indicates if on premises conditional access is enabled for this organization
+    - `[ExcludedGroups <String[]>]`: User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the conditional access policy.
+    - `[IncludedGroups <String[]>]`: User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.
+    - `[OverrideDefaultRule <Boolean?>]`: Override the default access rule when allowing a device to ensure access is granted.
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesConditionalAccessSettings" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgDeviceManagementConditionalAccessSetting
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Update-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgDeviceManagementConditionalAccessSetting [-AdditionalProperties <Hashtable>] [-Enabled]
+
+   [-ExcludedGroups <String[]>] [-Id <String>] [-IncludedGroups <String[]>] [-OverrideDefaultRule] [-PassThru]
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementConditionalAccessSetting
+
+   -BodyParameter <IMicrosoftGraphOnPremisesConditionalAccessSettings> [-PassThru] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphOnPremisesConditionalAccessSettings" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
+    To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Enabled
+  description: |+
+    Indicates if on premises conditional access is enabled for this organization
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExcludedGroups
+  description: |+
+    User groups that will be exempt by on premises conditional access.
+    All users in these groups will be exempt from the conditional access policy.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: IncludedGroups
+  description: |+
+    User groups that will be targeted by on premises conditional access.
+    All users in these groups will be required to have mobile device managed and compliant for mail access.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: OverrideDefaultRule
+  description: |+
+    Override the default access rule when allowing a device to ensure access is granted.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Enrolment.Update-MgDeviceManagementConditionalAccessSetting
+name: Update-MgDeviceManagementConditionalAccessSetting
+description: |-
+  Update the navigation property conditionalAccessSettings in deviceManagement
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+  online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementconditionalaccesssetting
+  schema: 2.0.0

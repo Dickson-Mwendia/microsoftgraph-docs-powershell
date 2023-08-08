@@ -1,0 +1,219 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the permissions assigned to an existing sharee or delegate, through the corresponding calendarPermission object for a calendar.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgGroupCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupCalendarPermission?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Calendar
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphCalendarPermission>`: calendarPermission
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
+    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
+    - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
+    - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
+    - `[Role <String>]`: calendarRoleType
+
+  `EMAILADDRESS <IMicrosoftGraphEmailAddress>`: emailAddress
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
+
+  `INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
+    - `[AttachmentId <String>]`: The unique identifier of attachment
+    - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+    - `[CalendarId <String>]`: The unique identifier of calendar
+    - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+    - `[EventId <String>]`: The unique identifier of event
+    - `[EventId1 <String>]`: The unique identifier of event
+    - `[EventId2 <String>]`: The unique identifier of event
+    - `[ExtensionId <String>]`: The unique identifier of extension
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PlaceId <String>]`: The unique identifier of place
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCalendarPermission" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCalendarPermission" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgGroupCalendarPermission
+  href: /powershell/module/Microsoft.Graph.Calendar/Update-MgGroupCalendarPermission?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaGroupCalendarPermission -CalendarPermissionId <String> -GroupId <String>
+
+   [-AdditionalProperties <Hashtable>] [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>]
+
+   [-Id <String>] [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaGroupCalendarPermission -CalendarPermissionId <String> -GroupId <String>
+
+   -BodyParameter <IMicrosoftGraphCalendarPermission> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaGroupCalendarPermission -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
+
+   [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>] [-Id <String>]
+
+   [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaGroupCalendarPermission -InputObject <ICalendarIdentity>
+
+   -BodyParameter <IMicrosoftGraphCalendarPermission> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: AllowedRoles
+  description: |+
+    List of allowed sharing or delegating permission levels for the calendar.
+    Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphCalendarPermission" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    calendarPermission
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CalendarPermissionId
+  isRequired: true
+  description: |+
+    The unique identifier of calendarPermission
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphEmailAddress" data-throw-if-not-resolved="False" />
+  name: EmailAddress
+  description: |+
+    emailAddress
+    To construct, see NOTES section for EMAILADDRESS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GroupId
+  isRequired: true
+  description: |+
+    The unique identifier of group
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ICalendarIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsInsideOrganization
+  description: |+
+    True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsRemovable
+  description: |+
+    True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise.
+    The 'My organization' user determines the permissions other people within your organization have to the given calendar.
+    You cannot remove 'My organization' as a sharee to a calendar.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Role
+  description: |+
+    calendarRoleType
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Calendar.Update-MgBetaGroupCalendarPermission
+name: Update-MgBetaGroupCalendarPermission
+description: |-
+  Update the permissions assigned to an existing sharee or delegate, through the corresponding calendarPermission object for a calendar.
+metadata:
+  external help file: Microsoft.Graph.Beta.Calendar-help.xml
+  Module Name: Microsoft.Graph.Beta.Calendar
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetagroupcalendarpermission
+  schema: 2.0.0

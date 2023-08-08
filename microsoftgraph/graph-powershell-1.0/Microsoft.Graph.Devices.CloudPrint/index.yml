@@ -1,0 +1,129 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Devices.CloudPrint
+  cmdlets:
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrint
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintConnector
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintConnectorCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintOperation
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintOperationCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinter
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterConnector
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterConnectorCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterJob
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterJobCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterJobDocument
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterJobDocumentContent
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterJobDocumentCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterJobTask
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterJobTaskCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterJobTaskDefinition
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterJobTaskTrigger
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterShare
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterShareCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterTaskTrigger
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterTaskTriggerCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintPrinterTaskTriggerDefinition
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintService
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintServiceCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintServiceEndpoint
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintServiceEndpointCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShare
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareAllowedGroup
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareAllowedGroupByRef
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareAllowedGroupCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareAllowedUser
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareAllowedUserByRef
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareAllowedUserCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareAllowedUserMailboxSetting
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareJob
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareJobCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareJobDocument
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareJobDocumentContent
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareJobDocumentCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareJobTask
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareJobTaskCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareJobTaskDefinition
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintShareJobTaskTrigger
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintSharePrinter
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintTaskDefinition
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintTaskDefinitionCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintTaskDefinitionTask
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintTaskDefinitionTaskCount
+  - Microsoft.Graph.Devices.CloudPrint.Get-MgPrintTaskDefinitionTaskTrigger
+  - Microsoft.Graph.Devices.CloudPrint.Invoke-MgAbortPrintPrinterJob
+  - Microsoft.Graph.Devices.CloudPrint.Invoke-MgAbortPrintShareJob
+  - Microsoft.Graph.Devices.CloudPrint.Invoke-MgRedirectPrintPrinterJob
+  - Microsoft.Graph.Devices.CloudPrint.Invoke-MgRedirectPrintShareJob
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintConnector
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintOperation
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintPrinter
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintPrinterJob
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintPrinterJobDocument
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintPrinterJobDocumentUploadSession
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintPrinterJobTask
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintPrinterTaskTrigger
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintService
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintServiceEndpoint
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintShare
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintShareAllowedGroupByRef
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintShareAllowedUserByRef
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintShareJob
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintShareJobDocument
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintShareJobDocumentUploadSession
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintShareJobTask
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintTaskDefinition
+  - Microsoft.Graph.Devices.CloudPrint.New-MgPrintTaskDefinitionTask
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintConnector
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintOperation
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintPrinter
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintPrinterJob
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintPrinterJobDocument
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintPrinterJobTask
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintPrinterTaskTrigger
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintService
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintServiceEndpoint
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintShare
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintShareAllowedGroupByRef
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintShareAllowedUserByRef
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintShareJob
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintShareJobDocument
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintShareJobTask
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintTaskDefinition
+  - Microsoft.Graph.Devices.CloudPrint.Remove-MgPrintTaskDefinitionTask
+  - Microsoft.Graph.Devices.CloudPrint.Restore-MgPrintPrinterFactoryDefault
+  - Microsoft.Graph.Devices.CloudPrint.Set-MgPrintPrinterJobDocumentContent
+  - Microsoft.Graph.Devices.CloudPrint.Set-MgPrintShareJobDocumentContent
+  - Microsoft.Graph.Devices.CloudPrint.Start-MgPrintPrinterJob
+  - Microsoft.Graph.Devices.CloudPrint.Start-MgPrintShareJob
+  - Microsoft.Graph.Devices.CloudPrint.Stop-MgPrintPrinterJob
+  - Microsoft.Graph.Devices.CloudPrint.Stop-MgPrintShareJob
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrint
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintConnector
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintOperation
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintPrinter
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintPrinterJob
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintPrinterJobDocument
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintPrinterJobTask
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintPrinterTaskTrigger
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintService
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintServiceEndpoint
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintShare
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintShareAllowedUserMailboxSetting
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintShareJob
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintShareJobDocument
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintShareJobTask
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintTaskDefinition
+  - Microsoft.Graph.Devices.CloudPrint.Update-MgPrintTaskDefinitionTask
+uid: Microsoft.Graph.Devices.CloudPrint
+name: Microsoft.Graph.Devices.CloudPrint
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Devices.CloudPrint
+  Module Guid: cc15d2f9-5993-46d9-a080-5e0fb819998f
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint
+  Help Version: 1.0.0.0
+  Locale: en-US

@@ -1,0 +1,92 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgPlannerRosterPlanCount](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerRosterPlanCount?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Planner
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+    - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
+    - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+    - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
+    - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
+    - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgPlannerRosterPlanCount
+  href: /powershell/module/Microsoft.Graph.Planner/Get-MgPlannerRosterPlanCount?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaPlannerRosterPlanCount -PlannerRosterId <String> [-Filter <String>] [-Search <String>]
+
+   [<CommonParameters>]
+- >-
+  Get-MgBetaPlannerRosterPlanCount -InputObject <IPlannerIdentity> [-Filter <String>] [-Search <String>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPlannerIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PlannerRosterId
+  isRequired: true
+  description: |+
+    The unique identifier of plannerRoster
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Planner.Get-MgBetaPlannerRosterPlanCount
+name: Get-MgBetaPlannerRosterPlanCount
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Beta.Planner-help.xml
+  Module Name: Microsoft.Graph.Beta.Planner
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannerrosterplancount
+  schema: 2.0.0

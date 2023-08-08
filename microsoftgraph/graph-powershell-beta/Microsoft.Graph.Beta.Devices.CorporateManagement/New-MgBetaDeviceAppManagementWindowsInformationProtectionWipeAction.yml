@@ -1,0 +1,164 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to windowsInformationProtectionWipeActions for deviceAppManagement
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementWindowsInformationProtectionWipeAction](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWindowsInformationProtectionWipeAction?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Devices.CorporateManagement
+notes: |-
+  ALIASES
+
+  New-MgBetaDeviceAppMgtWindowInformationProtectionWipeAction
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphWindowsInformationProtectionWipeAction>`: Represents wipe requests issued by tenant admin for Bring-Your-Own-Device(BYOD) Windows devices.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[LastCheckInDateTime <DateTime?>]`: Last checkin time of the device that was targeted by this wipe action.
+    - `[Status <String>]`: actionState
+    - `[TargetedDeviceMacAddress <String>]`: Targeted device Mac address.
+    - `[TargetedDeviceName <String>]`: Targeted device name.
+    - `[TargetedDeviceRegistrationId <String>]`: The DeviceRegistrationId being targeted by this wipe action.
+    - `[TargetedUserId <String>]`: The UserId being targeted by this wipe action.
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionWipeAction" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionWipeAction" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgDeviceAppManagementWindowsInformationProtectionWipeAction
+  href: /powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWindowsInformationProtectionWipeAction?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction [-AdditionalProperties <Hashtable>]
+
+   [-Id <String>] [-LastCheckInDateTime <DateTime>] [-Status <String>] [-TargetedDeviceMacAddress <String>]
+
+   [-TargetedDeviceName <String>] [-TargetedDeviceRegistrationId <String>] [-TargetedUserId <String>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
+
+   -BodyParameter <IMicrosoftGraphWindowsInformationProtectionWipeAction> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphWindowsInformationProtectionWipeAction" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Represents wipe requests issued by tenant admin for Bring-Your-Own-Device(BYOD) Windows devices.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastCheckInDateTime
+  description: |+
+    Last checkin time of the device that was targeted by this wipe action.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Status
+  description: |+
+    actionState
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TargetedDeviceMacAddress
+  description: |+
+    Targeted device Mac address.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TargetedDeviceName
+  description: |+
+    Targeted device name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TargetedDeviceRegistrationId
+  description: |+
+    The DeviceRegistrationId being targeted by this wipe action.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TargetedUserId
+  description: |+
+    The UserId being targeted by this wipe action.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Devices.CorporateManagement.New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
+name: New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction
+description: |-
+  Create new navigation property to windowsInformationProtectionWipeActions for deviceAppManagement
+metadata:
+  external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectionwipeaction
+  schema: 2.0.0

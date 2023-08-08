@@ -1,0 +1,114 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.CloudCommunications
+  cmdlets:
+  - Microsoft.Graph.CloudCommunications.Add-MgCommunicationCallLargeGalleryView
+  - Microsoft.Graph.CloudCommunications.Clear-MgCommunicationPresence
+  - Microsoft.Graph.CloudCommunications.Clear-MgCommunicationPresenceUserPreferredPresence
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCall
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallAudioRoutingGroup
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallAudioRoutingGroupCount
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallContentSharingSession
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallContentSharingSessionCount
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallCount
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallOperation
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallOperationCount
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallParticipant
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallParticipantCount
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallRecord
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallRecordCount
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallRecordSession
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallRecordSessionCount
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationCallRecordSessionSegmentCount
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationOnlineMeeting
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationOnlineMeetingAttendanceReport
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationOnlineMeetingAttendanceReportCount
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationOnlineMeetingAttendeeReport
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationOnlineMeetingCount
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationPresence
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationPresenceByUserId
+  - Microsoft.Graph.CloudCommunications.Get-MgCommunicationPresenceCount
+  - Microsoft.Graph.CloudCommunications.Get-MgUserOnlineMeeting
+  - Microsoft.Graph.CloudCommunications.Get-MgUserOnlineMeetingAttendanceReport
+  - Microsoft.Graph.CloudCommunications.Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord
+  - Microsoft.Graph.CloudCommunications.Get-MgUserOnlineMeetingAttendanceReportAttendanceRecordCount
+  - Microsoft.Graph.CloudCommunications.Get-MgUserOnlineMeetingAttendanceReportCount
+  - Microsoft.Graph.CloudCommunications.Get-MgUserOnlineMeetingAttendeeReport
+  - Microsoft.Graph.CloudCommunications.Get-MgUserOnlineMeetingCount
+  - Microsoft.Graph.CloudCommunications.Get-MgUserPresence
+  - Microsoft.Graph.CloudCommunications.Invoke-MgAnswerCommunicationCall
+  - Microsoft.Graph.CloudCommunications.Invoke-MgCreateOrGetCommunicationOnlineMeeting
+  - Microsoft.Graph.CloudCommunications.Invoke-MgInviteCommunicationCallParticipant
+  - Microsoft.Graph.CloudCommunications.Invoke-MgKeepCommunicationCallAlive
+  - Microsoft.Graph.CloudCommunications.Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
+  - Microsoft.Graph.CloudCommunications.Invoke-MgMuteCommunicationCall
+  - Microsoft.Graph.CloudCommunications.Invoke-MgMuteCommunicationCallParticipant
+  - Microsoft.Graph.CloudCommunications.Invoke-MgPlayCommunicationCallPrompt
+  - Microsoft.Graph.CloudCommunications.Invoke-MgRecordCommunicationCallResponse
+  - Microsoft.Graph.CloudCommunications.Invoke-MgRedirectCommunicationCall
+  - Microsoft.Graph.CloudCommunications.Invoke-MgRejectCommunicationCall
+  - Microsoft.Graph.CloudCommunications.Invoke-MgSubscribeCommunicationCallToTone
+  - Microsoft.Graph.CloudCommunications.Invoke-MgUnmuteCommunicationCall
+  - Microsoft.Graph.CloudCommunications.Move-MgCommunicationCall
+  - Microsoft.Graph.CloudCommunications.New-MgCommunicationCall
+  - Microsoft.Graph.CloudCommunications.New-MgCommunicationCallAudioRoutingGroup
+  - Microsoft.Graph.CloudCommunications.New-MgCommunicationCallContentSharingSession
+  - Microsoft.Graph.CloudCommunications.New-MgCommunicationCallOperation
+  - Microsoft.Graph.CloudCommunications.New-MgCommunicationCallParticipant
+  - Microsoft.Graph.CloudCommunications.New-MgCommunicationCallRecordSession
+  - Microsoft.Graph.CloudCommunications.New-MgCommunicationOnlineMeeting
+  - Microsoft.Graph.CloudCommunications.New-MgCommunicationOnlineMeetingAttendanceReport
+  - Microsoft.Graph.CloudCommunications.New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord
+  - Microsoft.Graph.CloudCommunications.New-MgCommunicationPresence
+  - Microsoft.Graph.CloudCommunications.New-MgUserOnlineMeeting
+  - Microsoft.Graph.CloudCommunications.New-MgUserOnlineMeetingAttendanceReport
+  - Microsoft.Graph.CloudCommunications.New-MgUserOnlineMeetingAttendanceReportAttendanceRecord
+  - Microsoft.Graph.CloudCommunications.Remove-MgCommunicationCall
+  - Microsoft.Graph.CloudCommunications.Remove-MgCommunicationCallAudioRoutingGroup
+  - Microsoft.Graph.CloudCommunications.Remove-MgCommunicationCallContentSharingSession
+  - Microsoft.Graph.CloudCommunications.Remove-MgCommunicationCallOperation
+  - Microsoft.Graph.CloudCommunications.Remove-MgCommunicationCallParticipant
+  - Microsoft.Graph.CloudCommunications.Remove-MgCommunicationCallRecordSession
+  - Microsoft.Graph.CloudCommunications.Remove-MgCommunicationOnlineMeeting
+  - Microsoft.Graph.CloudCommunications.Remove-MgCommunicationOnlineMeetingAttendanceReport
+  - Microsoft.Graph.CloudCommunications.Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord
+  - Microsoft.Graph.CloudCommunications.Remove-MgCommunicationPresence
+  - Microsoft.Graph.CloudCommunications.Remove-MgUserOnlineMeeting
+  - Microsoft.Graph.CloudCommunications.Remove-MgUserOnlineMeetingAttendanceReport
+  - Microsoft.Graph.CloudCommunications.Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord
+  - Microsoft.Graph.CloudCommunications.Remove-MgUserPresence
+  - Microsoft.Graph.CloudCommunications.Rename-MgCommunicationCallScreenSharingRole
+  - Microsoft.Graph.CloudCommunications.Set-MgCommunicationOnlineMeetingAttendeeReport
+  - Microsoft.Graph.CloudCommunications.Set-MgCommunicationPresence
+  - Microsoft.Graph.CloudCommunications.Set-MgCommunicationPresenceUserPreferredPresence
+  - Microsoft.Graph.CloudCommunications.Set-MgUserOnlineMeetingAttendeeReport
+  - Microsoft.Graph.CloudCommunications.Start-MgCommunicationCallParticipantHoldMusic
+  - Microsoft.Graph.CloudCommunications.Stop-MgCommunicationCallMediaProcessing
+  - Microsoft.Graph.CloudCommunications.Stop-MgCommunicationCallParticipantHoldMusic
+  - Microsoft.Graph.CloudCommunications.Update-MgCommunicationCallAudioRoutingGroup
+  - Microsoft.Graph.CloudCommunications.Update-MgCommunicationCallContentSharingSession
+  - Microsoft.Graph.CloudCommunications.Update-MgCommunicationCallOperation
+  - Microsoft.Graph.CloudCommunications.Update-MgCommunicationCallParticipant
+  - Microsoft.Graph.CloudCommunications.Update-MgCommunicationCallRecordingStatus
+  - Microsoft.Graph.CloudCommunications.Update-MgCommunicationCallRecordSession
+  - Microsoft.Graph.CloudCommunications.Update-MgCommunicationOnlineMeeting
+  - Microsoft.Graph.CloudCommunications.Update-MgCommunicationOnlineMeetingAttendanceReport
+  - Microsoft.Graph.CloudCommunications.Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord
+  - Microsoft.Graph.CloudCommunications.Update-MgCommunicationPresence
+  - Microsoft.Graph.CloudCommunications.Update-MgUserOnlineMeeting
+  - Microsoft.Graph.CloudCommunications.Update-MgUserOnlineMeetingAttendanceReport
+  - Microsoft.Graph.CloudCommunications.Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord
+  - Microsoft.Graph.CloudCommunications.Update-MgUserPresence
+uid: Microsoft.Graph.CloudCommunications
+name: Microsoft.Graph.CloudCommunications
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.CloudCommunications
+  Module Guid: 0e093be6-689b-410d-83e0-6d5f9b554a20
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications
+  Help Version: 1.0.0.0
+  Locale: en-US

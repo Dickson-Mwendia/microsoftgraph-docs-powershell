@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The RbacApplication for Device Management
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDeviceManagement?view=graph-powershell-v1.0)
+module: Microsoft.Graph.DeviceManagement.Enrolment
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplicationMultiple" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgRoleManagementDeviceManagement
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgRoleManagementDeviceManagement?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgRoleManagementDeviceManagement [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Enrolment.Get-MgRoleManagementDeviceManagement
+name: Get-MgRoleManagementDeviceManagement
+description: |-
+  The RbacApplication for Device Management
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+  online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementdevicemanagement
+  schema: 2.0.0

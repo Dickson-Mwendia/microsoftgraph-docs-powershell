@@ -1,0 +1,59 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Upon enabling, users assigned as administrators via Role Assignment Memberships will no longer require an assigned Intune license.
+  You are limited to 350 unlicensed direct members for each AAD security group in a role assignment, but you can assign multiple AAD security groups to a role if you need to support more than 350 unlicensed administrators.
+  Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Enable-MgDeviceManagementUnlicensedAdminstrator](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementUnlicensedAdminstrator?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Actions
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Enable-MgDeviceManagementUnlicensedAdminstrator
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementUnlicensedAdminstrator?view=graph-powershell-v1.0
+syntaxes:
+- Enable-MgBetaDeviceManagementUnlicensedAdminstrator [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Actions.Enable-MgBetaDeviceManagementUnlicensedAdminstrator
+name: Enable-MgBetaDeviceManagementUnlicensedAdminstrator
+description: |-
+  Upon enabling, users assigned as administrators via Role Assignment Memberships will no longer require an assigned Intune license.
+  You are limited to 350 unlicensed direct members for each AAD security group in a role assignment, but you can assign multiple AAD security groups to a role if you need to support more than 350 unlicensed administrators.
+  Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementunlicensedadminstrator
+  schema: 2.0.0

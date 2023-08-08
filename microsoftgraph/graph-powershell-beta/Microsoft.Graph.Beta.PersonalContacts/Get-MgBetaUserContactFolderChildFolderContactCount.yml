@@ -1,0 +1,100 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get the number of the resource
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderChildFolderContactCount](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderChildFolderContactCount?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.PersonalContacts
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IPersonalContactsIdentity>`: Identity Parameter
+    - `[ContactFolderId <String>]`: The unique identifier of contactFolder
+    - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
+    - `[ContactId <String>]`: The unique identifier of contact
+    - `[ExtensionId <String>]`: The unique identifier of extension
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPersonalContactsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Int32" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgUserContactFolderChildFolderContactCount
+  href: /powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderChildFolderContactCount?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaUserContactFolderChildFolderContactCount -ContactFolderId <String> -ContactFolderId1 <String>
+
+   -UserId <String> [-Filter <String>] [<CommonParameters>]
+- >-
+  Get-MgBetaUserContactFolderChildFolderContactCount -InputObject <IPersonalContactsIdentity> [-Filter <String>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContactFolderId
+  isRequired: true
+  description: |+
+    The unique identifier of contactFolder
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContactFolderId1
+  isRequired: true
+  description: |+
+    The unique identifier of contactFolder
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPersonalContactsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.PersonalContacts.Get-MgBetaUserContactFolderChildFolderContactCount
+name: Get-MgBetaUserContactFolderChildFolderContactCount
+description: |-
+  Get the number of the resource
+metadata:
+  external help file: Microsoft.Graph.Beta.PersonalContacts-help.xml
+  Module Name: Microsoft.Graph.Beta.PersonalContacts
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontactfolderchildfoldercontactcount
+  schema: 2.0.0

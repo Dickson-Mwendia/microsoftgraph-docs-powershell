@@ -1,0 +1,171 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Abort a print job.
+  Only applications using application permissions can abort a print job.
+  Aborting a print job will only succeed if there is a printTask in a `processing` state on the associated print job, started by a trigger that the requesting app created.
+  For details about how to register a task trigger, see Extending Universal Print to support pull printing.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Invoke-MgAbortPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Invoke-MgAbortPrintShareJob?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Devices.CloudPrint
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPathsP8CwgsPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Reason <String>]`: 
+
+  `INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+    - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+    - `[PrintJobId <String>]`: The unique identifier of printJob
+    - `[PrintOperationId <String>]`: The unique identifier of printOperation
+    - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
+    - `[PrintServiceId <String>]`: The unique identifier of printService
+    - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
+    - `[PrintTaskId <String>]`: The unique identifier of printTask
+    - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
+    - `[PrinterId <String>]`: The unique identifier of printer
+    - `[PrinterShareId <String>]`: The unique identifier of printerShare
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IPathsP8CwgsPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Invoke-MgAbortPrintShareJob
+  href: /powershell/module/Microsoft.Graph.Devices.CloudPrint/Invoke-MgAbortPrintShareJob?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Invoke-MgBetaAbortPrintShareJob -PrintJobId <String> -PrinterShareId <String>
+
+   [-AdditionalProperties <Hashtable>] [-Reason <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Invoke-MgBetaAbortPrintShareJob -PrintJobId <String> -PrinterShareId <String>
+
+   -BodyParameter <IPathsP8CwgsPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Invoke-MgBetaAbortPrintShareJob -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
+
+   [-Reason <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Invoke-MgBetaAbortPrintShareJob -InputObject <IDevicesCloudPrintIdentity>
+
+   -BodyParameter <IPathsP8CwgsPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPathsP8CwgsPrintSharesPrintershareIdJobsPrintjobIdMicrosoftGraphAbortPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IDevicesCloudPrintIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrinterShareId
+  isRequired: true
+  description: |+
+    The unique identifier of printerShare
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrintJobId
+  isRequired: true
+  description: |+
+    The unique identifier of printJob
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Reason
+  description: |+
+    .
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Devices.CloudPrint.Invoke-MgBetaAbortPrintShareJob
+name: Invoke-MgBetaAbortPrintShareJob
+description: |-
+  Abort a print job.
+  Only applications using application permissions can abort a print job.
+  Aborting a print job will only succeed if there is a printTask in a `processing` state on the associated print job, started by a trigger that the requesting app created.
+  For details about how to register a task trigger, see Extending Universal Print to support pull printing.
+metadata:
+  external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+  Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/invoke-mgbetaabortprintsharejob
+  schema: 2.0.0

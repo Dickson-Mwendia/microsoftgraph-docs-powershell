@@ -1,0 +1,289 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property deviceConfigurationStates in users
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaUserManagedDeviceConfigurationState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceConfigurationState?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.CorporateManagement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphDeviceConfigurationState>`: Device Configuration State for a given device.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[DisplayName <String>]`: The name of the policy for this policyBase
+    - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
+    - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
+    - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>]`: 
+      - `[CurrentValue <String>]`: Current value of setting on device
+      - `[ErrorCode <Int64?>]`: Error code for the setting
+      - `[ErrorDescription <String>]`: Error description
+      - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
+      - `[Setting <String>]`: The setting that is being reported
+      - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
+      - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
+        - `[DisplayName <String>]`: Not yet documented
+        - `[Id <String>]`: Not yet documented
+        - `[SourceType <String>]`: settingSourceType
+      - `[State <String>]`: complianceStatus
+      - `[UserEmail <String>]`: UserEmail
+      - `[UserId <String>]`: UserId
+      - `[UserName <String>]`: UserName
+      - `[UserPrincipalName <String>]`: UserPrincipalName.
+    - `[State <String>]`: complianceStatus
+    - `[Version <Int32?>]`: The version of the policy
+
+  `INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
+    - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
+    - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
+    - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
+    - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
+    - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
+    - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+    - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
+    - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
+    - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
+    - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
+    - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
+    - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
+    - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+    - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+    - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+    - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
+    - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+    - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
+    - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
+    - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
+    - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
+    - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+    - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
+    - `[MobileAppId <String>]`: The unique identifier of mobileApp
+    - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
+    - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
+    - `[UserId <String>]`: The unique identifier of user
+    - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
+    - `[VppTokenId <String>]`: The unique identifier of vppToken
+    - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+    - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
+    - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
+
+  `SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState[]>`: .
+    - `[CurrentValue <String>]`: Current value of setting on device
+    - `[ErrorCode <Int64?>]`: Error code for the setting
+    - `[ErrorDescription <String>]`: Error description
+    - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
+    - `[Setting <String>]`: The setting that is being reported
+    - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
+    - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
+      - `[DisplayName <String>]`: Not yet documented
+      - `[Id <String>]`: Not yet documented
+      - `[SourceType <String>]`: settingSourceType
+    - `[State <String>]`: complianceStatus
+    - `[UserEmail <String>]`: UserEmail
+    - `[UserId <String>]`: UserId
+    - `[UserName <String>]`: UserName
+    - `[UserPrincipalName <String>]`: UserPrincipalName.
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgBetaUserManagedDeviceConfigurationState
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceConfigurationState?view=graph-powershell-beta
+syntaxes:
+- >-
+  Update-MgUserManagedDeviceConfigurationState -DeviceConfigurationStateId <String> -ManagedDeviceId <String>
+
+   -UserId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+
+   [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
+
+   [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>] [-State <String>] [-Version <Int32>]
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgUserManagedDeviceConfigurationState -DeviceConfigurationStateId <String> -ManagedDeviceId <String>
+
+   -UserId <String> -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateManagementIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+
+   [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
+
+   [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>] [-State <String>] [-Version <Int32>]
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateManagementIdentity>
+
+   -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceConfigurationState" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Device Configuration State for a given device.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeviceConfigurationStateId
+  isRequired: true
+  description: |+
+    The unique identifier of deviceConfigurationState
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    The name of the policy for this policyBase
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDevicesCorporateManagementIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ManagedDeviceId
+  isRequired: true
+  description: |+
+    The unique identifier of managedDevice
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="PolicyPlatformType" data-throw-if-not-resolved="False" />
+  name: PlatformType
+  description: |+
+    Supported platform types for policies.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: SettingCount
+  description: |+
+    Count of how many setting a policy holds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceConfigurationSettingState" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: SettingStates
+  description: |+
+    .
+    To construct, see NOTES section for SETTINGSTATES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: State
+  description: |+
+    complianceStatus
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    The unique identifier of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Version
+  description: |+
+    The version of the policy
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.CorporateManagement.Update-MgUserManagedDeviceConfigurationState
+name: Update-MgUserManagedDeviceConfigurationState
+description: |-
+  Update the navigation property deviceConfigurationStates in users
+metadata:
+  external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Devices.CorporateManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddeviceconfigurationstate
+  schema: 2.0.0

@@ -1,0 +1,200 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create a new acronym object.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/New-MgSearchAcronym?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Search
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphSearchAcronym>`: acronym
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Description <String>]`: Search answer description shown on search results page.
+    - `[DisplayName <String>]`: Search answer name displayed in search results.
+    - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: 
+        - `[Id <String>]`: 
+      - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
+      - `[User <IMicrosoftGraphSearchIdentity>]`: identity
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
+    - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[StandsFor <String>]`: What the acronym stands for.
+    - `[State <String>]`: answerState
+
+  `LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
+    - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
+    - `[User <IMicrosoftGraphSearchIdentity>]`: identity
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAcronym" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAcronym" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgSearchAcronym
+  href: /powershell/module/Microsoft.Graph.Search/New-MgSearchAcronym?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaSearchAcronym [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>]
+
+   [-Id <String>] [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
+
+   [-StandsFor <String>] [-State <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- New-MgBetaSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-WhatIf] [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the New-MgBetaSearchAcronym Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Search
+    $params = @{
+    	DisplayName = "DNN"
+    	StandsFor = "Deep Neural Network"
+    	Description = "A deep neural network is a neural network with a certain level of complexity, a neural network with more than two layers."
+    	WebUrl = "http://microsoft.com/deep-neural-network"
+    	State = "draft"
+    }
+    New-MgBetaSearchAcronym -BodyParameter $params
+  description: |-
+    This example shows how to use the New-MgBetaSearchAcronym Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSearchAcronym" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    acronym
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Search answer description shown on search results page.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Search answer name displayed in search results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSearchIdentitySet" data-throw-if-not-resolved="False" />
+  name: LastModifiedBy
+  description: |+
+    identitySet
+    To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    Timestamp of when the search answer is created or edited.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: StandsFor
+  description: |+
+    What the acronym stands for.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: State
+  description: |+
+    answerState
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: WebUrl
+  description: |+
+    Search answer URL link.
+    When users click this search answer in search results, they will go to this URL.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Search.New-MgBetaSearchAcronym
+name: New-MgBetaSearchAcronym
+description: |-
+  Create a new acronym object.
+metadata:
+  external help file: Microsoft.Graph.Beta.Search-help.xml
+  Module Name: Microsoft.Graph.Beta.Search
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym
+  schema: 2.0.0

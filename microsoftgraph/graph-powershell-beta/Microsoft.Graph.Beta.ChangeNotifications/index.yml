@@ -1,0 +1,19 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.ChangeNotifications
+  cmdlets:
+  - Microsoft.Graph.Beta.ChangeNotifications.Get-MgBetaSubscription
+  - Microsoft.Graph.Beta.ChangeNotifications.Invoke-MgBetaReauthorizeSubscription
+  - Microsoft.Graph.Beta.ChangeNotifications.New-MgBetaSubscription
+  - Microsoft.Graph.Beta.ChangeNotifications.Remove-MgBetaSubscription
+  - Microsoft.Graph.Beta.ChangeNotifications.Update-MgBetaSubscription
+uid: Microsoft.Graph.Beta.ChangeNotifications
+name: Microsoft.Graph.Beta.ChangeNotifications
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.ChangeNotifications
+  Module Guid: b486eeff-7963-4710-a4a9-b4f71c0eb364
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.changenotifications
+  Help Version: 1.0.0.0
+  Locale: en-US

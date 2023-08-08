@@ -1,0 +1,125 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Beta.Notes
+  cmdlets:
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteNotebook
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteNotebookCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteNotebookSection
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteNotebookSectionGroup
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteOperation
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteOperationCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenotePage
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenotePageContent
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenotePageCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteResource
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteResourceContent
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteResourceCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteSection
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteSectionCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteSectionGroup
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteSectionGroupCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteSectionGroupSection
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaGroupOnenoteSectionPage
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteNotebook
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteNotebookCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteNotebookSection
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteNotebookSectionGroup
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteOperation
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteOperationCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenotePage
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenotePageContent
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenotePageCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteResource
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteResourceContent
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteResourceCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteSection
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteSectionCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteSectionGroup
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteSectionGroupCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteSectionGroupSection
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaSiteOnenoteSectionPage
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteNotebook
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteNotebookCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteNotebookSection
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteNotebookSectionGroup
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteOperation
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteOperationCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenotePage
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenotePageContent
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenotePageCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteResource
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteResourceContent
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteResourceCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteSection
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteSectionCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteSectionGroup
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteSectionGroupCount
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteSectionGroupSection
+  - Microsoft.Graph.Beta.Notes.Get-MgBetaUserOnenoteSectionPage
+  - Microsoft.Graph.Beta.Notes.New-MgBetaGroupOnenoteNotebook
+  - Microsoft.Graph.Beta.Notes.New-MgBetaGroupOnenoteNotebookSection
+  - Microsoft.Graph.Beta.Notes.New-MgBetaGroupOnenoteNotebookSectionGroup
+  - Microsoft.Graph.Beta.Notes.New-MgBetaGroupOnenotePage
+  - Microsoft.Graph.Beta.Notes.New-MgBetaGroupOnenoteSection
+  - Microsoft.Graph.Beta.Notes.New-MgBetaGroupOnenoteSectionGroup
+  - Microsoft.Graph.Beta.Notes.New-MgBetaGroupOnenoteSectionGroupSection
+  - Microsoft.Graph.Beta.Notes.New-MgBetaGroupOnenoteSectionPage
+  - Microsoft.Graph.Beta.Notes.New-MgBetaSiteOnenoteNotebook
+  - Microsoft.Graph.Beta.Notes.New-MgBetaSiteOnenoteNotebookSection
+  - Microsoft.Graph.Beta.Notes.New-MgBetaSiteOnenoteNotebookSectionGroup
+  - Microsoft.Graph.Beta.Notes.New-MgBetaSiteOnenotePage
+  - Microsoft.Graph.Beta.Notes.New-MgBetaSiteOnenoteSection
+  - Microsoft.Graph.Beta.Notes.New-MgBetaSiteOnenoteSectionGroup
+  - Microsoft.Graph.Beta.Notes.New-MgBetaSiteOnenoteSectionGroupSection
+  - Microsoft.Graph.Beta.Notes.New-MgBetaSiteOnenoteSectionPage
+  - Microsoft.Graph.Beta.Notes.New-MgBetaUserOnenoteNotebook
+  - Microsoft.Graph.Beta.Notes.New-MgBetaUserOnenoteNotebookSection
+  - Microsoft.Graph.Beta.Notes.New-MgBetaUserOnenoteNotebookSectionGroup
+  - Microsoft.Graph.Beta.Notes.New-MgBetaUserOnenotePage
+  - Microsoft.Graph.Beta.Notes.New-MgBetaUserOnenoteSection
+  - Microsoft.Graph.Beta.Notes.New-MgBetaUserOnenoteSectionGroup
+  - Microsoft.Graph.Beta.Notes.New-MgBetaUserOnenoteSectionGroupSection
+  - Microsoft.Graph.Beta.Notes.New-MgBetaUserOnenoteSectionPage
+  - Microsoft.Graph.Beta.Notes.Remove-MgBetaGroupOnenoteNotebook
+  - Microsoft.Graph.Beta.Notes.Remove-MgBetaGroupOnenotePage
+  - Microsoft.Graph.Beta.Notes.Remove-MgBetaGroupOnenoteSection
+  - Microsoft.Graph.Beta.Notes.Remove-MgBetaGroupOnenoteSectionGroup
+  - Microsoft.Graph.Beta.Notes.Remove-MgBetaSiteOnenoteNotebook
+  - Microsoft.Graph.Beta.Notes.Remove-MgBetaSiteOnenotePage
+  - Microsoft.Graph.Beta.Notes.Remove-MgBetaSiteOnenoteSection
+  - Microsoft.Graph.Beta.Notes.Remove-MgBetaSiteOnenoteSectionGroup
+  - Microsoft.Graph.Beta.Notes.Remove-MgBetaUserOnenoteNotebook
+  - Microsoft.Graph.Beta.Notes.Remove-MgBetaUserOnenotePage
+  - Microsoft.Graph.Beta.Notes.Remove-MgBetaUserOnenoteSection
+  - Microsoft.Graph.Beta.Notes.Remove-MgBetaUserOnenoteSectionGroup
+  - Microsoft.Graph.Beta.Notes.Set-MgBetaGroupOnenotePageContent
+  - Microsoft.Graph.Beta.Notes.Set-MgBetaGroupOnenoteResourceContent
+  - Microsoft.Graph.Beta.Notes.Set-MgBetaGroupOnenoteSectionPageContent
+  - Microsoft.Graph.Beta.Notes.Set-MgBetaSiteOnenotePageContent
+  - Microsoft.Graph.Beta.Notes.Set-MgBetaSiteOnenoteResourceContent
+  - Microsoft.Graph.Beta.Notes.Set-MgBetaSiteOnenoteSectionPageContent
+  - Microsoft.Graph.Beta.Notes.Set-MgBetaUserOnenotePageContent
+  - Microsoft.Graph.Beta.Notes.Set-MgBetaUserOnenoteResourceContent
+  - Microsoft.Graph.Beta.Notes.Set-MgBetaUserOnenoteSectionPageContent
+  - Microsoft.Graph.Beta.Notes.Update-MgBetaGroupOnenoteNotebook
+  - Microsoft.Graph.Beta.Notes.Update-MgBetaGroupOnenotePage
+  - Microsoft.Graph.Beta.Notes.Update-MgBetaGroupOnenoteSection
+  - Microsoft.Graph.Beta.Notes.Update-MgBetaGroupOnenoteSectionGroup
+  - Microsoft.Graph.Beta.Notes.Update-MgBetaSiteOnenoteNotebook
+  - Microsoft.Graph.Beta.Notes.Update-MgBetaSiteOnenotePage
+  - Microsoft.Graph.Beta.Notes.Update-MgBetaSiteOnenoteSection
+  - Microsoft.Graph.Beta.Notes.Update-MgBetaSiteOnenoteSectionGroup
+  - Microsoft.Graph.Beta.Notes.Update-MgBetaUserOnenoteNotebook
+  - Microsoft.Graph.Beta.Notes.Update-MgBetaUserOnenotePage
+  - Microsoft.Graph.Beta.Notes.Update-MgBetaUserOnenoteSection
+  - Microsoft.Graph.Beta.Notes.Update-MgBetaUserOnenoteSectionGroup
+uid: Microsoft.Graph.Beta.Notes
+name: Microsoft.Graph.Beta.Notes
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Beta.Notes
+  Module Guid: 99e314cb-ab1c-4613-a3c3-e060614baecf
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes
+  Help Version: 1.0.0.0
+  Locale: en-US

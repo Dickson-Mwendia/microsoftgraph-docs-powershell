@@ -1,0 +1,326 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create new navigation property to deviceConfigurations for deviceManagement
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
+module: Microsoft.Graph.DeviceManagement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `ASSIGNMENTS <IMicrosoftGraphDeviceConfigurationAssignment[]>`: The list of assignments for the device configuration profile.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+
+  `BODYPARAMETER <IMicrosoftGraphDeviceConfiguration>`: Device Configuration.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]`: The list of assignments for the device configuration profile.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
+    - `[Description <String>]`: Admin provided description of the Device Configuration.
+    - `[DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]`: Device Configuration Setting State Device Summary
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
+      - `[ConflictDeviceCount <Int32?>]`: Device conflict error count for the setting
+      - `[ErrorDeviceCount <Int32?>]`: Device error count for the setting
+      - `[InstancePath <String>]`: Name of the InstancePath for the setting
+      - `[NonCompliantDeviceCount <Int32?>]`: Device NonCompliant count for the setting
+      - `[NotApplicableDeviceCount <Int32?>]`: Device Not Applicable count for the setting
+      - `[RemediatedDeviceCount <Int32?>]`: Device Compliant count for the setting
+      - `[SettingName <String>]`: Name of the setting
+      - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
+    - `[DeviceStatusOverview <IMicrosoftGraphDeviceConfigurationDeviceOverview>]`: deviceConfigurationDeviceOverview
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
+      - `[ErrorCount <Int32?>]`: Number of error devices
+      - `[FailedCount <Int32?>]`: Number of failed devices
+      - `[LastUpdateDateTime <DateTime?>]`: Last update time
+      - `[NotApplicableCount <Int32?>]`: Number of not applicable devices
+      - `[PendingCount <Int32?>]`: Number of pending devices
+      - `[SuccessCount <Int32?>]`: Number of succeeded devices
+    - `[DeviceStatuses <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>]`: Device configuration installation status by device.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
+      - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
+      - `[DeviceModel <String>]`: The device model that is being reported
+      - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
+      - `[Status <String>]`: complianceStatus
+      - `[UserName <String>]`: The User Name that is being reported
+      - `[UserPrincipalName <String>]`: UserPrincipalName.
+    - `[DisplayName <String>]`: Admin provided name of the device configuration.
+    - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
+    - `[UserStatusOverview <IMicrosoftGraphDeviceConfigurationUserOverview>]`: deviceConfigurationUserOverview
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
+      - `[ErrorCount <Int32?>]`: Number of error Users
+      - `[FailedCount <Int32?>]`: Number of failed Users
+      - `[LastUpdateDateTime <DateTime?>]`: Last update time
+      - `[NotApplicableCount <Int32?>]`: Number of not applicable users
+      - `[PendingCount <Int32?>]`: Number of pending Users
+      - `[SuccessCount <Int32?>]`: Number of succeeded Users
+    - `[UserStatuses <IMicrosoftGraphDeviceConfigurationUserStatus[]>]`: Device configuration installation status by user.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[DevicesCount <Int32?>]`: Devices count for that user.
+      - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
+      - `[Status <String>]`: complianceStatus
+      - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
+      - `[UserPrincipalName <String>]`: UserPrincipalName.
+    - `[Version <Int32?>]`: Version of the device configuration.
+
+  `DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary[]>`: Device Configuration Setting State Device Summary
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
+    - `[ConflictDeviceCount <Int32?>]`: Device conflict error count for the setting
+    - `[ErrorDeviceCount <Int32?>]`: Device error count for the setting
+    - `[InstancePath <String>]`: Name of the InstancePath for the setting
+    - `[NonCompliantDeviceCount <Int32?>]`: Device NonCompliant count for the setting
+    - `[NotApplicableDeviceCount <Int32?>]`: Device Not Applicable count for the setting
+    - `[RemediatedDeviceCount <Int32?>]`: Device Compliant count for the setting
+    - `[SettingName <String>]`: Name of the setting
+    - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
+
+  `DEVICESTATUSES <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>`: Device configuration installation status by device.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
+    - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
+    - `[DeviceModel <String>]`: The device model that is being reported
+    - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
+    - `[Status <String>]`: complianceStatus
+    - `[UserName <String>]`: The User Name that is being reported
+    - `[UserPrincipalName <String>]`: UserPrincipalName.
+
+  `DEVICESTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationDeviceOverview>`: deviceConfigurationDeviceOverview
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
+    - `[ErrorCount <Int32?>]`: Number of error devices
+    - `[FailedCount <Int32?>]`: Number of failed devices
+    - `[LastUpdateDateTime <DateTime?>]`: Last update time
+    - `[NotApplicableCount <Int32?>]`: Number of not applicable devices
+    - `[PendingCount <Int32?>]`: Number of pending devices
+    - `[SuccessCount <Int32?>]`: Number of succeeded devices
+
+  `USERSTATUSES <IMicrosoftGraphDeviceConfigurationUserStatus[]>`: Device configuration installation status by user.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[DevicesCount <Int32?>]`: Devices count for that user.
+    - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
+    - `[Status <String>]`: complianceStatus
+    - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
+    - `[UserPrincipalName <String>]`: UserPrincipalName.
+
+  `USERSTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationUserOverview>`: deviceConfigurationUserOverview
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
+    - `[ErrorCount <Int32?>]`: Number of error Users
+    - `[FailedCount <Int32?>]`: Number of failed Users
+    - `[LastUpdateDateTime <DateTime?>]`: Last update time
+    - `[NotApplicableCount <Int32?>]`: Number of not applicable users
+    - `[PendingCount <Int32?>]`: Number of pending Users
+    - `[SuccessCount <Int32?>]`: Number of succeeded Users
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfiguration" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfiguration" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgBetaDeviceManagementDeviceConfiguration
+  href: /powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfiguration?view=graph-powershell-beta
+syntaxes:
+- >-
+  New-MgDeviceManagementDeviceConfiguration [-AdditionalProperties <Hashtable>]
+
+   [-Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
+
+   [-Description <String>] [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
+
+   [-DeviceStatusOverview <IMicrosoftGraphDeviceConfigurationDeviceOverview>]
+
+   [-DeviceStatuses <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>] [-DisplayName <String>] [-Id <String>]
+
+   [-LastModifiedDateTime <DateTime>] [-UserStatusOverview <IMicrosoftGraphDeviceConfigurationUserOverview>]
+
+   [-UserStatuses <IMicrosoftGraphDeviceConfigurationUserStatus[]>] [-Version <Int32>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceConfiguration> [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceConfigurationAssignment" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Assignments
+  description: |+
+    The list of assignments for the device configuration profile.
+    To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceConfiguration" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Device Configuration.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    DateTime the object was created.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Admin provided description of the Device Configuration.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphSettingStateDeviceSummary" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: DeviceSettingStateSummaries
+  description: |+
+    Device Configuration Setting State Device Summary
+    To construct, see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceConfigurationDeviceStatus" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: DeviceStatuses
+  description: |+
+    Device configuration installation status by device.
+    To construct, see NOTES section for DEVICESTATUSES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceConfigurationDeviceOverview" data-throw-if-not-resolved="False" />
+  name: DeviceStatusOverview
+  description: |+
+    deviceConfigurationDeviceOverview
+    To construct, see NOTES section for DEVICESTATUSOVERVIEW properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Admin provided name of the device configuration.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    DateTime the object was last modified.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceConfigurationUserStatus" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: UserStatuses
+  description: |+
+    Device configuration installation status by user.
+    To construct, see NOTES section for USERSTATUSES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphDeviceConfigurationUserOverview" data-throw-if-not-resolved="False" />
+  name: UserStatusOverview
+  description: |+
+    deviceConfigurationUserOverview
+    To construct, see NOTES section for USERSTATUSOVERVIEW properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Version
+  description: |+
+    Version of the device configuration.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.New-MgDeviceManagementDeviceConfiguration
+name: New-MgDeviceManagementDeviceConfiguration
+description: |-
+  Create new navigation property to deviceConfigurations for deviceManagement
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration
+  schema: 2.0.0

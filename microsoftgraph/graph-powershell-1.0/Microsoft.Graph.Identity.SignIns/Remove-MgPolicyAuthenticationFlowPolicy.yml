@@ -1,0 +1,84 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Delete navigation property authenticationFlowsPolicy for policies
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
+module: Microsoft.Graph.Identity.SignIns
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Remove-MgBetaPolicyAuthenticationFlowPolicy
+  href: /powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta
+syntaxes:
+- >-
+  Remove-MgPolicyAuthenticationFlowPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.Identity.SignIns
+
+    $params = @{
+    	selfServiceSignUp = @{
+    		isEnabled = $true
+    	}
+    }
+
+    Update-MgPolicyAuthenticationFlowPolicy -BodyParameter $params
+  description: |-
+    This example shows how to use the Remove-MgPolicyAuthenticationFlowPolicy Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: IfMatch
+  description: |+
+    ETag
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Identity.SignIns.Remove-MgPolicyAuthenticationFlowPolicy
+name: Remove-MgPolicyAuthenticationFlowPolicy
+description: |-
+  Delete navigation property authenticationFlowsPolicy for policies
+metadata:
+  external help file: Microsoft.Graph.Identity.SignIns-help.xml
+  Module Name: Microsoft.Graph.Identity.SignIns
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationflowpolicy
+  schema: 2.0.0

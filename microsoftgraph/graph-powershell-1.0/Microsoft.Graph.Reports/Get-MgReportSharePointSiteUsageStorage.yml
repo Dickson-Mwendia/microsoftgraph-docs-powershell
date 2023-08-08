@@ -1,0 +1,102 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke function getSharePointSiteUsageStorage
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageStorage?view=graph-powershell-beta)
+module: Microsoft.Graph.Reports
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IReportsIdentity>`: Identity Parameter
+    - `[Date <DateTime?>]`: Usage: date={date}
+    - `[DeviceManagementExportJobId <String>]`: The unique identifier of deviceManagementExportJob
+    - `[DirectoryAuditId <String>]`: The unique identifier of directoryAudit
+    - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
+    - `[Filter <String>]`: Usage: filter='{filter}'
+    - `[GroupId <String>]`: Usage: groupId='{groupId}'
+    - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
+    - `[IncludedUserTypes <String>]`: Usage: includedUserTypes='{includedUserTypes}'
+    - `[Period <String>]`: Usage: period='{period}'
+    - `[PrintUsageByPrinterId <String>]`: The unique identifier of printUsageByPrinter
+    - `[PrintUsageByUserId <String>]`: The unique identifier of printUsageByUser
+    - `[PrinterId <String>]`: Usage: printerId='{printerId}'
+    - `[ProvisioningObjectSummaryId <String>]`: The unique identifier of provisioningObjectSummary
+    - `[SignInId <String>]`: The unique identifier of signIn
+    - `[Skip <Int32?>]`: Usage: skip={skip}
+    - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
+    - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
+    - `[Top <Int32?>]`: Usage: top={top}
+    - `[UserId <String>]`: Usage: userId='{userId}'
+    - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IReportsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaReportSharePointSiteUsageStorage
+  href: /powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSharePointSiteUsageStorage?view=graph-powershell-beta
+syntaxes:
+- Get-MgReportSharePointSiteUsageStorage -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+- >-
+  Get-MgReportSharePointSiteUsageStorage -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="IReportsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OutFile
+  isRequired: true
+  description: |+
+    Path to write output file to
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Period
+  isRequired: true
+  description: |+
+    Usage: period='{period}'
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Reports.Get-MgReportSharePointSiteUsageStorage
+name: Get-MgReportSharePointSiteUsageStorage
+description: |-
+  Invoke function getSharePointSiteUsageStorage
+metadata:
+  external help file: Microsoft.Graph.Reports-help.xml
+  Module Name: Microsoft.Graph.Reports
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagestorage
+  schema: 2.0.0

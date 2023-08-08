@@ -1,0 +1,183 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke action updateWindowsDeviceAccount
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
+module: Microsoft.Graph.DeviceManagement.Actions
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>`: .
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[UpdateWindowsDeviceAccountActionParameter <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>]`: updateWindowsDeviceAccountActionParameter
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CalendarSyncEnabled <Boolean?>]`: Not yet documented
+      - `[DeviceAccount <IMicrosoftGraphWindowsDeviceAccount>]`: windowsDeviceAccount
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Password <String>]`: Not yet documented
+      - `[DeviceAccountEmail <String>]`: Not yet documented
+      - `[ExchangeServer <String>]`: Not yet documented
+      - `[PasswordRotationEnabled <Boolean?>]`: Not yet documented
+      - `[SessionInitiationProtocalAddress <String>]`: Not yet documented
+
+  `INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
+    - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+    - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
+    - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+    - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
+    - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+    - `[DeviceManagementExchangeConnectorId <String>]`: The unique identifier of deviceManagementExchangeConnector
+    - `[DeviceManagementPartnerId <String>]`: The unique identifier of deviceManagementPartner
+    - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+    - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
+    - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
+    - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
+    - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
+
+  `UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>`: updateWindowsDeviceAccountActionParameter
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CalendarSyncEnabled <Boolean?>]`: Not yet documented
+    - `[DeviceAccount <IMicrosoftGraphWindowsDeviceAccount>]`: windowsDeviceAccount
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Password <String>]`: Not yet documented
+    - `[DeviceAccountEmail <String>]`: Not yet documented
+    - `[ExchangeServer <String>]`: Not yet documented
+    - `[PasswordRotationEnabled <Boolean?>]`: Not yet documented
+    - `[SessionInitiationProtocalAddress <String>]`: Not yet documented
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount
+  href: /powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta
+syntaxes:
+- >-
+  Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount -ManagedDeviceId <String>
+
+   [-AdditionalProperties <Hashtable>]
+
+   [-UpdateWindowsDeviceAccountActionParameter <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>]
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount -ManagedDeviceId <String>
+
+   -BodyParameter <IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount -InputObject <IDeviceManagementActionsIdentity>
+
+   [-AdditionalProperties <Hashtable>]
+
+   [-UpdateWindowsDeviceAccountActionParameter <IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter>]
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount -InputObject <IDeviceManagementActionsIdentity>
+
+   -BodyParameter <IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema>
+
+   [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IPaths1L95NseDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphUpdatewindowsdeviceaccountPostRequestbodyContentApplicationJsonSchema" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    .
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IDeviceManagementActionsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ManagedDeviceId
+  isRequired: true
+  description: |+
+    The unique identifier of managedDevice
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphUpdateWindowsDeviceAccountActionParameter" data-throw-if-not-resolved="False" />
+  name: UpdateWindowsDeviceAccountActionParameter
+  description: |+
+    updateWindowsDeviceAccountActionParameter
+    To construct, see NOTES section for UPDATEWINDOWSDEVICEACCOUNTACTIONPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Actions.Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount
+name: Update-MgDeviceManagementManagedDeviceWindowsDeviceAccount
+description: |-
+  Invoke action updateWindowsDeviceAccount
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Actions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementmanageddevicewindowsdeviceaccount
+  schema: 2.0.0

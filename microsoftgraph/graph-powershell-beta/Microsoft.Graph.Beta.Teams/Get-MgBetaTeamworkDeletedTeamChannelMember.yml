@@ -1,0 +1,221 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get a conversationMember from a channel.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Teams
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
+    - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
+    - `[ChannelId <String>]`: The unique identifier of channel
+    - `[ChatId <String>]`: The unique identifier of chat
+    - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
+    - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+    - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
+    - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+    - `[DeletedChatId <String>]`: The unique identifier of deletedChat
+    - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
+    - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
+    - `[OpenShiftId <String>]`: The unique identifier of openShift
+    - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+    - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
+    - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
+    - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
+    - `[ShiftId <String>]`: The unique identifier of shift
+    - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
+    - `[TeamId <String>]`: The unique identifier of team
+    - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
+    - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
+    - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
+    - `[TeamsAppId <String>]`: The unique identifier of teamsApp
+    - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
+    - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
+    - `[TeamsTabId <String>]`: The unique identifier of teamsTab
+    - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
+    - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
+    - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
+    - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
+    - `[TimeCardId <String>]`: The unique identifier of timeCard
+    - `[TimeOffId <String>]`: The unique identifier of timeOff
+    - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
+    - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
+    - `[UserId <String>]`: The unique identifier of user
+    - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
+    - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationMember" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgTeamworkDeletedTeamChannelMember
+  href: /powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaTeamworkDeletedTeamChannelMember -ChannelId <String> -DeletedTeamId <String>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+
+   [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+- >-
+  Get-MgBetaTeamworkDeletedTeamChannelMember -ChannelId <String> -ConversationMemberId <String>
+
+   -DeletedTeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ChannelId
+  isRequired: true
+  description: |+
+    The unique identifier of channel
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ConversationMemberId
+  isRequired: true
+  description: |+
+    The unique identifier of conversationMember
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DeletedTeamId
+  isRequired: true
+  description: |+
+    The unique identifier of deletedTeam
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ITeamsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Teams.Get-MgBetaTeamworkDeletedTeamChannelMember
+name: Get-MgBetaTeamworkDeletedTeamChannelMember
+description: |-
+  Get a conversationMember from a channel.
+metadata:
+  external help file: Microsoft.Graph.Beta.Teams-help.xml
+  Module Name: Microsoft.Graph.Beta.Teams
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmember
+  schema: 2.0.0

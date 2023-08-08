@@ -1,0 +1,60 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Planner
+  cmdlets:
+  - Microsoft.Graph.Planner.Get-MgGroupPlanner
+  - Microsoft.Graph.Planner.Get-MgGroupPlannerPlan
+  - Microsoft.Graph.Planner.Get-MgGroupPlannerPlanBucket
+  - Microsoft.Graph.Planner.Get-MgGroupPlannerPlanCount
+  - Microsoft.Graph.Planner.Get-MgGroupPlannerPlanDetail
+  - Microsoft.Graph.Planner.Get-MgGroupPlannerPlanTask
+  - Microsoft.Graph.Planner.Get-MgPlanner
+  - Microsoft.Graph.Planner.Get-MgPlannerBucket
+  - Microsoft.Graph.Planner.Get-MgPlannerBucketCount
+  - Microsoft.Graph.Planner.Get-MgPlannerBucketTask
+  - Microsoft.Graph.Planner.Get-MgPlannerPlan
+  - Microsoft.Graph.Planner.Get-MgPlannerPlanBucket
+  - Microsoft.Graph.Planner.Get-MgPlannerPlanCount
+  - Microsoft.Graph.Planner.Get-MgPlannerPlanDetail
+  - Microsoft.Graph.Planner.Get-MgPlannerPlanTask
+  - Microsoft.Graph.Planner.Get-MgPlannerTask
+  - Microsoft.Graph.Planner.Get-MgPlannerTaskAssignedToTaskBoardFormat
+  - Microsoft.Graph.Planner.Get-MgPlannerTaskBucketTaskBoardFormat
+  - Microsoft.Graph.Planner.Get-MgPlannerTaskCount
+  - Microsoft.Graph.Planner.Get-MgPlannerTaskDetail
+  - Microsoft.Graph.Planner.Get-MgPlannerTaskProgressTaskBoardFormat
+  - Microsoft.Graph.Planner.Get-MgUserPlanner
+  - Microsoft.Graph.Planner.Get-MgUserPlannerPlan
+  - Microsoft.Graph.Planner.Get-MgUserPlannerTask
+  - Microsoft.Graph.Planner.New-MgPlannerBucket
+  - Microsoft.Graph.Planner.New-MgPlannerPlan
+  - Microsoft.Graph.Planner.New-MgPlannerTask
+  - Microsoft.Graph.Planner.Remove-MgGroupPlannerPlanDetail
+  - Microsoft.Graph.Planner.Remove-MgPlannerBucket
+  - Microsoft.Graph.Planner.Remove-MgPlannerPlan
+  - Microsoft.Graph.Planner.Remove-MgPlannerTask
+  - Microsoft.Graph.Planner.Remove-MgPlannerTaskAssignedToTaskBoardFormat
+  - Microsoft.Graph.Planner.Remove-MgPlannerTaskBucketTaskBoardFormat
+  - Microsoft.Graph.Planner.Remove-MgPlannerTaskProgressTaskBoardFormat
+  - Microsoft.Graph.Planner.Update-MgGroupPlanner
+  - Microsoft.Graph.Planner.Update-MgGroupPlannerPlanDetail
+  - Microsoft.Graph.Planner.Update-MgPlanner
+  - Microsoft.Graph.Planner.Update-MgPlannerBucket
+  - Microsoft.Graph.Planner.Update-MgPlannerPlan
+  - Microsoft.Graph.Planner.Update-MgPlannerPlanDetail
+  - Microsoft.Graph.Planner.Update-MgPlannerTask
+  - Microsoft.Graph.Planner.Update-MgPlannerTaskAssignedToTaskBoardFormat
+  - Microsoft.Graph.Planner.Update-MgPlannerTaskBucketTaskBoardFormat
+  - Microsoft.Graph.Planner.Update-MgPlannerTaskDetail
+  - Microsoft.Graph.Planner.Update-MgPlannerTaskProgressTaskBoardFormat
+  - Microsoft.Graph.Planner.Update-MgUserPlanner
+uid: Microsoft.Graph.Planner
+name: Microsoft.Graph.Planner
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Planner
+  Module Guid: 0ee08e09-ec93-4afa-aebd-ab6b326530ed
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.planner
+  Help Version: 1.0.0.0
+  Locale: en-US

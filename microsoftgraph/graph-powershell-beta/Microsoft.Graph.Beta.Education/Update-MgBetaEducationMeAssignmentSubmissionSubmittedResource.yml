@@ -1,0 +1,217 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property submittedResources in education
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgEducationMeAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeAssignmentSubmissionSubmittedResource?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Education
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphEducationSubmissionResource>`: educationSubmissionResource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which this resource was copied. If this is null, the student uploaded the resource.
+    - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Application <IMicrosoftGraphIdentity>]`: identity
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
+        - `[Device <IMicrosoftGraphIdentity>]`: identity
+        - `[User <IMicrosoftGraphIdentity>]`: identity
+      - `[DisplayName <String>]`: Display name of resource.
+      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+
+  `INPUTOBJECT <IEducationIdentity>`: Identity Parameter
+    - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
+    - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
+    - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
+    - `[EducationClassId <String>]`: The unique identifier of educationClass
+    - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+    - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
+    - `[EducationRubricId <String>]`: The unique identifier of educationRubric
+    - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
+    - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
+    - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
+    - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
+    - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
+    - `[EducationUserId <String>]`: The unique identifier of educationUser
+
+  `RESOURCE <IMicrosoftGraphEducationResource>`: educationResource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[DisplayName <String>]`: Display name of resource.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmissionResource" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmissionResource" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgEducationMeAssignmentSubmissionSubmittedResource
+  href: /powershell/module/Microsoft.Graph.Education/Update-MgEducationMeAssignmentSubmissionSubmittedResource?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaEducationMeAssignmentSubmissionSubmittedResource -EducationAssignmentId <String>
+
+   -EducationSubmissionId <String> -EducationSubmissionResourceId <String> [-AdditionalProperties <Hashtable>]
+
+   [-AssignmentResourceUrl <String>] [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaEducationMeAssignmentSubmissionSubmittedResource -EducationAssignmentId <String>
+
+   -EducationSubmissionId <String> -EducationSubmissionResourceId <String>
+
+   -BodyParameter <IMicrosoftGraphEducationSubmissionResource> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaEducationMeAssignmentSubmissionSubmittedResource -InputObject <IEducationIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-AssignmentResourceUrl <String>] [-Id <String>]
+
+   [-Resource <IMicrosoftGraphEducationResource>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaEducationMeAssignmentSubmissionSubmittedResource -InputObject <IEducationIdentity>
+
+   -BodyParameter <IMicrosoftGraphEducationSubmissionResource> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AssignmentResourceUrl
+  description: |+
+    Pointer to the assignment from which this resource was copied.
+    If this is null, the student uploaded the resource.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphEducationSubmissionResource" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    educationSubmissionResource
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EducationAssignmentId
+  isRequired: true
+  description: |+
+    The unique identifier of educationAssignment
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EducationSubmissionId
+  isRequired: true
+  description: |+
+    The unique identifier of educationSubmission
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EducationSubmissionResourceId
+  isRequired: true
+  description: |+
+    The unique identifier of educationSubmissionResource
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IEducationIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphEducationResource" data-throw-if-not-resolved="False" />
+  name: Resource
+  description: |+
+    educationResource
+    To construct, see NOTES section for RESOURCE properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Education.Update-MgBetaEducationMeAssignmentSubmissionSubmittedResource
+name: Update-MgBetaEducationMeAssignmentSubmissionSubmittedResource
+description: |-
+  Update the navigation property submittedResources in education
+metadata:
+  external help file: Microsoft.Graph.Beta.Education-help.xml
+  Module Name: Microsoft.Graph.Beta.Education
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationmeassignmentsubmissionsubmittedresource
+  schema: 2.0.0

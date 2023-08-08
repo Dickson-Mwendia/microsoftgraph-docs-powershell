@@ -1,0 +1,110 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update Preapproval policy associated with a Teams App.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgTeamAppPreApproval](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamAppPreApproval?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Teams
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgTeamAppPreApproval
+  href: /powershell/module/Microsoft.Graph.Teams/Update-MgTeamAppPreApproval?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaTeamAppPreApproval -TeamsAppId <String> [-AdditionalProperties <Hashtable>]
+
+   [-ResourceSpecificApplicationPermissionsAllowedForTeams <String[]>]
+
+   [-ResourceSpecificApplicationPermissionsAllowedForChats <String[]>]
+
+   [-TeamLevelSensitivityLabelCondition <MicrosoftGraphSensitivityLabelCondition>]
+
+   [-SpecificSensitivityLabelIdsApplicableToTeams <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ResourceSpecificApplicationPermissionsAllowedForChats
+  description: |+
+    Resource Specific Permissions Allowed for Chats
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ResourceSpecificApplicationPermissionsAllowedForTeams
+  description: |+
+    Resource Specific Permissions Allowed for Teams
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: SpecificSensitivityLabelIdsApplicableToTeams
+  description: |+
+    Specific Sensitivity label ids applicable to Teams.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="MicrosoftGraphSensitivityLabelCondition" data-throw-if-not-resolved="False" />
+  name: TeamLevelSensitivityLabelCondition
+  description: |+
+    Label selection mode for Teams.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: TeamsAppId
+  isRequired: true
+  description: |+
+    key: id of Teams App
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Teams.Update-MgBetaTeamAppPreApproval
+name: Update-MgBetaTeamAppPreApproval
+description: |-
+  Update Preapproval policy associated with a Teams App.
+metadata:
+  external help file: Microsoft.Graph.Beta.Teams-help.xml
+  Module Name: Microsoft.Graph.Beta.Teams
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamapppreapproval
+  schema: 2.0.0

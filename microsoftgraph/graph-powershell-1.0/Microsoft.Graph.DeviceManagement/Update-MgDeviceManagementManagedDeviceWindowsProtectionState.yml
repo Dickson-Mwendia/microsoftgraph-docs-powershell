@@ -1,0 +1,462 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property windowsProtectionState in deviceManagement
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
+module: Microsoft.Graph.DeviceManagement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphWindowsProtectionState>`: Device protection status entity.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[AntiMalwareVersion <String>]`: Current anti malware version
+    - `[DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]`: Device malware list
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[AdditionalInformationUrl <String>]`: Information URL to learn more about the malware
+      - `[Category <WindowsMalwareCategory?>]`: Malware category id
+      - `[DetectionCount <Int32?>]`: Number of times the malware is detected
+      - `[DisplayName <String>]`: Malware name
+      - `[ExecutionState <WindowsMalwareExecutionState?>]`: Malware execution status
+      - `[InitialDetectionDateTime <DateTime?>]`: Initial detection datetime of the malware
+      - `[LastStateChangeDateTime <DateTime?>]`: The last time this particular threat was changed
+      - `[Severity <WindowsMalwareSeverity?>]`: Malware severity
+      - `[State <WindowsMalwareState?>]`: Malware current status
+      - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
+    - `[DeviceState <WindowsDeviceHealthState?>]`: Computer endpoint protection state
+    - `[EngineVersion <String>]`: Current endpoint protection engine's version
+    - `[FullScanOverdue <Boolean?>]`: When TRUE indicates full scan is overdue, when FALSE indicates full scan is not overdue. Defaults to setting on client device.
+    - `[FullScanRequired <Boolean?>]`: When TRUE indicates full scan is required, when FALSE indicates full scan is not required. Defaults to setting on client device.
+    - `[IsVirtualMachine <Boolean?>]`: When TRUE indicates the device is a virtual machine, when FALSE indicates the device is not a virtual machine. Defaults to setting on client device.
+    - `[LastFullScanDateTime <DateTime?>]`: Last quick scan datetime
+    - `[LastFullScanSignatureVersion <String>]`: Last full scan signature version
+    - `[LastQuickScanDateTime <DateTime?>]`: Last quick scan datetime
+    - `[LastQuickScanSignatureVersion <String>]`: Last quick scan signature version
+    - `[LastReportedDateTime <DateTime?>]`: Last device health status reported time
+    - `[MalwareProtectionEnabled <Boolean?>]`: When TRUE indicates anti malware is enabled when FALSE indicates anti malware is not enabled.
+    - `[NetworkInspectionSystemEnabled <Boolean?>]`: When TRUE indicates network inspection system enabled, when FALSE indicates network inspection system is not enabled. Defaults to setting on client device.
+    - `[ProductStatus <WindowsDefenderProductStatus?>]`: Product Status of Windows Defender
+    - `[QuickScanOverdue <Boolean?>]`: When TRUE indicates quick scan is overdue, when FALSE indicates quick scan is not overdue. Defaults to setting on client device.
+    - `[RealTimeProtectionEnabled <Boolean?>]`: When TRUE indicates real time protection is enabled, when FALSE indicates real time protection is not enabled. Defaults to setting on client device.
+    - `[RebootRequired <Boolean?>]`: When TRUE indicates reboot is required, when FALSE indicates when TRUE indicates reboot is not required. Defaults to setting on client device.
+    - `[SignatureUpdateOverdue <Boolean?>]`: When TRUE indicates signature is out of date, when FALSE indicates signature is not out of date. Defaults to setting on client device.
+    - `[SignatureVersion <String>]`: Current malware definitions version
+    - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled. Defaults to setting on client device.
+
+  `DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState[]>`: Device malware list
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[AdditionalInformationUrl <String>]`: Information URL to learn more about the malware
+    - `[Category <WindowsMalwareCategory?>]`: Malware category id
+    - `[DetectionCount <Int32?>]`: Number of times the malware is detected
+    - `[DisplayName <String>]`: Malware name
+    - `[ExecutionState <WindowsMalwareExecutionState?>]`: Malware execution status
+    - `[InitialDetectionDateTime <DateTime?>]`: Initial detection datetime of the malware
+    - `[LastStateChangeDateTime <DateTime?>]`: The last time this particular threat was changed
+    - `[Severity <WindowsMalwareSeverity?>]`: Malware severity
+    - `[State <WindowsMalwareState?>]`: Malware current status
+    - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
+
+  `INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
+    - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
+    - `[BrowserSharedCookieId <String>]`: The unique identifier of browserSharedCookie
+    - `[BrowserSiteId <String>]`: The unique identifier of browserSite
+    - `[BrowserSiteListId <String>]`: The unique identifier of browserSiteList
+    - `[DetectedAppId <String>]`: The unique identifier of detectedApp
+    - `[DeviceCategoryId <String>]`: The unique identifier of deviceCategory
+    - `[DeviceComplianceActionItemId <String>]`: The unique identifier of deviceComplianceActionItem
+    - `[DeviceComplianceDeviceStatusId <String>]`: The unique identifier of deviceComplianceDeviceStatus
+    - `[DeviceCompliancePolicyAssignmentId <String>]`: The unique identifier of deviceCompliancePolicyAssignment
+    - `[DeviceCompliancePolicyId <String>]`: The unique identifier of deviceCompliancePolicy
+    - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: The unique identifier of deviceCompliancePolicySettingStateSummary
+    - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
+    - `[DeviceComplianceScheduledActionForRuleId <String>]`: The unique identifier of deviceComplianceScheduledActionForRule
+    - `[DeviceComplianceSettingStateId <String>]`: The unique identifier of deviceComplianceSettingState
+    - `[DeviceComplianceUserStatusId <String>]`: The unique identifier of deviceComplianceUserStatus
+    - `[DeviceConfigurationAssignmentId <String>]`: The unique identifier of deviceConfigurationAssignment
+    - `[DeviceConfigurationDeviceStatusId <String>]`: The unique identifier of deviceConfigurationDeviceStatus
+    - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+    - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
+    - `[DeviceConfigurationUserStatusId <String>]`: The unique identifier of deviceConfigurationUserStatus
+    - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+    - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
+    - `[LocalizedNotificationMessageId <String>]`: The unique identifier of localizedNotificationMessage
+    - `[MalwareStateForWindowsDeviceId <String>]`: The unique identifier of malwareStateForWindowsDevice
+    - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+    - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
+    - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
+    - `[SettingStateDeviceSummaryId <String>]`: The unique identifier of settingStateDeviceSummary
+    - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
+    - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
+    - `[UserExperienceAnalyticsAppHealthAppPerformanceByOSVersionId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
+    - `[UserExperienceAnalyticsAppHealthApplicationPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthApplicationPerformance
+    - `[UserExperienceAnalyticsAppHealthDeviceModelPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthDeviceModelPerformance
+    - `[UserExperienceAnalyticsAppHealthDevicePerformanceDetailsId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthDevicePerformanceDetails
+    - `[UserExperienceAnalyticsAppHealthDevicePerformanceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthDevicePerformance
+    - `[UserExperienceAnalyticsAppHealthOSVersionPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthOSVersionPerformance
+    - `[UserExperienceAnalyticsBaselineId <String>]`: The unique identifier of userExperienceAnalyticsBaseline
+    - `[UserExperienceAnalyticsCategoryId <String>]`: The unique identifier of userExperienceAnalyticsCategory
+    - `[UserExperienceAnalyticsDevicePerformanceId <String>]`: The unique identifier of userExperienceAnalyticsDevicePerformance
+    - `[UserExperienceAnalyticsDeviceScoresId <String>]`: The unique identifier of userExperienceAnalyticsDeviceScores
+    - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupHistory
+    - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: The unique identifier of userExperienceAnalyticsDeviceStartupProcess
+    - `[UserExperienceAnalyticsMetricHistoryId <String>]`: The unique identifier of userExperienceAnalyticsMetricHistory
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of userExperienceAnalyticsMetric
+    - `[UserExperienceAnalyticsModelScoresId <String>]`: The unique identifier of userExperienceAnalyticsModelScores
+    - `[UserExperienceAnalyticsScoreHistoryId <String>]`: The unique identifier of userExperienceAnalyticsScoreHistory
+    - `[UserExperienceAnalyticsWorkFromAnywhereDeviceId <String>]`: The unique identifier of userExperienceAnalyticsWorkFromAnywhereDevice
+    - `[UserExperienceAnalyticsWorkFromAnywhereMetricId <String>]`: The unique identifier of userExperienceAnalyticsWorkFromAnywhereMetric
+    - `[UserExperienceAnalyticsWorkFromAnywhereModelPerformanceId <String>]`: The unique identifier of userExperienceAnalyticsWorkFromAnywhereModelPerformance
+    - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+    - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
+    - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
+    - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+
+  ## RELATED LINKS
+  [Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
+
+  ## RELATED LINKS
+  [Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsProtectionState" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsProtectionState" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Update-MgDeviceManagementManagedDeviceWindowsProtectionState -ManagedDeviceId <String>
+
+   [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>]
+
+   [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>] [-DeviceState <WindowsDeviceHealthState>]
+
+   [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired] [-Id <String>] [-IsVirtualMachine]
+
+   [-LastFullScanDateTime <DateTime>] [-LastFullScanSignatureVersion <String>]
+
+   [-LastQuickScanDateTime <DateTime>] [-LastQuickScanSignatureVersion <String>]
+
+   [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled] [-NetworkInspectionSystemEnabled]
+
+   [-ProductStatus <WindowsDefenderProductStatus>] [-QuickScanOverdue] [-RealTimeProtectionEnabled]
+
+   [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TamperProtectionEnabled] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementManagedDeviceWindowsProtectionState -ManagedDeviceId <String>
+
+   -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementManagedDeviceWindowsProtectionState -InputObject <IDeviceManagementIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>]
+
+   [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>] [-DeviceState <WindowsDeviceHealthState>]
+
+   [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired] [-Id <String>] [-IsVirtualMachine]
+
+   [-LastFullScanDateTime <DateTime>] [-LastFullScanSignatureVersion <String>]
+
+   [-LastQuickScanDateTime <DateTime>] [-LastQuickScanSignatureVersion <String>]
+
+   [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled] [-NetworkInspectionSystemEnabled]
+
+   [-ProductStatus <WindowsDefenderProductStatus>] [-QuickScanOverdue] [-RealTimeProtectionEnabled]
+
+   [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TamperProtectionEnabled] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceManagementManagedDeviceWindowsProtectionState -InputObject <IDeviceManagementIdentity>
+
+   -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: AntiMalwareVersion
+  description: |+
+    Current anti malware version
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphWindowsProtectionState" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    Device protection status entity.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphWindowsDeviceMalwareState" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: DetectedMalwareState
+  description: |+
+    Device malware list
+    To construct, see NOTES section for DETECTEDMALWARESTATE properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="WindowsDeviceHealthState" data-throw-if-not-resolved="False" />
+  name: DeviceState
+  description: |+
+    Computer endpoint protection state
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EngineVersion
+  description: |+
+    Current endpoint protection engine's version
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: FullScanOverdue
+  description: |+
+    When TRUE indicates full scan is overdue, when FALSE indicates full scan is not overdue.
+    Defaults to setting on client device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: FullScanRequired
+  description: |+
+    When TRUE indicates full scan is required, when FALSE indicates full scan is not required.
+    Defaults to setting on client device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDeviceManagementIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsVirtualMachine
+  description: |+
+    When TRUE indicates the device is a virtual machine, when FALSE indicates the device is not a virtual machine.
+    Defaults to setting on client device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastFullScanDateTime
+  description: |+
+    Last quick scan datetime
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: LastFullScanSignatureVersion
+  description: |+
+    Last full scan signature version
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastQuickScanDateTime
+  description: |+
+    Last quick scan datetime
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: LastQuickScanSignatureVersion
+  description: |+
+    Last quick scan signature version
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastReportedDateTime
+  description: |+
+    Last device health status reported time
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: MalwareProtectionEnabled
+  description: |+
+    When TRUE indicates anti malware is enabled when FALSE indicates anti malware is not enabled.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ManagedDeviceId
+  isRequired: true
+  description: |+
+    The unique identifier of managedDevice
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: NetworkInspectionSystemEnabled
+  description: |+
+    When TRUE indicates network inspection system enabled, when FALSE indicates network inspection system is not enabled.
+    Defaults to setting on client device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="WindowsDefenderProductStatus" data-throw-if-not-resolved="False" />
+  name: ProductStatus
+  description: |+
+    Product Status of Windows Defender
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: QuickScanOverdue
+  description: |+
+    When TRUE indicates quick scan is overdue, when FALSE indicates quick scan is not overdue.
+    Defaults to setting on client device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: RealTimeProtectionEnabled
+  description: |+
+    When TRUE indicates real time protection is enabled, when FALSE indicates real time protection is not enabled.
+    Defaults to setting on client device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: RebootRequired
+  description: |+
+    When TRUE indicates reboot is required, when FALSE indicates when TRUE indicates reboot is not required.
+    Defaults to setting on client device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: SignatureUpdateOverdue
+  description: |+
+    When TRUE indicates signature is out of date, when FALSE indicates signature is not out of date.
+    Defaults to setting on client device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: SignatureVersion
+  description: |+
+    Current malware definitions version
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: TamperProtectionEnabled
+  description: |+
+    When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled.
+    Defaults to setting on client device.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Update-MgDeviceManagementManagedDeviceWindowsProtectionState
+name: Update-MgDeviceManagementManagedDeviceWindowsProtectionState
+description: |-
+  Update the navigation property windowsProtectionState in deviceManagement
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicewindowsprotectionstate
+  schema: 2.0.0

@@ -1,0 +1,45 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get print
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrint?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.CloudPrint
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrint" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaPrint
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrint?view=graph-powershell-beta
+syntaxes:
+- Get-MgPrint [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.CloudPrint.Get-MgPrint
+name: Get-MgPrint
+description: |-
+  Get print
+metadata:
+  external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+  Module Name: Microsoft.Graph.Devices.CloudPrint
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/get-mgprint
+  schema: 2.0.0

@@ -1,0 +1,394 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property mobileAppConfigurations in deviceAppManagement
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.CorporateManagement
+notes: |-
+  ALIASES
+
+  Update-MgDeviceAppMgtMobileAppConfiguration
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `ASSIGNMENTS <IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment[]>`: The list of group assignemenets for app configration.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+
+  `BODYPARAMETER <IMicrosoftGraphManagedDeviceMobileAppConfiguration>`: An abstract class for Mobile app configuration for enrolled devices.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Assignments <IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment[]>]`: The list of group assignemenets for app configration.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
+    - `[Description <String>]`: Admin provided description of the Device Configuration.
+    - `[DeviceStatusSummary <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceSummary>]`: Contains properties, inherited properties and actions for an MDM mobile app configuration device status summary.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
+      - `[ErrorCount <Int32?>]`: Number of error devices
+      - `[FailedCount <Int32?>]`: Number of failed devices
+      - `[LastUpdateDateTime <DateTime?>]`: Last update time
+      - `[NotApplicableCount <Int32?>]`: Number of not applicable devices
+      - `[PendingCount <Int32?>]`: Number of pending devices
+      - `[SuccessCount <Int32?>]`: Number of succeeded devices
+    - `[DeviceStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus[]>]`: List of ManagedDeviceMobileAppConfigurationDeviceStatus.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
+      - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
+      - `[DeviceModel <String>]`: The device model that is being reported
+      - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
+      - `[Status <String>]`: complianceStatus
+      - `[UserName <String>]`: The User Name that is being reported
+      - `[UserPrincipalName <String>]`: UserPrincipalName.
+    - `[DisplayName <String>]`: Admin provided name of the device configuration.
+    - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
+    - `[TargetedMobileApps <String[]>]`: the associated app.
+    - `[UserStatusSummary <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserSummary>]`: Contains properties, inherited properties and actions for an MDM mobile app configuration user status summary.
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
+      - `[ErrorCount <Int32?>]`: Number of error Users
+      - `[FailedCount <Int32?>]`: Number of failed Users
+      - `[LastUpdateDateTime <DateTime?>]`: Last update time
+      - `[NotApplicableCount <Int32?>]`: Number of not applicable users
+      - `[PendingCount <Int32?>]`: Number of pending Users
+      - `[SuccessCount <Int32?>]`: Number of succeeded Users
+    - `[UserStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus[]>]`: List of ManagedDeviceMobileAppConfigurationUserStatus.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[DevicesCount <Int32?>]`: Devices count for that user.
+      - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
+      - `[Status <String>]`: complianceStatus
+      - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
+      - `[UserPrincipalName <String>]`: UserPrincipalName.
+    - `[Version <Int32?>]`: Version of the device configuration.
+
+  `DEVICESTATUSES <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus[]>`: List of ManagedDeviceMobileAppConfigurationDeviceStatus.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
+    - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
+    - `[DeviceModel <String>]`: The device model that is being reported
+    - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
+    - `[Status <String>]`: complianceStatus
+    - `[UserName <String>]`: The User Name that is being reported
+    - `[UserPrincipalName <String>]`: UserPrincipalName.
+
+  `DEVICESTATUSSUMMARY <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceSummary>`: Contains properties, inherited properties and actions for an MDM mobile app configuration device status summary.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
+    - `[ErrorCount <Int32?>]`: Number of error devices
+    - `[FailedCount <Int32?>]`: Number of failed devices
+    - `[LastUpdateDateTime <DateTime?>]`: Last update time
+    - `[NotApplicableCount <Int32?>]`: Number of not applicable devices
+    - `[PendingCount <Int32?>]`: Number of pending devices
+    - `[SuccessCount <Int32?>]`: Number of succeeded devices
+
+  `INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
+    - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
+    - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
+    - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
+    - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
+    - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
+    - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+    - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
+    - `[IosManagedAppProtectionId <String>]`: The unique identifier of iosManagedAppProtection
+    - `[ManagedAppOperationId <String>]`: The unique identifier of managedAppOperation
+    - `[ManagedAppPolicyId <String>]`: The unique identifier of managedAppPolicy
+    - `[ManagedAppRegistrationId <String>]`: The unique identifier of managedAppRegistration
+    - `[ManagedAppStatusId <String>]`: The unique identifier of managedAppStatus
+    - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
+    - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationAssignment
+    - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
+    - `[ManagedDeviceMobileAppConfigurationId <String>]`: The unique identifier of managedDeviceMobileAppConfiguration
+    - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: The unique identifier of managedDeviceMobileAppConfigurationUserStatus
+    - `[ManagedEBookAssignmentId <String>]`: The unique identifier of managedEBookAssignment
+    - `[ManagedEBookId <String>]`: The unique identifier of managedEBook
+    - `[ManagedMobileAppId <String>]`: The unique identifier of managedMobileApp
+    - `[MdmWindowsInformationProtectionPolicyId <String>]`: The unique identifier of mdmWindowsInformationProtectionPolicy
+    - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
+    - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
+    - `[MobileAppId <String>]`: The unique identifier of mobileApp
+    - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
+    - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
+    - `[UserId <String>]`: The unique identifier of user
+    - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
+    - `[VppTokenId <String>]`: The unique identifier of vppToken
+    - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+    - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
+    - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
+
+  `USERSTATUSES <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus[]>`: List of ManagedDeviceMobileAppConfigurationUserStatus.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[DevicesCount <Int32?>]`: Devices count for that user.
+    - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
+    - `[Status <String>]`: complianceStatus
+    - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
+    - `[UserPrincipalName <String>]`: UserPrincipalName.
+
+  `USERSTATUSSUMMARY <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserSummary>`: Contains properties, inherited properties and actions for an MDM mobile app configuration user status summary.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
+    - `[ErrorCount <Int32?>]`: Number of error Users
+    - `[FailedCount <Int32?>]`: Number of failed Users
+    - `[LastUpdateDateTime <DateTime?>]`: Last update time
+    - `[NotApplicableCount <Int32?>]`: Number of not applicable users
+    - `[PendingCount <Int32?>]`: Number of pending Users
+    - `[SuccessCount <Int32?>]`: Number of succeeded Users
+
+  ## RELATED LINKS
+  [Update-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
+
+  ## RELATED LINKS
+  [Update-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfiguration" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfiguration" data-throw-if-not-resolved="False" />
+  description: ""
+syntaxes:
+- >-
+  Update-MgDeviceAppManagementMobileAppConfiguration -ManagedDeviceMobileAppConfigurationId <String>
+
+   [-AdditionalProperties <Hashtable>]
+
+   [-Assignments <IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
+
+   [-Description <String>]
+
+   [-DeviceStatusSummary <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceSummary>]
+
+   [-DeviceStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus[]>] [-DisplayName <String>]
+
+   [-Id <String>] [-LastModifiedDateTime <DateTime>] [-TargetedMobileApps <String[]>]
+
+   [-UserStatusSummary <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserSummary>]
+
+   [-UserStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus[]>] [-Version <Int32>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceAppManagementMobileAppConfiguration -ManagedDeviceMobileAppConfigurationId <String>
+
+   -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorporateManagementIdentity>
+
+   [-AdditionalProperties <Hashtable>]
+
+   [-Assignments <IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
+
+   [-Description <String>]
+
+   [-DeviceStatusSummary <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceSummary>]
+
+   [-DeviceStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus[]>] [-DisplayName <String>]
+
+   [-Id <String>] [-LastModifiedDateTime <DateTime>] [-TargetedMobileApps <String[]>]
+
+   [-UserStatusSummary <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserSummary>]
+
+   [-UserStatuses <IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus[]>] [-Version <Int32>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorporateManagementIdentity>
+
+   -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedDeviceMobileAppConfigurationAssignment" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Assignments
+  description: |+
+    The list of group assignemenets for app configration.
+    To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedDeviceMobileAppConfiguration" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    An abstract class for Mobile app configuration for enrolled devices.
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: CreatedDateTime
+  description: |+
+    DateTime the object was created.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Description
+  description: |+
+    Admin provided description of the Device Configuration.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceStatus" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: DeviceStatuses
+  description: |+
+    List of ManagedDeviceMobileAppConfigurationDeviceStatus.
+    To construct, see NOTES section for DEVICESTATUSES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedDeviceMobileAppConfigurationDeviceSummary" data-throw-if-not-resolved="False" />
+  name: DeviceStatusSummary
+  description: |+
+    Contains properties, inherited properties and actions for an MDM mobile app configuration device status summary.
+    To construct, see NOTES section for DEVICESTATUSSUMMARY properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: DisplayName
+  description: |+
+    Admin provided name of the device configuration.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique idenfier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDevicesCorporateManagementIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    DateTime the object was last modified.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ManagedDeviceMobileAppConfigurationId
+  isRequired: true
+  description: |+
+    The unique identifier of managedDeviceMobileAppConfiguration
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: TargetedMobileApps
+  description: |+
+    the associated app.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedDeviceMobileAppConfigurationUserStatus" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: UserStatuses
+  description: |+
+    List of ManagedDeviceMobileAppConfigurationUserStatus.
+    To construct, see NOTES section for USERSTATUSES properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphManagedDeviceMobileAppConfigurationUserSummary" data-throw-if-not-resolved="False" />
+  name: UserStatusSummary
+  description: |+
+    Contains properties, inherited properties and actions for an MDM mobile app configuration user status summary.
+    To construct, see NOTES section for USERSTATUSSUMMARY properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Version
+  description: |+
+    Version of the device configuration.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.CorporateManagement.Update-MgDeviceAppManagementMobileAppConfiguration
+name: Update-MgDeviceAppManagementMobileAppConfiguration
+description: |-
+  Update the navigation property mobileAppConfigurations in deviceAppManagement
+metadata:
+  external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+  Module Name: Microsoft.Graph.Devices.CorporateManagement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmobileappconfiguration
+  schema: 2.0.0

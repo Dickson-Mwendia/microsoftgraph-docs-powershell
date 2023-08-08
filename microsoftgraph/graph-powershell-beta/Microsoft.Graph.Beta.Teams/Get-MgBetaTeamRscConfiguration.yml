@@ -1,0 +1,26 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Get team RSC configuration for tenant.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgTeamRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamRscConfiguration?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Teams
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRscConfiguration" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgTeamRscConfiguration
+  href: /powershell/module/Microsoft.Graph.Teams/Get-MgTeamRscConfiguration?view=graph-powershell-v1.0
+syntaxes:
+- Get-MgBetaTeamRscConfiguration [<CommonParameters>]
+uid: Microsoft.Graph.Beta.Teams.Get-MgBetaTeamRscConfiguration
+name: Get-MgBetaTeamRscConfiguration
+description: |-
+  Get team RSC configuration for tenant.
+metadata:
+  external help file: Microsoft.Graph.Beta.Teams-help.xml
+  Module Name: Microsoft.Graph.Beta.Teams
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamrscconfiguration
+  schema: 2.0.0

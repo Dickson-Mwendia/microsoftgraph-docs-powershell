@@ -1,0 +1,216 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Create a new feedback resource for a submission.
+  Only a teacher can perform this operation.
+  To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
+  If the file doesn't exist or is not in that folder, the `POST` request will fail.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Education
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphEducationOutcome>`: educationOutcome
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[LastModifiedDateTime <DateTime?>]`: The moment in time when the resource was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
+
+  `INPUTOBJECT <IEducationIdentity>`: Identity Parameter
+    - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
+    - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
+    - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
+    - `[EducationClassId <String>]`: The unique identifier of educationClass
+    - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
+    - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
+    - `[EducationRubricId <String>]`: The unique identifier of educationRubric
+    - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
+    - `[EducationSubmissionId <String>]`: The unique identifier of educationSubmission
+    - `[EducationSubmissionResourceId <String>]`: The unique identifier of educationSubmissionResource
+    - `[EducationSynchronizationErrorId <String>]`: The unique identifier of educationSynchronizationError
+    - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
+    - `[EducationUserId <String>]`: The unique identifier of educationUser
+
+  `LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationOutcome" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationOutcome" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgEducationUserAssignmentSubmissionOutcome
+  href: /powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaEducationUserAssignmentSubmissionOutcome -EducationAssignmentId <String>
+
+   -EducationSubmissionId <String> -EducationUserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
+
+   [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  New-MgBetaEducationUserAssignmentSubmissionOutcome -EducationAssignmentId <String>
+
+   -EducationSubmissionId <String> -EducationUserId <String> -BodyParameter <IMicrosoftGraphEducationOutcome>
+
+   [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+
+   [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdentity>
+
+   -BodyParameter <IMicrosoftGraphEducationOutcome> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphEducationOutcome" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    educationOutcome
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EducationAssignmentId
+  isRequired: true
+  description: |+
+    The unique identifier of educationAssignment
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EducationSubmissionId
+  isRequired: true
+  description: |+
+    The unique identifier of educationSubmission
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EducationUserId
+  isRequired: true
+  description: |+
+    The unique identifier of educationUser
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IEducationIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphIdentitySet" data-throw-if-not-resolved="False" />
+  name: LastModifiedBy
+  description: |+
+    identitySet
+    To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    The moment in time when the resource was last modified.
+    The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Education.New-MgBetaEducationUserAssignmentSubmissionOutcome
+name: New-MgBetaEducationUserAssignmentSubmissionOutcome
+description: |-
+  Create a new feedback resource for a submission.
+  Only a teacher can perform this operation.
+  To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
+  If the file doesn't exist or is not in that folder, the `POST` request will fail.
+metadata:
+  external help file: Microsoft.Graph.Beta.Education-help.xml
+  Module Name: Microsoft.Graph.Beta.Education
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignmentsubmissionoutcome
+  schema: 2.0.0

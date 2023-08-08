@@ -1,0 +1,126 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Reports
+  cmdlets:
+  - Microsoft.Graph.Reports.Get-MgAuditLogDirectoryAudit
+  - Microsoft.Graph.Reports.Get-MgAuditLogDirectoryAuditCount
+  - Microsoft.Graph.Reports.Get-MgAuditLogProvisioning
+  - Microsoft.Graph.Reports.Get-MgAuditLogProvisioningCount
+  - Microsoft.Graph.Reports.Get-MgAuditLogSignIn
+  - Microsoft.Graph.Reports.Get-MgAuditLogSignInCount
+  - Microsoft.Graph.Reports.Get-MgDeviceManagementReport
+  - Microsoft.Graph.Reports.Get-MgDeviceManagementReportExportJob
+  - Microsoft.Graph.Reports.Get-MgDeviceManagementReportExportJobCount
+  - Microsoft.Graph.Reports.Get-MgReportAuthenticationMethod
+  - Microsoft.Graph.Reports.Get-MgReportAuthenticationMethodUserRegistrationDetail
+  - Microsoft.Graph.Reports.Get-MgReportAuthenticationMethodUserRegistrationDetailCount
+  - Microsoft.Graph.Reports.Get-MgReportDailyPrintUsageByPrinter
+  - Microsoft.Graph.Reports.Get-MgReportDailyPrintUsageByPrinterCount
+  - Microsoft.Graph.Reports.Get-MgReportDailyPrintUsageByUser
+  - Microsoft.Graph.Reports.Get-MgReportDailyPrintUsageByUserCount
+  - Microsoft.Graph.Reports.Get-MgReportDeviceConfigurationDeviceActivity
+  - Microsoft.Graph.Reports.Get-MgReportDeviceConfigurationUserActivity
+  - Microsoft.Graph.Reports.Get-MgReportEmailActivityCount
+  - Microsoft.Graph.Reports.Get-MgReportEmailActivityUserCount
+  - Microsoft.Graph.Reports.Get-MgReportEmailActivityUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportEmailAppUsageAppUserCount
+  - Microsoft.Graph.Reports.Get-MgReportEmailAppUsageUserCount
+  - Microsoft.Graph.Reports.Get-MgReportEmailAppUsageUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportEmailAppUsageVersionUserCount
+  - Microsoft.Graph.Reports.Get-MgReportGroupArchivedPrintJob
+  - Microsoft.Graph.Reports.Get-MgReportM365AppPlatformUserCount
+  - Microsoft.Graph.Reports.Get-MgReportM365AppUserCount
+  - Microsoft.Graph.Reports.Get-MgReportM365AppUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportMailboxUsageDetail
+  - Microsoft.Graph.Reports.Get-MgReportMailboxUsageMailboxCount
+  - Microsoft.Graph.Reports.Get-MgReportMailboxUsageQuotaStatusMailboxCount
+  - Microsoft.Graph.Reports.Get-MgReportMailboxUsageStorage
+  - Microsoft.Graph.Reports.Get-MgReportManagedDeviceEnrollmentFailureDetail
+  - Microsoft.Graph.Reports.Get-MgReportManagedDeviceEnrollmentTopFailure
+  - Microsoft.Graph.Reports.Get-MgReportMonthlyPrintUsageByPrinter
+  - Microsoft.Graph.Reports.Get-MgReportMonthlyPrintUsageByPrinterCount
+  - Microsoft.Graph.Reports.Get-MgReportMonthlyPrintUsageByUser
+  - Microsoft.Graph.Reports.Get-MgReportMonthlyPrintUsageByUserCount
+  - Microsoft.Graph.Reports.Get-MgReportOffice365ActivationCount
+  - Microsoft.Graph.Reports.Get-MgReportOffice365ActivationUserCount
+  - Microsoft.Graph.Reports.Get-MgReportOffice365ActivationUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportOffice365ActiveUserCount
+  - Microsoft.Graph.Reports.Get-MgReportOffice365ActiveUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportOffice365GroupActivityCount
+  - Microsoft.Graph.Reports.Get-MgReportOffice365GroupActivityDetail
+  - Microsoft.Graph.Reports.Get-MgReportOffice365GroupActivityFileCount
+  - Microsoft.Graph.Reports.Get-MgReportOffice365GroupActivityGroupCount
+  - Microsoft.Graph.Reports.Get-MgReportOffice365GroupActivityStorage
+  - Microsoft.Graph.Reports.Get-MgReportOffice365ServiceUserCount
+  - Microsoft.Graph.Reports.Get-MgReportOneDriveActivityFileCount
+  - Microsoft.Graph.Reports.Get-MgReportOneDriveActivityUserCount
+  - Microsoft.Graph.Reports.Get-MgReportOneDriveActivityUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportOneDriveUsageAccountCount
+  - Microsoft.Graph.Reports.Get-MgReportOneDriveUsageAccountDetail
+  - Microsoft.Graph.Reports.Get-MgReportOneDriveUsageFileCount
+  - Microsoft.Graph.Reports.Get-MgReportOneDriveUsageStorage
+  - Microsoft.Graph.Reports.Get-MgReportPrinterArchivedPrintJob
+  - Microsoft.Graph.Reports.Get-MgReportSecurity
+  - Microsoft.Graph.Reports.Get-MgReportSecurityAttackSimulationRepeatOffender
+  - Microsoft.Graph.Reports.Get-MgReportSecurityAttackSimulationTrainingUserCoverage
+  - Microsoft.Graph.Reports.Get-MgReportSecurityAttackSimulationUserCoverage
+  - Microsoft.Graph.Reports.Get-MgReportSharePointActivityFileCount
+  - Microsoft.Graph.Reports.Get-MgReportSharePointActivityPage
+  - Microsoft.Graph.Reports.Get-MgReportSharePointActivityUserCount
+  - Microsoft.Graph.Reports.Get-MgReportSharePointActivityUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportSharePointSiteUsageDetail
+  - Microsoft.Graph.Reports.Get-MgReportSharePointSiteUsageFileCount
+  - Microsoft.Graph.Reports.Get-MgReportSharePointSiteUsagePage
+  - Microsoft.Graph.Reports.Get-MgReportSharePointSiteUsageSiteCount
+  - Microsoft.Graph.Reports.Get-MgReportSharePointSiteUsageStorage
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessActivityCount
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessActivityUserCount
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessActivityUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessDeviceUsageUserCount
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessDeviceUsageUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessOrganizerActivityCount
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessOrganizerActivityMinuteCount
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessOrganizerActivityUserCount
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessParticipantActivityCount
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessParticipantActivityMinuteCount
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessParticipantActivityUserCount
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessPeerToPeerActivityCount
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessPeerToPeerActivityMinuteCount
+  - Microsoft.Graph.Reports.Get-MgReportSkypeForBusinessPeerToPeerActivityUserCount
+  - Microsoft.Graph.Reports.Get-MgReportTeamActivityCount
+  - Microsoft.Graph.Reports.Get-MgReportTeamActivityDetail
+  - Microsoft.Graph.Reports.Get-MgReportTeamActivityDistributionCount
+  - Microsoft.Graph.Reports.Get-MgReportTeamCount
+  - Microsoft.Graph.Reports.Get-MgReportTeamDeviceUsageDistributionUserCount
+  - Microsoft.Graph.Reports.Get-MgReportTeamDeviceUsageUserCount
+  - Microsoft.Graph.Reports.Get-MgReportTeamDeviceUsageUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportTeamUserActivityCount
+  - Microsoft.Graph.Reports.Get-MgReportTeamUserActivityUserCount
+  - Microsoft.Graph.Reports.Get-MgReportTeamUserActivityUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportUserArchivedPrintJob
+  - Microsoft.Graph.Reports.Get-MgReportYammerActivityCount
+  - Microsoft.Graph.Reports.Get-MgReportYammerActivityUserCount
+  - Microsoft.Graph.Reports.Get-MgReportYammerActivityUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportYammerDeviceUsageDistributionUserCount
+  - Microsoft.Graph.Reports.Get-MgReportYammerDeviceUsageUserCount
+  - Microsoft.Graph.Reports.Get-MgReportYammerDeviceUsageUserDetail
+  - Microsoft.Graph.Reports.Get-MgReportYammerGroupActivityCount
+  - Microsoft.Graph.Reports.Get-MgReportYammerGroupActivityDetail
+  - Microsoft.Graph.Reports.Get-MgReportYammerGroupActivityGroupCount
+  - Microsoft.Graph.Reports.Invoke-MgGraphReportAuthenticationMethod
+  - Microsoft.Graph.Reports.New-MgReportAuthenticationMethodUserRegistrationDetail
+  - Microsoft.Graph.Reports.Remove-MgDeviceManagementReport
+  - Microsoft.Graph.Reports.Remove-MgReportAuthenticationMethodUserRegistrationDetail
+  - Microsoft.Graph.Reports.Update-MgDeviceManagementReport
+  - Microsoft.Graph.Reports.Update-MgReportAuthenticationMethodUserRegistrationDetail
+uid: Microsoft.Graph.Reports
+name: Microsoft.Graph.Reports
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Reports
+  Module Guid: da8911bc-844e-4068-8833-8652ba767a74
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.reports
+  Help Version: 1.0.0.0
+  Locale: en-US

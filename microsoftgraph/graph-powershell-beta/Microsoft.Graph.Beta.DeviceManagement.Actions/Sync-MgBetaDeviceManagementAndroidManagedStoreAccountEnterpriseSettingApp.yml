@@ -1,0 +1,58 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke action syncApps
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Sync-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.DeviceManagement.Actions
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Sync-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Sync-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp [-PassThru] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.DeviceManagement.Actions.Sync-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp
+name: Sync-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp
+description: |-
+  Invoke action syncApps
+metadata:
+  external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+  Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/sync-mgbetadevicemanagementandroidmanagedstoreaccountenterprisesettingapp
+  schema: 2.0.0

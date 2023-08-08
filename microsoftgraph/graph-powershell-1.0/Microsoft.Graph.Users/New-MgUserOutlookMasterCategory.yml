@@ -1,0 +1,145 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The collection of open extensions defined for the user.
+  Read-only.
+  Nullable.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [New-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [New-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
+module: Microsoft.Graph.Users
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+    - `[AttachmentId <String>]`: key: id of attachment
+    - `[ExtensionId <String>]`: key: id of extension
+    - `[LicenseDetailsId <String>]`: key: id of licenseDetails
+    - `[LinkedResourceId <String>]`: key: id of linkedResource
+    - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
+    - `[NotificationId <String>]`: key: id of notification
+    - `[OutlookCategoryId <String>]`: key: id of outlookCategory
+    - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
+    - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
+    - `[OutlookTaskId <String>]`: key: id of outlookTask
+    - `[ProfilePhotoId <String>]`: key: id of profilePhoto
+    - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+    - `[TodoTaskId <String>]`: key: id of todoTask
+    - `[TodoTaskListId <String>]`: key: id of todoTaskList
+    - `[UserId <String>]`: key: id of user
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IUsersIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="System.Collections.Hashtable" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgBetaUserOutlookMasterCategory
+  href: /powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta
+- text: New-MgBetaUserMemberOfByRef
+  href: /powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta
+syntaxes:
+- >-
+  New-MgUserExtension -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- New-MgUserExtension -UserId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgUserExtension -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  New-MgUserExtension -InputObject <IUsersIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    extension
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IUsersIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: UserId
+  isRequired: true
+  description: |+
+    key: id of user
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Users.New-MgUserOutlookMasterCategory
+name: New-MgUserOutlookMasterCategory
+description: |-
+  The collection of open extensions defined for the user.
+  Read-only.
+  Nullable.
+metadata:
+  external help file: Microsoft.Graph.Users-help.xml
+  Module Name: Microsoft.Graph.Users
+  online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mguserextension
+  schema: 2.0.0

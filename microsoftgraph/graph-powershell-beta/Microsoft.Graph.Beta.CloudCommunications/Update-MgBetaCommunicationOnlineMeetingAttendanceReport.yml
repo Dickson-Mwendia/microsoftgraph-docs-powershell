@@ -1,0 +1,265 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Update the navigation property attendanceReports in communications
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Update-MgCommunicationOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingAttendanceReport?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.CloudCommunications
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord[]>`: List of attendance records of an attendance report. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
+      - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+      - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
+      - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
+    - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+    - `[Identity <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant. Presents when the participant has registered for the meeting.
+    - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
+    - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+
+  `BODYPARAMETER <IMicrosoftGraphMeetingAttendanceReport>`: meetingAttendanceReport
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
+        - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+        - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
+        - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
+      - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
+      - `[Identity <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+      - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant. Presents when the participant has registered for the meeting.
+      - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
+      - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+    - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
+    - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
+    - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
+
+  `INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
+    - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+    - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+    - `[CallId <String>]`: The unique identifier of call
+    - `[CallRecordId <String>]`: The unique identifier of callRecord
+    - `[CallRecordingId <String>]`: The unique identifier of callRecording
+    - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+    - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+    - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+    - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
+    - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+    - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
+    - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
+    - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+    - `[ParticipantId <String>]`: The unique identifier of participant
+    - `[PresenceId <String>]`: The unique identifier of presence
+    - `[SessionId <String>]`: The unique identifier of session
+    - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Update-MgCommunicationOnlineMeetingAttendanceReport
+  href: /powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingAttendanceReport?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Update-MgBetaCommunicationOnlineMeetingAttendanceReport -OnlineMeetingId <String>
+
+   [-AdditionalProperties <Hashtable>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>]
+
+   [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaCommunicationOnlineMeetingAttendanceReport -MeetingAttendanceReportId <String>
+
+   -OnlineMeetingId <String> [-AdditionalProperties <Hashtable>]
+
+   [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>] [-MeetingEndDateTime <DateTime>]
+
+   [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaCommunicationOnlineMeetingAttendanceReport -MeetingAttendanceReportId <String>
+
+   -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  Update-MgBetaCommunicationOnlineMeetingAttendanceReport -OnlineMeetingId <String>
+
+   -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>]
+
+   [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>]
+
+   [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
+
+   -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  Update-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
+
+   -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAttendanceRecord" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: AttendanceRecords
+  description: |+
+    List of attendance records of an attendance report.
+    Read-only.
+    To construct, see NOTES section for ATTENDANCERECORDS properties and create a hash table.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphMeetingAttendanceReport" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    meetingAttendanceReport
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ICloudCommunicationsIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: MeetingAttendanceReportId
+  isRequired: true
+  description: |+
+    The unique identifier of meetingAttendanceReport
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: MeetingEndDateTime
+  description: |+
+    UTC time when the meeting ended.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: MeetingStartDateTime
+  description: |+
+    UTC time when the meeting started.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: OnlineMeetingId
+  isRequired: true
+  description: |+
+    The unique identifier of onlineMeeting
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: TotalParticipantCount
+  description: |+
+    Total number of participants.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.CloudCommunications.Update-MgBetaCommunicationOnlineMeetingAttendanceReport
+name: Update-MgBetaCommunicationOnlineMeetingAttendanceReport
+description: |-
+  Update the navigation property attendanceReports in communications
+metadata:
+  external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+  Module Name: Microsoft.Graph.Beta.CloudCommunications
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingattendancereport
+  schema: 2.0.0

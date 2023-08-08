@@ -1,0 +1,109 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  An abstract definition that will be used to create a printTask when triggered by a print event.
+  Read-only.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterTaskTriggerDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterTaskTriggerDefinition?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Devices.CloudPrint
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+    - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+    - `[PrintJobId <String>]`: The unique identifier of printJob
+    - `[PrintOperationId <String>]`: The unique identifier of printOperation
+    - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
+    - `[PrintServiceId <String>]`: The unique identifier of printService
+    - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
+    - `[PrintTaskId <String>]`: The unique identifier of printTask
+    - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
+    - `[PrinterId <String>]`: The unique identifier of printer
+    - `[PrinterShareId <String>]`: The unique identifier of printerShare
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgPrintPrinterTaskTriggerDefinition
+  href: /powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterTaskTriggerDefinition?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgBetaPrintPrinterTaskTriggerDefinition -PrintTaskTriggerId <String> -PrinterId <String>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgBetaPrintPrinterTaskTriggerDefinition -InputObject <IDevicesCloudPrintIdentity>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="IDevicesCloudPrintIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrinterId
+  isRequired: true
+  description: |+
+    The unique identifier of printer
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: PrintTaskTriggerId
+  isRequired: true
+  description: |+
+    The unique identifier of printTaskTrigger
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Devices.CloudPrint.Get-MgBetaPrintPrinterTaskTriggerDefinition
+name: Get-MgBetaPrintPrinterTaskTriggerDefinition
+description: |-
+  An abstract definition that will be used to create a printTask when triggered by a print event.
+  Read-only.
+metadata:
+  external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+  Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintertasktriggerdefinition
+  schema: 2.0.0

@@ -1,0 +1,233 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Use this API to create a new Attachment.
+  An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [New-MgGroupEventExceptionOccurrenceInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEventExceptionOccurrenceInstanceAttachment?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Calendar
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `BODYPARAMETER <IMicrosoftGraphAttachment>`: attachment
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ContentType <String>]`: The MIME type.
+    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
+    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+    - `[Size <Int32?>]`: The length of the attachment in bytes.
+
+  `INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
+    - `[AttachmentId <String>]`: The unique identifier of attachment
+    - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+    - `[CalendarId <String>]`: The unique identifier of calendar
+    - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+    - `[EventId <String>]`: The unique identifier of event
+    - `[EventId1 <String>]`: The unique identifier of event
+    - `[EventId2 <String>]`: The unique identifier of event
+    - `[ExtensionId <String>]`: The unique identifier of extension
+    - `[GroupId <String>]`: The unique identifier of group
+    - `[PlaceId <String>]`: The unique identifier of place
+    - `[UserId <String>]`: The unique identifier of user
+inputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: New-MgGroupEventExceptionOccurrenceInstanceAttachment
+  href: /powershell/module/Microsoft.Graph.Calendar/New-MgGroupEventExceptionOccurrenceInstanceAttachment?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  New-MgBetaGroupEventExceptionOccurrenceInstanceAttachment -EventId <String> -EventId1 <String>
+
+   -EventId2 <String> -GroupId <String> [-AdditionalProperties <Hashtable>] [-ContentType <String>]
+
+   [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaGroupEventExceptionOccurrenceInstanceAttachment -EventId <String> -EventId1 <String>
+
+   -EventId2 <String> -GroupId <String> -BodyParameter <IMicrosoftGraphAttachment> [-WhatIf] [-Confirm]
+
+   [<CommonParameters>]
+- >-
+  New-MgBetaGroupEventExceptionOccurrenceInstanceAttachment -InputObject <ICalendarIdentity>
+
+   [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Id <String>] [-IsInline]
+
+   [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+- >-
+  New-MgBetaGroupEventExceptionOccurrenceInstanceAttachment -InputObject <ICalendarIdentity>
+
+   -BodyParameter <IMicrosoftGraphAttachment> [-WhatIf] [-Confirm] [<CommonParameters>]
+parameters:
+- type: <xref href="Hashtable" data-throw-if-not-resolved="False" />
+  name: AdditionalProperties
+  description: |+
+    Additional Parameters
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IMicrosoftGraphAttachment" data-throw-if-not-resolved="False" />
+  name: BodyParameter
+  isRequired: true
+  description: |+
+    attachment
+    To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ContentType
+  description: |+
+    The MIME type.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EventId
+  isRequired: true
+  description: |+
+    The unique identifier of event
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EventId1
+  isRequired: true
+  description: |+
+    The unique identifier of event
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: EventId2
+  isRequired: true
+  description: |+
+    The unique identifier of event
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: GroupId
+  isRequired: true
+  description: |+
+    The unique identifier of group
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Id
+  description: |+
+    The unique identifier for an entity.
+    Read-only.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="ICalendarIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: IsInline
+  description: |+
+    true if the attachment is an inline attachment; otherwise, false.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="DateTime" data-throw-if-not-resolved="False" />
+  name: LastModifiedDateTime
+  description: |+
+    The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+    For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Name
+  description: |+
+    The display name of the attachment.
+    This does not need to be the actual file name.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Size
+  description: |+
+    The length of the attachment in bytes.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Calendar.New-MgBetaGroupEventExceptionOccurrenceInstanceAttachment
+name: New-MgBetaGroupEventExceptionOccurrenceInstanceAttachment
+description: |-
+  Use this API to create a new Attachment.
+  An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+metadata:
+  external help file: Microsoft.Graph.Beta.Calendar-help.xml
+  Module Name: Microsoft.Graph.Beta.Calendar
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetagroupeventexceptionoccurrenceinstanceattachment
+  schema: 2.0.0

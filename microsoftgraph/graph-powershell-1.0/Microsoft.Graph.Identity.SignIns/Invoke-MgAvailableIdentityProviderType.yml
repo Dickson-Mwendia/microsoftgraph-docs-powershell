@@ -1,0 +1,100 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Invoke function availableProviderTypes
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Invoke-MgBetaAvailableIdentityProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaAvailableIdentityProviderType?view=graph-powershell-beta)
+module: Microsoft.Graph.Identity.SignIns
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.String" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Invoke-MgBetaAvailableIdentityProviderType
+  href: /powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaAvailableIdentityProviderType?view=graph-powershell-beta
+syntaxes:
+- >-
+  Invoke-MgAvailableIdentityProviderType [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+
+   [-Top <Int32>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Using the Invoke-MgAvailableIdentityProviderType Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Identity.SignIns
+    Invoke-MgAvailableIdentityProviderType
+  description: |-
+    This example shows how to use the Invoke-MgAvailableIdentityProviderType Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+- title: 'Example 2: Using the Invoke-MgAvailableIdentityProviderType Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Identity.SignIns
+    Invoke-MgAvailableIdentityProviderType
+  description: |-
+    This example shows how to use the Invoke-MgAvailableIdentityProviderType Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+- title: 'Example 3: Using the Invoke-MgAvailableIdentityProviderType Cmdlet'
+  code: |-
+    Import-Module Microsoft.Graph.Identity.SignIns
+    Invoke-MgAvailableIdentityProviderType -OutFile $outFileId
+  description: |-
+    This example shows how to use the Invoke-MgAvailableIdentityProviderType Cmdlet.
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Count
+  description: |+
+    Include count of items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Identity.SignIns.Invoke-MgAvailableIdentityProviderType
+name: Invoke-MgAvailableIdentityProviderType
+description: |-
+  Invoke function availableProviderTypes
+metadata:
+  external help file: Microsoft.Graph.Identity.SignIns-help.xml
+  Module Name: Microsoft.Graph.Identity.SignIns
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/invoke-mgavailableidentityprovidertype
+  schema: 2.0.0

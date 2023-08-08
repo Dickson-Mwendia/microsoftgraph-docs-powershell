@@ -1,0 +1,89 @@
+### YamlMime:PowershellModule
+children:
+- title: Microsoft.Graph.Mail
+  cmdlets:
+  - Microsoft.Graph.Mail.Get-MgUserInferenceClassification
+  - Microsoft.Graph.Mail.Get-MgUserInferenceClassificationOverride
+  - Microsoft.Graph.Mail.Get-MgUserInferenceClassificationOverrideCount
+  - Microsoft.Graph.Mail.Get-MgUserMailFolder
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderChildFolder
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderChildFolderCount
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderChildFolderMessage
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderChildFolderMessageAttachment
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderChildFolderMessageAttachmentCount
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderChildFolderMessageContent
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderChildFolderMessageCount
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderChildFolderMessageExtension
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderChildFolderMessageExtensionCount
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderChildFolderMessageRule
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderChildFolderMessageRuleCount
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderCount
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderMessage
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderMessageAttachment
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderMessageAttachmentCount
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderMessageContent
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderMessageCount
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderMessageExtension
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderMessageExtensionCount
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderMessageRule
+  - Microsoft.Graph.Mail.Get-MgUserMailFolderMessageRuleCount
+  - Microsoft.Graph.Mail.Get-MgUserMessage
+  - Microsoft.Graph.Mail.Get-MgUserMessageAttachment
+  - Microsoft.Graph.Mail.Get-MgUserMessageAttachmentCount
+  - Microsoft.Graph.Mail.Get-MgUserMessageContent
+  - Microsoft.Graph.Mail.Get-MgUserMessageCount
+  - Microsoft.Graph.Mail.Get-MgUserMessageExtension
+  - Microsoft.Graph.Mail.Get-MgUserMessageExtensionCount
+  - Microsoft.Graph.Mail.New-MgUserInferenceClassificationOverride
+  - Microsoft.Graph.Mail.New-MgUserMailFolder
+  - Microsoft.Graph.Mail.New-MgUserMailFolderChildFolder
+  - Microsoft.Graph.Mail.New-MgUserMailFolderChildFolderMessage
+  - Microsoft.Graph.Mail.New-MgUserMailFolderChildFolderMessageAttachment
+  - Microsoft.Graph.Mail.New-MgUserMailFolderChildFolderMessageExtension
+  - Microsoft.Graph.Mail.New-MgUserMailFolderChildFolderMessageRule
+  - Microsoft.Graph.Mail.New-MgUserMailFolderMessage
+  - Microsoft.Graph.Mail.New-MgUserMailFolderMessageAttachment
+  - Microsoft.Graph.Mail.New-MgUserMailFolderMessageExtension
+  - Microsoft.Graph.Mail.New-MgUserMailFolderMessageRule
+  - Microsoft.Graph.Mail.New-MgUserMessage
+  - Microsoft.Graph.Mail.New-MgUserMessageAttachment
+  - Microsoft.Graph.Mail.New-MgUserMessageExtension
+  - Microsoft.Graph.Mail.Remove-MgUserInferenceClassificationOverride
+  - Microsoft.Graph.Mail.Remove-MgUserMailFolder
+  - Microsoft.Graph.Mail.Remove-MgUserMailFolderChildFolder
+  - Microsoft.Graph.Mail.Remove-MgUserMailFolderChildFolderMessage
+  - Microsoft.Graph.Mail.Remove-MgUserMailFolderChildFolderMessageAttachment
+  - Microsoft.Graph.Mail.Remove-MgUserMailFolderChildFolderMessageExtension
+  - Microsoft.Graph.Mail.Remove-MgUserMailFolderChildFolderMessageRule
+  - Microsoft.Graph.Mail.Remove-MgUserMailFolderMessage
+  - Microsoft.Graph.Mail.Remove-MgUserMailFolderMessageAttachment
+  - Microsoft.Graph.Mail.Remove-MgUserMailFolderMessageExtension
+  - Microsoft.Graph.Mail.Remove-MgUserMailFolderMessageRule
+  - Microsoft.Graph.Mail.Remove-MgUserMessage
+  - Microsoft.Graph.Mail.Remove-MgUserMessageAttachment
+  - Microsoft.Graph.Mail.Remove-MgUserMessageExtension
+  - Microsoft.Graph.Mail.Set-MgUserMailFolderChildFolderMessageContent
+  - Microsoft.Graph.Mail.Set-MgUserMailFolderMessageContent
+  - Microsoft.Graph.Mail.Set-MgUserMessageContent
+  - Microsoft.Graph.Mail.Update-MgUserInferenceClassification
+  - Microsoft.Graph.Mail.Update-MgUserInferenceClassificationOverride
+  - Microsoft.Graph.Mail.Update-MgUserMailFolder
+  - Microsoft.Graph.Mail.Update-MgUserMailFolderChildFolder
+  - Microsoft.Graph.Mail.Update-MgUserMailFolderChildFolderMessage
+  - Microsoft.Graph.Mail.Update-MgUserMailFolderChildFolderMessageExtension
+  - Microsoft.Graph.Mail.Update-MgUserMailFolderChildFolderMessageRule
+  - Microsoft.Graph.Mail.Update-MgUserMailFolderMessage
+  - Microsoft.Graph.Mail.Update-MgUserMailFolderMessageExtension
+  - Microsoft.Graph.Mail.Update-MgUserMailFolderMessageRule
+  - Microsoft.Graph.Mail.Update-MgUserMessage
+  - Microsoft.Graph.Mail.Update-MgUserMessageExtension
+uid: Microsoft.Graph.Mail
+name: Microsoft.Graph.Mail
+description: |-
+  Microsoft Graph PowerShell Cmdlets
+metadata:
+  Module Name: Microsoft.Graph.Mail
+  Module Guid: fcd8e108-3435-4cf0-8f5c-730c8191b3c5
+  Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.mail
+  Help Version: 1.0.0.0
+  Locale: en-US

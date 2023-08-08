@@ -1,0 +1,50 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  The Exchange on premises conditional access settings.
+  On premises conditional access will require devices to be both enrolled and compliant for mail access
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-v1.0)
+module: Microsoft.Graph.DeviceManagement.Enrolment
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesConditionalAccessSettings" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgDeviceManagementConditionalAccessSetting
+  href: /powershell/module/Microsoft.Graph.DeviceManagement.Enrolment/Get-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Get-MgDeviceManagementConditionalAccessSetting [-ExpandProperty <String[]>] [-Property <String[]>]
+
+   [<CommonParameters>]
+parameters:
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+uid: Microsoft.Graph.DeviceManagement.Enrolment.Get-MgDeviceManagementConditionalAccessSetting
+name: Get-MgDeviceManagementConditionalAccessSetting
+description: |-
+  The Exchange on premises conditional access settings.
+  On premises conditional access will require devices to be both enrolled and compliant for mail access
+metadata:
+  external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+  Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+  online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgdevicemanagementconditionalaccesssetting
+  schema: 2.0.0

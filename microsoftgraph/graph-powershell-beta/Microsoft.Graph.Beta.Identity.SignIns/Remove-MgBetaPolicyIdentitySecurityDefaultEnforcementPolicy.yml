@@ -1,0 +1,82 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Delete navigation property identitySecurityDefaultsEnforcementPolicy for policies
+
+  > [!NOTE]
+  > To view the v1.0 release of this cmdlet, view [Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-v1.0)
+module: Microsoft.Graph.Beta.Identity.SignIns
+notes: |-
+  ALIASES
+outputs:
+- name: <xref href="System.Boolean" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy
+  href: /powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-v1.0
+syntaxes:
+- >-
+  Remove-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy [-IfMatch <String>] [-PassThru] [-WhatIf]
+
+   [-Confirm] [<CommonParameters>]
+examples:
+- title: 'Example 1: Code snippet'
+  code: |-
+    Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+    $params = @{
+    	isEnabled = $false
+    }
+
+    Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params
+  description: |-
+    This example shows how to use the Remove-MgBetaBetaPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: Confirm
+  description: |+
+    Prompts you for confirmation before running the cmdlet.
+
+  defaultValue: None
+  position: Named
+  aliases: cf
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: IfMatch
+  description: |+
+    ETag
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: PassThru
+  description: |+
+    Returns true when the command succeeds
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: WhatIf
+  description: |+
+    Shows what would happen if the cmdlet runs.
+    The cmdlet is not run.
+
+  defaultValue: None
+  position: Named
+  aliases: wi
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Beta.Identity.SignIns.Remove-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
+name: Remove-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
+description: |-
+  Delete navigation property identitySecurityDefaultsEnforcementPolicy for policies
+metadata:
+  external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+  Module Name: Microsoft.Graph.Beta.Identity.SignIns
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyidentitysecuritydefaultenforcementpolicy
+  schema: 2.0.0

@@ -1,0 +1,190 @@
+### YamlMime:PowershellCmdlet
+summary: |-
+  Retrieve the properties and relationships of a serviceHealth object.
+  This operation provides the health information of a specified service for a tenant.
+
+  > [!NOTE]
+  > To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementHealthOverview?view=graph-powershell-beta)
+module: Microsoft.Graph.Devices.ServiceAnnouncement
+notes: |-
+  ALIASES
+
+  COMPLEX PARAMETER PROPERTIES
+
+  To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+  `INPUTOBJECT <IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+    - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
+    - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
+    - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
+    - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
+inputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity" data-throw-if-not-resolved="False" />
+  description: ""
+outputs:
+- name: <xref href="Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealth" data-throw-if-not-resolved="False" />
+  description: ""
+links:
+- text: Get-MgBetaServiceAnnouncementHealthOverview
+  href: /powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementHealthOverview?view=graph-powershell-beta
+syntaxes:
+- >-
+  Get-MgServiceAnnouncementHealthOverview [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+
+   [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+
+   [-CountVariable <String>] [<CommonParameters>]
+- >-
+  Get-MgServiceAnnouncementHealthOverview -ServiceHealthId <String> [-ExpandProperty <String[]>]
+
+   [-Property <String[]>] [<CommonParameters>]
+- >-
+  Get-MgServiceAnnouncementHealthOverview -InputObject <IDevicesServiceAnnouncementIdentity>
+
+   [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+examples:
+- title: 'Example 1: Get the properties of a serviceHealth object'
+  code: |-
+    Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+
+    Get-MgServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId
+  description: |-
+    This example shows how to use the Get-MgServiceAnnouncementHealthOverview Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+- title: 'Example 2: Include navigation property issues'
+  code: |-
+    Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+
+    Get-MgServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId -ExpandProperty "issues"
+  description: |-
+    This example shows how to use the Get-MgServiceAnnouncementHealthOverview Cmdlet.
+
+    To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+  summary: ""
+parameters:
+- type: <xref href="SwitchParameter" data-throw-if-not-resolved="False" />
+  name: All
+  description: |+
+    List all pages.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: CountVariable
+  description: |+
+    Specifies a count of the total number of items in a collection.
+    By default, this variable will be set in the global scope.
+
+  defaultValue: None
+  position: Named
+  aliases: CV
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: ExpandProperty
+  description: |+
+    Expand related entities
+
+  defaultValue: None
+  position: Named
+  aliases: Expand
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Filter
+  description: |+
+    Filter items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="IDevicesServiceAnnouncementIdentity" data-throw-if-not-resolved="False" />
+  name: InputObject
+  isRequired: true
+  description: |+
+    Identity Parameter
+    To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+  defaultValue: None
+  pipelineInput: true
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: PageSize
+  description: |+
+    Sets the page size of results.
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Property
+  description: |+
+    Select properties to be returned
+
+  defaultValue: None
+  position: Named
+  aliases: Select
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: Search
+  description: |+
+    Search items by search phrases
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" />
+  name: ServiceHealthId
+  isRequired: true
+  description: |+
+    The unique identifier of serviceHealth
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Skip
+  description: |+
+    Skip the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: ""
+  parameterValueGroup: ""
+- type: <xref href="String" data-throw-if-not-resolved="False" /><span>[</span><span>]</span>
+  name: Sort
+  description: |+
+    Order items by property values
+
+  defaultValue: None
+  position: Named
+  aliases: OrderBy
+  parameterValueGroup: ""
+- type: <xref href="Int32" data-throw-if-not-resolved="False" />
+  name: Top
+  description: |+
+    Show only the first n items
+
+  defaultValue: None
+  position: Named
+  aliases: Limit
+  parameterValueGroup: ""
+uid: Microsoft.Graph.Devices.ServiceAnnouncement.Get-MgServiceAnnouncementHealthOverview
+name: Get-MgServiceAnnouncementHealthOverview
+description: |-
+  Retrieve the properties and relationships of a serviceHealth object.
+  This operation provides the health information of a specified service for a tenant.
+metadata:
+  external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
+  Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
+  online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementhealthoverview
+  schema: 2.0.0
